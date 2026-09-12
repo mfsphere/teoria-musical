@@ -1,0 +1,731 @@
+<!DOCTYPE html><html lang="pt-PT"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>1.2 Pauta e partitura</title><meta name="description" content="O que é a pauta musical, como se forma a partitura e o sistema, e para que servem as chavetas, os parênteses retos e as linhas suplementares."><link rel="canonical" href="https://www.teoria-musical.com/fundamentos/pauta-e-partitura/"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><meta property="og:type" content="book"><meta property="og:site_name" content="Teoria Musical"><meta property="og:title" content="1.2 Pauta e partitura"><meta property="og:description" content="O que é a pauta musical, como se forma a partitura e o sistema, e para que servem as chavetas, os parênteses retos e as linhas suplementares."><meta property="og:url" content="https://www.teoria-musical.com/fundamentos/pauta-e-partitura/"><meta property="og:image" content="https://www.teoria-musical.com/og.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Teoria Musical — princípios de ritmo, melodia e harmonia"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://www.teoria-musical.com/og.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Book","name":"Teoria Musical","alternateName":"Música: Princípios de ritmo, melodia e harmonia","author":{"@type":"Person","name":"Marco A. Ferra"},"inLanguage":"pt-PT","url":"https://www.teoria-musical.com/","license":"https://creativecommons.org/licenses/by-sa/4.0/","isAccessibleForFree":true,"genre":"Teoria musical"}</script><script>
+			try {
+				const stored = localStorage.getItem('teoria-musical:theme');
+				const dark =
+					stored === 'dark' ||
+					(stored !== 'light' && matchMedia('(prefers-color-scheme: dark)').matches);
+				document.documentElement.classList.toggle('dark', dark);
+			} catch {
+				/* Storage refused: the system preference still applies. */
+			}
+		</script><link rel="stylesheet" href="/_astro/nav.BigK0A7K.css"></head><body class="min-h-dvh bg-paper font-serif text-body"><a href="#_top" class="skip-link">Saltar para o conteúdo</a><header class="sticky top-0 z-40 flex items-center gap-2 border-b border-border bg-surface px-3 py-2 sm:gap-3 sm:px-4"><style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var l=(n,t)=>{let i=async()=>{await(await n())()},e=typeof t.value=="object"?t.value:void 0,s={timeout:e==null?void 0:e.timeout};"requestIdleCallback"in window?window.requestIdleCallback(i,s):setTimeout(i,s.timeout||200)};(self.Astro||(self.Astro={})).idle=l;window.dispatchEvent(new Event("astro:idle"));})();</script><script>(()=>{var g=Object.defineProperty;var w=(a,s,c)=>s in a?g(a,s,{enumerable:!0,configurable:!0,writable:!0,value:c}):a[s]=c;var l=(a,s,c)=>w(a,typeof s!="symbol"?s+"":s,c);var E=new Set(["__proto__","constructor","prototype"]);{let a={0:t=>y(t),1:t=>c(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(c(t)),5:t=>new Set(c(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t),11:t=>Number.POSITIVE_INFINITY*t},s=t=>{let[p,e]=t;return p in a?a[p](e):void 0},c=t=>t.map(s),y=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([p,e])=>[p,s(e)]));class f extends HTMLElement{constructor(){super(...arguments);l(this,"Component");l(this,"hydrator");l(this,"hydrate",async()=>{var b;if(!this.hydrator||!this.isConnected)return;let e=(b=this.parentElement)==null?void 0:b.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let r=this.querySelectorAll("astro-slot"),n={},d=this.querySelectorAll("template[data-astro-template]");for(let o of d){let i=o.closest(this.tagName);i!=null&&i.isSameNode(this)&&(n[o.getAttribute("data-astro-template")||"default"]=o.innerHTML,o.remove())}for(let o of r){let i=o.closest(this.tagName);i!=null&&i.isSameNode(this)&&(n[o.getAttribute("name")||"default"]=o.innerHTML)}let u;try{u=this.hasAttribute("props")?y(JSON.parse(this.getAttribute("props"))):{}}catch(o){let i=this.getAttribute("component-url")||"<unknown>",v=this.getAttribute("component-export");throw v&&(i+=` (export ${v})`),console.error(`[hydrate] Error parsing props for component ${i}`,this.getAttribute("props"),o),o}let h;await this.hydrator(this)(this.Component,u,n,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});l(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),r.disconnect(),this.childrenConnectedCallback()},r=new MutationObserver(()=>{var n;((n=this.lastChild)==null?void 0:n.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});r.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}getRetryImportUrl(e){let r=new URL(e,document.baseURI);return r.searchParams.set("astro-retry",Date.now().toString()),r.toString()}async importWithRetry(e){try{return await import(e)}catch(r){return await new Promise(n=>setTimeout(n,1e3)),import(this.getRetryImportUrl(e))}}handleHydrationError(e){let r=this.getAttribute("component-url"),n=new CustomEvent("astro:hydration-error",{cancelable:!0,bubbles:!0,composed:!0,detail:{error:e,componentUrl:r}});this.dispatchEvent(n)&&console.error(`[astro-island] Error hydrating ${r}`,e)}async start(){let e=JSON.parse(this.getAttribute("opts")),r=this.getAttribute("client");if(Astro[r]===void 0){window.addEventListener(`astro:${r}`,()=>this.start(),{once:!0});return}try{await Astro[r](async()=>{let n=this.getAttribute("renderer-url");try{let[d,{default:u}]=await Promise.all([this.importWithRetry(this.getAttribute("component-url")),n?this.importWithRetry(n):Promise.resolve({default:()=>()=>{}})]),h=this.getAttribute("component-export")||"default";if(h.includes(".")){this.Component=d;for(let m of h.split(".")){if(E.has(m)||!this.Component||typeof this.Component!="object"&&typeof this.Component!="function"||!Object.hasOwn(this.Component,m))throw new Error(`Invalid component export path: ${h}`);this.Component=this.Component[m]}}else{if(E.has(h))throw new Error(`Invalid component export path: ${h}`);this.Component=d[h]}return this.hydrator=u,this.hydrate}catch(d){return this.handleHydrationError(d),()=>{}}},e,this)}catch(n){this.handleHydrationError(n)}}attributeChangedCallback(){this.hydrate()}}l(f,"observedAttributes",["props"]),customElements.get("astro-island")||customElements.define("astro-island",f)}})();</script><astro-island uid="ZESlq9" prefix="r5" component-url="/_astro/MobileNav.BCEGxCaz.js" component-export="default" renderer-url="/_astro/client.yyZZvWdV.js" props="{&quot;chapters&quot;:[1,[[0,{&quot;label&quot;:[0,&quot;Prefácio&quot;],&quot;pages&quot;:[1,[[0,{&quot;href&quot;:[0,&quot;/prefacio/&quot;],&quot;label&quot;:[0,&quot;Prefácio&quot;]}]]]}],[0,{&quot;label&quot;:[0,&quot;1. Fundamentos&quot;],&quot;pages&quot;:[1,[[0,{&quot;href&quot;:[0,&quot;/fundamentos/som/&quot;],&quot;label&quot;:[0,&quot;1.1 Som&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/pauta-e-partitura/&quot;],&quot;label&quot;:[0,&quot;1.2 Pauta e partitura&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/notas/&quot;],&quot;label&quot;:[0,&quot;1.3 Notas&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/claves/&quot;],&quot;label&quot;:[0,&quot;1.4 Claves&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/armacao-de-clave/&quot;],&quot;label&quot;:[0,&quot;1.5 Armação de clave&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/vozes/&quot;],&quot;label&quot;:[0,&quot;1.6 Vozes&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/figuras-ritmicas/&quot;],&quot;label&quot;:[0,&quot;1.7 Figuras rítmicas&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/ritmo-e-compassos/&quot;],&quot;label&quot;:[0,&quot;1.8 Ritmo e compassos&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/metrica/&quot;],&quot;label&quot;:[0,&quot;1.9 Métrica&quot;]}]]]}],[0,{&quot;label&quot;:[0,&quot;2. Sons isolados&quot;],&quot;pages&quot;:[1,[[0,{&quot;href&quot;:[0,&quot;/sons-isolados/serie-harmonica/&quot;],&quot;label&quot;:[0,&quot;2.1 Série harmónica&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-isolados/altura-definida-e-indefinida/&quot;],&quot;label&quot;:[0,&quot;2.2 Altura definida e indefinida&quot;]}]]]}],[0,{&quot;label&quot;:[0,&quot;3. Sons em conjunto&quot;],&quot;pages&quot;:[1,[[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/melodia-e-intervalos/&quot;],&quot;label&quot;:[0,&quot;3.1 Melodia e intervalos&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/consonancia-e-dissonancia/&quot;],&quot;label&quot;:[0,&quot;3.2 Consonância e dissonância&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/escalas/&quot;],&quot;label&quot;:[0,&quot;3.3 Escalas&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/modos/&quot;],&quot;label&quot;:[0,&quot;3.4 Modos&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/triades/&quot;],&quot;label&quot;:[0,&quot;3.5 Tríades&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/acordes-de-setima/&quot;],&quot;label&quot;:[0,&quot;3.6 Acordes de sétima&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/baixo-continuo/&quot;],&quot;label&quot;:[0,&quot;3.7 Baixo contínuo&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/dominantes-secundarias/&quot;],&quot;label&quot;:[0,&quot;3.8 Dominantes secundárias&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/modulacao/&quot;],&quot;label&quot;:[0,&quot;3.9 Modulação&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/cadencias/&quot;],&quot;label&quot;:[0,&quot;3.10 Cadências&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/forma-e-frase/&quot;],&quot;label&quot;:[0,&quot;3.11 Forma e frase&quot;]}]]]}],[0,{&quot;label&quot;:[0,&quot;4. Palavras finais&quot;],&quot;pages&quot;:[1,[]]}],[0,{&quot;label&quot;:[0,&quot;Recursos&quot;],&quot;pages&quot;:[1,[[0,{&quot;href&quot;:[0,&quot;/recursos/papel-pautado/&quot;],&quot;label&quot;:[0,&quot;Papel pautado&quot;]}],[0,{&quot;href&quot;:[0,&quot;/recursos/sobre/&quot;],&quot;label&quot;:[0,&quot;Sobre o livro&quot;]}],[0,{&quot;href&quot;:[0,&quot;/recursos/transferencias/&quot;],&quot;label&quot;:[0,&quot;Transferências&quot;]}]]]}]]],&quot;current&quot;:[0,&quot;/fundamentos/pauta-e-partitura/&quot;]}" ssr client="idle" opts="{&quot;name&quot;:&quot;MobileNav&quot;,&quot;value&quot;:true}" await-children><button class="rounded p-2 text-secondary outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent lg:hidden" data-rac="" type="button" tabindex="0" aria-expanded="false" id="react-aria-_r5R_0H1_" data-react-aria-pressable="true" aria-label="Menu"><svg aria-hidden="true" viewBox="0 0 24 24" class="size-5" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round"></path></svg></button><!--astro:end--></astro-island><a href="/" class="min-w-0 truncate font-semibold text-ink no-underline">Teoria Musical</a><div class="ms-auto flex shrink-0 items-center gap-1"><astro-island uid="2qpPsV" prefix="r6" component-url="/_astro/Search.DWVVEPUn.js" component-export="default" renderer-url="/_astro/client.yyZZvWdV.js" props="{}" ssr client="idle" opts="{&quot;name&quot;:&quot;Search&quot;,&quot;value&quot;:true}" await-children><button class="rounded px-2 py-1 text-body-sm text-secondary outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent" data-rac="" type="button" tabindex="0" aria-expanded="false" id="react-aria-_r6R_0H1_" data-react-aria-pressable="true">Pesquisar</button><!--astro:end--></astro-island><astro-island uid="1Af02n" prefix="r7" component-url="/_astro/ThemeToggle.BfMpIbgS.js" component-export="default" renderer-url="/_astro/client.yyZZvWdV.js" props="{}" ssr client="idle" opts="{&quot;name&quot;:&quot;ThemeToggle&quot;,&quot;value&quot;:true}" await-children><button class="rounded px-2 py-1 text-body-sm text-secondary outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent" data-rac="" type="button" tabindex="0" aria-haspopup="true" aria-expanded="false" id="react-aria-_r7R_0_" data-react-aria-pressable="true" aria-label="Selecionar tema">Automático</button><!--astro:end--></astro-island></div></header><div class="mx-auto grid w-full max-w-6xl grid-cols-1 gap-8 px-4 lg:grid-cols-[16rem_minmax(0,1fr)] xl:grid-cols-[16rem_minmax(0,1fr)_14rem]"><div class="hidden py-8 lg:block"><!-- Rendered on the server and hydrated for the disclosures; a reader
+				     without JavaScript still gets every link. --><div class="sticky top-16 max-h-[calc(100dvh-5rem)] overflow-auto"><astro-island uid="Z2ohmmf" prefix="r4" component-url="/_astro/SidebarNav.Cc3HOfc4.js" component-export="default" renderer-url="/_astro/client.yyZZvWdV.js" props="{&quot;slot&quot;:[0,&quot;sidebar&quot;],&quot;chapters&quot;:[1,[[0,{&quot;label&quot;:[0,&quot;Prefácio&quot;],&quot;pages&quot;:[1,[[0,{&quot;href&quot;:[0,&quot;/prefacio/&quot;],&quot;label&quot;:[0,&quot;Prefácio&quot;]}]]]}],[0,{&quot;label&quot;:[0,&quot;1. Fundamentos&quot;],&quot;pages&quot;:[1,[[0,{&quot;href&quot;:[0,&quot;/fundamentos/som/&quot;],&quot;label&quot;:[0,&quot;1.1 Som&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/pauta-e-partitura/&quot;],&quot;label&quot;:[0,&quot;1.2 Pauta e partitura&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/notas/&quot;],&quot;label&quot;:[0,&quot;1.3 Notas&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/claves/&quot;],&quot;label&quot;:[0,&quot;1.4 Claves&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/armacao-de-clave/&quot;],&quot;label&quot;:[0,&quot;1.5 Armação de clave&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/vozes/&quot;],&quot;label&quot;:[0,&quot;1.6 Vozes&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/figuras-ritmicas/&quot;],&quot;label&quot;:[0,&quot;1.7 Figuras rítmicas&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/ritmo-e-compassos/&quot;],&quot;label&quot;:[0,&quot;1.8 Ritmo e compassos&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/metrica/&quot;],&quot;label&quot;:[0,&quot;1.9 Métrica&quot;]}]]]}],[0,{&quot;label&quot;:[0,&quot;2. Sons isolados&quot;],&quot;pages&quot;:[1,[[0,{&quot;href&quot;:[0,&quot;/sons-isolados/serie-harmonica/&quot;],&quot;label&quot;:[0,&quot;2.1 Série harmónica&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-isolados/altura-definida-e-indefinida/&quot;],&quot;label&quot;:[0,&quot;2.2 Altura definida e indefinida&quot;]}]]]}],[0,{&quot;label&quot;:[0,&quot;3. Sons em conjunto&quot;],&quot;pages&quot;:[1,[[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/melodia-e-intervalos/&quot;],&quot;label&quot;:[0,&quot;3.1 Melodia e intervalos&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/consonancia-e-dissonancia/&quot;],&quot;label&quot;:[0,&quot;3.2 Consonância e dissonância&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/escalas/&quot;],&quot;label&quot;:[0,&quot;3.3 Escalas&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/modos/&quot;],&quot;label&quot;:[0,&quot;3.4 Modos&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/triades/&quot;],&quot;label&quot;:[0,&quot;3.5 Tríades&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/acordes-de-setima/&quot;],&quot;label&quot;:[0,&quot;3.6 Acordes de sétima&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/baixo-continuo/&quot;],&quot;label&quot;:[0,&quot;3.7 Baixo contínuo&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/dominantes-secundarias/&quot;],&quot;label&quot;:[0,&quot;3.8 Dominantes secundárias&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/modulacao/&quot;],&quot;label&quot;:[0,&quot;3.9 Modulação&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/cadencias/&quot;],&quot;label&quot;:[0,&quot;3.10 Cadências&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/forma-e-frase/&quot;],&quot;label&quot;:[0,&quot;3.11 Forma e frase&quot;]}]]]}],[0,{&quot;label&quot;:[0,&quot;4. Palavras finais&quot;],&quot;pages&quot;:[1,[]]}],[0,{&quot;label&quot;:[0,&quot;Recursos&quot;],&quot;pages&quot;:[1,[[0,{&quot;href&quot;:[0,&quot;/recursos/papel-pautado/&quot;],&quot;label&quot;:[0,&quot;Papel pautado&quot;]}],[0,{&quot;href&quot;:[0,&quot;/recursos/sobre/&quot;],&quot;label&quot;:[0,&quot;Sobre o livro&quot;]}],[0,{&quot;href&quot;:[0,&quot;/recursos/transferencias/&quot;],&quot;label&quot;:[0,&quot;Transferências&quot;]}]]]}]]],&quot;current&quot;:[0,&quot;/fundamentos/pauta-e-partitura/&quot;]}" ssr client="idle" opts="{&quot;name&quot;:&quot;SidebarNav&quot;,&quot;value&quot;:true}" await-children><nav aria-label="Navegação principal" class="flex flex-col gap-1"><div class="react-aria-Disclosure" data-rac=""><h3 class="contents"><button id="react-aria-_r4R_1H1_" class="group flex w-full items-center gap-2 rounded px-2 py-1 text-start text-body-sm font-semibold text-ink outline-none hover:text-accent focus-visible:ring-2 focus-visible:ring-accent" data-rac="" type="button" tabindex="0" data-react-aria-pressable="true" aria-expanded="false" aria-controls="react-aria-_r4R_1H2_" slot="trigger"><svg aria-hidden="true" viewBox="0 0 24 24" class="size-4 shrink-0 transition-transform group-aria-[expanded=false]:-rotate-90" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"></path></svg>Prefácio</button></h3><div class="react-aria-DisclosurePanel" data-rac="" id="react-aria-_r4R_1H2_" role="group" aria-labelledby="react-aria-_r4R_1H1_" aria-hidden="true" hidden=""><ul class="ms-4 flex flex-col border-s border-border ps-2"><li><a href="/prefacio/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">Prefácio</a></li></ul></div></div><div class="react-aria-Disclosure" data-rac="" data-expanded="true"><h3 class="contents"><button id="react-aria-_r4R_2H1_" class="group flex w-full items-center gap-2 rounded px-2 py-1 text-start text-body-sm font-semibold text-ink outline-none hover:text-accent focus-visible:ring-2 focus-visible:ring-accent" data-rac="" type="button" tabindex="0" data-react-aria-pressable="true" aria-expanded="true" aria-controls="react-aria-_r4R_2H2_" slot="trigger"><svg aria-hidden="true" viewBox="0 0 24 24" class="size-4 shrink-0 transition-transform group-aria-[expanded=false]:-rotate-90" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"></path></svg>1. Fundamentos</button></h3><div class="react-aria-DisclosurePanel" data-rac="" id="react-aria-_r4R_2H2_" role="group" aria-labelledby="react-aria-_r4R_2H1_" aria-hidden="false"><ul class="ms-4 flex flex-col border-s border-border ps-2"><li><a href="/fundamentos/som/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">1.1 Som</a></li><li><a href="/fundamentos/pauta-e-partitura/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent" aria-current="page">1.2 Pauta e partitura</a></li><li><a href="/fundamentos/notas/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">1.3 Notas</a></li><li><a href="/fundamentos/claves/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">1.4 Claves</a></li><li><a href="/fundamentos/armacao-de-clave/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">1.5 Armação de clave</a></li><li><a href="/fundamentos/vozes/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">1.6 Vozes</a></li><li><a href="/fundamentos/figuras-ritmicas/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">1.7 Figuras rítmicas</a></li><li><a href="/fundamentos/ritmo-e-compassos/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">1.8 Ritmo e compassos</a></li><li><a href="/fundamentos/metrica/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">1.9 Métrica</a></li></ul></div></div><div class="react-aria-Disclosure" data-rac=""><h3 class="contents"><button id="react-aria-_r4R_3H1_" class="group flex w-full items-center gap-2 rounded px-2 py-1 text-start text-body-sm font-semibold text-ink outline-none hover:text-accent focus-visible:ring-2 focus-visible:ring-accent" data-rac="" type="button" tabindex="0" data-react-aria-pressable="true" aria-expanded="false" aria-controls="react-aria-_r4R_3H2_" slot="trigger"><svg aria-hidden="true" viewBox="0 0 24 24" class="size-4 shrink-0 transition-transform group-aria-[expanded=false]:-rotate-90" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"></path></svg>2. Sons isolados</button></h3><div class="react-aria-DisclosurePanel" data-rac="" id="react-aria-_r4R_3H2_" role="group" aria-labelledby="react-aria-_r4R_3H1_" aria-hidden="true" hidden=""><ul class="ms-4 flex flex-col border-s border-border ps-2"><li><a href="/sons-isolados/serie-harmonica/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">2.1 Série harmónica</a></li><li><a href="/sons-isolados/altura-definida-e-indefinida/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">2.2 Altura definida e indefinida</a></li></ul></div></div><div class="react-aria-Disclosure" data-rac=""><h3 class="contents"><button id="react-aria-_r4R_4H1_" class="group flex w-full items-center gap-2 rounded px-2 py-1 text-start text-body-sm font-semibold text-ink outline-none hover:text-accent focus-visible:ring-2 focus-visible:ring-accent" data-rac="" type="button" tabindex="0" data-react-aria-pressable="true" aria-expanded="false" aria-controls="react-aria-_r4R_4H2_" slot="trigger"><svg aria-hidden="true" viewBox="0 0 24 24" class="size-4 shrink-0 transition-transform group-aria-[expanded=false]:-rotate-90" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"></path></svg>3. Sons em conjunto</button></h3><div class="react-aria-DisclosurePanel" data-rac="" id="react-aria-_r4R_4H2_" role="group" aria-labelledby="react-aria-_r4R_4H1_" aria-hidden="true" hidden=""><ul class="ms-4 flex flex-col border-s border-border ps-2"><li><a href="/sons-em-conjunto/melodia-e-intervalos/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">3.1 Melodia e intervalos</a></li><li><a href="/sons-em-conjunto/consonancia-e-dissonancia/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">3.2 Consonância e dissonância</a></li><li><a href="/sons-em-conjunto/escalas/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">3.3 Escalas</a></li><li><a href="/sons-em-conjunto/modos/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">3.4 Modos</a></li><li><a href="/sons-em-conjunto/triades/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">3.5 Tríades</a></li><li><a href="/sons-em-conjunto/acordes-de-setima/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">3.6 Acordes de sétima</a></li><li><a href="/sons-em-conjunto/baixo-continuo/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">3.7 Baixo contínuo</a></li><li><a href="/sons-em-conjunto/dominantes-secundarias/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">3.8 Dominantes secundárias</a></li><li><a href="/sons-em-conjunto/modulacao/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">3.9 Modulação</a></li><li><a href="/sons-em-conjunto/cadencias/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">3.10 Cadências</a></li><li><a href="/sons-em-conjunto/forma-e-frase/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">3.11 Forma e frase</a></li></ul></div></div><div class="react-aria-Disclosure" data-rac=""><h3 class="contents"><button id="react-aria-_r4R_5H1_" class="group flex w-full items-center gap-2 rounded px-2 py-1 text-start text-body-sm font-semibold text-ink outline-none hover:text-accent focus-visible:ring-2 focus-visible:ring-accent" data-rac="" type="button" tabindex="0" data-react-aria-pressable="true" aria-expanded="false" aria-controls="react-aria-_r4R_5H2_" slot="trigger"><svg aria-hidden="true" viewBox="0 0 24 24" class="size-4 shrink-0 transition-transform group-aria-[expanded=false]:-rotate-90" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"></path></svg>4. Palavras finais</button></h3><div class="react-aria-DisclosurePanel" data-rac="" id="react-aria-_r4R_5H2_" role="group" aria-labelledby="react-aria-_r4R_5H1_" aria-hidden="true" hidden=""><ul class="ms-4 flex flex-col border-s border-border ps-2"></ul></div></div><div class="react-aria-Disclosure" data-rac=""><h3 class="contents"><button id="react-aria-_r4R_6H1_" class="group flex w-full items-center gap-2 rounded px-2 py-1 text-start text-body-sm font-semibold text-ink outline-none hover:text-accent focus-visible:ring-2 focus-visible:ring-accent" data-rac="" type="button" tabindex="0" data-react-aria-pressable="true" aria-expanded="false" aria-controls="react-aria-_r4R_6H2_" slot="trigger"><svg aria-hidden="true" viewBox="0 0 24 24" class="size-4 shrink-0 transition-transform group-aria-[expanded=false]:-rotate-90" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"></path></svg>Recursos</button></h3><div class="react-aria-DisclosurePanel" data-rac="" id="react-aria-_r4R_6H2_" role="group" aria-labelledby="react-aria-_r4R_6H1_" aria-hidden="true" hidden=""><ul class="ms-4 flex flex-col border-s border-border ps-2"><li><a href="/recursos/papel-pautado/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">Papel pautado</a></li><li><a href="/recursos/sobre/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">Sobre o livro</a></li><li><a href="/recursos/transferencias/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">Transferências</a></li></ul></div></div></nav><!--astro:end--></astro-island></div></div><main id="_top" class="min-w-0 py-8"><h1 class="mb-6 text-title font-semibold text-ink">1.2 Pauta e partitura</h1><div class="book-content" data-pagefind-body><p>Denomina-se «pauta musical» o conjunto de cinco linhas horizontais paralelas e equidistantes
+onde as notas e restantes símbolos musicais são colocados. Tanto as linhas como os espaços
+entre elas formadas contam-se de baixo para cima. Quando se adicionam à pauta os símbolos
+musicais, como, por exemplo, figuras rítmicas, claves, fórmulas de compasso ou sinais de
+expressão, forma-se a partitura.</p>
+<p>O princípio de funcionamento da pauta musical é similar ao de um plano cartesiano. Na
+horizontal estamos no domínio do tempo, e consequentemente da melodia e do ritmo, sendo a
+leitura realizada da esquerda para a direita. Na vertical estamos no domínio da altura, ou
+seja, das notas mais graves às mais agudas, e estamos no domínio da harmonia, sendo a
+leitura realizada em simultâneo.</p>
+<p>Quando várias pautas musicais são usadas em conjunto e encontram-se unidas por uma linha
+vertical, forma-se um sistema musical, e pressupõe que a música seja tocada simultaneamente.
+As chavetas são colocadas junto à linha vertical para unir as pautas em instrumentos que
+dispõem de uma grande amplitude de alturas, como, por exemplo, um piano. De um modo similar,
+os parênteses retos são adicionados e colocados na vertical próximo a esta linha para
+indicar grupos de instrumentos que funcionam como uma unidade, como, por exemplo, um quarteto
+de cordas. O nome dos instrumentos musicais aos quais a pauta se refere é colocado à
+esquerda destes símbolos, sejam chavetas ou parênteses.</p>
+<figure id="fig-quarteto-cordas" class="figure" data-score="string_quartet" data-cursor="[[0,8.74,1.68,32.870000000000005],[1.818,13.08,1.68,32.870000000000005],[3.636,19.46,1.68,32.870000000000005]]"><svg class="score" role="img" aria-label="Figura 1.2.1. Quarteto de cordas agrupado por parênteses retos." xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.2" width="65.85mm" height="60.53mm" viewBox="-10.8628 -0.0240 37.4741 34.4430">
+<style type="text/css">
+<![CDATA[
+tspan { white-space: pre; }
+]]>
+</style>
+<g transform="translate(0.0000, 5.7760)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="26.5613" y2="0"/>
+</g>
+<g transform="translate(0.0000, 4.7760)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="26.5613" y2="0"/>
+</g>
+<g transform="translate(0.0000, 3.7760)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="26.5613" y2="0"/>
+</g>
+<g transform="translate(0.0000, 2.7760)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="26.5613" y2="0"/>
+</g>
+<g transform="translate(0.0000, 1.7760)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="26.5613" y2="0"/>
+</g>
+<g transform="translate(26.0113, -0.0000)">
+<rect x="0.0000" y="23.8260" width="0.6000" height="4.9500" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(25.5213, -0.0000)">
+<rect x="0.0000" y="23.8260" width="0.1900" height="4.9500" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(26.0113, -0.0000)">
+<rect x="0.0000" y="14.8260" width="0.6000" height="4.9500" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(25.5213, -0.0000)">
+<rect x="0.0000" y="14.8260" width="0.1900" height="4.9500" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(26.0113, -0.0000)">
+<rect x="0.0000" y="5.8260" width="0.6000" height="4.9500" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(25.5213, -0.0000)">
+<rect x="0.0000" y="5.8260" width="0.1900" height="4.9500" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(26.0113, 30.7760)">
+<rect x="0.0000" y="-2.0500" width="0.6000" height="4.0500" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(25.5213, 30.7760)">
+<rect x="0.0000" y="-2.0500" width="0.1900" height="4.0500" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(0.0000, 14.7760)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="26.5613" y2="0"/>
+</g>
+<g transform="translate(0.0000, 13.7760)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="26.5613" y2="0"/>
+</g>
+<g transform="translate(0.0000, 12.7760)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="26.5613" y2="0"/>
+</g>
+<g transform="translate(0.0000, 11.7760)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="26.5613" y2="0"/>
+</g>
+<g transform="translate(0.0000, 10.7760)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="26.5613" y2="0"/>
+</g>
+<g transform="translate(26.0113, 21.7760)">
+<rect x="0.0000" y="-2.0500" width="0.6000" height="4.1000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(25.5213, 21.7760)">
+<rect x="0.0000" y="-2.0500" width="0.1900" height="4.1000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(26.0113, 12.7760)">
+<rect x="0.0000" y="-2.0500" width="0.6000" height="4.1000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(25.5213, 12.7760)">
+<rect x="0.0000" y="-2.0500" width="0.1900" height="4.1000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(0.0000, 23.7760)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="26.5613" y2="0"/>
+</g>
+<g transform="translate(0.0000, 22.7760)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="26.5613" y2="0"/>
+</g>
+<g transform="translate(0.0000, 21.7760)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="26.5613" y2="0"/>
+</g>
+<g transform="translate(0.0000, 20.7760)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="26.5613" y2="0"/>
+</g>
+<g transform="translate(0.0000, 19.7760)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="26.5613" y2="0"/>
+</g>
+<g transform="translate(26.0113, 3.7760)">
+<rect x="0.0000" y="-2.0000" width="0.6000" height="4.0500" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(25.5213, 3.7760)">
+<rect x="0.0000" y="-2.0000" width="0.1900" height="4.0500" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(17.3712, -0.0000)">
+<rect x="0.0000" y="23.8260" width="0.1900" height="4.9500" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(17.3712, -0.0000)">
+<rect x="0.0000" y="14.8260" width="0.1900" height="4.9500" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(17.3712, -0.0000)">
+<rect x="0.0000" y="5.8260" width="0.1900" height="4.9500" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(0.0000, 32.7760)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="26.5613" y2="0"/>
+</g>
+<g transform="translate(0.0000, 31.7760)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="26.5613" y2="0"/>
+</g>
+<g transform="translate(0.0000, 30.7760)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="26.5613" y2="0"/>
+</g>
+<g transform="translate(0.0000, 29.7760)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="26.5613" y2="0"/>
+</g>
+<g transform="translate(0.0000, 28.7760)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="26.5613" y2="0"/>
+</g>
+<g transform="translate(17.3712, 30.7760)">
+<rect x="0.0000" y="-2.0500" width="0.1900" height="4.0500" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(17.3712, 21.7760)">
+<rect x="0.0000" y="-2.0500" width="0.1900" height="4.1000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(17.3712, 12.7760)">
+<rect x="0.0000" y="-2.0500" width="0.1900" height="4.1000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(17.3712, 3.7760)">
+<rect x="0.0000" y="-2.0000" width="0.1900" height="4.0500" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(14.3903, 21.7760)">
+<rect x="-0.0650" y="-2.0000" width="0.1300" height="3.2410" ry="0.0400" fill="currentColor"/>
+</g>
+<g transform="translate(-9.6678, 4.4836)">
+<text font-family="TeX Gyre Schola" font-size="1.9598" text-anchor="start" fill="currentColor">
+<tspan>Violino 1</tspan>
+</text>
+</g>
+<g transform="translate(-1.3100, 1.5010)">
+<path transform="scale(0.0040, -0.0040)" d="M0 -56v87c0 14 11 25 25 25h50c159 0 271 136 362 270c3 5 8 7 12 7c8 0 17 -7 17 -16c0 -3 -1 -6 -3 -9c-99 -144 -215 -364 -388 -364h-75z" fill="currentColor"/>
+</g>
+<g transform="translate(-1.3100, 33.0510)">
+<path transform="scale(0.0040, -0.0040)" d="M0 56h75c173 0 289 -220 388 -364c2 -3 3 -6 3 -9c0 -9 -9 -16 -17 -16c-4 0 -9 2 -12 7c-91 134 -203 270 -362 270h-50c-14 0 -25 11 -25 25v87z" fill="currentColor"/>
+</g>
+<g transform="translate(-1.3100, 17.2760)">
+<rect x="0.0000" y="-15.5950" width="0.4500" height="31.1900" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(8.7400, 4.2760)">
+<path transform="scale(0.0040, -0.0040)" d="M72 -106c40 0 204 110 231 143c7 9 11 19 11 28c0 22 -18 41 -42 41c-40 0 -204 -110 -231 -143c-7 -9 -10 -19 -10 -28c0 -22 17 -41 41 -41zM0 -67c0 71 46 203 258 203c41 0 86 -10 86 -69c0 -71 -46 -203 -258 -203c-41 0 -86 10 -86 69z" fill="currentColor"/>
+</g>
+<g transform="translate(0.8000, 4.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M266 -635h-6c-108 0 -195 88 -195 197c0 58 53 103 112 103c54 0 95 -47 95 -103c0 -52 -43 -95 -95 -95c-11 0 -21 2 -31 6c26 -39 68 -65 117 -65h4zM401 151c19 -89 48 -242 60 -354c76 27 112 94 112 163c0 89 -60 179 -172 191zM74 28c0 -112 98 -247 278 -247
+c21 0 44 2 68 6c-7 64 -29 203 -63 364c-79 -8 -124 -61 -124 -119c0 -44 25 -91 81 -123c5 -5 7 -10 7 -15c0 -11 -10 -22 -22 -22c-15 0 -126 62 -126 187c0 88 58 174 160 197c-14 58 -29 117 -46 175c-107 -121 -213 -243 -213 -403zM357 1194c28 0 143 -206 143 -361
+c0 -143 -86 -255 -180 -364c21 -68 39 -138 56 -207c5 0 10 1 14 1c155 0 255 -129 255 -262c0 -113 -74 -212 -180 -245c3 -35 5 -70 5 -105c0 -19 -1 -39 -2 -58c-7 -119 -88 -225 -202 -228l1 43c93 2 153 92 159 191c1 18 2 37 2 55c0 31 -1 61 -4 92
+c-28 -5 -55 -8 -80 -8c-239 0 -342 217 -342 374c0 177 131 306 248 441c-29 96 -52 170 -52 346c0 189 144 295 159 295zM247 782c0 -55 12 -115 35 -190c82 100 147 202 147 326c0 40 -6 82 -21 127c-49 -24 -161 -97 -161 -263z" fill="currentColor"/>
+</g>
+<g transform="translate(5.0400, 3.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M433 -89c0 -22 -50 -174 -183 -174c-59 0 -250 19 -250 263c0 62 18 262 250 262c116 0 176 -106 176 -163c0 -40 -30 -72 -67 -72c-31 0 -75 25 -75 75c0 38 27 77 72 77c4 0 9 0 14 -1c-28 37 -72 59 -120 59c-106 0 -113 -73 -113 -186v-51v-51
+c0 -113 7 -187 113 -187c80 0 139 70 158 151c2 7 7 10 12 10c6 0 13 -4 13 -12z" fill="currentColor"/>
+</g>
+<g transform="translate(8.7400, 14.2760)">
+<path transform="scale(0.0040, -0.0040)" d="M72 -106c40 0 204 110 231 143c7 9 11 19 11 28c0 22 -18 41 -42 41c-40 0 -204 -110 -231 -143c-7 -9 -10 -19 -10 -28c0 -22 17 -41 41 -41zM0 -67c0 71 46 203 258 203c41 0 86 -10 86 -69c0 -71 -46 -203 -258 -203c-41 0 -86 10 -86 69z" fill="currentColor"/>
+</g>
+<g transform="translate(0.8000, 13.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M266 -635h-6c-108 0 -195 88 -195 197c0 58 53 103 112 103c54 0 95 -47 95 -103c0 -52 -43 -95 -95 -95c-11 0 -21 2 -31 6c26 -39 68 -65 117 -65h4zM401 151c19 -89 48 -242 60 -354c76 27 112 94 112 163c0 89 -60 179 -172 191zM74 28c0 -112 98 -247 278 -247
+c21 0 44 2 68 6c-7 64 -29 203 -63 364c-79 -8 -124 -61 -124 -119c0 -44 25 -91 81 -123c5 -5 7 -10 7 -15c0 -11 -10 -22 -22 -22c-15 0 -126 62 -126 187c0 88 58 174 160 197c-14 58 -29 117 -46 175c-107 -121 -213 -243 -213 -403zM357 1194c28 0 143 -206 143 -361
+c0 -143 -86 -255 -180 -364c21 -68 39 -138 56 -207c5 0 10 1 14 1c155 0 255 -129 255 -262c0 -113 -74 -212 -180 -245c3 -35 5 -70 5 -105c0 -19 -1 -39 -2 -58c-7 -119 -88 -225 -202 -228l1 43c93 2 153 92 159 191c1 18 2 37 2 55c0 31 -1 61 -4 92
+c-28 -5 -55 -8 -80 -8c-239 0 -342 217 -342 374c0 177 131 306 248 441c-29 96 -52 170 -52 346c0 189 144 295 159 295zM247 782c0 -55 12 -115 35 -190c82 100 147 202 147 326c0 40 -6 82 -21 127c-49 -24 -161 -97 -161 -263z" fill="currentColor"/>
+</g>
+<g transform="translate(5.0400, 12.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M433 -89c0 -22 -50 -174 -183 -174c-59 0 -250 19 -250 263c0 62 18 262 250 262c116 0 176 -106 176 -163c0 -40 -30 -72 -67 -72c-31 0 -75 25 -75 75c0 38 27 77 72 77c4 0 9 0 14 -1c-28 37 -72 59 -120 59c-106 0 -113 -73 -113 -186v-51v-51
+c0 -113 7 -187 113 -187c80 0 139 70 158 151c2 7 7 10 12 10c6 0 13 -4 13 -12z" fill="currentColor"/>
+</g>
+<g transform="translate(8.7400, 22.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M72 -106c40 0 204 110 231 143c7 9 11 19 11 28c0 22 -18 41 -42 41c-40 0 -204 -110 -231 -143c-7 -9 -10 -19 -10 -28c0 -22 17 -41 41 -41zM0 -67c0 71 46 203 258 203c41 0 86 -10 86 -69c0 -71 -46 -203 -258 -203c-41 0 -86 10 -86 69z" fill="currentColor"/>
+</g>
+<g transform="translate(0.8000, 21.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M318 0c0 -44 12 -73 45 -73c29 0 57 31 88 31c123 0 229 -89 229 -208c0 -169 -93 -250 -265 -250c-83 0 -152 61 -152 142c0 42 34 77 76 77s76 -35 76 -77c0 -39 -49 -37 -49 -76c0 -23 24 -38 49 -38c116 0 140 90 140 222c0 106 -12 180 -104 180
+c-72 0 -119 -71 -119 -149c0 -9 -7 -14 -14 -14s-13 5 -13 14c0 76 -31 147 -84 200v-471c0 -6 -4 -10 -10 -10h-21c-6 0 -10 4 -10 10v980c0 6 4 10 10 10h21c6 0 10 -4 10 -10v-471c53 53 84 124 84 200c0 9 6 14 13 14s14 -5 14 -14c0 -78 47 -149 119 -149
+c92 0 104 74 104 180c0 132 -24 222 -140 222c-25 0 -49 -15 -49 -38c0 -39 49 -37 49 -76c0 -42 -34 -77 -76 -77s-76 35 -76 77c0 81 69 142 152 142c172 0 265 -81 265 -250c0 -119 -106 -208 -229 -208c-31 0 -59 31 -88 31c-33 0 -45 -29 -45 -73zM129 -500h-119
+c-6 0 -10 4 -10 10v980c0 6 4 10 10 10h119c6 0 10 -4 10 -10v-980c0 -6 -4 -10 -10 -10z" fill="currentColor"/>
+</g>
+<g transform="translate(5.0400, 21.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M433 -89c0 -22 -50 -174 -183 -174c-59 0 -250 19 -250 263c0 62 18 262 250 262c116 0 176 -106 176 -163c0 -40 -30 -72 -67 -72c-31 0 -75 25 -75 75c0 38 27 77 72 77c4 0 9 0 14 -1c-28 37 -72 59 -120 59c-106 0 -113 -73 -113 -186v-51v-51
+c0 -113 7 -187 113 -187c80 0 139 70 158 151c2 7 7 10 12 10c6 0 13 -4 13 -12z" fill="currentColor"/>
+</g>
+<g transform="translate(8.7400, 30.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M72 -106c40 0 204 110 231 143c7 9 11 19 11 28c0 22 -18 41 -42 41c-40 0 -204 -110 -231 -143c-7 -9 -10 -19 -10 -28c0 -22 17 -41 41 -41zM0 -67c0 71 46 203 258 203c41 0 86 -10 86 -69c0 -71 -46 -203 -258 -203c-41 0 -86 10 -86 69z" fill="currentColor"/>
+</g>
+<g transform="translate(0.8000, 29.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M557 -125c0 28 23 51 51 51s51 -23 51 -51s-23 -51 -51 -51s-51 23 -51 51zM557 125c0 28 23 51 51 51s51 -23 51 -51s-23 -51 -51 -51s-51 23 -51 51zM232 263c172 0 293 -88 293 -251c0 -263 -263 -414 -516 -521c-3 -3 -6 -4 -9 -4c-7 0 -13 6 -13 13c0 3 1 6 4 9
+c202 118 412 265 412 493c0 120 -63 235 -171 235c-74 0 -129 -54 -154 -126c11 5 22 8 34 8c55 0 100 -45 100 -100c0 -58 -44 -106 -100 -106c-60 0 -112 47 -112 106c0 133 102 244 232 244z" fill="currentColor"/>
+</g>
+<g transform="translate(5.0400, 30.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M433 -89c0 -22 -50 -174 -183 -174c-59 0 -250 19 -250 263c0 62 18 262 250 262c116 0 176 -106 176 -163c0 -40 -30 -72 -67 -72c-31 0 -75 25 -75 75c0 38 27 77 72 77c4 0 9 0 14 -1c-28 37 -72 59 -120 59c-106 0 -113 -73 -113 -186v-51v-51
+c0 -113 7 -187 113 -187c80 0 139 70 158 151c2 7 7 10 12 10c6 0 13 -4 13 -12z" fill="currentColor"/>
+</g>
+<g transform="translate(10.0524, 3.7760)">
+<rect x="-0.0650" y="-3.0000" width="0.1300" height="3.2410" ry="0.0400" fill="currentColor"/>
+</g>
+<g transform="translate(10.0524, 12.7760)">
+<rect x="-0.0650" y="-2.0000" width="0.1300" height="3.2410" ry="0.0400" fill="currentColor"/>
+</g>
+<g transform="translate(10.0524, 21.7760)">
+<rect x="-0.0650" y="-2.5000" width="0.1300" height="3.2410" ry="0.0400" fill="currentColor"/>
+</g>
+<g transform="translate(8.8050, 30.7760)">
+<rect x="-0.0650" y="0.2590" width="0.1300" height="3.0743" ry="0.0400" fill="currentColor"/>
+</g>
+<g transform="translate(13.0779, 3.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M72 -106c40 0 204 110 231 143c7 9 11 19 11 28c0 22 -18 41 -42 41c-40 0 -204 -110 -231 -143c-7 -9 -10 -19 -10 -28c0 -22 17 -41 41 -41zM0 -67c0 71 46 203 258 203c41 0 86 -10 86 -69c0 -71 -46 -203 -258 -203c-41 0 -86 10 -86 69z" fill="currentColor"/>
+</g>
+<g transform="translate(13.0779, 13.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M72 -106c40 0 204 110 231 143c7 9 11 19 11 28c0 22 -18 41 -42 41c-40 0 -204 -110 -231 -143c-7 -9 -10 -19 -10 -28c0 -22 17 -41 41 -41zM0 -67c0 71 46 203 258 203c41 0 86 -10 86 -69c0 -71 -46 -203 -258 -203c-41 0 -86 10 -86 69z" fill="currentColor"/>
+</g>
+<g transform="translate(13.0779, 23.2760)">
+<path transform="scale(0.0040, -0.0040)" d="M72 -106c40 0 204 110 231 143c7 9 11 19 11 28c0 22 -18 41 -42 41c-40 0 -204 -110 -231 -143c-7 -9 -10 -19 -10 -28c0 -22 17 -41 41 -41zM0 -67c0 71 46 203 258 203c41 0 86 -10 86 -69c0 -71 -46 -203 -258 -203c-41 0 -86 10 -86 69z" fill="currentColor"/>
+</g>
+<g transform="translate(13.0779, 29.2760)">
+<path transform="scale(0.0040, -0.0040)" d="M72 -106c40 0 204 110 231 143c7 9 11 19 11 28c0 22 -18 41 -42 41c-40 0 -204 -110 -231 -143c-7 -9 -10 -19 -10 -28c0 -22 17 -41 41 -41zM0 -67c0 71 46 203 258 203c41 0 86 -10 86 -69c0 -71 -46 -203 -258 -203c-41 0 -86 10 -86 69z" fill="currentColor"/>
+</g>
+<g transform="translate(13.1429, 3.7760)">
+<rect x="-0.0650" y="0.2590" width="0.1300" height="3.0743" ry="0.0400" fill="currentColor"/>
+</g>
+<g transform="translate(14.3903, 12.7760)">
+<rect x="-0.0650" y="-2.5000" width="0.1300" height="3.2410" ry="0.0400" fill="currentColor"/>
+</g>
+<g transform="translate(-0.0600, 17.2760)">
+<rect x="0.0000" y="-15.5500" width="0.1600" height="31.1000" ry="0.0500" fill="currentColor"/>
+</g>
+<g transform="translate(13.1429, 30.7760)">
+<rect x="-0.0650" y="-1.2410" width="0.1300" height="3.2410" ry="0.0400" fill="currentColor"/>
+</g>
+<g transform="translate(19.4612, 13.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(19.4612, 20.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(19.4612, 31.2760)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(-10.8628, 31.4836)">
+<text font-family="TeX Gyre Schola" font-size="1.9598" text-anchor="start" fill="currentColor">
+<tspan>Violoncelo</tspan>
+</text>
+</g>
+<g transform="translate(-6.3218, 22.4836)">
+<text font-family="TeX Gyre Schola" font-size="1.9598" text-anchor="start" fill="currentColor">
+<tspan>Viola</tspan>
+</text>
+</g>
+<g transform="translate(-9.6678, 13.4836)">
+<text font-family="TeX Gyre Schola" font-size="1.9598" text-anchor="start" fill="currentColor">
+<tspan>Violino 2</tspan>
+</text>
+</g>
+<g transform="translate(19.4612, 3.2760)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+</svg><p><audio class="figure-audio" controls preload="none"><source src="/audio/string_quartet.m4a" type="audio/mp4"><source src="/audio/string_quartet.mp3" type="audio/mpeg"></audio></p><figcaption><b class="figure-number">Figura 1.2.1.</b> Quarteto de cordas agrupado por parênteses retos.<span class="figure-files"><a href="/scores/string_quartet.ly" download>LilyPond</a> · <a href="/audio/string_quartet.m4a" download>AAC</a> · <a href="/audio/string_quartet.mp3" download>MP3</a></span></figcaption></figure>
+<figure id="fig-partitura-piano" class="figure" data-score="piano" data-cursor="[[0,8.7,0.44,14.83],[1.818,13.1,0.44,14.83],[3.636,19.48,0.44,14.83]]"><svg class="score" role="img" aria-label="Figura 1.2.2. Partitura para piano usando a «Grande Clave»." xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.2" width="58.50mm" height="28.35mm" viewBox="-6.6596 -0.0240 33.2882 16.1333">
+<style type="text/css">
+<![CDATA[
+tspan { white-space: pre; }
+]]>
+</style>
+<g transform="translate(0.0000, 5.7760)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="26.5786" y2="0"/>
+</g>
+<g transform="translate(0.0000, 4.7760)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="26.5786" y2="0"/>
+</g>
+<g transform="translate(0.0000, 3.7760)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="26.5786" y2="0"/>
+</g>
+<g transform="translate(0.0000, 2.7760)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="26.5786" y2="0"/>
+</g>
+<g transform="translate(0.0000, 1.7760)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="26.5786" y2="0"/>
+</g>
+<g transform="translate(26.0286, -0.0000)">
+<rect x="0.0000" y="5.8260" width="0.6000" height="4.9500" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(25.5386, -0.0000)">
+<rect x="0.0000" y="5.8260" width="0.1900" height="4.9500" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(0.0000, 14.7760)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="26.5786" y2="0"/>
+</g>
+<g transform="translate(0.0000, 13.7760)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="26.5786" y2="0"/>
+</g>
+<g transform="translate(0.0000, 12.7760)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="26.5786" y2="0"/>
+</g>
+<g transform="translate(0.0000, 11.7760)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="26.5786" y2="0"/>
+</g>
+<g transform="translate(0.0000, 10.7760)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="26.5786" y2="0"/>
+</g>
+<g transform="translate(26.0286, 12.7760)">
+<rect x="0.0000" y="-2.0500" width="0.6000" height="4.0500" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(25.5386, 12.7760)">
+<rect x="0.0000" y="-2.0500" width="0.1900" height="4.0500" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(26.0286, 3.7760)">
+<rect x="0.0000" y="-2.0000" width="0.6000" height="4.0500" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(25.5386, 3.7760)">
+<rect x="0.0000" y="-2.0000" width="0.1900" height="4.0500" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(17.3885, -0.0000)">
+<rect x="0.0000" y="5.8260" width="0.1900" height="4.9500" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(17.3885, 12.7760)">
+<rect x="0.0000" y="-2.0500" width="0.1900" height="4.0500" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(17.3885, 3.7760)">
+<rect x="0.0000" y="-2.0000" width="0.1900" height="4.0500" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(8.7034, 6.2760)">
+<path transform="scale(0.0040, -0.0040)" d="M72 -106c40 0 204 110 231 143c7 9 11 19 11 28c0 22 -18 41 -42 41c-40 0 -204 -110 -231 -143c-7 -9 -10 -19 -10 -28c0 -22 17 -41 41 -41zM0 -67c0 71 46 203 258 203c41 0 86 -10 86 -69c0 -71 -46 -203 -258 -203c-41 0 -86 10 -86 69z" fill="currentColor"/>
+</g>
+<g transform="translate(8.7034, 5.2760)">
+<path transform="scale(0.0040, -0.0040)" d="M72 -106c40 0 204 110 231 143c7 9 11 19 11 28c0 22 -18 41 -42 41c-40 0 -204 -110 -231 -143c-7 -9 -10 -19 -10 -28c0 -22 17 -41 41 -41zM0 -67c0 71 46 203 258 203c41 0 86 -10 86 -69c0 -71 -46 -203 -258 -203c-41 0 -86 10 -86 69z" fill="currentColor"/>
+</g>
+<g transform="translate(8.7034, 4.2760)">
+<path transform="scale(0.0040, -0.0040)" d="M72 -106c40 0 204 110 231 143c7 9 11 19 11 28c0 22 -18 41 -42 41c-40 0 -204 -110 -231 -143c-7 -9 -10 -19 -10 -28c0 -22 17 -41 41 -41zM0 -67c0 71 46 203 258 203c41 0 86 -10 86 -69c0 -71 -46 -203 -258 -203c-41 0 -86 10 -86 69z" fill="currentColor"/>
+</g>
+<g transform="translate(0.8000, 4.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M266 -635h-6c-108 0 -195 88 -195 197c0 58 53 103 112 103c54 0 95 -47 95 -103c0 -52 -43 -95 -95 -95c-11 0 -21 2 -31 6c26 -39 68 -65 117 -65h4zM401 151c19 -89 48 -242 60 -354c76 27 112 94 112 163c0 89 -60 179 -172 191zM74 28c0 -112 98 -247 278 -247
+c21 0 44 2 68 6c-7 64 -29 203 -63 364c-79 -8 -124 -61 -124 -119c0 -44 25 -91 81 -123c5 -5 7 -10 7 -15c0 -11 -10 -22 -22 -22c-15 0 -126 62 -126 187c0 88 58 174 160 197c-14 58 -29 117 -46 175c-107 -121 -213 -243 -213 -403zM357 1194c28 0 143 -206 143 -361
+c0 -143 -86 -255 -180 -364c21 -68 39 -138 56 -207c5 0 10 1 14 1c155 0 255 -129 255 -262c0 -113 -74 -212 -180 -245c3 -35 5 -70 5 -105c0 -19 -1 -39 -2 -58c-7 -119 -88 -225 -202 -228l1 43c93 2 153 92 159 191c1 18 2 37 2 55c0 31 -1 61 -4 92
+c-28 -5 -55 -8 -80 -8c-239 0 -342 217 -342 374c0 177 131 306 248 441c-29 96 -52 170 -52 346c0 189 144 295 159 295zM247 782c0 -55 12 -115 35 -190c82 100 147 202 147 326c0 40 -6 82 -21 127c-49 -24 -161 -97 -161 -263z" fill="currentColor"/>
+</g>
+<g transform="translate(5.0034, 3.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M433 -89c0 -22 -50 -174 -183 -174c-59 0 -250 19 -250 263c0 62 18 262 250 262c116 0 176 -106 176 -163c0 -40 -30 -72 -67 -72c-31 0 -75 25 -75 75c0 38 27 77 72 77c4 0 9 0 14 -1c-28 37 -72 59 -120 59c-106 0 -113 -73 -113 -186v-51v-51
+c0 -113 7 -187 113 -187c80 0 139 70 158 151c2 7 7 10 12 10c6 0 13 -4 13 -12z" fill="currentColor"/>
+</g>
+<g transform="translate(8.7034, 12.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M72 -106c40 0 204 110 231 143c7 9 11 19 11 28c0 22 -18 41 -42 41c-40 0 -204 -110 -231 -143c-7 -9 -10 -19 -10 -28c0 -22 17 -41 41 -41zM0 -67c0 71 46 203 258 203c41 0 86 -10 86 -69c0 -71 -46 -203 -258 -203c-41 0 -86 10 -86 69z" fill="currentColor"/>
+</g>
+<g transform="translate(0.8000, 11.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M557 -125c0 28 23 51 51 51s51 -23 51 -51s-23 -51 -51 -51s-51 23 -51 51zM557 125c0 28 23 51 51 51s51 -23 51 -51s-23 -51 -51 -51s-51 23 -51 51zM232 263c172 0 293 -88 293 -251c0 -263 -263 -414 -516 -521c-3 -3 -6 -4 -9 -4c-7 0 -13 6 -13 13c0 3 1 6 4 9
+c202 118 412 265 412 493c0 120 -63 235 -171 235c-74 0 -129 -54 -154 -126c11 5 22 8 34 8c55 0 100 -45 100 -100c0 -58 -44 -106 -100 -106c-60 0 -112 47 -112 106c0 133 102 244 232 244z" fill="currentColor"/>
+</g>
+<g transform="translate(5.0034, 12.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M433 -89c0 -22 -50 -174 -183 -174c-59 0 -250 19 -250 263c0 62 18 262 250 262c116 0 176 -106 176 -163c0 -40 -30 -72 -67 -72c-31 0 -75 25 -75 75c0 38 27 77 72 77c4 0 9 0 14 -1c-28 37 -72 59 -120 59c-106 0 -113 -73 -113 -186v-51v-51
+c0 -113 7 -187 113 -187c80 0 139 70 158 151c2 7 7 10 12 10c6 0 13 -4 13 -12z" fill="currentColor"/>
+</g>
+<g transform="translate(10.0158, 3.7760)">
+<rect x="-0.0650" y="-3.0000" width="0.1300" height="5.2410" ry="0.0400" fill="currentColor"/>
+</g>
+<g transform="translate(8.7684, 12.7760)">
+<rect x="-0.0650" y="0.2590" width="0.1300" height="3.0743" ry="0.0400" fill="currentColor"/>
+</g>
+<g transform="translate(13.1038, 6.2760)">
+<path transform="scale(0.0040, -0.0040)" d="M72 -106c40 0 204 110 231 143c7 9 11 19 11 28c0 22 -18 41 -42 41c-40 0 -204 -110 -231 -143c-7 -9 -10 -19 -10 -28c0 -22 17 -41 41 -41zM0 -67c0 71 46 203 258 203c41 0 86 -10 86 -69c0 -71 -46 -203 -258 -203c-41 0 -86 10 -86 69z" fill="currentColor"/>
+</g>
+<g transform="translate(13.1038, 4.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M72 -106c40 0 204 110 231 143c7 9 11 19 11 28c0 22 -18 41 -42 41c-40 0 -204 -110 -231 -143c-7 -9 -10 -19 -10 -28c0 -22 17 -41 41 -41zM0 -67c0 71 46 203 258 203c41 0 86 -10 86 -69c0 -71 -46 -203 -258 -203c-41 0 -86 10 -86 69z" fill="currentColor"/>
+</g>
+<g transform="translate(13.1038, 3.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M72 -106c40 0 204 110 231 143c7 9 11 19 11 28c0 22 -18 41 -42 41c-40 0 -204 -110 -231 -143c-7 -9 -10 -19 -10 -28c0 -22 17 -41 41 -41zM0 -67c0 71 46 203 258 203c41 0 86 -10 86 -69c0 -71 -46 -203 -258 -203c-41 0 -86 10 -86 69z" fill="currentColor"/>
+</g>
+<g transform="translate(13.1038, 11.2760)">
+<path transform="scale(0.0040, -0.0040)" d="M72 -106c40 0 204 110 231 143c7 9 11 19 11 28c0 22 -18 41 -42 41c-40 0 -204 -110 -231 -143c-7 -9 -10 -19 -10 -28c0 -22 17 -41 41 -41zM0 -67c0 71 46 203 258 203c41 0 86 -10 86 -69c0 -71 -46 -203 -258 -203c-41 0 -86 10 -86 69z" fill="currentColor"/>
+</g>
+<g transform="translate(14.4162, 3.7760)">
+<rect x="-0.0650" y="-3.3333" width="0.1300" height="5.5743" ry="0.0400" fill="currentColor"/>
+</g>
+<g transform="translate(13.1688, 12.7760)">
+<rect x="-0.0650" y="-1.2410" width="0.1300" height="3.2410" ry="0.0400" fill="currentColor"/>
+</g>
+<g transform="translate(19.4785, 5.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(19.4785, 4.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(19.4785, 3.2760)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(-0.0600, 8.2760)">
+<rect x="0.0000" y="-6.5500" width="0.1600" height="13.1000" ry="0.0500" fill="currentColor"/>
+</g>
+<g transform="translate(19.4785, 13.2760)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(-0.3600, 8.2760)">
+<path transform="scale(0.0040, -0.0040)" d="M-84 -360c0 252 -129 357 -129 360c0 21 129 93 129 360c0 246 -105 537 -105 807c0 339 183 474 189 474c9 0 15 -6 15 -15c0 -24 -132 -93 -132 -366c0 -243 99 -525 99 -792c0 -168 -39 -330 -171 -468c132 -138 171 -300 171 -468c0 -267 -99 -549 -99 -792
+c0 -273 132 -342 132 -366c0 -9 -6 -15 -15 -15c-6 0 -189 135 -189 474c0 270 105 561 105 807z" fill="currentColor"/>
+</g>
+<g transform="translate(-6.6596, 8.9689)">
+<text font-family="TeX Gyre Schola" font-size="1.9598" text-anchor="start" fill="currentColor">
+<tspan>Piano</tspan>
+</text>
+</g>
+</svg><p><audio class="figure-audio" controls preload="none"><source src="/audio/piano.m4a" type="audio/mp4"><source src="/audio/piano.mp3" type="audio/mpeg"></audio></p><figcaption><b class="figure-number">Figura 1.2.2.</b> Partitura para piano usando a «Grande Clave».<span class="figure-files"><a href="/scores/piano.ly" download>LilyPond</a> · <a href="/audio/piano.m4a" download>AAC</a> · <a href="/audio/piano.mp3" download>MP3</a></span></figcaption></figure>
+<p>Quando se pretende representar uma nota mais aguda ou mais grave, devem ser acrescentadas
+linhas suplementares às cinco linhas disponíveis na pauta musical. Estas linhas aumentam a
+pauta na vertical, tanto superiormente, para registos mais agudos, como inferiormente, para
+registos mais graves. O posicionamento deste traço na vertical deve respeitar o mesmo
+espaçamento das linhas da pauta, e na horizontal deve ser curto, de modo a ser apenas o
+suficiente para tornar evidente qual a nota em questão.</p>
+<figure id="fig-linhas-suplementares" class="figure" data-score="ledger_lines"><svg class="score" role="img" aria-label="Figura 1.2.3. Exemplo do uso de linhas suplementares." xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.2" width="159.20mm" height="32.72mm" viewBox="0.0000 -0.0000 90.5936 18.6175">
+<style type="text/css">
+<![CDATA[
+tspan { white-space: pre; }
+]]>
+</style>
+<g transform="translate(33.0229, 6.5450)">
+<rect x="0.0000" y="-2.0000" width="0.1900" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(0.0000, 8.5450)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(0.0000, 7.5450)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(0.0000, 6.5450)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(0.0000, 5.5450)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(0.0000, 4.5450)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(89.9936, 6.5450)">
+<rect x="0.0000" y="-2.0000" width="0.6000" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(89.5036, 6.5450)">
+<rect x="0.0000" y="-2.0000" width="0.1900" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(70.8972, 6.5450)">
+<rect x="0.0000" y="-2.0000" width="0.1900" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(0.0000, 0.5450)">
+<rect x="80.8536" y="-0.1000" width="2.0661" height="0.2000" ry="0.1000" fill="currentColor"/>
+</g>
+<g transform="translate(0.0000, 1.5450)">
+<rect x="80.8536" y="-0.1000" width="2.0661" height="0.2000" ry="0.1000" fill="currentColor"/>
+</g>
+<g transform="translate(0.0000, 2.5450)">
+<rect x="80.8536" y="-0.1000" width="2.0661" height="0.2000" ry="0.1000" fill="currentColor"/>
+</g>
+<g transform="translate(0.0000, 3.5450)">
+<rect x="80.8536" y="-0.1000" width="2.0661" height="0.2000" ry="0.1000" fill="currentColor"/>
+</g>
+<g transform="translate(0.0000, 1.5450)">
+<rect x="72.4051" y="-0.1000" width="2.0661" height="0.2000" ry="0.1000" fill="currentColor"/>
+</g>
+<g transform="translate(0.0000, 2.5450)">
+<rect x="72.4051" y="-0.1000" width="2.0661" height="0.2000" ry="0.1000" fill="currentColor"/>
+</g>
+<g transform="translate(0.0000, 3.5450)">
+<rect x="72.4051" y="-0.1000" width="2.0661" height="0.2000" ry="0.1000" fill="currentColor"/>
+</g>
+<g transform="translate(0.0000, 2.5450)">
+<rect x="62.2472" y="-0.1000" width="2.0661" height="0.2000" ry="0.1000" fill="currentColor"/>
+</g>
+<g transform="translate(0.0000, 3.5450)">
+<rect x="62.2472" y="-0.1000" width="2.0661" height="0.2000" ry="0.1000" fill="currentColor"/>
+</g>
+<g transform="translate(0.0000, 3.5450)">
+<rect x="53.7987" y="-0.1000" width="2.0661" height="0.2000" ry="0.1000" fill="currentColor"/>
+</g>
+<g transform="translate(0.0000, 9.5450)">
+<rect x="42.8651" y="-0.1000" width="2.0661" height="0.2000" ry="0.1000" fill="currentColor"/>
+</g>
+<g transform="translate(0.0000, 9.5450)">
+<rect x="34.4166" y="-0.1000" width="2.0661" height="0.2000" ry="0.1000" fill="currentColor"/>
+</g>
+<g transform="translate(0.0000, 10.5450)">
+<rect x="34.4166" y="-0.1000" width="2.0661" height="0.2000" ry="0.1000" fill="currentColor"/>
+</g>
+<g transform="translate(0.0000, 9.5450)">
+<rect x="24.0872" y="-0.1000" width="2.0661" height="0.2000" ry="0.1000" fill="currentColor"/>
+</g>
+<g transform="translate(0.0000, 10.5450)">
+<rect x="24.0872" y="-0.1000" width="2.0661" height="0.2000" ry="0.1000" fill="currentColor"/>
+</g>
+<g transform="translate(0.0000, 11.5450)">
+<rect x="24.0872" y="-0.1000" width="2.0661" height="0.2000" ry="0.1000" fill="currentColor"/>
+</g>
+<g transform="translate(0.0000, 9.5450)">
+<rect x="15.6387" y="-0.1000" width="2.0661" height="0.2000" ry="0.1000" fill="currentColor"/>
+</g>
+<g transform="translate(0.0000, 10.5450)">
+<rect x="15.6387" y="-0.1000" width="2.0661" height="0.2000" ry="0.1000" fill="currentColor"/>
+</g>
+<g transform="translate(0.0000, 11.5450)">
+<rect x="15.6387" y="-0.1000" width="2.0661" height="0.2000" ry="0.1000" fill="currentColor"/>
+</g>
+<g transform="translate(0.0000, 12.5450)">
+<rect x="15.6387" y="-0.1000" width="2.0661" height="0.2000" ry="0.1000" fill="currentColor"/>
+</g>
+<g transform="translate(52.2908, 6.5450)">
+<rect x="0.0000" y="-2.0000" width="0.1900" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(51.8008, 6.5450)">
+<rect x="0.0000" y="-2.0000" width="0.1900" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(15.9831, 12.5450)">
+<path transform="scale(0.0040, -0.0040)" d="M72 -106c40 0 204 110 231 143c7 9 11 19 11 28c0 22 -18 41 -42 41c-40 0 -204 -110 -231 -143c-7 -9 -10 -19 -10 -28c0 -22 17 -41 41 -41zM0 -67c0 71 46 203 258 203c41 0 86 -10 86 -69c0 -71 -46 -203 -258 -203c-41 0 -86 10 -86 69z" fill="currentColor"/>
+</g>
+<g transform="translate(0.8000, 7.5450)">
+<path transform="scale(0.0040, -0.0040)" d="M266 -635h-6c-108 0 -195 88 -195 197c0 58 53 103 112 103c54 0 95 -47 95 -103c0 -52 -43 -95 -95 -95c-11 0 -21 2 -31 6c26 -39 68 -65 117 -65h4zM401 151c19 -89 48 -242 60 -354c76 27 112 94 112 163c0 89 -60 179 -172 191zM74 28c0 -112 98 -247 278 -247
+c21 0 44 2 68 6c-7 64 -29 203 -63 364c-79 -8 -124 -61 -124 -119c0 -44 25 -91 81 -123c5 -5 7 -10 7 -15c0 -11 -10 -22 -22 -22c-15 0 -126 62 -126 187c0 88 58 174 160 197c-14 58 -29 117 -46 175c-107 -121 -213 -243 -213 -403zM357 1194c28 0 143 -206 143 -361
+c0 -143 -86 -255 -180 -364c21 -68 39 -138 56 -207c5 0 10 1 14 1c155 0 255 -129 255 -262c0 -113 -74 -212 -180 -245c3 -35 5 -70 5 -105c0 -19 -1 -39 -2 -58c-7 -119 -88 -225 -202 -228l1 43c93 2 153 92 159 191c1 18 2 37 2 55c0 31 -1 61 -4 92
+c-28 -5 -55 -8 -80 -8c-239 0 -342 217 -342 374c0 177 131 306 248 441c-29 96 -52 170 -52 346c0 189 144 295 159 295zM247 782c0 -55 12 -115 35 -190c82 100 147 202 147 326c0 40 -6 82 -21 127c-49 -24 -161 -97 -161 -263z" fill="currentColor"/>
+</g>
+<g transform="translate(4.8850, 6.5450)">
+<path transform="scale(0.0040, -0.0040)" d="M433 -89c0 -22 -50 -174 -183 -174c-59 0 -250 19 -250 263c0 62 18 262 250 262c116 0 176 -106 176 -163c0 -40 -30 -72 -67 -72c-31 0 -75 25 -75 75c0 38 27 77 72 77c4 0 9 0 14 -1c-28 37 -72 59 -120 59c-106 0 -113 -73 -113 -186v-51v-51
+c0 -113 7 -187 113 -187c80 0 139 70 158 151c2 7 7 10 12 10c6 0 13 -4 13 -12z" fill="currentColor"/>
+</g>
+<g transform="translate(15.0329, 15.3731)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>D3</tspan>
+</text>
+</g>
+<g transform="translate(6.9994, 15.3731)">
+<text font-family="TeX Gyre Schola" font-weight="bold" font-size="2.2000" text-anchor="start" fill="currentColor">
+<tspan>Notas:</tspan>
+</text>
+</g>
+<g transform="translate(15.9889, 18.1731)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>1</tspan>
+</text>
+</g>
+<g transform="translate(0.0000, 18.1731)">
+<text font-family="TeX Gyre Schola" font-weight="bold" font-size="2.2000" text-anchor="start" fill="currentColor">
+<tspan>Exemplo n.º:</tspan>
+</text>
+</g>
+<g transform="translate(17.2955, 6.5450)">
+<rect x="-0.0650" y="-0.0000" width="0.1300" height="5.7410" ry="0.0400" fill="currentColor"/>
+</g>
+<g transform="translate(24.4316, 12.0450)">
+<path transform="scale(0.0040, -0.0040)" d="M72 -106c40 0 204 110 231 143c7 9 11 19 11 28c0 22 -18 41 -42 41c-40 0 -204 -110 -231 -143c-7 -9 -10 -19 -10 -28c0 -22 17 -41 41 -41zM0 -67c0 71 46 203 258 203c41 0 86 -10 86 -69c0 -71 -46 -203 -258 -203c-41 0 -86 10 -86 69z" fill="currentColor"/>
+</g>
+<g transform="translate(23.5497, 15.3731)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>E3</tspan>
+</text>
+</g>
+<g transform="translate(24.4374, 18.1731)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>2</tspan>
+</text>
+</g>
+<g transform="translate(25.7440, 6.5450)">
+<rect x="-0.0650" y="-0.0000" width="0.1300" height="5.2410" ry="0.0400" fill="currentColor"/>
+</g>
+<g transform="translate(34.7609, 10.5450)">
+<path transform="scale(0.0040, -0.0040)" d="M72 -106c40 0 204 110 231 143c7 9 11 19 11 28c0 22 -18 41 -42 41c-40 0 -204 -110 -231 -143c-7 -9 -10 -19 -10 -28c0 -22 17 -41 41 -41zM0 -67c0 71 46 203 258 203c41 0 86 -10 86 -69c0 -71 -46 -203 -258 -203c-41 0 -86 10 -86 69z" fill="currentColor"/>
+</g>
+<g transform="translate(33.8790, 15.3731)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>A3</tspan>
+</text>
+</g>
+<g transform="translate(34.7667, 18.1731)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>3</tspan>
+</text>
+</g>
+<g transform="translate(36.0733, 6.5450)">
+<rect x="-0.0650" y="-0.0000" width="0.1300" height="3.7410" ry="0.0400" fill="currentColor"/>
+</g>
+<g transform="translate(43.2094, 10.0450)">
+<path transform="scale(0.0040, -0.0040)" d="M72 -106c40 0 204 110 231 143c7 9 11 19 11 28c0 22 -18 41 -42 41c-40 0 -204 -110 -231 -143c-7 -9 -10 -19 -10 -28c0 -22 17 -41 41 -41zM0 -67c0 71 46 203 258 203c41 0 86 -10 86 -69c0 -71 -46 -203 -258 -203c-41 0 -86 10 -86 69z" fill="currentColor"/>
+</g>
+<g transform="translate(42.3275, 15.3731)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>B3</tspan>
+</text>
+</g>
+<g transform="translate(43.2152, 18.1731)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>4</tspan>
+</text>
+</g>
+<g transform="translate(44.5218, 6.5450)">
+<rect x="-0.0650" y="-0.0000" width="0.1300" height="3.2410" ry="0.0400" fill="currentColor"/>
+</g>
+<g transform="translate(54.1430, 3.0450)">
+<path transform="scale(0.0040, -0.0040)" d="M72 -106c40 0 204 110 231 143c7 9 11 19 11 28c0 22 -18 41 -42 41c-40 0 -204 -110 -231 -143c-7 -9 -10 -19 -10 -28c0 -22 17 -41 41 -41zM0 -67c0 71 46 203 258 203c41 0 86 -10 86 -69c0 -71 -46 -203 -258 -203c-41 0 -86 10 -86 69z" fill="currentColor"/>
+</g>
+<g transform="translate(53.2611, 15.3731)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>B5</tspan>
+</text>
+</g>
+<g transform="translate(54.1489, 18.1731)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>5</tspan>
+</text>
+</g>
+<g transform="translate(54.2080, 6.5450)">
+<rect x="-0.0650" y="-3.2410" width="0.1300" height="3.2410" ry="0.0400" fill="currentColor"/>
+</g>
+<g transform="translate(62.5915, 2.5450)">
+<path transform="scale(0.0040, -0.0040)" d="M72 -106c40 0 204 110 231 143c7 9 11 19 11 28c0 22 -18 41 -42 41c-40 0 -204 -110 -231 -143c-7 -9 -10 -19 -10 -28c0 -22 17 -41 41 -41zM0 -67c0 71 46 203 258 203c41 0 86 -10 86 -69c0 -71 -46 -203 -258 -203c-41 0 -86 10 -86 69z" fill="currentColor"/>
+</g>
+<g transform="translate(61.7096, 15.3731)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>C6</tspan>
+</text>
+</g>
+<g transform="translate(62.5974, 18.1731)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>6</tspan>
+</text>
+</g>
+<g transform="translate(62.6565, 6.5450)">
+<rect x="-0.0650" y="-3.7410" width="0.1300" height="3.7410" ry="0.0400" fill="currentColor"/>
+</g>
+<g transform="translate(72.7494, 1.0450)">
+<path transform="scale(0.0040, -0.0040)" d="M72 -106c40 0 204 110 231 143c7 9 11 19 11 28c0 22 -18 41 -42 41c-40 0 -204 -110 -231 -143c-7 -9 -10 -19 -10 -28c0 -22 17 -41 41 -41zM0 -67c0 71 46 203 258 203c41 0 86 -10 86 -69c0 -71 -46 -203 -258 -203c-41 0 -86 10 -86 69z" fill="currentColor"/>
+</g>
+<g transform="translate(71.9358, 15.3731)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>F6</tspan>
+</text>
+</g>
+<g transform="translate(72.7553, 18.1731)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>7</tspan>
+</text>
+</g>
+<g transform="translate(72.8144, 6.5450)">
+<rect x="-0.0650" y="-5.2410" width="0.1300" height="5.2410" ry="0.0400" fill="currentColor"/>
+</g>
+<g transform="translate(81.1979, 0.5450)">
+<path transform="scale(0.0040, -0.0040)" d="M72 -106c40 0 204 110 231 143c7 9 11 19 11 28c0 22 -18 41 -42 41c-40 0 -204 -110 -231 -143c-7 -9 -10 -19 -10 -28c0 -22 17 -41 41 -41zM0 -67c0 71 46 203 258 203c41 0 86 -10 86 -69c0 -71 -46 -203 -258 -203c-41 0 -86 10 -86 69z" fill="currentColor"/>
+</g>
+<g transform="translate(80.2478, 15.3731)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>G6</tspan>
+</text>
+</g>
+<g transform="translate(81.2038, 18.1731)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>8</tspan>
+</text>
+</g>
+<g transform="translate(81.2629, 6.5450)">
+<rect x="-0.0650" y="-5.7410" width="0.1300" height="5.7410" ry="0.0400" fill="currentColor"/>
+</g>
+</svg><figcaption><b class="figure-number">Figura 1.2.3.</b> Exemplo do uso de linhas suplementares.<span class="figure-files"><a href="/scores/ledger_lines.ly" download>LilyPond</a></span></figcaption></figure>
+<p>Os exemplos número 1, 2, 3 e 4 apresentam notas com 4, 3, 2 e 1 linhas suplementares
+inferiores, respetivamente. Os exemplos número 5, 6, 7 e 8 apresentam notas com 1, 2, 3 e 4
+linhas suplementares superiores, respetivamente.</p>
+<script type="module">
+for (const figure of document.querySelectorAll('figure.figure[data-cursor]')) {
+  const map = JSON.parse(figure.dataset.cursor);
+  const audio = figure.querySelector('audio');
+  const svg = figure.querySelector('svg.score');
+  if (!audio || !svg || map.length === 0) continue;
+
+  // The band is the staves the note belongs to: on a score over several systems the bar
+  // must not run down the silent ones.
+  const PAD = 1.5;
+  const bar = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+  bar.setAttribute('class', 'score-cursor');
+  bar.setAttribute('width', 0.5);
+  const place = ([, x, top, bottom]) => {
+    bar.setAttribute('y', top - PAD);
+    bar.setAttribute('height', bottom - top + PAD * 2);
+  };
+  place(map[0]);
+  bar.setAttribute('x', map[0][1]);
+  svg.append(bar);
+
+  let frame = 0;
+  const follow = () => {
+    const now = audio.currentTime;
+    let index = 0;
+    for (let low = 0, high = map.length - 1; low <= high; ) {
+      const middle = (low + high) >> 1;
+      if (map[middle][0] <= now) { index = middle; low = middle + 1; } else { high = middle - 1; }
+    }
+    // The bar marks the note sounding rather than sliding between notes: a whole note
+    // lasts seconds, and drift reads as the recording being out of step.
+    place(map[index]);
+    bar.setAttribute('x', map[index][1]);
+    frame = requestAnimationFrame(follow);
+  };
+
+  const stop = () => { cancelAnimationFrame(frame); frame = 0; };
+  audio.addEventListener('play', () => { svg.classList.add('is-playing'); follow(); });
+  audio.addEventListener('pause', stop);
+  audio.addEventListener('ended', () => { stop(); svg.classList.remove('is-playing'); });
+}
+</script>
+</div><nav class="mt-12 flex justify-between gap-4 border-t border-border pt-6 text-body-sm"><a href="/fundamentos/som/" rel="prev" class="text-accent no-underline">← Anterior: 1.1 Som</a><a href="/fundamentos/notas/" rel="next" class="text-accent no-underline">Seguinte: 1.3 Notas →</a></nav></main><div class="hidden py-8 xl:block"></div></div><footer class="book-colophon"><p><a href="/">Teoria Musical</a>, um projeto de Marco Ferra</p><p><span>Código sob <a href="https://github.com/mfsphere/teoria-musical/blob/main/LICENSE">MIT</a></span><span>Texto, partituras e gravações sob <a href="https://github.com/mfsphere/teoria-musical/blob/main/LICENSE-TEXT">CC BY-SA 4.0</a></span><span>2017–2026</span></p></footer></body></html>

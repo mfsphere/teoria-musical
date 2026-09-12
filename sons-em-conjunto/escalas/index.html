@@ -1,0 +1,1743 @@
+<!DOCTYPE html><html lang="pt-PT"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>3.3 Escalas</title><meta name="description" content="A escala diatónica, a escala maior e a sua estrutura de tons e meios-tons, e as escalas relativa menor e paralela menor, com exemplos em C, Eb, A e D."><link rel="canonical" href="https://www.teoria-musical.com/sons-em-conjunto/escalas/"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><meta property="og:type" content="book"><meta property="og:site_name" content="Teoria Musical"><meta property="og:title" content="3.3 Escalas"><meta property="og:description" content="A escala diatónica, a escala maior e a sua estrutura de tons e meios-tons, e as escalas relativa menor e paralela menor, com exemplos em C, Eb, A e D."><meta property="og:url" content="https://www.teoria-musical.com/sons-em-conjunto/escalas/"><meta property="og:image" content="https://www.teoria-musical.com/og.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Teoria Musical — princípios de ritmo, melodia e harmonia"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://www.teoria-musical.com/og.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Book","name":"Teoria Musical","alternateName":"Música: Princípios de ritmo, melodia e harmonia","author":{"@type":"Person","name":"Marco A. Ferra"},"inLanguage":"pt-PT","url":"https://www.teoria-musical.com/","license":"https://creativecommons.org/licenses/by-sa/4.0/","isAccessibleForFree":true,"genre":"Teoria musical"}</script><script>
+			try {
+				const stored = localStorage.getItem('teoria-musical:theme');
+				const dark =
+					stored === 'dark' ||
+					(stored !== 'light' && matchMedia('(prefers-color-scheme: dark)').matches);
+				document.documentElement.classList.toggle('dark', dark);
+			} catch {
+				/* Storage refused: the system preference still applies. */
+			}
+		</script><link rel="stylesheet" href="/_astro/nav.BigK0A7K.css"></head><body class="min-h-dvh bg-paper font-serif text-body"><a href="#_top" class="skip-link">Saltar para o conteúdo</a><header class="sticky top-0 z-40 flex items-center gap-2 border-b border-border bg-surface px-3 py-2 sm:gap-3 sm:px-4"><style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var l=(n,t)=>{let i=async()=>{await(await n())()},e=typeof t.value=="object"?t.value:void 0,s={timeout:e==null?void 0:e.timeout};"requestIdleCallback"in window?window.requestIdleCallback(i,s):setTimeout(i,s.timeout||200)};(self.Astro||(self.Astro={})).idle=l;window.dispatchEvent(new Event("astro:idle"));})();</script><script>(()=>{var g=Object.defineProperty;var w=(a,s,c)=>s in a?g(a,s,{enumerable:!0,configurable:!0,writable:!0,value:c}):a[s]=c;var l=(a,s,c)=>w(a,typeof s!="symbol"?s+"":s,c);var E=new Set(["__proto__","constructor","prototype"]);{let a={0:t=>y(t),1:t=>c(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(c(t)),5:t=>new Set(c(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t),11:t=>Number.POSITIVE_INFINITY*t},s=t=>{let[p,e]=t;return p in a?a[p](e):void 0},c=t=>t.map(s),y=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([p,e])=>[p,s(e)]));class f extends HTMLElement{constructor(){super(...arguments);l(this,"Component");l(this,"hydrator");l(this,"hydrate",async()=>{var b;if(!this.hydrator||!this.isConnected)return;let e=(b=this.parentElement)==null?void 0:b.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let r=this.querySelectorAll("astro-slot"),n={},d=this.querySelectorAll("template[data-astro-template]");for(let o of d){let i=o.closest(this.tagName);i!=null&&i.isSameNode(this)&&(n[o.getAttribute("data-astro-template")||"default"]=o.innerHTML,o.remove())}for(let o of r){let i=o.closest(this.tagName);i!=null&&i.isSameNode(this)&&(n[o.getAttribute("name")||"default"]=o.innerHTML)}let u;try{u=this.hasAttribute("props")?y(JSON.parse(this.getAttribute("props"))):{}}catch(o){let i=this.getAttribute("component-url")||"<unknown>",v=this.getAttribute("component-export");throw v&&(i+=` (export ${v})`),console.error(`[hydrate] Error parsing props for component ${i}`,this.getAttribute("props"),o),o}let h;await this.hydrator(this)(this.Component,u,n,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});l(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),r.disconnect(),this.childrenConnectedCallback()},r=new MutationObserver(()=>{var n;((n=this.lastChild)==null?void 0:n.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});r.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}getRetryImportUrl(e){let r=new URL(e,document.baseURI);return r.searchParams.set("astro-retry",Date.now().toString()),r.toString()}async importWithRetry(e){try{return await import(e)}catch(r){return await new Promise(n=>setTimeout(n,1e3)),import(this.getRetryImportUrl(e))}}handleHydrationError(e){let r=this.getAttribute("component-url"),n=new CustomEvent("astro:hydration-error",{cancelable:!0,bubbles:!0,composed:!0,detail:{error:e,componentUrl:r}});this.dispatchEvent(n)&&console.error(`[astro-island] Error hydrating ${r}`,e)}async start(){let e=JSON.parse(this.getAttribute("opts")),r=this.getAttribute("client");if(Astro[r]===void 0){window.addEventListener(`astro:${r}`,()=>this.start(),{once:!0});return}try{await Astro[r](async()=>{let n=this.getAttribute("renderer-url");try{let[d,{default:u}]=await Promise.all([this.importWithRetry(this.getAttribute("component-url")),n?this.importWithRetry(n):Promise.resolve({default:()=>()=>{}})]),h=this.getAttribute("component-export")||"default";if(h.includes(".")){this.Component=d;for(let m of h.split(".")){if(E.has(m)||!this.Component||typeof this.Component!="object"&&typeof this.Component!="function"||!Object.hasOwn(this.Component,m))throw new Error(`Invalid component export path: ${h}`);this.Component=this.Component[m]}}else{if(E.has(h))throw new Error(`Invalid component export path: ${h}`);this.Component=d[h]}return this.hydrator=u,this.hydrate}catch(d){return this.handleHydrationError(d),()=>{}}},e,this)}catch(n){this.handleHydrationError(n)}}attributeChangedCallback(){this.hydrate()}}l(f,"observedAttributes",["props"]),customElements.get("astro-island")||customElements.define("astro-island",f)}})();</script><astro-island uid="ecITI" prefix="r5" component-url="/_astro/MobileNav.BCEGxCaz.js" component-export="default" renderer-url="/_astro/client.yyZZvWdV.js" props="{&quot;chapters&quot;:[1,[[0,{&quot;label&quot;:[0,&quot;Prefácio&quot;],&quot;pages&quot;:[1,[[0,{&quot;href&quot;:[0,&quot;/prefacio/&quot;],&quot;label&quot;:[0,&quot;Prefácio&quot;]}]]]}],[0,{&quot;label&quot;:[0,&quot;1. Fundamentos&quot;],&quot;pages&quot;:[1,[[0,{&quot;href&quot;:[0,&quot;/fundamentos/som/&quot;],&quot;label&quot;:[0,&quot;1.1 Som&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/pauta-e-partitura/&quot;],&quot;label&quot;:[0,&quot;1.2 Pauta e partitura&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/notas/&quot;],&quot;label&quot;:[0,&quot;1.3 Notas&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/claves/&quot;],&quot;label&quot;:[0,&quot;1.4 Claves&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/armacao-de-clave/&quot;],&quot;label&quot;:[0,&quot;1.5 Armação de clave&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/vozes/&quot;],&quot;label&quot;:[0,&quot;1.6 Vozes&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/figuras-ritmicas/&quot;],&quot;label&quot;:[0,&quot;1.7 Figuras rítmicas&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/ritmo-e-compassos/&quot;],&quot;label&quot;:[0,&quot;1.8 Ritmo e compassos&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/metrica/&quot;],&quot;label&quot;:[0,&quot;1.9 Métrica&quot;]}]]]}],[0,{&quot;label&quot;:[0,&quot;2. Sons isolados&quot;],&quot;pages&quot;:[1,[[0,{&quot;href&quot;:[0,&quot;/sons-isolados/serie-harmonica/&quot;],&quot;label&quot;:[0,&quot;2.1 Série harmónica&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-isolados/altura-definida-e-indefinida/&quot;],&quot;label&quot;:[0,&quot;2.2 Altura definida e indefinida&quot;]}]]]}],[0,{&quot;label&quot;:[0,&quot;3. Sons em conjunto&quot;],&quot;pages&quot;:[1,[[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/melodia-e-intervalos/&quot;],&quot;label&quot;:[0,&quot;3.1 Melodia e intervalos&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/consonancia-e-dissonancia/&quot;],&quot;label&quot;:[0,&quot;3.2 Consonância e dissonância&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/escalas/&quot;],&quot;label&quot;:[0,&quot;3.3 Escalas&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/modos/&quot;],&quot;label&quot;:[0,&quot;3.4 Modos&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/triades/&quot;],&quot;label&quot;:[0,&quot;3.5 Tríades&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/acordes-de-setima/&quot;],&quot;label&quot;:[0,&quot;3.6 Acordes de sétima&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/baixo-continuo/&quot;],&quot;label&quot;:[0,&quot;3.7 Baixo contínuo&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/dominantes-secundarias/&quot;],&quot;label&quot;:[0,&quot;3.8 Dominantes secundárias&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/modulacao/&quot;],&quot;label&quot;:[0,&quot;3.9 Modulação&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/cadencias/&quot;],&quot;label&quot;:[0,&quot;3.10 Cadências&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/forma-e-frase/&quot;],&quot;label&quot;:[0,&quot;3.11 Forma e frase&quot;]}]]]}],[0,{&quot;label&quot;:[0,&quot;4. Palavras finais&quot;],&quot;pages&quot;:[1,[]]}],[0,{&quot;label&quot;:[0,&quot;Recursos&quot;],&quot;pages&quot;:[1,[[0,{&quot;href&quot;:[0,&quot;/recursos/papel-pautado/&quot;],&quot;label&quot;:[0,&quot;Papel pautado&quot;]}],[0,{&quot;href&quot;:[0,&quot;/recursos/sobre/&quot;],&quot;label&quot;:[0,&quot;Sobre o livro&quot;]}],[0,{&quot;href&quot;:[0,&quot;/recursos/transferencias/&quot;],&quot;label&quot;:[0,&quot;Transferências&quot;]}]]]}]]],&quot;current&quot;:[0,&quot;/sons-em-conjunto/escalas/&quot;]}" ssr client="idle" opts="{&quot;name&quot;:&quot;MobileNav&quot;,&quot;value&quot;:true}" await-children><button class="rounded p-2 text-secondary outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent lg:hidden" data-rac="" type="button" tabindex="0" aria-expanded="false" id="react-aria-_r5R_0H1_" data-react-aria-pressable="true" aria-label="Menu"><svg aria-hidden="true" viewBox="0 0 24 24" class="size-5" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round"></path></svg></button><!--astro:end--></astro-island><a href="/" class="min-w-0 truncate font-semibold text-ink no-underline">Teoria Musical</a><div class="ms-auto flex shrink-0 items-center gap-1"><astro-island uid="2qpPsV" prefix="r6" component-url="/_astro/Search.DWVVEPUn.js" component-export="default" renderer-url="/_astro/client.yyZZvWdV.js" props="{}" ssr client="idle" opts="{&quot;name&quot;:&quot;Search&quot;,&quot;value&quot;:true}" await-children><button class="rounded px-2 py-1 text-body-sm text-secondary outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent" data-rac="" type="button" tabindex="0" aria-expanded="false" id="react-aria-_r6R_0H1_" data-react-aria-pressable="true">Pesquisar</button><!--astro:end--></astro-island><astro-island uid="1Af02n" prefix="r7" component-url="/_astro/ThemeToggle.BfMpIbgS.js" component-export="default" renderer-url="/_astro/client.yyZZvWdV.js" props="{}" ssr client="idle" opts="{&quot;name&quot;:&quot;ThemeToggle&quot;,&quot;value&quot;:true}" await-children><button class="rounded px-2 py-1 text-body-sm text-secondary outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent" data-rac="" type="button" tabindex="0" aria-haspopup="true" aria-expanded="false" id="react-aria-_r7R_0_" data-react-aria-pressable="true" aria-label="Selecionar tema">Automático</button><!--astro:end--></astro-island></div></header><div class="mx-auto grid w-full max-w-6xl grid-cols-1 gap-8 px-4 lg:grid-cols-[16rem_minmax(0,1fr)] xl:grid-cols-[16rem_minmax(0,1fr)_14rem]"><div class="hidden py-8 lg:block"><!-- Rendered on the server and hydrated for the disclosures; a reader
+				     without JavaScript still gets every link. --><div class="sticky top-16 max-h-[calc(100dvh-5rem)] overflow-auto"><astro-island uid="25mBkj" prefix="r4" component-url="/_astro/SidebarNav.Cc3HOfc4.js" component-export="default" renderer-url="/_astro/client.yyZZvWdV.js" props="{&quot;slot&quot;:[0,&quot;sidebar&quot;],&quot;chapters&quot;:[1,[[0,{&quot;label&quot;:[0,&quot;Prefácio&quot;],&quot;pages&quot;:[1,[[0,{&quot;href&quot;:[0,&quot;/prefacio/&quot;],&quot;label&quot;:[0,&quot;Prefácio&quot;]}]]]}],[0,{&quot;label&quot;:[0,&quot;1. Fundamentos&quot;],&quot;pages&quot;:[1,[[0,{&quot;href&quot;:[0,&quot;/fundamentos/som/&quot;],&quot;label&quot;:[0,&quot;1.1 Som&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/pauta-e-partitura/&quot;],&quot;label&quot;:[0,&quot;1.2 Pauta e partitura&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/notas/&quot;],&quot;label&quot;:[0,&quot;1.3 Notas&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/claves/&quot;],&quot;label&quot;:[0,&quot;1.4 Claves&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/armacao-de-clave/&quot;],&quot;label&quot;:[0,&quot;1.5 Armação de clave&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/vozes/&quot;],&quot;label&quot;:[0,&quot;1.6 Vozes&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/figuras-ritmicas/&quot;],&quot;label&quot;:[0,&quot;1.7 Figuras rítmicas&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/ritmo-e-compassos/&quot;],&quot;label&quot;:[0,&quot;1.8 Ritmo e compassos&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/metrica/&quot;],&quot;label&quot;:[0,&quot;1.9 Métrica&quot;]}]]]}],[0,{&quot;label&quot;:[0,&quot;2. Sons isolados&quot;],&quot;pages&quot;:[1,[[0,{&quot;href&quot;:[0,&quot;/sons-isolados/serie-harmonica/&quot;],&quot;label&quot;:[0,&quot;2.1 Série harmónica&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-isolados/altura-definida-e-indefinida/&quot;],&quot;label&quot;:[0,&quot;2.2 Altura definida e indefinida&quot;]}]]]}],[0,{&quot;label&quot;:[0,&quot;3. Sons em conjunto&quot;],&quot;pages&quot;:[1,[[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/melodia-e-intervalos/&quot;],&quot;label&quot;:[0,&quot;3.1 Melodia e intervalos&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/consonancia-e-dissonancia/&quot;],&quot;label&quot;:[0,&quot;3.2 Consonância e dissonância&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/escalas/&quot;],&quot;label&quot;:[0,&quot;3.3 Escalas&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/modos/&quot;],&quot;label&quot;:[0,&quot;3.4 Modos&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/triades/&quot;],&quot;label&quot;:[0,&quot;3.5 Tríades&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/acordes-de-setima/&quot;],&quot;label&quot;:[0,&quot;3.6 Acordes de sétima&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/baixo-continuo/&quot;],&quot;label&quot;:[0,&quot;3.7 Baixo contínuo&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/dominantes-secundarias/&quot;],&quot;label&quot;:[0,&quot;3.8 Dominantes secundárias&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/modulacao/&quot;],&quot;label&quot;:[0,&quot;3.9 Modulação&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/cadencias/&quot;],&quot;label&quot;:[0,&quot;3.10 Cadências&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/forma-e-frase/&quot;],&quot;label&quot;:[0,&quot;3.11 Forma e frase&quot;]}]]]}],[0,{&quot;label&quot;:[0,&quot;4. Palavras finais&quot;],&quot;pages&quot;:[1,[]]}],[0,{&quot;label&quot;:[0,&quot;Recursos&quot;],&quot;pages&quot;:[1,[[0,{&quot;href&quot;:[0,&quot;/recursos/papel-pautado/&quot;],&quot;label&quot;:[0,&quot;Papel pautado&quot;]}],[0,{&quot;href&quot;:[0,&quot;/recursos/sobre/&quot;],&quot;label&quot;:[0,&quot;Sobre o livro&quot;]}],[0,{&quot;href&quot;:[0,&quot;/recursos/transferencias/&quot;],&quot;label&quot;:[0,&quot;Transferências&quot;]}]]]}]]],&quot;current&quot;:[0,&quot;/sons-em-conjunto/escalas/&quot;]}" ssr client="idle" opts="{&quot;name&quot;:&quot;SidebarNav&quot;,&quot;value&quot;:true}" await-children><nav aria-label="Navegação principal" class="flex flex-col gap-1"><div class="react-aria-Disclosure" data-rac=""><h3 class="contents"><button id="react-aria-_r4R_1H1_" class="group flex w-full items-center gap-2 rounded px-2 py-1 text-start text-body-sm font-semibold text-ink outline-none hover:text-accent focus-visible:ring-2 focus-visible:ring-accent" data-rac="" type="button" tabindex="0" data-react-aria-pressable="true" aria-expanded="false" aria-controls="react-aria-_r4R_1H2_" slot="trigger"><svg aria-hidden="true" viewBox="0 0 24 24" class="size-4 shrink-0 transition-transform group-aria-[expanded=false]:-rotate-90" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"></path></svg>Prefácio</button></h3><div class="react-aria-DisclosurePanel" data-rac="" id="react-aria-_r4R_1H2_" role="group" aria-labelledby="react-aria-_r4R_1H1_" aria-hidden="true" hidden=""><ul class="ms-4 flex flex-col border-s border-border ps-2"><li><a href="/prefacio/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">Prefácio</a></li></ul></div></div><div class="react-aria-Disclosure" data-rac=""><h3 class="contents"><button id="react-aria-_r4R_2H1_" class="group flex w-full items-center gap-2 rounded px-2 py-1 text-start text-body-sm font-semibold text-ink outline-none hover:text-accent focus-visible:ring-2 focus-visible:ring-accent" data-rac="" type="button" tabindex="0" data-react-aria-pressable="true" aria-expanded="false" aria-controls="react-aria-_r4R_2H2_" slot="trigger"><svg aria-hidden="true" viewBox="0 0 24 24" class="size-4 shrink-0 transition-transform group-aria-[expanded=false]:-rotate-90" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"></path></svg>1. Fundamentos</button></h3><div class="react-aria-DisclosurePanel" data-rac="" id="react-aria-_r4R_2H2_" role="group" aria-labelledby="react-aria-_r4R_2H1_" aria-hidden="true" hidden=""><ul class="ms-4 flex flex-col border-s border-border ps-2"><li><a href="/fundamentos/som/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">1.1 Som</a></li><li><a href="/fundamentos/pauta-e-partitura/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">1.2 Pauta e partitura</a></li><li><a href="/fundamentos/notas/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">1.3 Notas</a></li><li><a href="/fundamentos/claves/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">1.4 Claves</a></li><li><a href="/fundamentos/armacao-de-clave/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">1.5 Armação de clave</a></li><li><a href="/fundamentos/vozes/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">1.6 Vozes</a></li><li><a href="/fundamentos/figuras-ritmicas/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">1.7 Figuras rítmicas</a></li><li><a href="/fundamentos/ritmo-e-compassos/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">1.8 Ritmo e compassos</a></li><li><a href="/fundamentos/metrica/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">1.9 Métrica</a></li></ul></div></div><div class="react-aria-Disclosure" data-rac=""><h3 class="contents"><button id="react-aria-_r4R_3H1_" class="group flex w-full items-center gap-2 rounded px-2 py-1 text-start text-body-sm font-semibold text-ink outline-none hover:text-accent focus-visible:ring-2 focus-visible:ring-accent" data-rac="" type="button" tabindex="0" data-react-aria-pressable="true" aria-expanded="false" aria-controls="react-aria-_r4R_3H2_" slot="trigger"><svg aria-hidden="true" viewBox="0 0 24 24" class="size-4 shrink-0 transition-transform group-aria-[expanded=false]:-rotate-90" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"></path></svg>2. Sons isolados</button></h3><div class="react-aria-DisclosurePanel" data-rac="" id="react-aria-_r4R_3H2_" role="group" aria-labelledby="react-aria-_r4R_3H1_" aria-hidden="true" hidden=""><ul class="ms-4 flex flex-col border-s border-border ps-2"><li><a href="/sons-isolados/serie-harmonica/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">2.1 Série harmónica</a></li><li><a href="/sons-isolados/altura-definida-e-indefinida/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">2.2 Altura definida e indefinida</a></li></ul></div></div><div class="react-aria-Disclosure" data-rac="" data-expanded="true"><h3 class="contents"><button id="react-aria-_r4R_4H1_" class="group flex w-full items-center gap-2 rounded px-2 py-1 text-start text-body-sm font-semibold text-ink outline-none hover:text-accent focus-visible:ring-2 focus-visible:ring-accent" data-rac="" type="button" tabindex="0" data-react-aria-pressable="true" aria-expanded="true" aria-controls="react-aria-_r4R_4H2_" slot="trigger"><svg aria-hidden="true" viewBox="0 0 24 24" class="size-4 shrink-0 transition-transform group-aria-[expanded=false]:-rotate-90" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"></path></svg>3. Sons em conjunto</button></h3><div class="react-aria-DisclosurePanel" data-rac="" id="react-aria-_r4R_4H2_" role="group" aria-labelledby="react-aria-_r4R_4H1_" aria-hidden="false"><ul class="ms-4 flex flex-col border-s border-border ps-2"><li><a href="/sons-em-conjunto/melodia-e-intervalos/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">3.1 Melodia e intervalos</a></li><li><a href="/sons-em-conjunto/consonancia-e-dissonancia/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">3.2 Consonância e dissonância</a></li><li><a href="/sons-em-conjunto/escalas/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent" aria-current="page">3.3 Escalas</a></li><li><a href="/sons-em-conjunto/modos/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">3.4 Modos</a></li><li><a href="/sons-em-conjunto/triades/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">3.5 Tríades</a></li><li><a href="/sons-em-conjunto/acordes-de-setima/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">3.6 Acordes de sétima</a></li><li><a href="/sons-em-conjunto/baixo-continuo/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">3.7 Baixo contínuo</a></li><li><a href="/sons-em-conjunto/dominantes-secundarias/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">3.8 Dominantes secundárias</a></li><li><a href="/sons-em-conjunto/modulacao/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">3.9 Modulação</a></li><li><a href="/sons-em-conjunto/cadencias/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">3.10 Cadências</a></li><li><a href="/sons-em-conjunto/forma-e-frase/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">3.11 Forma e frase</a></li></ul></div></div><div class="react-aria-Disclosure" data-rac=""><h3 class="contents"><button id="react-aria-_r4R_5H1_" class="group flex w-full items-center gap-2 rounded px-2 py-1 text-start text-body-sm font-semibold text-ink outline-none hover:text-accent focus-visible:ring-2 focus-visible:ring-accent" data-rac="" type="button" tabindex="0" data-react-aria-pressable="true" aria-expanded="false" aria-controls="react-aria-_r4R_5H2_" slot="trigger"><svg aria-hidden="true" viewBox="0 0 24 24" class="size-4 shrink-0 transition-transform group-aria-[expanded=false]:-rotate-90" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"></path></svg>4. Palavras finais</button></h3><div class="react-aria-DisclosurePanel" data-rac="" id="react-aria-_r4R_5H2_" role="group" aria-labelledby="react-aria-_r4R_5H1_" aria-hidden="true" hidden=""><ul class="ms-4 flex flex-col border-s border-border ps-2"></ul></div></div><div class="react-aria-Disclosure" data-rac=""><h3 class="contents"><button id="react-aria-_r4R_6H1_" class="group flex w-full items-center gap-2 rounded px-2 py-1 text-start text-body-sm font-semibold text-ink outline-none hover:text-accent focus-visible:ring-2 focus-visible:ring-accent" data-rac="" type="button" tabindex="0" data-react-aria-pressable="true" aria-expanded="false" aria-controls="react-aria-_r4R_6H2_" slot="trigger"><svg aria-hidden="true" viewBox="0 0 24 24" class="size-4 shrink-0 transition-transform group-aria-[expanded=false]:-rotate-90" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"></path></svg>Recursos</button></h3><div class="react-aria-DisclosurePanel" data-rac="" id="react-aria-_r4R_6H2_" role="group" aria-labelledby="react-aria-_r4R_6H1_" aria-hidden="true" hidden=""><ul class="ms-4 flex flex-col border-s border-border ps-2"><li><a href="/recursos/papel-pautado/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">Papel pautado</a></li><li><a href="/recursos/sobre/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">Sobre o livro</a></li><li><a href="/recursos/transferencias/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">Transferências</a></li></ul></div></div></nav><!--astro:end--></astro-island></div></div><main id="_top" class="min-w-0 py-8"><h1 class="mb-6 text-title font-semibold text-ink">3.3 Escalas</h1><div class="book-content" data-pagefind-body><p>Uma escala é um conjunto de notas dispostas ordenadamente da mais grave à mais aguda, de modo
+ascendente, ou da mais aguda para a mais grave, de modo descendente. Cada uma das notas que
+pertence a uma determinada escala musical deverá ocorrer apenas uma vez, ou seja, o seu nome
+deve ser único na escala. Por exemplo, a escala de Dó Maior composta através das notas
+[C D E F G A B C] não deve ser escrita com as notas [C D E E# G A Cb C], ainda que, devido
+à enarmonia, as notas correspondam às mesmas alturas musicais.</p>
+<p>Como visto anteriormente, na música tonal ocidental o total de notas disponíveis encontra-se
+definido na escala cromática. Esta é uma escala onde cada uma das suas notas se encontra
+distanciada em ½ tom relativamente às suas adjacentes, totalizando doze notas diferentes.</p>
+<p>Relativamente à estrutura da música tonal, deve ser introduzido o conceito de escala
+diatónica. Esta escala apresenta uma estrutura interna onde existem dois meios-tons e cinco
+tons, e que correspondem visualmente às teclas brancas de um piano. Notas que pertencem à
+escala diatónica são aquelas que se encontram presentes na tonalidade, ou no respetivo modo,
+em questão. Uma expressão anglo-saxónica curta para pensar em «diatónico» é «in the key of»,
+ou seja, na tonalidade de.</p>
+<h2 id="escala-maior">Escala maior</h2>
+<p>Se considerarmos a escala de Dó Maior, que é uma escala diatónica por conter dois meios-tons
+e cinco tons, esta apresenta a seguinte estrutura interna de intervalos:</p>
+<figure id="fig-escala-cmajor" class="figure" data-score="scale_cmajor" data-cursor="[[0,19.45,1.78,5.78],[1.2,28.2,1.78,5.78],[2.4,36.96,1.78,5.78],[3.6,45.72,1.78,5.78],[4.8,54.48,1.78,5.78],[6,63.23,1.78,5.78],[7.2,71.99,1.78,5.78],[8.4,80.75,1.78,5.78]]"><svg class="score" role="img" aria-label="Figura 3.3.1. Escala de Dó Maior." xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.2" width="159.20mm" height="22.69mm" viewBox="0.0000 -0.0240 90.5936 12.9096">
+<style type="text/css">
+<![CDATA[
+tspan { white-space: pre; }
+]]>
+</style>
+<g transform="translate(0.0000, 6.7760)">
+<rect x="18.9560" y="-0.1000" width="2.9430" height="0.2000" ry="0.1000" fill="currentColor"/>
+</g>
+<g transform="translate(0.0000, 5.7760)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(0.0000, 4.7760)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(0.0000, 3.7760)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(0.0000, 2.7760)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(0.0000, 1.7760)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(89.9936, 3.7760)">
+<rect x="0.0000" y="-2.0000" width="0.6000" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(89.5036, 3.7760)">
+<rect x="0.0000" y="-2.0000" width="0.1900" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(53.6635, 12.4411)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>Sol</tspan>
+</text>
+</g>
+<g transform="translate(19.4465, 6.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(0.8000, 4.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M266 -635h-6c-108 0 -195 88 -195 197c0 58 53 103 112 103c54 0 95 -47 95 -103c0 -52 -43 -95 -95 -95c-11 0 -21 2 -31 6c26 -39 68 -65 117 -65h4zM401 151c19 -89 48 -242 60 -354c76 27 112 94 112 163c0 89 -60 179 -172 191zM74 28c0 -112 98 -247 278 -247
+c21 0 44 2 68 6c-7 64 -29 203 -63 364c-79 -8 -124 -61 -124 -119c0 -44 25 -91 81 -123c5 -5 7 -10 7 -15c0 -11 -10 -22 -22 -22c-15 0 -126 62 -126 187c0 88 58 174 160 197c-14 58 -29 117 -46 175c-107 -121 -213 -243 -213 -403zM357 1194c28 0 143 -206 143 -361
+c0 -143 -86 -255 -180 -364c21 -68 39 -138 56 -207c5 0 10 1 14 1c155 0 255 -129 255 -262c0 -113 -74 -212 -180 -245c3 -35 5 -70 5 -105c0 -19 -1 -39 -2 -58c-7 -119 -88 -225 -202 -228l1 43c93 2 153 92 159 191c1 18 2 37 2 55c0 31 -1 61 -4 92
+c-28 -5 -55 -8 -80 -8c-239 0 -342 217 -342 374c0 177 131 306 248 441c-29 96 -52 170 -52 346c0 189 144 295 159 295zM247 782c0 -55 12 -115 35 -190c82 100 147 202 147 326c0 40 -6 82 -21 127c-49 -24 -161 -97 -161 -263z" fill="currentColor"/>
+</g>
+<g transform="translate(19.5398, 9.6411)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>C</tspan>
+</text>
+</g>
+<g transform="translate(0.0000, 9.6411)">
+<text font-family="TeX Gyre Schola" font-weight="bold" font-size="2.2000" text-anchor="start" fill="currentColor">
+<tspan>Anglo-saxónico:</tspan>
+</text>
+</g>
+<g transform="translate(18.8569, 12.4411)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>Dó</tspan>
+</text>
+</g>
+<g transform="translate(5.4971, 12.4411)">
+<text font-family="TeX Gyre Schola" font-weight="bold" font-size="2.2000" text-anchor="start" fill="currentColor">
+<tspan>Português:</tspan>
+</text>
+</g>
+<g transform="translate(71.9893, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M9.6092 0.6438C9.6729 0.5984 9.7321 0.5518 9.7865 0.5040L9.7865 0.5040C9.7318 0.5476 9.6723 0.5901 9.6083 0.6316z"/>
+</g>
+<g transform="translate(71.9893, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M9.0529 0.9615C9.1368 0.9222 9.2172 0.8817 9.2936 0.8400L9.2914 0.8112C9.2148 0.8495 9.1342 0.8867 9.0500 0.9228z"/>
+</g>
+<g transform="translate(71.9893, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M8.3595 1.2318C8.4597 1.1990 8.5571 1.1649 8.6513 1.1295L8.6475 1.0776C8.5530 1.1102 8.4555 1.1418 8.3551 1.1721z"/>
+</g>
+<g transform="translate(71.9893, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M7.5600 1.4523C7.6723 1.4264 7.7826 1.3990 7.8906 1.3702L7.8854 1.3006C7.7773 1.3274 7.6668 1.3529 7.5544 1.3772z"/>
+</g>
+<g transform="translate(71.9893, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M6.6850 1.6209C6.8053 1.6020 6.9244 1.5817 7.0421 1.5599L7.0360 1.4781C6.9183 1.4986 6.7991 1.5179 6.6786 1.5359z"/>
+</g>
+<g transform="translate(71.9893, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M5.7652 1.7353C5.8895 1.7238 6.0134 1.7107 6.1365 1.6962L6.1300 1.6078C6.0068 1.6218 5.8829 1.6345 5.7586 1.6458z"/>
+</g>
+<g transform="translate(71.9893, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M4.8315 1.7931C4.9556 1.7892 5.0801 1.7838 5.2047 1.7769L5.1981 1.6874C5.0735 1.6945 4.9490 1.7003 4.8250 1.7047z"/>
+</g>
+<g transform="translate(71.9893, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M3.9146 1.7920C4.0344 1.7962 4.1554 1.7987 4.2774 1.7996L4.2711 1.7146C4.1492 1.7146 4.0282 1.7132 3.9085 1.7103z"/>
+</g>
+<g transform="translate(71.9893, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M3.0452 1.7299C3.1565 1.7423 3.2700 1.7531 3.3853 1.7622L3.3797 1.6871C3.2646 1.6797 3.1512 1.6707 3.0400 1.6603z"/>
+</g>
+<g transform="translate(71.9893, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M2.2540 1.6043C2.3529 1.6254 2.4547 1.6447 2.5591 1.6623L2.5547 1.6026C2.4505 1.5875 2.3488 1.5707 2.2501 1.5524z"/>
+</g>
+<g transform="translate(71.9893, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M1.5718 1.4131C1.6541 1.4431 1.7402 1.4713 1.8296 1.4976L1.8268 1.4590C1.7376 1.4358 1.6518 1.4109 1.5697 1.3844z"/>
+</g>
+<g transform="translate(71.9893, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M1.0294 1.1540C1.0910 1.1931 1.1572 1.2305 1.2276 1.2659L1.2267 1.2538C1.1566 1.2222 1.0907 1.1889 1.0294 1.1540z"/>
+</g>
+<g transform="translate(28.2037, 6.2760)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(28.2287, 9.6411)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>D</tspan>
+</text>
+</g>
+<g transform="translate(27.6653, 12.4411)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>Ré</tspan>
+</text>
+</g>
+<g transform="translate(36.9608, 5.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(37.0541, 9.6411)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>E</tspan>
+</text>
+</g>
+<g transform="translate(36.3883, 12.4411)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>Mi</tspan>
+</text>
+</g>
+<g transform="translate(45.7179, 5.2760)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(45.8795, 9.6411)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>F</tspan>
+</text>
+</g>
+<g transform="translate(45.2308, 12.4411)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>Fá</tspan>
+</text>
+</g>
+<g transform="translate(54.4751, 4.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(54.5000, 9.6411)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>G</tspan>
+</text>
+</g>
+<g transform="translate(63.2322, 4.2760)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(63.3255, 9.6411)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>A</tspan>
+</text>
+</g>
+<g transform="translate(62.7109, 12.4411)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>Lá</tspan>
+</text>
+</g>
+<g transform="translate(71.9893, 3.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(72.0826, 9.6411)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>B</tspan>
+</text>
+</g>
+<g transform="translate(71.7924, 12.4411)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>Si</tspan>
+</text>
+</g>
+<g transform="translate(80.7464, 3.2760)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(80.8397, 9.6411)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>C</tspan>
+</text>
+</g>
+<g transform="translate(80.1569, 12.4411)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>Dó</tspan>
+</text>
+</g>
+<g transform="translate(36.9608, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M9.5956 2.6967C9.6601 2.6476 9.7201 2.5970 9.7754 2.5450L9.7754 2.5450C9.7199 2.5928 9.6596 2.6393 9.5949 2.6845z"/>
+</g>
+<g transform="translate(36.9608, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M9.0339 3.0374C9.1185 2.9957 9.1995 2.9525 9.2766 2.9078L9.2749 2.8790C9.1977 2.9202 9.1165 2.9601 9.0317 2.9986z"/>
+</g>
+<g transform="translate(36.9608, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M8.3363 3.3215C8.4370 3.2874 8.5349 3.2518 8.6297 3.2147L8.6267 3.1627C8.5318 3.1971 8.4338 3.2301 8.3329 3.2617z"/>
+</g>
+<g transform="translate(36.9608, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M7.5338 3.5473C7.6464 3.5212 7.7571 3.4934 7.8654 3.4641L7.8615 3.3944C7.7530 3.4217 7.6422 3.4476 7.5295 3.4721z"/>
+</g>
+<g transform="translate(36.9608, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M6.6569 3.7131C6.7774 3.6951 6.8967 3.6754 7.0146 3.6541L7.0099 3.5722C6.8920 3.5923 6.7726 3.6108 6.6520 3.6279z"/>
+</g>
+<g transform="translate(36.9608, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M5.7363 3.8171C5.8606 3.8074 5.9846 3.7960 6.1078 3.7830L6.1028 3.6945C5.9795 3.7070 5.8555 3.7180 5.7312 3.7275z"/>
+</g>
+<g transform="translate(36.9608, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M4.8030 3.8575C4.9269 3.8564 5.0513 3.8536 5.1759 3.8491L5.1708 3.7595C5.0462 3.7642 4.9218 3.7674 4.7979 3.7690z"/>
+</g>
+<g transform="translate(36.9608, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M3.8874 3.8326C4.0069 3.8404 4.1277 3.8463 4.2495 3.8505L4.2447 3.7654C4.1229 3.7621 4.0022 3.7573 3.8827 3.7508z"/>
+</g>
+<g transform="translate(36.9608, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M3.0204 3.7407C3.1314 3.7575 3.2445 3.7725 3.3594 3.7856L3.3551 3.7104C3.2403 3.6990 3.1273 3.6858 3.0165 3.6710z"/>
+</g>
+<g transform="translate(36.9608, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M2.2328 3.5800C2.3312 3.6061 2.4325 3.6303 2.5364 3.6526L2.5330 3.5929C2.4292 3.5730 2.3280 3.5513 2.2298 3.5280z"/>
+</g>
+<g transform="translate(36.9608, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M1.5552 3.3486C1.6368 3.3843 1.7222 3.4180 1.8110 3.4497L1.8088 3.4110C1.7202 3.3824 1.6350 3.3520 1.5535 3.3199z"/>
+</g>
+<g transform="translate(36.9608, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M1.0183 3.0450C1.0791 3.0904 1.1445 3.1338 1.2142 3.1752L1.2135 3.1631C1.1440 3.1255 1.0789 3.0862 1.0183 3.0450z"/>
+</g>
+</svg><p><audio class="figure-audio" controls preload="none"><source src="/audio/scale_cmajor.m4a" type="audio/mp4"><source src="/audio/scale_cmajor.mp3" type="audio/mpeg"></audio></p><figcaption><b class="figure-number">Figura 3.3.1.</b> Escala de Dó Maior.<span class="figure-files"><a href="/scores/scale_cmajor.ly" download>LilyPond</a> · <a href="/audio/scale_cmajor.m4a" download>AAC</a> · <a href="/audio/scale_cmajor.mp3" download>MP3</a></span></figcaption></figure>
+<p>Qualquer escala construída a partir de qualquer das doze notas que apresente a mesma sequência
+interna de tons e meios-tons será uma escala maior. Em todas as escalas maiores as notas
+distam das suas adjacentes em 1 tom inteiro, exceto do 3.º para o 4.º grau e do 7.º para o
+8.º grau (ou seja, uma oitava acima) em que distam em ½ tom.</p>
+<p>Conforme mencionado no capítulo sobre armações de clave, encontram-se convencionadas quinze
+armações de claves: sete construídas com sustenidos, sete construídas com bemóis e uma armação
+de clave adicional sem quaisquer alterações. As armações de clave existem, justamente, para
+estabelecerem esta relação interna de tons e meios-tons relativamente às notas da escala.</p>
+<p>Se for pretendido construir uma escala maior a partir de [G] é necessário que internamente a
+sequência de tons e meios-tons se mantenha. Para a sequência se manter, a altura da nota [F]
+terá de subir em ½ tom, passando a ser um [F#], construindo-se a armação de clave com um
+sustenido. Esta alteração fez com que os dois meios-tons existentes na escala continuassem do
+3.º para o 4.º grau e do 7.º para o 8.º grau.</p>
+<p>De modo similar, para construir uma escala maior a partir de [F] é necessário manter a
+sequência interna de tons e meios-tons. Para a sequência se manter, a altura da nota [B] terá
+de baixar em ½ tom, passando a ser um [Bb], construindo-se a armação de clave com um bemol.</p>
+<p>Se forem construídas escalas maiores a partir de cada uma das notas disponíveis, terá de se
+proceder às alterações necessárias de modo a que a sequência de tons e meios-tons se mantenha.
+Este é o motivo pelo qual existem as armações de clave.</p>
+<p>Exemplo noutra tonalidade maior, como, por exemplo, Eb Maior:</p>
+<figure id="fig-escala-ebmajor" class="figure" data-score="scale_ebmajor" data-cursor="[[0,12.78,1.78,5.78],[1.2,22.37,1.78,5.78],[2.4,31.96,1.78,5.78],[3.6,41.55,1.78,5.78],[4.8,51.14,1.78,5.78],[6,60.73,1.78,5.78],[7.2,70.32,1.78,5.78],[8.4,79.91,1.78,5.78]]"><svg class="score" role="img" aria-label="Figura 3.3.2. Escala de Eb Maior." xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.2" width="159.20mm" height="17.73mm" viewBox="0.0000 -0.0240 90.5936 10.0882">
+<style type="text/css">
+<![CDATA[
+tspan { white-space: pre; }
+]]>
+</style>
+<g transform="translate(0.0000, 5.7760)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(0.0000, 4.7760)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(0.0000, 3.7760)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(0.0000, 2.7760)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(0.0000, 1.7760)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(89.9936, 3.7760)">
+<rect x="0.0000" y="-2.0000" width="0.6000" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(89.5036, 3.7760)">
+<rect x="0.0000" y="-2.0000" width="0.1900" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(51.1404, 3.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(70.3220, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M10.4432 -0.3762C10.5052 -0.4185 10.5629 -0.4617 10.6160 -0.5059L10.6160 -0.5059C10.5627 -0.4655 10.5047 -0.4261 10.4424 -0.3875z"/>
+</g>
+<g transform="translate(70.3220, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M9.9007 -0.0791C9.9827 -0.1161 10.0610 -0.1541 10.1355 -0.1932L10.1337 -0.2199C10.0590 -0.1840 9.9805 -0.1491 9.8983 -0.1150z"/>
+</g>
+<g transform="translate(70.3220, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M9.2227 0.1782C9.3209 0.1466 9.4162 0.1140 9.5084 0.0802L9.5051 0.0316C9.4128 0.0627 9.3173 0.0929 9.2189 0.1221z"/>
+</g>
+<g transform="translate(70.3220, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M8.4365 0.3936C8.5473 0.3677 8.6560 0.3407 8.7622 0.3126L8.7577 0.2467C8.6514 0.2729 8.5426 0.2980 8.4316 0.3221z"/>
+</g>
+<g transform="translate(70.3220, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M7.5696 0.5654C7.6894 0.5455 7.8077 0.5243 7.9243 0.5020L7.9190 0.4235C7.8023 0.4445 7.6839 0.4644 7.5641 0.4831z"/>
+</g>
+<g transform="translate(70.3220, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M6.6496 0.6916C6.7746 0.6779 6.8989 0.6629 7.0222 0.6467L7.0164 0.5603C6.8930 0.5757 6.7686 0.5901 6.6436 0.6033z"/>
+</g>
+<g transform="translate(70.3220, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M5.7037 0.7704C5.8303 0.7632 5.9570 0.7546 6.0834 0.7447L6.0773 0.6550C5.9509 0.6648 5.8242 0.6733 5.6976 0.6807z"/>
+</g>
+<g transform="translate(70.3220, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M4.7596 0.8000C4.8841 0.7995 5.0095 0.7975 5.1353 0.7942L5.1293 0.7059C5.0035 0.7097 4.8782 0.7123 4.7537 0.7136z"/>
+</g>
+<g transform="translate(70.3220, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M3.8446 0.7785C3.9634 0.7849 4.0838 0.7898 4.2053 0.7934L4.1997 0.7111C4.0783 0.7087 3.9580 0.7050 3.8393 0.7000z"/>
+</g>
+<g transform="translate(70.3220, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M2.9862 0.7040C3.0956 0.7176 3.2073 0.7297 3.3210 0.7403L3.3161 0.6688C3.2026 0.6599 3.0910 0.6497 2.9817 0.6381z"/>
+</g>
+<g transform="translate(70.3220, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M2.2119 0.5747C2.3083 0.5957 2.4077 0.6152 2.5097 0.6331L2.5059 0.5771C2.4040 0.5615 2.3048 0.5445 2.2086 0.5261z"/>
+</g>
+<g transform="translate(70.3220, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M1.5491 0.3887C1.6288 0.4173 1.7122 0.4445 1.7990 0.4700L1.7966 0.4340C1.7100 0.4115 1.6267 0.3875 1.5472 0.3621z"/>
+</g>
+<g transform="translate(70.3220, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M1.0252 0.1441C1.0846 0.1807 1.1484 0.2157 1.2163 0.2491L1.2156 0.2379C1.1479 0.2081 1.0843 0.1768 1.0252 0.1441z"/>
+</g>
+<g transform="translate(12.7772, 5.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(0.8000, 4.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M266 -635h-6c-108 0 -195 88 -195 197c0 58 53 103 112 103c54 0 95 -47 95 -103c0 -52 -43 -95 -95 -95c-11 0 -21 2 -31 6c26 -39 68 -65 117 -65h4zM401 151c19 -89 48 -242 60 -354c76 27 112 94 112 163c0 89 -60 179 -172 191zM74 28c0 -112 98 -247 278 -247
+c21 0 44 2 68 6c-7 64 -29 203 -63 364c-79 -8 -124 -61 -124 -119c0 -44 25 -91 81 -123c5 -5 7 -10 7 -15c0 -11 -10 -22 -22 -22c-15 0 -126 62 -126 187c0 88 58 174 160 197c-14 58 -29 117 -46 175c-107 -121 -213 -243 -213 -403zM357 1194c28 0 143 -206 143 -361
+c0 -143 -86 -255 -180 -364c21 -68 39 -138 56 -207c5 0 10 1 14 1c155 0 255 -129 255 -262c0 -113 -74 -212 -180 -245c3 -35 5 -70 5 -105c0 -19 -1 -39 -2 -58c-7 -119 -88 -225 -202 -228l1 43c93 2 153 92 159 191c1 18 2 37 2 55c0 31 -1 61 -4 92
+c-28 -5 -55 -8 -80 -8c-239 0 -342 217 -342 374c0 177 131 306 248 441c-29 96 -52 170 -52 346c0 189 144 295 159 295zM247 782c0 -55 12 -115 35 -190c82 100 147 202 147 326c0 40 -6 82 -21 127c-49 -24 -161 -97 -161 -263z" fill="currentColor"/>
+</g>
+<g transform="translate(4.3050, 3.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M27 41l-1 -66v-11c0 -22 1 -44 4 -66c45 38 93 80 93 139c0 33 -14 67 -43 67c-31 0 -52 -30 -53 -63zM-15 -138l-12 595c8 5 18 8 27 8s19 -3 27 -8l-7 -345c25 21 58 34 91 34c52 0 89 -48 89 -102c0 -80 -86 -117 -147 -169c-15 -13 -24 -38 -45 -38
+c-13 0 -23 11 -23 25z" fill="currentColor"/>
+</g>
+<g transform="translate(5.2250, 2.2760)">
+<path transform="scale(0.0040, -0.0040)" d="M27 41l-1 -66v-11c0 -22 1 -44 4 -66c45 38 93 80 93 139c0 33 -14 67 -43 67c-31 0 -52 -30 -53 -63zM-15 -138l-12 595c8 5 18 8 27 8s19 -3 27 -8l-7 -345c25 21 58 34 91 34c52 0 89 -48 89 -102c0 -80 -86 -117 -147 -169c-15 -13 -24 -38 -45 -38
+c-13 0 -23 11 -23 25z" fill="currentColor"/>
+</g>
+<g transform="translate(6.1450, 4.2760)">
+<path transform="scale(0.0040, -0.0040)" d="M27 41l-1 -66v-11c0 -22 1 -44 4 -66c45 38 93 80 93 139c0 33 -14 67 -43 67c-31 0 -52 -30 -53 -63zM-15 -138l-12 595c8 5 18 8 27 8s19 -3 27 -8l-7 -345c25 21 58 34 91 34c52 0 89 -48 89 -102c0 -80 -86 -117 -147 -169c-15 -13 -24 -38 -45 -38
+c-13 0 -23 11 -23 25z" fill="currentColor"/>
+</g>
+<g transform="translate(12.1104, 9.7342)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>E</tspan>
+</text>
+</g>
+<g transform="translate(14.6059, 9.4342)">
+<path transform="scale(0.0040, -0.0040)" d="M27 41l-1 -66v-11c0 -22 1 -44 4 -66c45 38 93 80 93 139c0 33 -14 67 -43 67c-31 0 -52 -30 -53 -63zM-15 -138l-12 595c8 5 18 8 27 8s19 -3 27 -8l-7 -345c25 21 58 34 91 34c52 0 89 -48 89 -102c0 -80 -86 -117 -147 -169c-15 -13 -24 -38 -45 -38
+c-13 0 -23 11 -23 25z" fill="currentColor"/>
+</g>
+<g transform="translate(0.0000, 9.7342)">
+<text font-family="TeX Gyre Schola" font-weight="bold" font-size="2.2000" text-anchor="start" fill="currentColor">
+<tspan>E</tspan>
+</text>
+</g>
+<g transform="translate(2.3886, 9.4342)">
+<path transform="scale(0.0036, -0.0036)" d="M29 39l-2 -64v-11c0 -22 2 -43 5 -65c44 38 91 80 91 138c0 33 -13 66 -42 66c-31 0 -51 -31 -52 -64zM-28 454c9 5 18 8 28 8s19 -3 28 -8l-7 -343c25 23 58 36 92 36c51 0 87 -49 87 -103c0 -79 -84 -117 -144 -169c-16 -14 -25 -41 -47 -41c-14 0 -25 13 -25 27z" fill="currentColor"/>
+</g>
+<g transform="translate(3.7013, 9.7342)">
+<text font-family="TeX Gyre Schola" font-weight="bold" font-size="2.2000" text-anchor="start" fill="currentColor">
+<tspan>Maior:</tspan>
+</text>
+</g>
+<g transform="translate(11.8272, 5.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M37 -250c0 17 63 58 63 250s-63 233 -63 250c0 7 6 13 13 13c4 0 7 -2 10 -6c53 -76 90 -164 90 -257s-37 -181 -90 -257c-3 -4 -6 -6 -10 -6c-7 0 -13 6 -13 13z" fill="currentColor"/>
+</g>
+<g transform="translate(10.9072, 5.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M-37 250c0 -17 -63 -58 -63 -250s63 -233 63 -250c0 -7 -6 -13 -13 -13c-4 0 -7 2 -10 6c-53 76 -90 164 -90 257s37 181 90 257c3 4 6 6 10 6c7 0 13 -6 13 -13z" fill="currentColor"/>
+</g>
+<g transform="translate(11.0272, 5.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M27 41l-1 -66v-11c0 -22 1 -44 4 -66c45 38 93 80 93 139c0 33 -14 67 -43 67c-31 0 -52 -30 -53 -63zM-15 -138l-12 595c8 5 18 8 27 8s19 -3 27 -8l-7 -345c25 21 58 34 91 34c52 0 89 -48 89 -102c0 -80 -86 -117 -147 -169c-15 -13 -24 -38 -45 -38
+c-13 0 -23 11 -23 25z" fill="currentColor"/>
+</g>
+<g transform="translate(22.3680, 5.2760)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(22.5295, 9.7342)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>F</tspan>
+</text>
+</g>
+<g transform="translate(31.9588, 4.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(31.9837, 9.7342)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>G</tspan>
+</text>
+</g>
+<g transform="translate(41.5496, 4.2760)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(40.8828, 9.7342)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>A</tspan>
+</text>
+</g>
+<g transform="translate(43.3783, 9.4342)">
+<path transform="scale(0.0040, -0.0040)" d="M27 41l-1 -66v-11c0 -22 1 -44 4 -66c45 38 93 80 93 139c0 33 -14 67 -43 67c-31 0 -52 -30 -53 -63zM-15 -138l-12 595c8 5 18 8 27 8s19 -3 27 -8l-7 -345c25 21 58 34 91 34c52 0 89 -48 89 -102c0 -80 -86 -117 -147 -169c-15 -13 -24 -38 -45 -38
+c-13 0 -23 11 -23 25z" fill="currentColor"/>
+</g>
+<g transform="translate(40.5996, 4.2760)">
+<path transform="scale(0.0040, -0.0040)" d="M37 -250c0 17 63 58 63 250s-63 233 -63 250c0 7 6 13 13 13c4 0 7 -2 10 -6c53 -76 90 -164 90 -257s-37 -181 -90 -257c-3 -4 -6 -6 -10 -6c-7 0 -13 6 -13 13z" fill="currentColor"/>
+</g>
+<g transform="translate(39.6796, 4.2760)">
+<path transform="scale(0.0040, -0.0040)" d="M-37 250c0 -17 -63 -58 -63 -250s63 -233 63 -250c0 -7 -6 -13 -13 -13c-4 0 -7 2 -10 6c-53 76 -90 164 -90 257s37 181 90 257c3 4 6 6 10 6c7 0 13 -6 13 -13z" fill="currentColor"/>
+</g>
+<g transform="translate(39.7996, 4.2760)">
+<path transform="scale(0.0040, -0.0040)" d="M27 41l-1 -66v-11c0 -22 1 -44 4 -66c45 38 93 80 93 139c0 33 -14 67 -43 67c-31 0 -52 -30 -53 -63zM-15 -138l-12 595c8 5 18 8 27 8s19 -3 27 -8l-7 -345c25 21 58 34 91 34c52 0 89 -48 89 -102c0 -80 -86 -117 -147 -169c-15 -13 -24 -38 -45 -38
+c-13 0 -23 11 -23 25z" fill="currentColor"/>
+</g>
+<g transform="translate(50.4736, 9.7342)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>B</tspan>
+</text>
+</g>
+<g transform="translate(52.9691, 9.4342)">
+<path transform="scale(0.0040, -0.0040)" d="M27 41l-1 -66v-11c0 -22 1 -44 4 -66c45 38 93 80 93 139c0 33 -14 67 -43 67c-31 0 -52 -30 -53 -63zM-15 -138l-12 595c8 5 18 8 27 8s19 -3 27 -8l-7 -345c25 21 58 34 91 34c52 0 89 -48 89 -102c0 -80 -86 -117 -147 -169c-15 -13 -24 -38 -45 -38
+c-13 0 -23 11 -23 25z" fill="currentColor"/>
+</g>
+<g transform="translate(50.1904, 3.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M37 -250c0 17 63 58 63 250s-63 233 -63 250c0 7 6 13 13 13c4 0 7 -2 10 -6c53 -76 90 -164 90 -257s-37 -181 -90 -257c-3 -4 -6 -6 -10 -6c-7 0 -13 6 -13 13z" fill="currentColor"/>
+</g>
+<g transform="translate(49.2704, 3.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M-37 250c0 -17 -63 -58 -63 -250s63 -233 63 -250c0 -7 -6 -13 -13 -13c-4 0 -7 2 -10 6c-53 76 -90 164 -90 257s37 181 90 257c3 4 6 6 10 6c7 0 13 -6 13 -13z" fill="currentColor"/>
+</g>
+<g transform="translate(49.3904, 3.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M27 41l-1 -66v-11c0 -22 1 -44 4 -66c45 38 93 80 93 139c0 33 -14 67 -43 67c-31 0 -52 -30 -53 -63zM-15 -138l-12 595c8 5 18 8 27 8s19 -3 27 -8l-7 -345c25 21 58 34 91 34c52 0 89 -48 89 -102c0 -80 -86 -117 -147 -169c-15 -13 -24 -38 -45 -38
+c-13 0 -23 11 -23 25z" fill="currentColor"/>
+</g>
+<g transform="translate(31.9588, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M10.4432 1.6919C10.5052 1.6441 10.5629 1.5951 10.6160 1.5450L10.6160 1.5450C10.5627 1.5913 10.5047 1.6365 10.4424 1.6806z"/>
+</g>
+<g transform="translate(31.9588, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M9.9007 2.0270C9.9827 1.9855 10.0610 1.9426 10.1355 1.8985L10.1337 1.8719C10.0590 1.9127 9.9805 1.9525 9.8983 1.9911z"/>
+</g>
+<g transform="translate(31.9588, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M9.2227 2.3151C9.3209 2.2799 9.4162 2.2434 9.5084 2.2057L9.5051 2.1571C9.4128 2.1922 9.3173 2.2262 9.2189 2.2591z"/>
+</g>
+<g transform="translate(31.9588, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M8.4365 2.5542C8.5473 2.5257 8.6560 2.4958 8.7622 2.4646L8.7577 2.3987C8.6514 2.4279 8.5426 2.4559 8.4316 2.4827z"/>
+</g>
+<g transform="translate(31.9588, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M7.5696 2.7425C7.6894 2.7208 7.8077 2.6978 7.9243 2.6734L7.9190 2.5949C7.8023 2.6179 7.6839 2.6397 7.5641 2.6602z"/>
+</g>
+<g transform="translate(31.9588, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M6.6496 2.8780C6.7746 2.8635 6.8989 2.8476 7.0222 2.8302L7.0164 2.7438C6.8930 2.7604 6.7686 2.7757 6.6436 2.7897z"/>
+</g>
+<g transform="translate(31.9588, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M5.7037 2.9590C5.8303 2.9519 5.9570 2.9434 6.0834 2.9333L6.0773 2.8436C5.9509 2.8535 5.8242 2.8621 5.6976 2.8693z"/>
+</g>
+<g transform="translate(31.9588, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M4.7596 2.9836C4.8841 2.9842 5.0095 2.9832 5.1353 2.9807L5.1293 2.8924C5.0035 2.8954 4.8782 2.8970 4.7537 2.8972z"/>
+</g>
+<g transform="translate(31.9588, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M3.8446 2.9499C3.9634 2.9583 4.0838 2.9652 4.2053 2.9705L4.1997 2.8883C4.0783 2.8841 3.9580 2.8785 3.8393 2.8714z"/>
+</g>
+<g transform="translate(31.9588, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M2.9862 2.8560C3.0956 2.8726 3.2073 2.8876 3.3210 2.9009L3.3161 2.8294C3.2026 2.8179 3.0910 2.8048 2.9817 2.7902z"/>
+</g>
+<g transform="translate(31.9588, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M2.2119 2.7002C2.3083 2.7252 2.4077 2.7485 2.5097 2.7701L2.5059 2.7140C2.4040 2.6948 2.3048 2.6740 2.2086 2.6516z"/>
+</g>
+<g transform="translate(31.9588, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M1.5491 2.4804C1.6288 2.5141 1.7122 2.5460 1.7990 2.5761L1.7966 2.5401C1.7100 2.5130 1.6267 2.4842 1.5472 2.4538z"/>
+</g>
+<g transform="translate(31.9588, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M1.0252 2.1950C1.0846 2.2375 1.1484 2.2782 1.2163 2.3172L1.2156 2.3060C1.1479 2.2706 1.0843 2.2337 1.0252 2.1950z"/>
+</g>
+<g transform="translate(60.7312, 3.2760)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(60.8244, 9.7342)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>C</tspan>
+</text>
+</g>
+<g transform="translate(70.3220, 2.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(70.3470, 9.7342)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>D</tspan>
+</text>
+</g>
+<g transform="translate(79.9128, 2.2760)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(79.2460, 9.7342)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>E</tspan>
+</text>
+</g>
+<g transform="translate(81.7415, 9.4342)">
+<path transform="scale(0.0040, -0.0040)" d="M27 41l-1 -66v-11c0 -22 1 -44 4 -66c45 38 93 80 93 139c0 33 -14 67 -43 67c-31 0 -52 -30 -53 -63zM-15 -138l-12 595c8 5 18 8 27 8s19 -3 27 -8l-7 -345c25 21 58 34 91 34c52 0 89 -48 89 -102c0 -80 -86 -117 -147 -169c-15 -13 -24 -38 -45 -38
+c-13 0 -23 11 -23 25z" fill="currentColor"/>
+</g>
+<g transform="translate(78.9628, 2.2760)">
+<path transform="scale(0.0040, -0.0040)" d="M37 -250c0 17 63 58 63 250s-63 233 -63 250c0 7 6 13 13 13c4 0 7 -2 10 -6c53 -76 90 -164 90 -257s-37 -181 -90 -257c-3 -4 -6 -6 -10 -6c-7 0 -13 6 -13 13z" fill="currentColor"/>
+</g>
+<g transform="translate(78.0428, 2.2760)">
+<path transform="scale(0.0040, -0.0040)" d="M-37 250c0 -17 -63 -58 -63 -250s63 -233 63 -250c0 -7 -6 -13 -13 -13c-4 0 -7 2 -10 6c-53 76 -90 164 -90 257s37 181 90 257c3 4 6 6 10 6c7 0 13 -6 13 -13z" fill="currentColor"/>
+</g>
+<g transform="translate(78.1628, 2.2760)">
+<path transform="scale(0.0040, -0.0040)" d="M27 41l-1 -66v-11c0 -22 1 -44 4 -66c45 38 93 80 93 139c0 33 -14 67 -43 67c-31 0 -52 -30 -53 -63zM-15 -138l-12 595c8 5 18 8 27 8s19 -3 27 -8l-7 -345c25 21 58 34 91 34c52 0 89 -48 89 -102c0 -80 -86 -117 -147 -169c-15 -13 -24 -38 -45 -38
+c-13 0 -23 11 -23 25z" fill="currentColor"/>
+</g>
+</svg><p><audio class="figure-audio" controls preload="none"><source src="/audio/scale_ebmajor.m4a" type="audio/mp4"><source src="/audio/scale_ebmajor.mp3" type="audio/mpeg"></audio></p><figcaption><b class="figure-number">Figura 3.3.2.</b> Escala de Eb Maior.<span class="figure-files"><a href="/scores/scale_ebmajor.ly" download>LilyPond</a> · <a href="/audio/scale_ebmajor.m4a" download>AAC</a> · <a href="/audio/scale_ebmajor.mp3" download>MP3</a></span></figcaption></figure>
+<p>É a sequência específica de tons e meios-tons que lhes confere uma determinada sonoridade e
+sensação auditiva, e existem inúmeras combinações possíveis.</p>
+<h2 id="escala-relativa-menor">Escala relativa menor</h2>
+<p>O sistema tonal ocidental clássico apresenta duas escalas fundamentais na música: a escala
+maior e a sua relativa menor. Estas são consideradas escalas fundamentais, pois são aquelas que
+permitem, convencionalmente, harmonias mais ricas. As escalas menores são construídas a partir
+do 6.º grau da escala maior. Podemos pensar no 6.º grau como estando a 9 meios-tons da tónica,
+se contarmos as distâncias de modo ascendente, ou a 3 meios-tons da tónica, se contarmos de
+modo descendente.</p>
+<p>Como exemplo, se for construída uma escala usando as mesmas notas da escala de Dó Maior, mas
+começando no 6.º grau, obter-se-á a escala de [A] menor:</p>
+<figure id="fig-escala-aminor" class="figure" data-score="scale_aminor" data-cursor="[[0,12.45,1.78,5.78],[1.2,22.08,1.78,5.78],[2.4,31.71,1.78,5.78],[3.6,41.34,1.78,5.78],[4.8,50.98,1.78,5.78],[6,60.61,1.78,5.78],[7.2,70.24,1.78,5.78],[8.4,79.87,1.78,5.78]]"><svg class="score" role="img" aria-label="Figura 3.3.3. Escala de A menor. A menor é a relativa menor de C Maior." xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.2" width="159.20mm" height="19.21mm" viewBox="0.0000 -0.0240 90.5936 10.9300">
+<style type="text/css">
+<![CDATA[
+tspan { white-space: pre; }
+]]>
+</style>
+<g transform="translate(0.0000, 6.7760)">
+<rect x="31.2208" y="-0.1000" width="2.9430" height="0.2000" ry="0.1000" fill="currentColor"/>
+</g>
+<g transform="translate(0.0000, 6.7760)">
+<rect x="21.5887" y="-0.1000" width="2.9430" height="0.2000" ry="0.1000" fill="currentColor"/>
+</g>
+<g transform="translate(0.0000, 6.7760)">
+<rect x="11.9567" y="-0.1000" width="2.9430" height="0.2000" ry="0.1000" fill="currentColor"/>
+</g>
+<g transform="translate(0.0000, 7.7760)">
+<rect x="11.9567" y="-0.1000" width="2.9430" height="0.2000" ry="0.1000" fill="currentColor"/>
+</g>
+<g transform="translate(0.0000, 5.7760)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(0.0000, 4.7760)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(0.0000, 3.7760)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(0.0000, 2.7760)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(0.0000, 1.7760)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(89.9936, 3.7760)">
+<rect x="0.0000" y="-2.0000" width="0.6000" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(89.5036, 3.7760)">
+<rect x="0.0000" y="-2.0000" width="0.1900" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(50.9754, 5.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(12.4472, 7.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(0.8000, 4.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M266 -635h-6c-108 0 -195 88 -195 197c0 58 53 103 112 103c54 0 95 -47 95 -103c0 -52 -43 -95 -95 -95c-11 0 -21 2 -31 6c26 -39 68 -65 117 -65h4zM401 151c19 -89 48 -242 60 -354c76 27 112 94 112 163c0 89 -60 179 -172 191zM74 28c0 -112 98 -247 278 -247
+c21 0 44 2 68 6c-7 64 -29 203 -63 364c-79 -8 -124 -61 -124 -119c0 -44 25 -91 81 -123c5 -5 7 -10 7 -15c0 -11 -10 -22 -22 -22c-15 0 -126 62 -126 187c0 88 58 174 160 197c-14 58 -29 117 -46 175c-107 -121 -213 -243 -213 -403zM357 1194c28 0 143 -206 143 -361
+c0 -143 -86 -255 -180 -364c21 -68 39 -138 56 -207c5 0 10 1 14 1c155 0 255 -129 255 -262c0 -113 -74 -212 -180 -245c3 -35 5 -70 5 -105c0 -19 -1 -39 -2 -58c-7 -119 -88 -225 -202 -228l1 43c93 2 153 92 159 191c1 18 2 37 2 55c0 31 -1 61 -4 92
+c-28 -5 -55 -8 -80 -8c-239 0 -342 217 -342 374c0 177 131 306 248 441c-29 96 -52 170 -52 346c0 189 144 295 159 295zM247 782c0 -55 12 -115 35 -190c82 100 147 202 147 326c0 40 -6 82 -21 127c-49 -24 -161 -97 -161 -263z" fill="currentColor"/>
+</g>
+<g transform="translate(12.5404, 10.8690)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>A</tspan>
+</text>
+</g>
+<g transform="translate(0.0000, 10.8690)">
+<text font-family="TeX Gyre Schola" font-weight="bold" font-size="2.2000" text-anchor="start" fill="currentColor">
+<tspan>Lá menor:</tspan>
+</text>
+</g>
+<g transform="translate(22.0792, 7.2760)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(22.1725, 10.8690)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>B</tspan>
+</text>
+</g>
+<g transform="translate(50.9754, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M10.4714 2.6893C10.5344 2.6425 10.5930 2.5944 10.6470 2.5450L10.6470 2.5450C10.5928 2.5905 10.5340 2.6349 10.4708 2.6781z"/>
+</g>
+<g transform="translate(50.9754, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M9.9222 3.0163C10.0051 2.9760 10.0844 2.9343 10.1597 2.8913L10.1583 2.8647C10.0828 2.9044 10.0034 2.9429 9.9204 2.9803z"/>
+</g>
+<g transform="translate(50.9754, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M9.2376 3.2940C9.3366 3.2604 9.4329 3.2253 9.5259 3.1890L9.5234 3.1403C9.4302 3.1741 9.3339 3.2066 9.2346 3.2379z"/>
+</g>
+<g transform="translate(50.9754, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M8.4450 3.5210C8.5566 3.4942 8.6661 3.4660 8.7732 3.4364L8.7698 3.3705C8.6626 3.3981 8.5530 3.4244 8.4413 3.4495z"/>
+</g>
+<g transform="translate(50.9754, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M7.5722 3.6959C7.6927 3.6761 7.8117 3.6549 7.9291 3.6323L7.9251 3.5537C7.8076 3.5750 7.6884 3.5949 7.5679 3.6136z"/>
+</g>
+<g transform="translate(50.9754, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M6.6467 3.8172C6.7724 3.8046 6.8974 3.7906 7.0214 3.7752L7.0169 3.6887C6.8928 3.7034 6.7678 3.7167 6.6421 3.7288z"/>
+</g>
+<g transform="translate(50.9754, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M5.6962 3.8834C5.8234 3.8783 5.9506 3.8717 6.0776 3.8636L6.0730 3.7738C5.9459 3.7818 5.8187 3.7884 5.6915 3.7936z"/>
+</g>
+<g transform="translate(50.9754, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M4.7483 3.8932C4.8733 3.8957 4.9991 3.8967 5.1254 3.8961L5.1208 3.8077C4.9945 3.8088 4.8688 3.8084 4.7438 3.8067z"/>
+</g>
+<g transform="translate(50.9754, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M3.8307 3.8451C3.9498 3.8554 4.0704 3.8642 4.1923 3.8713L4.1881 3.7890C4.0662 3.7830 3.9456 3.7755 3.8266 3.7665z"/>
+</g>
+<g transform="translate(50.9754, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M2.9709 3.7376C3.0805 3.7560 3.1923 3.7727 3.3061 3.7878L3.3024 3.7163C3.1887 3.7029 3.0769 3.6880 2.9675 3.6717z"/>
+</g>
+<g transform="translate(50.9754, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M2.1966 3.5694C2.2929 3.5960 2.3922 3.6208 2.4943 3.6441L2.4914 3.5880C2.3894 3.5671 2.2902 3.5447 2.1941 3.5208z"/>
+</g>
+<g transform="translate(50.9754, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M1.5354 3.3390C1.6148 3.3740 1.6979 3.4072 1.7845 3.4387L1.7827 3.4027C1.6962 3.3742 1.6132 3.3441 1.5340 3.3124z"/>
+</g>
+<g transform="translate(50.9754, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M1.0149 3.0450C1.0737 3.0885 1.1370 3.1303 1.2044 3.1703L1.2039 3.1591C1.1366 3.1227 1.0735 3.0846 1.0149 3.0450z"/>
+</g>
+<g transform="translate(31.7113, 6.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(31.8045, 10.8690)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>C</tspan>
+</text>
+</g>
+<g transform="translate(41.3433, 6.2760)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(41.3683, 10.8690)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>D</tspan>
+</text>
+</g>
+<g transform="translate(51.0686, 10.8690)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>E</tspan>
+</text>
+</g>
+<g transform="translate(60.6074, 5.2760)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(60.7690, 10.8690)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>F</tspan>
+</text>
+</g>
+<g transform="translate(22.0792, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M10.4714 4.1893C10.5344 4.1425 10.5930 4.0944 10.6470 4.0450L10.6470 4.0450C10.5928 4.0905 10.5340 4.1349 10.4708 4.1781z"/>
+</g>
+<g transform="translate(22.0792, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M9.9222 4.5163C10.0051 4.4760 10.0844 4.4343 10.1597 4.3913L10.1583 4.3647C10.0828 4.4044 10.0034 4.4429 9.9204 4.4803z"/>
+</g>
+<g transform="translate(22.0792, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M9.2376 4.7940C9.3366 4.7604 9.4329 4.7253 9.5259 4.6890L9.5234 4.6403C9.4302 4.6741 9.3339 4.7066 9.2346 4.7379z"/>
+</g>
+<g transform="translate(22.0792, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M8.4450 5.0210C8.5566 4.9942 8.6661 4.9660 8.7732 4.9364L8.7698 4.8705C8.6626 4.8981 8.5530 4.9244 8.4413 4.9495z"/>
+</g>
+<g transform="translate(22.0792, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M7.5722 5.1959C7.6927 5.1761 7.8117 5.1549 7.9291 5.1323L7.9251 5.0537C7.8076 5.0750 7.6884 5.0949 7.5679 5.1136z"/>
+</g>
+<g transform="translate(22.0792, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M6.6467 5.3172C6.7724 5.3046 6.8974 5.2906 7.0214 5.2752L7.0169 5.1887C6.8928 5.2034 6.7678 5.2167 6.6421 5.2288z"/>
+</g>
+<g transform="translate(22.0792, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M5.6962 5.3834C5.8234 5.3783 5.9506 5.3717 6.0776 5.3636L6.0730 5.2738C5.9459 5.2818 5.8187 5.2884 5.6915 5.2936z"/>
+</g>
+<g transform="translate(22.0792, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M4.7483 5.3932C4.8733 5.3957 4.9991 5.3967 5.1254 5.3961L5.1208 5.3077C4.9945 5.3088 4.8688 5.3084 4.7438 5.3067z"/>
+</g>
+<g transform="translate(22.0792, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M3.8307 5.3451C3.9498 5.3554 4.0704 5.3642 4.1923 5.3713L4.1881 5.2890C4.0662 5.2830 3.9456 5.2755 3.8266 5.2665z"/>
+</g>
+<g transform="translate(22.0792, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M2.9709 5.2376C3.0805 5.2560 3.1923 5.2727 3.3061 5.2878L3.3024 5.2163C3.1887 5.2029 3.0769 5.1880 2.9675 5.1717z"/>
+</g>
+<g transform="translate(22.0792, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M2.1966 5.0694C2.2929 5.0960 2.3922 5.1208 2.4943 5.1441L2.4914 5.0880C2.3894 5.0671 2.2902 5.0447 2.1941 5.0208z"/>
+</g>
+<g transform="translate(22.0792, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M1.5354 4.8390C1.6148 4.8740 1.6979 4.9072 1.7845 4.9387L1.7827 4.9027C1.6962 4.8742 1.6132 4.8441 1.5340 4.8124z"/>
+</g>
+<g transform="translate(22.0792, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M1.0149 4.5450C1.0737 4.5885 1.1370 4.6303 1.2044 4.6703L1.2039 4.6591C1.1366 4.6227 1.0735 4.5846 1.0149 4.5450z"/>
+</g>
+<g transform="translate(70.2395, 4.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(70.2645, 10.8690)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>G</tspan>
+</text>
+</g>
+<g transform="translate(79.8715, 4.2760)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(79.9648, 10.8690)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>A</tspan>
+</text>
+</g>
+</svg><p><audio class="figure-audio" controls preload="none"><source src="/audio/scale_aminor.m4a" type="audio/mp4"><source src="/audio/scale_aminor.mp3" type="audio/mpeg"></audio></p><figcaption><b class="figure-number">Figura 3.3.3.</b> Escala de A menor. A menor é a relativa menor de C Maior.<span class="figure-files"><a href="/scores/scale_aminor.ly" download>LilyPond</a> · <a href="/audio/scale_aminor.m4a" download>AAC</a> · <a href="/audio/scale_aminor.mp3" download>MP3</a></span></figcaption></figure>
+<p>Esta nova escala apresenta, relativamente à escala maior, uma sequência interna diferente de
+tons e meios-tons: T-s-T-T-s-T-T. Todas as escalas menores são relativas menores (de uma
+escala maior) e são sempre construídas no 6.º grau da sua respetiva relativa maior,
+apresentando sempre a mesma sequência interna de intervalos. Consequentemente, todas as
+escalas maiores são também relativas maiores e são obtidas a partir do 3.º grau da respetiva
+escala menor. Em conjunto:</p>
+<figure id="fig-escala-ebmajor-cminor" class="figure" data-score="scale_ebmajor_cminor_relative" data-cursor="[[0,16.64,1.78,5.78],[1.2,25.75,1.78,5.78],[2.4,34.86,1.78,5.78],[3.6,43.97,1.78,5.78],[4.8,53.07,1.78,5.78],[6,62.18,1.78,5.78],[7.2,71.29,1.78,5.78],[8.4,80.4,1.78,5.78],[9.6,16.64,12.38,16.380000000000003],[10.8,25.75,12.38,16.380000000000003],[12,34.86,12.38,16.380000000000003],[13.2,43.97,12.38,16.380000000000003],[14.4,53.07,12.38,16.380000000000003],[15.6,62.18,12.38,16.380000000000003],[16.8,71.29,12.38,16.380000000000003],[18,80.4,12.38,16.380000000000003]]"><svg class="score" role="img" aria-label="Figura 3.3.4. Escala Eb Maior e a respetiva relativa menor: C menor." xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.2" width="159.20mm" height="36.81mm" viewBox="0.0000 -0.0240 90.5936 20.9468">
+<style type="text/css">
+<![CDATA[
+tspan { white-space: pre; }
+]]>
+</style>
+<g transform="translate(0.0000, 5.7760)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(0.0000, 4.7760)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(0.0000, 3.7760)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(0.0000, 2.7760)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(0.0000, 1.7760)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(89.9936, 14.3768)">
+<rect x="0.0000" y="-2.0000" width="0.6000" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(89.5036, 14.3768)">
+<rect x="0.0000" y="-2.0000" width="0.1900" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(89.9936, 3.7760)">
+<rect x="0.0000" y="-2.0000" width="0.6000" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(89.5036, 3.7760)">
+<rect x="0.0000" y="-2.0000" width="0.1900" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(0.0000, 17.3768)">
+<rect x="16.1517" y="-0.1000" width="2.9430" height="0.2000" ry="0.1000" fill="currentColor"/>
+</g>
+<g transform="translate(0.0000, 16.3768)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(0.0000, 15.3768)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(0.0000, 14.3768)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(0.0000, 13.3768)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(0.0000, 12.3768)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(53.0979, 20.5928)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>G</tspan>
+</text>
+</g>
+<g transform="translate(16.6422, 5.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(0.8000, 4.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M266 -635h-6c-108 0 -195 88 -195 197c0 58 53 103 112 103c54 0 95 -47 95 -103c0 -52 -43 -95 -95 -95c-11 0 -21 2 -31 6c26 -39 68 -65 117 -65h4zM401 151c19 -89 48 -242 60 -354c76 27 112 94 112 163c0 89 -60 179 -172 191zM74 28c0 -112 98 -247 278 -247
+c21 0 44 2 68 6c-7 64 -29 203 -63 364c-79 -8 -124 -61 -124 -119c0 -44 25 -91 81 -123c5 -5 7 -10 7 -15c0 -11 -10 -22 -22 -22c-15 0 -126 62 -126 187c0 88 58 174 160 197c-14 58 -29 117 -46 175c-107 -121 -213 -243 -213 -403zM357 1194c28 0 143 -206 143 -361
+c0 -143 -86 -255 -180 -364c21 -68 39 -138 56 -207c5 0 10 1 14 1c155 0 255 -129 255 -262c0 -113 -74 -212 -180 -245c3 -35 5 -70 5 -105c0 -19 -1 -39 -2 -58c-7 -119 -88 -225 -202 -228l1 43c93 2 153 92 159 191c1 18 2 37 2 55c0 31 -1 61 -4 92
+c-28 -5 -55 -8 -80 -8c-239 0 -342 217 -342 374c0 177 131 306 248 441c-29 96 -52 170 -52 346c0 189 144 295 159 295zM247 782c0 -55 12 -115 35 -190c82 100 147 202 147 326c0 40 -6 82 -21 127c-49 -24 -161 -97 -161 -263z" fill="currentColor"/>
+</g>
+<g transform="translate(4.3050, 3.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M27 41l-1 -66v-11c0 -22 1 -44 4 -66c45 38 93 80 93 139c0 33 -14 67 -43 67c-31 0 -52 -30 -53 -63zM-15 -138l-12 595c8 5 18 8 27 8s19 -3 27 -8l-7 -345c25 21 58 34 91 34c52 0 89 -48 89 -102c0 -80 -86 -117 -147 -169c-15 -13 -24 -38 -45 -38
+c-13 0 -23 11 -23 25z" fill="currentColor"/>
+</g>
+<g transform="translate(5.2250, 2.2760)">
+<path transform="scale(0.0040, -0.0040)" d="M27 41l-1 -66v-11c0 -22 1 -44 4 -66c45 38 93 80 93 139c0 33 -14 67 -43 67c-31 0 -52 -30 -53 -63zM-15 -138l-12 595c8 5 18 8 27 8s19 -3 27 -8l-7 -345c25 21 58 34 91 34c52 0 89 -48 89 -102c0 -80 -86 -117 -147 -169c-15 -13 -24 -38 -45 -38
+c-13 0 -23 11 -23 25z" fill="currentColor"/>
+</g>
+<g transform="translate(6.1450, 4.2760)">
+<path transform="scale(0.0040, -0.0040)" d="M27 41l-1 -66v-11c0 -22 1 -44 4 -66c45 38 93 80 93 139c0 33 -14 67 -43 67c-31 0 -52 -30 -53 -63zM-15 -138l-12 595c8 5 18 8 27 8s19 -3 27 -8l-7 -345c25 21 58 34 91 34c52 0 89 -48 89 -102c0 -80 -86 -117 -147 -169c-15 -13 -24 -38 -45 -38
+c-13 0 -23 11 -23 25z" fill="currentColor"/>
+</g>
+<g transform="translate(15.9754, 9.2462)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>E</tspan>
+</text>
+</g>
+<g transform="translate(18.4709, 8.9462)">
+<path transform="scale(0.0040, -0.0040)" d="M27 41l-1 -66v-11c0 -22 1 -44 4 -66c45 38 93 80 93 139c0 33 -14 67 -43 67c-31 0 -52 -30 -53 -63zM-15 -138l-12 595c8 5 18 8 27 8s19 -3 27 -8l-7 -345c25 21 58 34 91 34c52 0 89 -48 89 -102c0 -80 -86 -117 -147 -169c-15 -13 -24 -38 -45 -38
+c-13 0 -23 11 -23 25z" fill="currentColor"/>
+</g>
+<g transform="translate(3.8650, 9.2462)">
+<text font-family="TeX Gyre Schola" font-weight="bold" font-size="2.2000" text-anchor="start" fill="currentColor">
+<tspan>E</tspan>
+</text>
+</g>
+<g transform="translate(6.2536, 8.9462)">
+<path transform="scale(0.0036, -0.0036)" d="M29 39l-2 -64v-11c0 -22 2 -43 5 -65c44 38 91 80 91 138c0 33 -13 66 -42 66c-31 0 -51 -31 -52 -64zM-28 454c9 5 18 8 28 8s19 -3 28 -8l-7 -343c25 23 58 36 92 36c51 0 87 -49 87 -103c0 -79 -84 -117 -144 -169c-16 -14 -25 -41 -47 -41c-14 0 -25 13 -25 27z" fill="currentColor"/>
+</g>
+<g transform="translate(7.5663, 9.2462)">
+<text font-family="TeX Gyre Schola" font-weight="bold" font-size="2.2000" text-anchor="start" fill="currentColor">
+<tspan>Maior:</tspan>
+</text>
+</g>
+<g transform="translate(16.6422, 17.3768)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(0.8000, 15.3768)">
+<path transform="scale(0.0040, -0.0040)" d="M266 -635h-6c-108 0 -195 88 -195 197c0 58 53 103 112 103c54 0 95 -47 95 -103c0 -52 -43 -95 -95 -95c-11 0 -21 2 -31 6c26 -39 68 -65 117 -65h4zM401 151c19 -89 48 -242 60 -354c76 27 112 94 112 163c0 89 -60 179 -172 191zM74 28c0 -112 98 -247 278 -247
+c21 0 44 2 68 6c-7 64 -29 203 -63 364c-79 -8 -124 -61 -124 -119c0 -44 25 -91 81 -123c5 -5 7 -10 7 -15c0 -11 -10 -22 -22 -22c-15 0 -126 62 -126 187c0 88 58 174 160 197c-14 58 -29 117 -46 175c-107 -121 -213 -243 -213 -403zM357 1194c28 0 143 -206 143 -361
+c0 -143 -86 -255 -180 -364c21 -68 39 -138 56 -207c5 0 10 1 14 1c155 0 255 -129 255 -262c0 -113 -74 -212 -180 -245c3 -35 5 -70 5 -105c0 -19 -1 -39 -2 -58c-7 -119 -88 -225 -202 -228l1 43c93 2 153 92 159 191c1 18 2 37 2 55c0 31 -1 61 -4 92
+c-28 -5 -55 -8 -80 -8c-239 0 -342 217 -342 374c0 177 131 306 248 441c-29 96 -52 170 -52 346c0 189 144 295 159 295zM247 782c0 -55 12 -115 35 -190c82 100 147 202 147 326c0 40 -6 82 -21 127c-49 -24 -161 -97 -161 -263z" fill="currentColor"/>
+</g>
+<g transform="translate(4.3050, 14.3768)">
+<path transform="scale(0.0040, -0.0040)" d="M27 41l-1 -66v-11c0 -22 1 -44 4 -66c45 38 93 80 93 139c0 33 -14 67 -43 67c-31 0 -52 -30 -53 -63zM-15 -138l-12 595c8 5 18 8 27 8s19 -3 27 -8l-7 -345c25 21 58 34 91 34c52 0 89 -48 89 -102c0 -80 -86 -117 -147 -169c-15 -13 -24 -38 -45 -38
+c-13 0 -23 11 -23 25z" fill="currentColor"/>
+</g>
+<g transform="translate(5.2250, 12.8768)">
+<path transform="scale(0.0040, -0.0040)" d="M27 41l-1 -66v-11c0 -22 1 -44 4 -66c45 38 93 80 93 139c0 33 -14 67 -43 67c-31 0 -52 -30 -53 -63zM-15 -138l-12 595c8 5 18 8 27 8s19 -3 27 -8l-7 -345c25 21 58 34 91 34c52 0 89 -48 89 -102c0 -80 -86 -117 -147 -169c-15 -13 -24 -38 -45 -38
+c-13 0 -23 11 -23 25z" fill="currentColor"/>
+</g>
+<g transform="translate(6.1450, 14.8768)">
+<path transform="scale(0.0040, -0.0040)" d="M27 41l-1 -66v-11c0 -22 1 -44 4 -66c45 38 93 80 93 139c0 33 -14 67 -43 67c-31 0 -52 -30 -53 -63zM-15 -138l-12 595c8 5 18 8 27 8s19 -3 27 -8l-7 -345c25 21 58 34 91 34c52 0 89 -48 89 -102c0 -80 -86 -117 -147 -169c-15 -13 -24 -38 -45 -38
+c-13 0 -23 11 -23 25z" fill="currentColor"/>
+</g>
+<g transform="translate(16.7354, 20.5928)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>C</tspan>
+</text>
+</g>
+<g transform="translate(5.4241, 20.5928)">
+<text font-family="TeX Gyre Schola" font-weight="bold" font-size="2.2000" text-anchor="start" fill="currentColor">
+<tspan>C menor:</tspan>
+</text>
+</g>
+<g transform="translate(15.6922, 5.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M37 -250c0 17 63 58 63 250s-63 233 -63 250c0 7 6 13 13 13c4 0 7 -2 10 -6c53 -76 90 -164 90 -257s-37 -181 -90 -257c-3 -4 -6 -6 -10 -6c-7 0 -13 6 -13 13z" fill="currentColor"/>
+</g>
+<g transform="translate(14.7722, 5.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M-37 250c0 -17 -63 -58 -63 -250s63 -233 63 -250c0 -7 -6 -13 -13 -13c-4 0 -7 2 -10 6c-53 76 -90 164 -90 257s37 181 90 257c3 4 6 6 10 6c7 0 13 -6 13 -13z" fill="currentColor"/>
+</g>
+<g transform="translate(14.8922, 5.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M27 41l-1 -66v-11c0 -22 1 -44 4 -66c45 38 93 80 93 139c0 33 -14 67 -43 67c-31 0 -52 -30 -53 -63zM-15 -138l-12 595c8 5 18 8 27 8s19 -3 27 -8l-7 -345c25 21 58 34 91 34c52 0 89 -48 89 -102c0 -80 -86 -117 -147 -169c-15 -13 -24 -38 -45 -38
+c-13 0 -23 11 -23 25z" fill="currentColor"/>
+</g>
+<g transform="translate(71.2882, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M9.9686 -0.3712C10.0283 -0.4132 10.0839 -0.4563 10.1352 -0.5004L10.1352 -0.5004C10.0836 -0.4602 10.0277 -0.4208 9.9678 -0.3824z"/>
+</g>
+<g transform="translate(71.2882, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M9.4498 -0.0751C9.5279 -0.1120 9.6027 -0.1499 9.6738 -0.1888L9.6719 -0.2155C9.6005 -0.1797 9.5255 -0.1449 9.4472 -0.1111z"/>
+</g>
+<g transform="translate(71.2882, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M8.8052 0.1810C8.8984 0.1496 8.9889 0.1171 9.0765 0.0835L9.0730 0.0349C8.9853 0.0659 8.8946 0.0960 8.8012 0.1250z"/>
+</g>
+<g transform="translate(71.2882, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M8.0603 0.3955C8.1652 0.3698 8.2681 0.3429 8.3687 0.3148L8.3640 0.2490C8.2633 0.2750 8.1602 0.3000 8.0552 0.3240z"/>
+</g>
+<g transform="translate(71.2882, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M7.2405 0.5664C7.3537 0.5466 7.4655 0.5256 7.5758 0.5034L7.5702 0.4249C7.4598 0.4457 7.3479 0.4655 7.2346 0.4842z"/>
+</g>
+<g transform="translate(71.2882, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M6.3710 0.6920C6.4891 0.6784 6.6066 0.6635 6.7231 0.6473L6.7170 0.5609C6.6004 0.5763 6.4829 0.5906 6.3647 0.6037z"/>
+</g>
+<g transform="translate(71.2882, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M5.4773 0.7704C5.5970 0.7632 5.7167 0.7547 5.8361 0.7448L5.8297 0.6552C5.7102 0.6649 5.5906 0.6734 5.4709 0.6808z"/>
+</g>
+<g transform="translate(71.2882, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M4.5848 0.7999C4.7026 0.7993 4.8211 0.7974 4.9401 0.7941L4.9338 0.7058C4.8149 0.7096 4.6964 0.7122 4.5786 0.7135z"/>
+</g>
+<g transform="translate(71.2882, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M3.7188 0.7786C3.8314 0.7849 3.9453 0.7898 4.0604 0.7934L4.0545 0.7112C3.9395 0.7088 3.8257 0.7051 3.7132 0.7002z"/>
+</g>
+<g transform="translate(71.2882, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M2.9047 0.7048C3.0087 0.7182 3.1147 0.7302 3.2225 0.7408L3.2174 0.6693C3.1097 0.6605 3.0038 0.6504 2.9000 0.6389z"/>
+</g>
+<g transform="translate(71.2882, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M2.1679 0.5765C2.2598 0.5974 2.3545 0.6167 2.4517 0.6345L2.4477 0.5784C2.3507 0.5630 2.2562 0.5462 2.1644 0.5280z"/>
+</g>
+<g transform="translate(71.2882, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M1.5337 0.3921C1.6103 0.4205 1.6903 0.4474 1.7734 0.4727L1.7709 0.4368C1.6879 0.4144 1.6082 0.3907 1.5318 0.3655z"/>
+</g>
+<g transform="translate(71.2882, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M1.0276 0.1496C1.0854 0.1859 1.1473 0.2206 1.2130 0.2537L1.2122 0.2425C1.1468 0.2130 1.0851 0.1821 1.0276 0.1496z"/>
+</g>
+<g transform="translate(25.7498, 5.2760)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(25.9114, 9.2462)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>F</tspan>
+</text>
+</g>
+<g transform="translate(25.7498, 16.8768)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(25.7748, 20.5928)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>D</tspan>
+</text>
+</g>
+<g transform="translate(34.8575, 4.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(34.8825, 9.2462)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>G</tspan>
+</text>
+</g>
+<g transform="translate(34.8575, 16.3768)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(34.1908, 20.5928)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>E</tspan>
+</text>
+</g>
+<g transform="translate(36.6862, 20.2928)">
+<path transform="scale(0.0040, -0.0040)" d="M27 41l-1 -66v-11c0 -22 1 -44 4 -66c45 38 93 80 93 139c0 33 -14 67 -43 67c-31 0 -52 -30 -53 -63zM-15 -138l-12 595c8 5 18 8 27 8s19 -3 27 -8l-7 -345c25 21 58 34 91 34c52 0 89 -48 89 -102c0 -80 -86 -117 -147 -169c-15 -13 -24 -38 -45 -38
+c-13 0 -23 11 -23 25z" fill="currentColor"/>
+</g>
+<g transform="translate(33.9075, 16.3768)">
+<path transform="scale(0.0040, -0.0040)" d="M37 -250c0 17 63 58 63 250s-63 233 -63 250c0 7 6 13 13 13c4 0 7 -2 10 -6c53 -76 90 -164 90 -257s-37 -181 -90 -257c-3 -4 -6 -6 -10 -6c-7 0 -13 6 -13 13z" fill="currentColor"/>
+</g>
+<g transform="translate(32.9875, 16.3768)">
+<path transform="scale(0.0040, -0.0040)" d="M-37 250c0 -17 -63 -58 -63 -250s63 -233 63 -250c0 -7 -6 -13 -13 -13c-4 0 -7 2 -10 6c-53 76 -90 164 -90 257s37 181 90 257c3 4 6 6 10 6c7 0 13 -6 13 -13z" fill="currentColor"/>
+</g>
+<g transform="translate(33.1075, 16.3768)">
+<path transform="scale(0.0040, -0.0040)" d="M27 41l-1 -66v-11c0 -22 1 -44 4 -66c45 38 93 80 93 139c0 33 -14 67 -43 67c-31 0 -52 -30 -53 -63zM-15 -138l-12 595c8 5 18 8 27 8s19 -3 27 -8l-7 -345c25 21 58 34 91 34c52 0 89 -48 89 -102c0 -80 -86 -117 -147 -169c-15 -13 -24 -38 -45 -38
+c-13 0 -23 11 -23 25z" fill="currentColor"/>
+</g>
+<g transform="translate(43.9652, 4.2760)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(43.2985, 9.2462)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>A</tspan>
+</text>
+</g>
+<g transform="translate(45.7939, 8.9462)">
+<path transform="scale(0.0040, -0.0040)" d="M27 41l-1 -66v-11c0 -22 1 -44 4 -66c45 38 93 80 93 139c0 33 -14 67 -43 67c-31 0 -52 -30 -53 -63zM-15 -138l-12 595c8 5 18 8 27 8s19 -3 27 -8l-7 -345c25 21 58 34 91 34c52 0 89 -48 89 -102c0 -80 -86 -117 -147 -169c-15 -13 -24 -38 -45 -38
+c-13 0 -23 11 -23 25z" fill="currentColor"/>
+</g>
+<g transform="translate(43.9652, 15.8768)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(44.1267, 20.5928)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>F</tspan>
+</text>
+</g>
+<g transform="translate(43.0152, 4.2760)">
+<path transform="scale(0.0040, -0.0040)" d="M37 -250c0 17 63 58 63 250s-63 233 -63 250c0 7 6 13 13 13c4 0 7 -2 10 -6c53 -76 90 -164 90 -257s-37 -181 -90 -257c-3 -4 -6 -6 -10 -6c-7 0 -13 6 -13 13z" fill="currentColor"/>
+</g>
+<g transform="translate(42.0952, 4.2760)">
+<path transform="scale(0.0040, -0.0040)" d="M-37 250c0 -17 -63 -58 -63 -250s63 -233 63 -250c0 -7 -6 -13 -13 -13c-4 0 -7 2 -10 6c-53 76 -90 164 -90 257s37 181 90 257c3 4 6 6 10 6c7 0 13 -6 13 -13z" fill="currentColor"/>
+</g>
+<g transform="translate(42.2152, 4.2760)">
+<path transform="scale(0.0040, -0.0040)" d="M27 41l-1 -66v-11c0 -22 1 -44 4 -66c45 38 93 80 93 139c0 33 -14 67 -43 67c-31 0 -52 -30 -53 -63zM-15 -138l-12 595c8 5 18 8 27 8s19 -3 27 -8l-7 -345c25 21 58 34 91 34c52 0 89 -48 89 -102c0 -80 -86 -117 -147 -169c-15 -13 -24 -38 -45 -38
+c-13 0 -23 11 -23 25z" fill="currentColor"/>
+</g>
+<g transform="translate(53.0729, 3.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(52.4061, 9.2462)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>B</tspan>
+</text>
+</g>
+<g transform="translate(54.9016, 8.9462)">
+<path transform="scale(0.0040, -0.0040)" d="M27 41l-1 -66v-11c0 -22 1 -44 4 -66c45 38 93 80 93 139c0 33 -14 67 -43 67c-31 0 -52 -30 -53 -63zM-15 -138l-12 595c8 5 18 8 27 8s19 -3 27 -8l-7 -345c25 21 58 34 91 34c52 0 89 -48 89 -102c0 -80 -86 -117 -147 -169c-15 -13 -24 -38 -45 -38
+c-13 0 -23 11 -23 25z" fill="currentColor"/>
+</g>
+<g transform="translate(53.0729, 15.3768)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(52.1229, 3.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M37 -250c0 17 63 58 63 250s-63 233 -63 250c0 7 6 13 13 13c4 0 7 -2 10 -6c53 -76 90 -164 90 -257s-37 -181 -90 -257c-3 -4 -6 -6 -10 -6c-7 0 -13 6 -13 13z" fill="currentColor"/>
+</g>
+<g transform="translate(51.2029, 3.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M-37 250c0 -17 -63 -58 -63 -250s63 -233 63 -250c0 -7 -6 -13 -13 -13c-4 0 -7 2 -10 6c-53 76 -90 164 -90 257s37 181 90 257c3 4 6 6 10 6c7 0 13 -6 13 -13z" fill="currentColor"/>
+</g>
+<g transform="translate(51.3229, 3.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M27 41l-1 -66v-11c0 -22 1 -44 4 -66c45 38 93 80 93 139c0 33 -14 67 -43 67c-31 0 -52 -30 -53 -63zM-15 -138l-12 595c8 5 18 8 27 8s19 -3 27 -8l-7 -345c25 21 58 34 91 34c52 0 89 -48 89 -102c0 -80 -86 -117 -147 -169c-15 -13 -24 -38 -45 -38
+c-13 0 -23 11 -23 25z" fill="currentColor"/>
+</g>
+<g transform="translate(62.1805, 3.2760)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(62.2738, 9.2462)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>C</tspan>
+</text>
+</g>
+<g transform="translate(62.1805, 14.8768)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(61.5138, 20.5928)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>A</tspan>
+</text>
+</g>
+<g transform="translate(64.0093, 20.2928)">
+<path transform="scale(0.0040, -0.0040)" d="M27 41l-1 -66v-11c0 -22 1 -44 4 -66c45 38 93 80 93 139c0 33 -14 67 -43 67c-31 0 -52 -30 -53 -63zM-15 -138l-12 595c8 5 18 8 27 8s19 -3 27 -8l-7 -345c25 21 58 34 91 34c52 0 89 -48 89 -102c0 -80 -86 -117 -147 -169c-15 -13 -24 -38 -45 -38
+c-13 0 -23 11 -23 25z" fill="currentColor"/>
+</g>
+<g transform="translate(61.2305, 14.8768)">
+<path transform="scale(0.0040, -0.0040)" d="M37 -250c0 17 63 58 63 250s-63 233 -63 250c0 7 6 13 13 13c4 0 7 -2 10 -6c53 -76 90 -164 90 -257s-37 -181 -90 -257c-3 -4 -6 -6 -10 -6c-7 0 -13 6 -13 13z" fill="currentColor"/>
+</g>
+<g transform="translate(60.3105, 14.8768)">
+<path transform="scale(0.0040, -0.0040)" d="M-37 250c0 -17 -63 -58 -63 -250s63 -233 63 -250c0 -7 -6 -13 -13 -13c-4 0 -7 2 -10 6c-53 76 -90 164 -90 257s37 181 90 257c3 4 6 6 10 6c7 0 13 -6 13 -13z" fill="currentColor"/>
+</g>
+<g transform="translate(60.4305, 14.8768)">
+<path transform="scale(0.0040, -0.0040)" d="M27 41l-1 -66v-11c0 -22 1 -44 4 -66c45 38 93 80 93 139c0 33 -14 67 -43 67c-31 0 -52 -30 -53 -63zM-15 -138l-12 595c8 5 18 8 27 8s19 -3 27 -8l-7 -345c25 21 58 34 91 34c52 0 89 -48 89 -102c0 -80 -86 -117 -147 -169c-15 -13 -24 -38 -45 -38
+c-13 0 -23 11 -23 25z" fill="currentColor"/>
+</g>
+<g transform="translate(53.0729, 14.3768)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M9.9686 1.6895C10.0283 1.6425 10.0839 1.5943 10.1352 1.5450L10.1352 1.5450C10.0836 1.5905 10.0277 1.6349 9.9678 1.6783z"/>
+</g>
+<g transform="translate(53.0729, 14.3768)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M9.4498 2.0193C9.5279 1.9784 9.6027 1.9362 9.6738 1.8928L9.6719 1.8662C9.6005 1.9064 9.5255 1.9454 9.4472 1.9834z"/>
+</g>
+<g transform="translate(53.0729, 14.3768)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M8.8052 2.3029C8.8984 2.2682 8.9889 2.2323 9.0765 2.1951L9.0730 2.1465C8.9853 2.1811 8.8946 2.2146 8.8012 2.2468z"/>
+</g>
+<g transform="translate(53.0729, 14.3768)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M8.0603 2.5383C8.1652 2.5102 8.2681 2.4808 8.3687 2.4500L8.3640 2.3842C8.2633 2.4129 8.1602 2.4405 8.0552 2.4669z"/>
+</g>
+<g transform="translate(53.0729, 14.3768)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M7.2405 2.7239C7.3537 2.7026 7.4655 2.6799 7.5758 2.6558L7.5702 2.5773C7.4598 2.6000 7.3479 2.6215 7.2346 2.6417z"/>
+</g>
+<g transform="translate(53.0729, 14.3768)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M6.3710 2.8578C6.4891 2.8435 6.6066 2.8277 6.7231 2.8106L6.7170 2.7242C6.6004 2.7406 6.4829 2.7557 6.3647 2.7695z"/>
+</g>
+<g transform="translate(53.0729, 14.3768)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M5.4773 2.9382C5.5970 2.9311 5.7167 2.9225 5.8361 2.9126L5.8297 2.8229C5.7102 2.8327 5.5906 2.8413 5.4709 2.8485z"/>
+</g>
+<g transform="translate(53.0729, 14.3768)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M4.5848 2.9632C4.7026 2.9636 4.8211 2.9625 4.9401 2.9599L4.9338 2.8716C4.8149 2.8747 4.6964 2.8765 4.5786 2.8768z"/>
+</g>
+<g transform="translate(53.0729, 14.3768)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M3.7188 2.9311C3.8314 2.9392 3.9453 2.9458 4.0604 2.9509L4.0545 2.8687C3.9395 2.8648 3.8257 2.8594 3.7132 2.8526z"/>
+</g>
+<g transform="translate(53.0729, 14.3768)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M2.9047 2.8400C3.0087 2.8562 3.1147 2.8707 3.2225 2.8836L3.2174 2.8122C3.1097 2.8010 3.0038 2.7883 2.9000 2.7741z"/>
+</g>
+<g transform="translate(53.0729, 14.3768)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M2.1679 2.6882C2.2598 2.7126 2.3545 2.7353 2.4517 2.7563L2.4477 2.7003C2.3507 2.6816 2.2562 2.6614 2.1644 2.6396z"/>
+</g>
+<g transform="translate(53.0729, 14.3768)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M1.5337 2.4738C1.6103 2.5066 1.6903 2.5377 1.7734 2.5672L1.7709 2.5312C1.6879 2.5048 1.6082 2.4768 1.5318 2.4472z"/>
+</g>
+<g transform="translate(53.0729, 14.3768)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M1.0276 2.1950C1.0854 2.2365 1.1473 2.2763 1.2130 2.3144L1.2122 2.3031C1.1468 2.2687 1.0851 2.2327 1.0276 2.1950z"/>
+</g>
+<g transform="translate(71.2882, 2.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(71.3132, 9.2462)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>D</tspan>
+</text>
+</g>
+<g transform="translate(71.2882, 14.3768)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(70.6215, 20.5928)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>B</tspan>
+</text>
+</g>
+<g transform="translate(73.1169, 20.2928)">
+<path transform="scale(0.0040, -0.0040)" d="M27 41l-1 -66v-11c0 -22 1 -44 4 -66c45 38 93 80 93 139c0 33 -14 67 -43 67c-31 0 -52 -30 -53 -63zM-15 -138l-12 595c8 5 18 8 27 8s19 -3 27 -8l-7 -345c25 21 58 34 91 34c52 0 89 -48 89 -102c0 -80 -86 -117 -147 -169c-15 -13 -24 -38 -45 -38
+c-13 0 -23 11 -23 25z" fill="currentColor"/>
+</g>
+<g transform="translate(70.3382, 14.3768)">
+<path transform="scale(0.0040, -0.0040)" d="M37 -250c0 17 63 58 63 250s-63 233 -63 250c0 7 6 13 13 13c4 0 7 -2 10 -6c53 -76 90 -164 90 -257s-37 -181 -90 -257c-3 -4 -6 -6 -10 -6c-7 0 -13 6 -13 13z" fill="currentColor"/>
+</g>
+<g transform="translate(69.4182, 14.3768)">
+<path transform="scale(0.0040, -0.0040)" d="M-37 250c0 -17 -63 -58 -63 -250s63 -233 63 -250c0 -7 -6 -13 -13 -13c-4 0 -7 2 -10 6c-53 76 -90 164 -90 257s37 181 90 257c3 4 6 6 10 6c7 0 13 -6 13 -13z" fill="currentColor"/>
+</g>
+<g transform="translate(69.5382, 14.3768)">
+<path transform="scale(0.0040, -0.0040)" d="M27 41l-1 -66v-11c0 -22 1 -44 4 -66c45 38 93 80 93 139c0 33 -14 67 -43 67c-31 0 -52 -30 -53 -63zM-15 -138l-12 595c8 5 18 8 27 8s19 -3 27 -8l-7 -345c25 21 58 34 91 34c52 0 89 -48 89 -102c0 -80 -86 -117 -147 -169c-15 -13 -24 -38 -45 -38
+c-13 0 -23 11 -23 25z" fill="currentColor"/>
+</g>
+<g transform="translate(80.3959, 2.2760)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(79.7292, 9.2462)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>E</tspan>
+</text>
+</g>
+<g transform="translate(82.2246, 8.9462)">
+<path transform="scale(0.0040, -0.0040)" d="M27 41l-1 -66v-11c0 -22 1 -44 4 -66c45 38 93 80 93 139c0 33 -14 67 -43 67c-31 0 -52 -30 -53 -63zM-15 -138l-12 595c8 5 18 8 27 8s19 -3 27 -8l-7 -345c25 21 58 34 91 34c52 0 89 -48 89 -102c0 -80 -86 -117 -147 -169c-15 -13 -24 -38 -45 -38
+c-13 0 -23 11 -23 25z" fill="currentColor"/>
+</g>
+<g transform="translate(80.3959, 13.8768)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(80.4892, 20.5928)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>C</tspan>
+</text>
+</g>
+<g transform="translate(79.4459, 2.2760)">
+<path transform="scale(0.0040, -0.0040)" d="M37 -250c0 17 63 58 63 250s-63 233 -63 250c0 7 6 13 13 13c4 0 7 -2 10 -6c53 -76 90 -164 90 -257s-37 -181 -90 -257c-3 -4 -6 -6 -10 -6c-7 0 -13 6 -13 13z" fill="currentColor"/>
+</g>
+<g transform="translate(78.5259, 2.2760)">
+<path transform="scale(0.0040, -0.0040)" d="M-37 250c0 -17 -63 -58 -63 -250s63 -233 63 -250c0 -7 -6 -13 -13 -13c-4 0 -7 2 -10 6c-53 76 -90 164 -90 257s37 181 90 257c3 4 6 6 10 6c7 0 13 -6 13 -13z" fill="currentColor"/>
+</g>
+<g transform="translate(78.6459, 2.2760)">
+<path transform="scale(0.0040, -0.0040)" d="M27 41l-1 -66v-11c0 -22 1 -44 4 -66c45 38 93 80 93 139c0 33 -14 67 -43 67c-31 0 -52 -30 -53 -63zM-15 -138l-12 595c8 5 18 8 27 8s19 -3 27 -8l-7 -345c25 21 58 34 91 34c52 0 89 -48 89 -102c0 -80 -86 -117 -147 -169c-15 -13 -24 -38 -45 -38
+c-13 0 -23 11 -23 25z" fill="currentColor"/>
+</g>
+<g transform="translate(25.7498, 14.3768)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M9.9557 3.1867C10.0160 3.1407 10.0724 3.0935 10.1245 3.0450L10.1245 3.0450C10.0722 3.0896 10.0156 3.1331 9.9550 3.1755z"/>
+</g>
+<g transform="translate(25.7498, 14.3768)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M9.4319 3.5078C9.5106 3.4682 9.5860 3.4273 9.6578 3.3851L9.6563 3.3584C9.5844 3.3974 9.5088 3.4352 9.4300 3.4718z"/>
+</g>
+<g transform="translate(25.7498, 14.3768)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M8.7835 3.7806C8.8771 3.7475 8.9681 3.7131 9.0562 3.6774L9.0535 3.6288C8.9653 3.6619 8.8742 3.6938 8.7804 3.7245z"/>
+</g>
+<g transform="translate(25.7498, 14.3768)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M8.0356 4.0037C8.1408 3.9774 8.2441 3.9496 8.3451 3.9205L8.3414 3.8546C8.2403 3.8817 8.1370 3.9076 8.0317 3.9322z"/>
+</g>
+<g transform="translate(25.7498, 14.3768)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M7.2137 4.1757C7.3271 4.1563 7.4392 4.1354 7.5497 4.1132L7.5454 4.0346C7.4348 4.0555 7.3227 4.0751 7.2092 4.0935z"/>
+</g>
+<g transform="translate(25.7498, 14.3768)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M6.3432 4.2953C6.4614 4.2829 6.5789 4.2691 6.6956 4.2538L6.6909 4.1673C6.5741 4.1818 6.4565 4.1950 6.3383 4.2069z"/>
+</g>
+<g transform="translate(25.7498, 14.3768)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M5.4493 4.3609C5.5689 4.3558 5.6886 4.3492 5.8080 4.3412L5.8031 4.2514C5.6836 4.2593 5.5640 4.2659 5.4444 4.2711z"/>
+</g>
+<g transform="translate(25.7498, 14.3768)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M4.5575 4.3712C4.6751 4.3736 4.7935 4.3744 4.9123 4.3738L4.9075 4.2854C4.7887 4.2866 4.6703 4.2863 4.5527 4.2847z"/>
+</g>
+<g transform="translate(25.7498, 14.3768)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M3.6931 4.3249C3.8054 4.3349 3.9191 4.3434 4.0339 4.3503L4.0294 4.2680C3.9146 4.2622 3.8010 4.2550 3.6888 4.2463z"/>
+</g>
+<g transform="translate(25.7498, 14.3768)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M2.8815 4.2205C2.9850 4.2383 3.0907 4.2546 3.1982 4.2693L3.1942 4.1978C3.0869 4.1848 2.9813 4.1704 2.8779 4.1546z"/>
+</g>
+<g transform="translate(25.7498, 14.3768)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M2.1480 4.0566C2.2394 4.0825 2.3337 4.1068 2.4304 4.1294L2.4273 4.0733C2.3307 4.0530 2.2366 4.0313 2.1453 4.0080z"/>
+</g>
+<g transform="translate(25.7498, 14.3768)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M1.5180 3.8319C1.5940 3.8660 1.6734 3.8984 1.7559 3.9292L1.7540 3.8932C1.6716 3.8654 1.5923 3.8361 1.5165 3.8053z"/>
+</g>
+<g transform="translate(25.7498, 14.3768)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M1.0168 3.5450C1.0740 3.5875 1.1352 3.6282 1.2002 3.6673L1.1996 3.6561C1.1347 3.6206 1.0737 3.5836 1.0168 3.5450z"/>
+</g>
+<g transform="translate(34.8575, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M9.9686 1.6895C10.0283 1.6425 10.0839 1.5943 10.1352 1.5450L10.1352 1.5450C10.0836 1.5905 10.0277 1.6349 9.9678 1.6783z"/>
+</g>
+<g transform="translate(34.8575, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M9.4498 2.0193C9.5279 1.9784 9.6027 1.9362 9.6738 1.8928L9.6719 1.8662C9.6005 1.9064 9.5255 1.9454 9.4472 1.9834z"/>
+</g>
+<g transform="translate(34.8575, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M8.8052 2.3029C8.8984 2.2682 8.9889 2.2323 9.0765 2.1951L9.0730 2.1465C8.9853 2.1811 8.8946 2.2146 8.8012 2.2468z"/>
+</g>
+<g transform="translate(34.8575, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M8.0603 2.5383C8.1652 2.5102 8.2681 2.4808 8.3687 2.4500L8.3640 2.3842C8.2633 2.4129 8.1602 2.4405 8.0552 2.4669z"/>
+</g>
+<g transform="translate(34.8575, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M7.2405 2.7239C7.3537 2.7026 7.4655 2.6799 7.5758 2.6558L7.5702 2.5773C7.4598 2.6000 7.3479 2.6215 7.2346 2.6417z"/>
+</g>
+<g transform="translate(34.8575, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M6.3710 2.8578C6.4891 2.8435 6.6066 2.8277 6.7231 2.8106L6.7170 2.7242C6.6004 2.7406 6.4829 2.7557 6.3647 2.7695z"/>
+</g>
+<g transform="translate(34.8575, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M5.4773 2.9382C5.5970 2.9311 5.7167 2.9225 5.8361 2.9126L5.8297 2.8229C5.7102 2.8327 5.5906 2.8413 5.4709 2.8485z"/>
+</g>
+<g transform="translate(34.8575, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M4.5848 2.9632C4.7026 2.9636 4.8211 2.9625 4.9401 2.9599L4.9338 2.8716C4.8149 2.8747 4.6964 2.8765 4.5786 2.8768z"/>
+</g>
+<g transform="translate(34.8575, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M3.7188 2.9311C3.8314 2.9392 3.9453 2.9458 4.0604 2.9509L4.0545 2.8687C3.9395 2.8648 3.8257 2.8594 3.7132 2.8526z"/>
+</g>
+<g transform="translate(34.8575, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M2.9047 2.8400C3.0087 2.8562 3.1147 2.8707 3.2225 2.8836L3.2174 2.8122C3.1097 2.8010 3.0038 2.7883 2.9000 2.7741z"/>
+</g>
+<g transform="translate(34.8575, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M2.1679 2.6882C2.2598 2.7126 2.3545 2.7353 2.4517 2.7563L2.4477 2.7003C2.3507 2.6816 2.2562 2.6614 2.1644 2.6396z"/>
+</g>
+<g transform="translate(34.8575, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M1.5337 2.4738C1.6103 2.5066 1.6903 2.5377 1.7734 2.5672L1.7709 2.5312C1.6879 2.5048 1.6082 2.4768 1.5318 2.4472z"/>
+</g>
+<g transform="translate(34.8575, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M1.0276 2.1950C1.0854 2.2365 1.1473 2.2763 1.2130 2.3144L1.2122 2.3031C1.1468 2.2687 1.0851 2.2327 1.0276 2.1950z"/>
+</g>
+</svg><p><audio class="figure-audio" controls preload="none"><source src="/audio/scale_ebmajor_cminor_relative.m4a" type="audio/mp4"><source src="/audio/scale_ebmajor_cminor_relative.mp3" type="audio/mpeg"></audio></p><figcaption><b class="figure-number">Figura 3.3.4.</b> Escala Eb Maior e a respetiva relativa menor: C menor.<span class="figure-files"><a href="/scores/scale_ebmajor_cminor_relative.ly" download>LilyPond</a> · <a href="/audio/scale_ebmajor_cminor_relative.m4a" download>AAC</a> · <a href="/audio/scale_ebmajor_cminor_relative.mp3" download>MP3</a></span></figcaption></figure>
+<p>Como as escalas menores partilham as mesmas notas da sua relativa maior, estas apresentam a
+mesma armação de clave. Como exemplo, a relativa menor de Eb Maior é C menor e a armação de
+clave de ambas as tonalidades, Eb Maior e C menor, é composta por [Bb, Eb, Ab].</p>
+<h2 id="escala-paralela-menor">Escala paralela menor</h2>
+<p>Denominam-se de escalas paralelas às escalas musicais maiores e menores que partilham a mesma
+tónica. Por exemplo, a escala de C Maior e C menor são escalas paralelas, assim como D Maior e
+D menor. Exemplo:</p>
+<figure id="fig-escala-dmajor-dminor" class="figure" data-score="scale_dmajor_dminor_parallel" data-cursor="[[0,11.42,1.78,5.78],[1.2,20.98,1.78,5.78],[2.4,31.88,1.78,5.78],[3.6,41.44,1.78,5.78],[4.8,50.99,1.78,5.78],[6,61.72,1.78,5.78],[7.2,72.62,1.78,5.78],[8.4,82.18,1.78,5.78],[9.6,11.42,12.71,16.71],[10.8,20.98,12.71,16.71],[12,31.88,12.71,16.71],[13.2,41.44,12.71,16.71],[14.4,50.99,12.71,16.71],[15.6,61.72,12.71,16.71],[16.8,72.62,12.71,16.71],[18,82.18,12.71,16.71]]"><svg class="score" role="img" aria-label="Figura 3.3.5. Escala de D Maior e respetiva escala paralela D menor." xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.2" width="159.20mm" height="36.55mm" viewBox="0.0000 -0.0240 90.5936 20.7997">
+<style type="text/css">
+<![CDATA[
+tspan { white-space: pre; }
+]]>
+</style>
+<g transform="translate(18.7488, 3.7760)">
+<rect x="0.0000" y="-2.0000" width="0.1900" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(0.0000, 5.7760)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(0.0000, 4.7760)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(0.0000, 3.7760)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(0.0000, 2.7760)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(0.0000, 1.7760)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(89.9936, 14.7135)">
+<rect x="0.0000" y="-2.0000" width="0.6000" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(89.5036, 14.7135)">
+<rect x="0.0000" y="-2.0000" width="0.1900" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(89.9936, 3.7760)">
+<rect x="0.0000" y="-2.0000" width="0.6000" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(89.5036, 3.7760)">
+<rect x="0.0000" y="-2.0000" width="0.1900" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(0.0000, 16.7135)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(0.0000, 15.7135)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(0.0000, 14.7135)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(0.0000, 13.7135)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(0.0000, 12.7135)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(79.9486, 14.7135)">
+<rect x="0.0000" y="-2.0000" width="0.1900" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(79.9486, 3.7760)">
+<rect x="0.0000" y="-2.0000" width="0.1900" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(69.0436, 14.7135)">
+<rect x="0.0000" y="-2.0000" width="0.1900" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(69.0436, 3.7760)">
+<rect x="0.0000" y="-2.0000" width="0.1900" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(58.3187, 14.7135)">
+<rect x="0.0000" y="-2.0000" width="0.1900" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(58.3187, 3.7760)">
+<rect x="0.0000" y="-2.0000" width="0.1900" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(48.7637, 14.7135)">
+<rect x="0.0000" y="-2.0000" width="0.1900" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(48.7637, 3.7760)">
+<rect x="0.0000" y="-2.0000" width="0.1900" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(39.2088, 14.7135)">
+<rect x="0.0000" y="-2.0000" width="0.1900" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(39.2088, 3.7760)">
+<rect x="0.0000" y="-2.0000" width="0.1900" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(28.3038, 14.7135)">
+<rect x="0.0000" y="-2.0000" width="0.1900" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(28.3038, 3.7760)">
+<rect x="0.0000" y="-2.0000" width="0.1900" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(18.7488, 14.7135)">
+<rect x="0.0000" y="-2.0000" width="0.1900" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(11.4479, 20.4457)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>D</tspan>
+</text>
+</g>
+<g transform="translate(0.0000, 20.4457)">
+<text font-family="TeX Gyre Schola" font-weight="bold" font-size="2.2000" text-anchor="start" fill="currentColor">
+<tspan>D menor:</tspan>
+</text>
+</g>
+<g transform="translate(20.9778, 5.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(0.8000, 15.7135)">
+<path transform="scale(0.0040, -0.0040)" d="M266 -635h-6c-108 0 -195 88 -195 197c0 58 53 103 112 103c54 0 95 -47 95 -103c0 -52 -43 -95 -95 -95c-11 0 -21 2 -31 6c26 -39 68 -65 117 -65h4zM401 151c19 -89 48 -242 60 -354c76 27 112 94 112 163c0 89 -60 179 -172 191zM74 28c0 -112 98 -247 278 -247
+c21 0 44 2 68 6c-7 64 -29 203 -63 364c-79 -8 -124 -61 -124 -119c0 -44 25 -91 81 -123c5 -5 7 -10 7 -15c0 -11 -10 -22 -22 -22c-15 0 -126 62 -126 187c0 88 58 174 160 197c-14 58 -29 117 -46 175c-107 -121 -213 -243 -213 -403zM357 1194c28 0 143 -206 143 -361
+c0 -143 -86 -255 -180 -364c21 -68 39 -138 56 -207c5 0 10 1 14 1c155 0 255 -129 255 -262c0 -113 -74 -212 -180 -245c3 -35 5 -70 5 -105c0 -19 -1 -39 -2 -58c-7 -119 -88 -225 -202 -228l1 43c93 2 153 92 159 191c1 18 2 37 2 55c0 31 -1 61 -4 92
+c-28 -5 -55 -8 -80 -8c-239 0 -342 217 -342 374c0 177 131 306 248 441c-29 96 -52 170 -52 346c0 189 144 295 159 295zM247 782c0 -55 12 -115 35 -190c82 100 147 202 147 326c0 40 -6 82 -21 127c-49 -24 -161 -97 -161 -263z" fill="currentColor"/>
+</g>
+<g transform="translate(21.0711, 9.4045)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>E</tspan>
+</text>
+</g>
+<g transform="translate(20.9778, 16.7135)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(11.4229, 17.2135)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(21.0711, 20.4457)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>E</tspan>
+</text>
+</g>
+<g transform="translate(72.6227, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M10.3832 0.3361C10.4465 0.2904 10.5055 0.2434 10.5599 0.1950L10.5599 0.1950C10.5053 0.2395 10.4462 0.2828 10.3828 0.3249z"/>
+</g>
+<g transform="translate(72.6227, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M9.8330 0.6536C9.9158 0.6147 9.9951 0.5744 10.0705 0.5327L10.0696 0.5061C9.9940 0.5445 9.9146 0.5817 9.8317 0.6176z"/>
+</g>
+<g transform="translate(72.6227, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M9.1498 0.9199C9.2485 0.8879 9.3445 0.8544 9.4373 0.8196L9.4355 0.7710C9.3426 0.8032 9.2466 0.8341 9.1477 0.8638z"/>
+</g>
+<g transform="translate(72.6227, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M8.3609 1.1340C8.4719 1.1090 8.5809 1.0825 8.6874 1.0547L8.6850 0.9887C8.5784 1.0145 8.4694 1.0391 8.3583 1.0624z"/>
+</g>
+<g transform="translate(72.6227, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M7.4936 1.2948C7.6133 1.2769 7.7316 1.2576 7.8482 1.2369L7.8453 1.1583C7.7286 1.1776 7.6103 1.1957 7.4906 1.2124z"/>
+</g>
+<g transform="translate(72.6227, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M6.5751 1.4014C6.6998 1.3908 6.8238 1.3788 6.9469 1.3653L6.9437 1.2787C6.8206 1.2915 6.6966 1.3029 6.5719 1.3129z"/>
+</g>
+<g transform="translate(72.6227, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M5.6328 1.4527C5.7588 1.4496 5.8849 1.4450 6.0109 1.4389L6.0076 1.3490C5.8816 1.3550 5.7555 1.3596 5.6295 1.3629z"/>
+</g>
+<g transform="translate(72.6227, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M4.6939 1.4478C4.8176 1.4523 4.9422 1.4552 5.0673 1.4566L5.0640 1.3681C4.9390 1.3672 4.8144 1.3650 4.6907 1.3613z"/>
+</g>
+<g transform="translate(72.6227, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M3.7856 1.3857C3.9035 1.3979 4.0228 1.4084 4.1435 1.4175L4.1405 1.3351C4.0199 1.3272 3.9005 1.3179 3.7827 1.3071z"/>
+</g>
+<g transform="translate(72.6227, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M2.9353 1.2654C3.0436 1.2854 3.1542 1.3037 3.2667 1.3206L3.2641 1.2490C3.1516 1.2339 3.0411 1.2174 2.9329 1.1994z"/>
+</g>
+<g transform="translate(72.6227, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M2.1702 1.0858C2.2654 1.1137 2.3635 1.1401 2.4643 1.1648L2.4622 1.1087C2.3615 1.0863 2.2635 1.0625 2.1685 1.0371z"/>
+</g>
+<g transform="translate(72.6227, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M1.5177 0.8460C1.5960 0.8821 1.6780 0.9165 1.7635 0.9492L1.7622 0.9132C1.6768 0.8834 1.5949 0.8521 1.5167 0.8193z"/>
+</g>
+<g transform="translate(72.6227, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M1.0049 0.5450C1.0628 0.5893 1.1251 0.6319 1.1915 0.6728L1.1911 0.6616C1.1248 0.6243 1.0626 0.5854 1.0049 0.5450z"/>
+</g>
+<g transform="translate(31.8828, 5.2760)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(0.5804, 9.4045)">
+<text font-family="TeX Gyre Schola" font-weight="bold" font-size="2.2000" text-anchor="start" fill="currentColor">
+<tspan>D Maior:</tspan>
+</text>
+</g>
+<g transform="translate(31.3554, 9.4045)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>F</tspan>
+</text>
+</g>
+<g transform="translate(33.5943, 8.9045)">
+<path transform="scale(0.0028, -0.0028)" d="M0 114c0 12 7 22 18 26l37 15v151c0 12 10 22 22 22s22 -10 22 -22v-134l77 29v152c0 12 10 22 22 22s22 -10 22 -22v-134l16 6c3 1 8 2 11 2c15 0 28 -12 28 -28v-50c0 -12 -7 -23 -18 -27l-37 -14v-152l16 7c3 1 8 2 11 2c15 0 28 -13 28 -29v-50c0 -12 -7 -22 -18 -26
+l-37 -15v-151c0 -12 -10 -22 -22 -22s-22 10 -22 22v134l-77 -29v-152c0 -12 -10 -22 -22 -22s-22 10 -22 22v134l-16 -6c-3 -1 -8 -2 -11 -2c-15 0 -28 12 -28 28v50c0 12 7 23 18 27l37 14v152l-16 -7c-3 -1 -8 -2 -11 -2c-15 0 -28 13 -28 29v50zM176 91l-77 -30v-152
+l77 30v152z" fill="currentColor"/>
+</g>
+<g transform="translate(31.8828, 16.2135)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(11.4479, 9.4045)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>D</tspan>
+</text>
+</g>
+<g transform="translate(32.0444, 20.4457)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>F</tspan>
+</text>
+</g>
+<g transform="translate(30.9328, 5.2760)">
+<path transform="scale(0.0040, -0.0040)" d="M37 -250c0 17 63 58 63 250s-63 233 -63 250c0 7 6 13 13 13c4 0 7 -2 10 -6c53 -76 90 -164 90 -257s-37 -181 -90 -257c-3 -4 -6 -6 -10 -6c-7 0 -13 6 -13 13z" fill="currentColor"/>
+</g>
+<g transform="translate(29.8328, 5.2760)">
+<path transform="scale(0.0040, -0.0040)" d="M-37 250c0 -17 -63 -58 -63 -250s63 -233 63 -250c0 -7 -6 -13 -13 -13c-4 0 -7 2 -10 6c-53 76 -90 164 -90 257s37 181 90 257c3 4 6 6 10 6c7 0 13 -6 13 -13z" fill="currentColor"/>
+</g>
+<g transform="translate(29.8328, 5.2760)">
+<path transform="scale(0.0040, -0.0040)" d="M0 119c0 8 5 15 13 18l46 17v158c0 10 8 19 18 19s19 -9 19 -19v-145l83 31v158c0 10 9 19 19 19s18 -9 18 -19v-145l32 12c2 1 5 1 7 1c11 0 20 -9 20 -20v-60c0 -8 -5 -16 -13 -19l-46 -16v-160l32 11c2 1 5 1 7 1c11 0 20 -9 20 -20v-60c0 -8 -5 -15 -13 -18l-46 -17
+v-158c0 -10 -8 -19 -18 -19s-19 9 -19 19v145l-83 -31v-158c0 -10 -9 -19 -19 -19s-18 9 -18 19v145l-32 -12c-2 -1 -5 -1 -7 -1c-11 0 -20 9 -20 20v60c0 8 5 16 13 19l46 16v160l-32 -11c-2 -1 -5 -1 -7 -1c-11 0 -20 9 -20 20v60zM179 95l-83 -30v-160l83 30v160z" fill="currentColor"/>
+</g>
+<g transform="translate(41.4378, 4.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(41.4627, 9.4045)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>G</tspan>
+</text>
+</g>
+<g transform="translate(41.4378, 15.7135)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(4.1850, 1.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M0 119c0 8 5 15 13 18l46 17v158c0 10 8 19 18 19s19 -9 19 -19v-145l83 31v158c0 10 9 19 19 19s18 -9 18 -19v-145l32 12c2 1 5 1 7 1c11 0 20 -9 20 -20v-60c0 -8 -5 -16 -13 -19l-46 -16v-160l32 11c2 1 5 1 7 1c11 0 20 -9 20 -20v-60c0 -8 -5 -15 -13 -18l-46 -17
+v-158c0 -10 -8 -19 -18 -19s-19 9 -19 19v145l-83 -31v-158c0 -10 -9 -19 -19 -19s-18 9 -18 19v145l-32 -12c-2 -1 -5 -1 -7 -1c-11 0 -20 9 -20 20v60c0 8 5 16 13 19l46 16v160l-32 -11c-2 -1 -5 -1 -7 -1c-11 0 -20 9 -20 20v60zM179 95l-83 -30v-160l83 30v160z" fill="currentColor"/>
+</g>
+<g transform="translate(5.2850, 3.2760)">
+<path transform="scale(0.0040, -0.0040)" d="M0 119c0 8 5 15 13 18l46 17v158c0 10 8 19 18 19s19 -9 19 -19v-145l83 31v158c0 10 9 19 19 19s18 -9 18 -19v-145l32 12c2 1 5 1 7 1c11 0 20 -9 20 -20v-60c0 -8 -5 -16 -13 -19l-46 -16v-160l32 11c2 1 5 1 7 1c11 0 20 -9 20 -20v-60c0 -8 -5 -15 -13 -18l-46 -17
+v-158c0 -10 -8 -19 -18 -19s-19 9 -19 19v145l-83 -31v-158c0 -10 -9 -19 -19 -19s-18 9 -18 19v145l-32 -12c-2 -1 -5 -1 -7 -1c-11 0 -20 9 -20 20v60c0 8 5 16 13 19l46 16v160l-32 -11c-2 -1 -5 -1 -7 -1c-11 0 -20 9 -20 20v60zM179 95l-83 -30v-160l83 30v160z" fill="currentColor"/>
+</g>
+<g transform="translate(41.4627, 20.4457)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>G</tspan>
+</text>
+</g>
+<g transform="translate(50.9927, 14.7135)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M11.5650 1.3215C11.6229 1.2804 11.6771 1.2382 11.7273 1.1950L11.7273 1.1950C11.6770 1.2349 11.6227 1.2738 11.5647 1.3118z"/>
+</g>
+<g transform="translate(50.9927, 14.7135)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M11.0623 1.6108C11.1379 1.5748 11.2103 1.5378 11.2792 1.4998L11.2784 1.4765C11.2094 1.5117 11.1370 1.5459 11.0613 1.5792z"/>
+</g>
+<g transform="translate(50.9927, 14.7135)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M10.4380 1.8606C10.5284 1.8300 10.6162 1.7983 10.7010 1.7655L10.6996 1.7224C10.6147 1.7528 10.5269 1.7822 10.4364 1.8107z"/>
+</g>
+<g transform="translate(50.9927, 14.7135)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M9.7127 2.0705C9.8152 2.0452 9.9156 2.0189 10.0136 1.9914L10.0117 1.9321C9.9136 1.9576 9.8131 1.9821 9.7106 2.0056z"/>
+</g>
+<g transform="translate(50.9927, 14.7135)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M8.9072 2.2397C9.0190 2.2199 9.1292 2.1990 9.2377 2.1770L9.2353 2.1048C9.1268 2.1253 9.0165 2.1448 8.9047 2.1634z"/>
+</g>
+<g transform="translate(50.9927, 14.7135)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M8.0421 2.3675C8.1605 2.3533 8.2779 2.3379 8.3940 2.3214L8.3913 2.2399C8.2752 2.2553 8.1578 2.2698 8.0394 2.2832z"/>
+</g>
+<g transform="translate(50.9927, 14.7135)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M7.1384 2.4533C7.2605 2.4447 7.3822 2.4350 7.5032 2.4241L7.5003 2.3367C7.3793 2.3470 7.2576 2.3563 7.1355 2.3645z"/>
+</g>
+<g transform="translate(50.9927, 14.7135)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M6.2166 2.4964C6.3398 2.4935 6.4630 2.4895 6.5861 2.4843L6.5832 2.3945C6.4601 2.3995 6.3369 2.4036 6.2137 2.4065z"/>
+</g>
+<g transform="translate(50.9927, 14.7135)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M5.2976 2.4961C5.4190 2.4990 5.5411 2.5008 5.6635 2.5015L5.6606 2.4126C5.5382 2.4124 5.4161 2.4110 5.2947 2.4086z"/>
+</g>
+<g transform="translate(50.9927, 14.7135)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M4.4020 2.4517C4.5189 2.4606 4.6370 2.4683 4.7561 2.4748L4.7533 2.3905C4.6343 2.3848 4.5162 2.3780 4.3994 2.3701z"/>
+</g>
+<g transform="translate(50.9927, 14.7135)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M3.5507 2.3626C3.6603 2.3775 3.7717 2.3911 3.8846 2.4036L3.8821 2.3273C3.7693 2.3161 3.6579 2.3038 3.5483 2.2904z"/>
+</g>
+<g transform="translate(50.9927, 14.7135)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M2.7643 2.2280C2.8639 2.2490 2.9658 2.2688 3.0697 2.2873L3.0676 2.2224C2.9637 2.2056 2.8619 2.1877 2.7624 2.1687z"/>
+</g>
+<g transform="translate(50.9927, 14.7135)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M2.0636 2.0473C2.1504 2.0745 2.2400 2.1005 2.3323 2.1252L2.3307 2.0752C2.2385 2.0527 2.1489 2.0291 2.0622 2.0043z"/>
+</g>
+<g transform="translate(50.9927, 14.7135)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M1.4694 1.8199C1.5406 1.8534 1.6152 1.8856 1.6930 1.9165L1.6920 1.8849C1.6143 1.8567 1.5398 1.8272 1.4686 1.7966z"/>
+</g>
+<g transform="translate(50.9927, 14.7135)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M1.0023 1.5450C1.0552 1.5848 1.1120 1.6234 1.1726 1.6607L1.1722 1.6510C1.1118 1.6168 1.0551 1.5815 1.0023 1.5450z"/>
+</g>
+<g transform="translate(50.9927, 4.2760)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(0.8000, 4.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M266 -635h-6c-108 0 -195 88 -195 197c0 58 53 103 112 103c54 0 95 -47 95 -103c0 -52 -43 -95 -95 -95c-11 0 -21 2 -31 6c26 -39 68 -65 117 -65h4zM401 151c19 -89 48 -242 60 -354c76 27 112 94 112 163c0 89 -60 179 -172 191zM74 28c0 -112 98 -247 278 -247
+c21 0 44 2 68 6c-7 64 -29 203 -63 364c-79 -8 -124 -61 -124 -119c0 -44 25 -91 81 -123c5 -5 7 -10 7 -15c0 -11 -10 -22 -22 -22c-15 0 -126 62 -126 187c0 88 58 174 160 197c-14 58 -29 117 -46 175c-107 -121 -213 -243 -213 -403zM357 1194c28 0 143 -206 143 -361
+c0 -143 -86 -255 -180 -364c21 -68 39 -138 56 -207c5 0 10 1 14 1c155 0 255 -129 255 -262c0 -113 -74 -212 -180 -245c3 -35 5 -70 5 -105c0 -19 -1 -39 -2 -58c-7 -119 -88 -225 -202 -228l1 43c93 2 153 92 159 191c1 18 2 37 2 55c0 31 -1 61 -4 92
+c-28 -5 -55 -8 -80 -8c-239 0 -342 217 -342 374c0 177 131 306 248 441c-29 96 -52 170 -52 346c0 189 144 295 159 295zM247 782c0 -55 12 -115 35 -190c82 100 147 202 147 326c0 40 -6 82 -21 127c-49 -24 -161 -97 -161 -263z" fill="currentColor"/>
+</g>
+<g transform="translate(51.0860, 9.4045)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>A</tspan>
+</text>
+</g>
+<g transform="translate(50.9927, 15.2135)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(11.4229, 6.2760)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(51.0860, 20.4457)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>A</tspan>
+</text>
+</g>
+<g transform="translate(4.3050, 14.7135)">
+<path transform="scale(0.0040, -0.0040)" d="M27 41l-1 -66v-11c0 -22 1 -44 4 -66c45 38 93 80 93 139c0 33 -14 67 -43 67c-31 0 -52 -30 -53 -63zM-15 -138l-12 595c8 5 18 8 27 8s19 -3 27 -8l-7 -345c25 21 58 34 91 34c52 0 89 -48 89 -102c0 -80 -86 -117 -147 -169c-15 -13 -24 -38 -45 -38
+c-13 0 -23 11 -23 25z" fill="currentColor"/>
+</g>
+<g transform="translate(61.7177, 3.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(61.8110, 9.4045)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>B</tspan>
+</text>
+</g>
+<g transform="translate(61.7177, 14.7135)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(61.0510, 20.4457)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>B</tspan>
+</text>
+</g>
+<g transform="translate(63.5464, 20.1457)">
+<path transform="scale(0.0040, -0.0040)" d="M27 41l-1 -66v-11c0 -22 1 -44 4 -66c45 38 93 80 93 139c0 33 -14 67 -43 67c-31 0 -52 -30 -53 -63zM-15 -138l-12 595c8 5 18 8 27 8s19 -3 27 -8l-7 -345c25 21 58 34 91 34c52 0 89 -48 89 -102c0 -80 -86 -117 -147 -169c-15 -13 -24 -38 -45 -38
+c-13 0 -23 11 -23 25z" fill="currentColor"/>
+</g>
+<g transform="translate(60.7677, 14.7135)">
+<path transform="scale(0.0040, -0.0040)" d="M37 -250c0 17 63 58 63 250s-63 233 -63 250c0 7 6 13 13 13c4 0 7 -2 10 -6c53 -76 90 -164 90 -257s-37 -181 -90 -257c-3 -4 -6 -6 -10 -6c-7 0 -13 6 -13 13z" fill="currentColor"/>
+</g>
+<g transform="translate(59.8477, 14.7135)">
+<path transform="scale(0.0040, -0.0040)" d="M-37 250c0 -17 -63 -58 -63 -250s63 -233 63 -250c0 -7 -6 -13 -13 -13c-4 0 -7 2 -10 6c-53 76 -90 164 -90 257s37 181 90 257c3 4 6 6 10 6c7 0 13 -6 13 -13z" fill="currentColor"/>
+</g>
+<g transform="translate(59.9677, 14.7135)">
+<path transform="scale(0.0040, -0.0040)" d="M27 41l-1 -66v-11c0 -22 1 -44 4 -66c45 38 93 80 93 139c0 33 -14 67 -43 67c-31 0 -52 -30 -53 -63zM-15 -138l-12 595c8 5 18 8 27 8s19 -3 27 -8l-7 -345c25 21 58 34 91 34c52 0 89 -48 89 -102c0 -80 -86 -117 -147 -169c-15 -13 -24 -38 -45 -38
+c-13 0 -23 11 -23 25z" fill="currentColor"/>
+</g>
+<g transform="translate(31.8828, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M10.3832 2.3361C10.4465 2.2904 10.5055 2.2434 10.5599 2.1950L10.5599 2.1950C10.5053 2.2395 10.4462 2.2828 10.3828 2.3249z"/>
+</g>
+<g transform="translate(31.8828, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M9.8330 2.6536C9.9158 2.6147 9.9951 2.5744 10.0705 2.5327L10.0696 2.5061C9.9940 2.5445 9.9146 2.5817 9.8317 2.6176z"/>
+</g>
+<g transform="translate(31.8828, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M9.1498 2.9199C9.2485 2.8879 9.3445 2.8544 9.4373 2.8196L9.4355 2.7710C9.3426 2.8032 9.2466 2.8341 9.1477 2.8638z"/>
+</g>
+<g transform="translate(31.8828, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M8.3609 3.1340C8.4719 3.1090 8.5809 3.0825 8.6874 3.0547L8.6850 2.9887C8.5784 3.0145 8.4694 3.0391 8.3583 3.0624z"/>
+</g>
+<g transform="translate(31.8828, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M7.4936 3.2948C7.6133 3.2769 7.7316 3.2576 7.8482 3.2369L7.8453 3.1583C7.7286 3.1776 7.6103 3.1957 7.4906 3.2124z"/>
+</g>
+<g transform="translate(31.8828, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M6.5751 3.4014C6.6998 3.3908 6.8238 3.3788 6.9469 3.3653L6.9437 3.2787C6.8206 3.2915 6.6966 3.3029 6.5719 3.3129z"/>
+</g>
+<g transform="translate(31.8828, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M5.6328 3.4527C5.7588 3.4496 5.8849 3.4450 6.0109 3.4389L6.0076 3.3490C5.8816 3.3550 5.7555 3.3596 5.6295 3.3629z"/>
+</g>
+<g transform="translate(31.8828, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M4.6939 3.4478C4.8176 3.4523 4.9422 3.4552 5.0673 3.4566L5.0640 3.3681C4.9390 3.3672 4.8144 3.3650 4.6907 3.3613z"/>
+</g>
+<g transform="translate(31.8828, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M3.7856 3.3857C3.9035 3.3979 4.0228 3.4084 4.1435 3.4175L4.1405 3.3351C4.0199 3.3272 3.9005 3.3179 3.7827 3.3071z"/>
+</g>
+<g transform="translate(31.8828, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M2.9353 3.2654C3.0436 3.2854 3.1542 3.3037 3.2667 3.3206L3.2641 3.2490C3.1516 3.2339 3.0411 3.2174 2.9329 3.1994z"/>
+</g>
+<g transform="translate(31.8828, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M2.1702 3.0858C2.2654 3.1137 2.3635 3.1401 2.4643 3.1648L2.4622 3.1087C2.3615 3.0863 2.2635 3.0625 2.1685 3.0371z"/>
+</g>
+<g transform="translate(31.8828, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M1.5177 2.8460C1.5960 2.8821 1.6780 2.9165 1.7635 2.9492L1.7622 2.9132C1.6768 2.8834 1.5949 2.8521 1.5167 2.8193z"/>
+</g>
+<g transform="translate(31.8828, 3.7760)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M1.0049 2.5450C1.0628 2.5893 1.1251 2.6319 1.1915 2.6728L1.1911 2.6616C1.1248 2.6243 1.0626 2.5854 1.0049 2.5450z"/>
+</g>
+<g transform="translate(72.6227, 3.2760)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(72.0270, 9.4045)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>C</tspan>
+</text>
+</g>
+<g transform="translate(74.4024, 8.9045)">
+<path transform="scale(0.0028, -0.0028)" d="M0 114c0 12 7 22 18 26l37 15v151c0 12 10 22 22 22s22 -10 22 -22v-134l77 29v152c0 12 10 22 22 22s22 -10 22 -22v-134l16 6c3 1 8 2 11 2c15 0 28 -12 28 -28v-50c0 -12 -7 -23 -18 -27l-37 -14v-152l16 7c3 1 8 2 11 2c15 0 28 -13 28 -29v-50c0 -12 -7 -22 -18 -26
+l-37 -15v-151c0 -12 -10 -22 -22 -22s-22 10 -22 22v134l-77 -29v-152c0 -12 -10 -22 -22 -22s-22 10 -22 22v134l-16 -6c-3 -1 -8 -2 -11 -2c-15 0 -28 12 -28 28v50c0 12 7 23 18 27l37 14v152l-16 -7c-3 -1 -8 -2 -11 -2c-15 0 -28 13 -28 29v50zM176 91l-77 -30v-152
+l77 30v152z" fill="currentColor"/>
+</g>
+<g transform="translate(72.6227, 14.2135)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(72.7159, 20.4457)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>C</tspan>
+</text>
+</g>
+<g transform="translate(71.6727, 3.2760)">
+<path transform="scale(0.0040, -0.0040)" d="M37 -250c0 17 63 58 63 250s-63 233 -63 250c0 7 6 13 13 13c4 0 7 -2 10 -6c53 -76 90 -164 90 -257s-37 -181 -90 -257c-3 -4 -6 -6 -10 -6c-7 0 -13 6 -13 13z" fill="currentColor"/>
+</g>
+<g transform="translate(70.5727, 3.2760)">
+<path transform="scale(0.0040, -0.0040)" d="M-37 250c0 -17 -63 -58 -63 -250s63 -233 63 -250c0 -7 -6 -13 -13 -13c-4 0 -7 2 -10 6c-53 76 -90 164 -90 257s37 181 90 257c3 4 6 6 10 6c7 0 13 -6 13 -13z" fill="currentColor"/>
+</g>
+<g transform="translate(70.5727, 3.2760)">
+<path transform="scale(0.0040, -0.0040)" d="M0 119c0 8 5 15 13 18l46 17v158c0 10 8 19 18 19s19 -9 19 -19v-145l83 31v158c0 10 9 19 19 19s18 -9 18 -19v-145l32 12c2 1 5 1 7 1c11 0 20 -9 20 -20v-60c0 -8 -5 -16 -13 -19l-46 -16v-160l32 11c2 1 5 1 7 1c11 0 20 -9 20 -20v-60c0 -8 -5 -15 -13 -18l-46 -17
+v-158c0 -10 -8 -19 -18 -19s-19 9 -19 19v145l-83 -31v-158c0 -10 -9 -19 -19 -19s-18 9 -18 19v145l-32 -12c-2 -1 -5 -1 -7 -1c-11 0 -20 9 -20 20v60c0 8 5 16 13 19l46 16v160l-32 -11c-2 -1 -5 -1 -7 -1c-11 0 -20 9 -20 20v60zM179 95l-83 -30v-160l83 30v160z" fill="currentColor"/>
+</g>
+<g transform="translate(20.9778, 14.7135)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M11.7536 2.6744C11.8117 2.6323 11.8659 2.5891 11.9159 2.5450L11.9159 2.5450C11.8657 2.5858 11.8114 2.6257 11.7531 2.6647z"/>
+</g>
+<g transform="translate(20.9778, 14.7135)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M11.2481 2.9721C11.3243 2.9349 11.3972 2.8967 11.4665 2.8575L11.4654 2.8343C11.3960 2.8706 11.3230 2.9060 11.2466 2.9405z"/>
+</g>
+<g transform="translate(20.9778, 14.7135)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M10.6172 3.2320C10.7087 3.1999 10.7975 3.1668 10.8832 3.1326L10.8812 3.0896C10.7954 3.1213 10.7065 3.1521 10.6149 3.1820z"/>
+</g>
+<g transform="translate(20.9778, 14.7135)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M9.8822 3.4530C9.9862 3.4262 10.0880 3.3983 10.1873 3.3693L10.1846 3.3100C10.0852 3.3370 9.9833 3.3631 9.8793 3.3881z"/>
+</g>
+<g transform="translate(20.9778, 14.7135)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M9.0644 3.6343C9.1781 3.6128 9.2900 3.5902 9.4001 3.5666L9.3968 3.4945C9.2867 3.5166 9.1746 3.5378 9.0609 3.5580z"/>
+</g>
+<g transform="translate(20.9778, 14.7135)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M8.1851 3.7748C8.3055 3.7588 8.4248 3.7417 8.5429 3.7236L8.5391 3.6420C8.4211 3.6592 8.3017 3.6754 8.1813 3.6905z"/>
+</g>
+<g transform="translate(20.9778, 14.7135)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M7.2655 3.8736C7.3899 3.8633 7.5137 3.8518 7.6368 3.8392L7.6328 3.7518C7.5097 3.7638 7.3858 3.7748 7.2614 3.7848z"/>
+</g>
+<g transform="translate(20.9778, 14.7135)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M6.3269 3.9297C6.4524 3.9251 6.5779 3.9194 6.7033 3.9125L6.6991 3.8226C6.5738 3.8294 6.4482 3.8352 6.3228 3.8399z"/>
+</g>
+<g transform="translate(20.9778, 14.7135)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M5.3905 3.9422C5.5143 3.9435 5.6387 3.9436 5.7634 3.9425L5.7594 3.8537C5.6346 3.8551 5.5102 3.8555 5.3865 3.8548z"/>
+</g>
+<g transform="translate(20.9778, 14.7135)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M4.4777 3.9099C4.5969 3.9173 4.7173 3.9234 4.8386 3.9282L4.8348 3.8440C4.7135 3.8399 4.5931 3.8347 4.4740 3.8284z"/>
+</g>
+<g transform="translate(20.9778, 14.7135)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M3.6097 3.8321C3.7215 3.8456 3.8350 3.8578 3.9501 3.8688L3.9466 3.7925C3.8316 3.7828 3.7181 3.7719 3.6064 3.7600z"/>
+</g>
+<g transform="translate(20.9778, 14.7135)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M2.8077 3.7077C2.9093 3.7274 3.0132 3.7459 3.1192 3.7631L3.1162 3.6982C3.0103 3.6828 2.9065 3.6662 2.8050 3.6484z"/>
+</g>
+<g transform="translate(20.9778, 14.7135)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M2.0931 3.5357C2.1816 3.5618 2.2730 3.5867 2.3671 3.6102L2.3648 3.5603C2.2708 3.5389 2.1795 3.5164 2.0911 3.4926z"/>
+</g>
+<g transform="translate(20.9778, 14.7135)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M1.4871 3.3151C1.5597 3.3478 1.6358 3.3791 1.7151 3.4092L1.7136 3.3776C1.6345 3.3503 1.5585 3.3217 1.4860 3.2918z"/>
+</g>
+<g transform="translate(20.9778, 14.7135)">
+<path stroke-width="0.0800" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="currentColor" d="M1.0110 3.0450C1.0648 3.0844 1.1227 3.1224 1.1845 3.1590L1.1840 3.1493C1.1224 3.1158 1.0647 3.0810 1.0110 3.0450z"/>
+</g>
+<g transform="translate(82.1776, 2.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(82.2026, 9.4045)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>D</tspan>
+</text>
+</g>
+<g transform="translate(82.1776, 13.7135)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(82.2026, 20.4457)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>D</tspan>
+</text>
+</g>
+</svg><p><audio class="figure-audio" controls preload="none"><source src="/audio/scale_dmajor_dminor_parallel.m4a" type="audio/mp4"><source src="/audio/scale_dmajor_dminor_parallel.mp3" type="audio/mpeg"></audio></p><figcaption><b class="figure-number">Figura 3.3.5.</b> Escala de D Maior e respetiva escala paralela D menor.<span class="figure-files"><a href="/scores/scale_dmajor_dminor_parallel.ly" download>LilyPond</a> · <a href="/audio/scale_dmajor_dminor_parallel.m4a" download>AAC</a> · <a href="/audio/scale_dmajor_dminor_parallel.mp3" download>MP3</a></span></figcaption></figure>
+<p>As escalas paralelas não partilham a mesma armação de clave.</p>
+<script type="module">
+for (const figure of document.querySelectorAll('figure.figure[data-cursor]')) {
+  const map = JSON.parse(figure.dataset.cursor);
+  const audio = figure.querySelector('audio');
+  const svg = figure.querySelector('svg.score');
+  if (!audio || !svg || map.length === 0) continue;
+
+  // The band is the staves the note belongs to: on a score over several systems the bar
+  // must not run down the silent ones.
+  const PAD = 1.5;
+  const bar = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+  bar.setAttribute('class', 'score-cursor');
+  bar.setAttribute('width', 0.5);
+  const place = ([, x, top, bottom]) => {
+    bar.setAttribute('y', top - PAD);
+    bar.setAttribute('height', bottom - top + PAD * 2);
+  };
+  place(map[0]);
+  bar.setAttribute('x', map[0][1]);
+  svg.append(bar);
+
+  let frame = 0;
+  const follow = () => {
+    const now = audio.currentTime;
+    let index = 0;
+    for (let low = 0, high = map.length - 1; low <= high; ) {
+      const middle = (low + high) >> 1;
+      if (map[middle][0] <= now) { index = middle; low = middle + 1; } else { high = middle - 1; }
+    }
+    // The bar marks the note sounding rather than sliding between notes: a whole note
+    // lasts seconds, and drift reads as the recording being out of step.
+    place(map[index]);
+    bar.setAttribute('x', map[index][1]);
+    frame = requestAnimationFrame(follow);
+  };
+
+  const stop = () => { cancelAnimationFrame(frame); frame = 0; };
+  audio.addEventListener('play', () => { svg.classList.add('is-playing'); follow(); });
+  audio.addEventListener('pause', stop);
+  audio.addEventListener('ended', () => { stop(); svg.classList.remove('is-playing'); });
+}
+</script>
+</div><nav class="mt-12 flex justify-between gap-4 border-t border-border pt-6 text-body-sm"><a href="/sons-em-conjunto/consonancia-e-dissonancia/" rel="prev" class="text-accent no-underline">← Anterior: 3.2 Consonância e dissonância</a><a href="/sons-em-conjunto/modos/" rel="next" class="text-accent no-underline">Seguinte: 3.4 Modos →</a></nav></main><div class="hidden py-8 xl:block"><nav aria-label="Nesta página" class="sticky top-16 text-body-sm text-secondary"><p class="mb-2 font-semibold text-ink">Nesta página</p><ul class="flex flex-col gap-1"><li class><a href="#escala-maior" class="no-underline hover:text-ink">Escala maior</a></li><li class><a href="#escala-relativa-menor" class="no-underline hover:text-ink">Escala relativa menor</a></li><li class><a href="#escala-paralela-menor" class="no-underline hover:text-ink">Escala paralela menor</a></li></ul></nav></div></div><footer class="book-colophon"><p><a href="/">Teoria Musical</a>, um projeto de Marco Ferra</p><p><span>Código sob <a href="https://github.com/mfsphere/teoria-musical/blob/main/LICENSE">MIT</a></span><span>Texto, partituras e gravações sob <a href="https://github.com/mfsphere/teoria-musical/blob/main/LICENSE-TEXT">CC BY-SA 4.0</a></span><span>2017–2026</span></p></footer></body></html>

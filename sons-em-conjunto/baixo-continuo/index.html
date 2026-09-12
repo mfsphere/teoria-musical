@@ -1,0 +1,279 @@
+<!DOCTYPE html><html lang="pt-PT"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>3.7 Baixo contínuo</title><meta name="description" content="Como o baixo contínuo cifra a posição das vozes acima do baixo, e o que significam as figuras 6, 6/4, 6/5, 4/3 e 4/2 em tríades e acordes de sétima."><link rel="canonical" href="https://www.teoria-musical.com/sons-em-conjunto/baixo-continuo/"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><meta property="og:type" content="book"><meta property="og:site_name" content="Teoria Musical"><meta property="og:title" content="3.7 Baixo contínuo"><meta property="og:description" content="Como o baixo contínuo cifra a posição das vozes acima do baixo, e o que significam as figuras 6, 6/4, 6/5, 4/3 e 4/2 em tríades e acordes de sétima."><meta property="og:url" content="https://www.teoria-musical.com/sons-em-conjunto/baixo-continuo/"><meta property="og:image" content="https://www.teoria-musical.com/og.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Teoria Musical — princípios de ritmo, melodia e harmonia"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://www.teoria-musical.com/og.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Book","name":"Teoria Musical","alternateName":"Música: Princípios de ritmo, melodia e harmonia","author":{"@type":"Person","name":"Marco A. Ferra"},"inLanguage":"pt-PT","url":"https://www.teoria-musical.com/","license":"https://creativecommons.org/licenses/by-sa/4.0/","isAccessibleForFree":true,"genre":"Teoria musical"}</script><script>
+			try {
+				const stored = localStorage.getItem('teoria-musical:theme');
+				const dark =
+					stored === 'dark' ||
+					(stored !== 'light' && matchMedia('(prefers-color-scheme: dark)').matches);
+				document.documentElement.classList.toggle('dark', dark);
+			} catch {
+				/* Storage refused: the system preference still applies. */
+			}
+		</script><link rel="stylesheet" href="/_astro/nav.BigK0A7K.css"></head><body class="min-h-dvh bg-paper font-serif text-body"><a href="#_top" class="skip-link">Saltar para o conteúdo</a><header class="sticky top-0 z-40 flex items-center gap-2 border-b border-border bg-surface px-3 py-2 sm:gap-3 sm:px-4"><style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var l=(n,t)=>{let i=async()=>{await(await n())()},e=typeof t.value=="object"?t.value:void 0,s={timeout:e==null?void 0:e.timeout};"requestIdleCallback"in window?window.requestIdleCallback(i,s):setTimeout(i,s.timeout||200)};(self.Astro||(self.Astro={})).idle=l;window.dispatchEvent(new Event("astro:idle"));})();</script><script>(()=>{var g=Object.defineProperty;var w=(a,s,c)=>s in a?g(a,s,{enumerable:!0,configurable:!0,writable:!0,value:c}):a[s]=c;var l=(a,s,c)=>w(a,typeof s!="symbol"?s+"":s,c);var E=new Set(["__proto__","constructor","prototype"]);{let a={0:t=>y(t),1:t=>c(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(c(t)),5:t=>new Set(c(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t),11:t=>Number.POSITIVE_INFINITY*t},s=t=>{let[p,e]=t;return p in a?a[p](e):void 0},c=t=>t.map(s),y=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([p,e])=>[p,s(e)]));class f extends HTMLElement{constructor(){super(...arguments);l(this,"Component");l(this,"hydrator");l(this,"hydrate",async()=>{var b;if(!this.hydrator||!this.isConnected)return;let e=(b=this.parentElement)==null?void 0:b.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let r=this.querySelectorAll("astro-slot"),n={},d=this.querySelectorAll("template[data-astro-template]");for(let o of d){let i=o.closest(this.tagName);i!=null&&i.isSameNode(this)&&(n[o.getAttribute("data-astro-template")||"default"]=o.innerHTML,o.remove())}for(let o of r){let i=o.closest(this.tagName);i!=null&&i.isSameNode(this)&&(n[o.getAttribute("name")||"default"]=o.innerHTML)}let u;try{u=this.hasAttribute("props")?y(JSON.parse(this.getAttribute("props"))):{}}catch(o){let i=this.getAttribute("component-url")||"<unknown>",v=this.getAttribute("component-export");throw v&&(i+=` (export ${v})`),console.error(`[hydrate] Error parsing props for component ${i}`,this.getAttribute("props"),o),o}let h;await this.hydrator(this)(this.Component,u,n,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});l(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),r.disconnect(),this.childrenConnectedCallback()},r=new MutationObserver(()=>{var n;((n=this.lastChild)==null?void 0:n.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});r.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}getRetryImportUrl(e){let r=new URL(e,document.baseURI);return r.searchParams.set("astro-retry",Date.now().toString()),r.toString()}async importWithRetry(e){try{return await import(e)}catch(r){return await new Promise(n=>setTimeout(n,1e3)),import(this.getRetryImportUrl(e))}}handleHydrationError(e){let r=this.getAttribute("component-url"),n=new CustomEvent("astro:hydration-error",{cancelable:!0,bubbles:!0,composed:!0,detail:{error:e,componentUrl:r}});this.dispatchEvent(n)&&console.error(`[astro-island] Error hydrating ${r}`,e)}async start(){let e=JSON.parse(this.getAttribute("opts")),r=this.getAttribute("client");if(Astro[r]===void 0){window.addEventListener(`astro:${r}`,()=>this.start(),{once:!0});return}try{await Astro[r](async()=>{let n=this.getAttribute("renderer-url");try{let[d,{default:u}]=await Promise.all([this.importWithRetry(this.getAttribute("component-url")),n?this.importWithRetry(n):Promise.resolve({default:()=>()=>{}})]),h=this.getAttribute("component-export")||"default";if(h.includes(".")){this.Component=d;for(let m of h.split(".")){if(E.has(m)||!this.Component||typeof this.Component!="object"&&typeof this.Component!="function"||!Object.hasOwn(this.Component,m))throw new Error(`Invalid component export path: ${h}`);this.Component=this.Component[m]}}else{if(E.has(h))throw new Error(`Invalid component export path: ${h}`);this.Component=d[h]}return this.hydrator=u,this.hydrate}catch(d){return this.handleHydrationError(d),()=>{}}},e,this)}catch(n){this.handleHydrationError(n)}}attributeChangedCallback(){this.hydrate()}}l(f,"observedAttributes",["props"]),customElements.get("astro-island")||customElements.define("astro-island",f)}})();</script><astro-island uid="Z2cSI08" prefix="r5" component-url="/_astro/MobileNav.BCEGxCaz.js" component-export="default" renderer-url="/_astro/client.yyZZvWdV.js" props="{&quot;chapters&quot;:[1,[[0,{&quot;label&quot;:[0,&quot;Prefácio&quot;],&quot;pages&quot;:[1,[[0,{&quot;href&quot;:[0,&quot;/prefacio/&quot;],&quot;label&quot;:[0,&quot;Prefácio&quot;]}]]]}],[0,{&quot;label&quot;:[0,&quot;1. Fundamentos&quot;],&quot;pages&quot;:[1,[[0,{&quot;href&quot;:[0,&quot;/fundamentos/som/&quot;],&quot;label&quot;:[0,&quot;1.1 Som&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/pauta-e-partitura/&quot;],&quot;label&quot;:[0,&quot;1.2 Pauta e partitura&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/notas/&quot;],&quot;label&quot;:[0,&quot;1.3 Notas&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/claves/&quot;],&quot;label&quot;:[0,&quot;1.4 Claves&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/armacao-de-clave/&quot;],&quot;label&quot;:[0,&quot;1.5 Armação de clave&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/vozes/&quot;],&quot;label&quot;:[0,&quot;1.6 Vozes&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/figuras-ritmicas/&quot;],&quot;label&quot;:[0,&quot;1.7 Figuras rítmicas&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/ritmo-e-compassos/&quot;],&quot;label&quot;:[0,&quot;1.8 Ritmo e compassos&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/metrica/&quot;],&quot;label&quot;:[0,&quot;1.9 Métrica&quot;]}]]]}],[0,{&quot;label&quot;:[0,&quot;2. Sons isolados&quot;],&quot;pages&quot;:[1,[[0,{&quot;href&quot;:[0,&quot;/sons-isolados/serie-harmonica/&quot;],&quot;label&quot;:[0,&quot;2.1 Série harmónica&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-isolados/altura-definida-e-indefinida/&quot;],&quot;label&quot;:[0,&quot;2.2 Altura definida e indefinida&quot;]}]]]}],[0,{&quot;label&quot;:[0,&quot;3. Sons em conjunto&quot;],&quot;pages&quot;:[1,[[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/melodia-e-intervalos/&quot;],&quot;label&quot;:[0,&quot;3.1 Melodia e intervalos&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/consonancia-e-dissonancia/&quot;],&quot;label&quot;:[0,&quot;3.2 Consonância e dissonância&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/escalas/&quot;],&quot;label&quot;:[0,&quot;3.3 Escalas&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/modos/&quot;],&quot;label&quot;:[0,&quot;3.4 Modos&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/triades/&quot;],&quot;label&quot;:[0,&quot;3.5 Tríades&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/acordes-de-setima/&quot;],&quot;label&quot;:[0,&quot;3.6 Acordes de sétima&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/baixo-continuo/&quot;],&quot;label&quot;:[0,&quot;3.7 Baixo contínuo&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/dominantes-secundarias/&quot;],&quot;label&quot;:[0,&quot;3.8 Dominantes secundárias&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/modulacao/&quot;],&quot;label&quot;:[0,&quot;3.9 Modulação&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/cadencias/&quot;],&quot;label&quot;:[0,&quot;3.10 Cadências&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/forma-e-frase/&quot;],&quot;label&quot;:[0,&quot;3.11 Forma e frase&quot;]}]]]}],[0,{&quot;label&quot;:[0,&quot;4. Palavras finais&quot;],&quot;pages&quot;:[1,[]]}],[0,{&quot;label&quot;:[0,&quot;Recursos&quot;],&quot;pages&quot;:[1,[[0,{&quot;href&quot;:[0,&quot;/recursos/papel-pautado/&quot;],&quot;label&quot;:[0,&quot;Papel pautado&quot;]}],[0,{&quot;href&quot;:[0,&quot;/recursos/sobre/&quot;],&quot;label&quot;:[0,&quot;Sobre o livro&quot;]}],[0,{&quot;href&quot;:[0,&quot;/recursos/transferencias/&quot;],&quot;label&quot;:[0,&quot;Transferências&quot;]}]]]}]]],&quot;current&quot;:[0,&quot;/sons-em-conjunto/baixo-continuo/&quot;]}" ssr client="idle" opts="{&quot;name&quot;:&quot;MobileNav&quot;,&quot;value&quot;:true}" await-children><button class="rounded p-2 text-secondary outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent lg:hidden" data-rac="" type="button" tabindex="0" aria-expanded="false" id="react-aria-_r5R_0H1_" data-react-aria-pressable="true" aria-label="Menu"><svg aria-hidden="true" viewBox="0 0 24 24" class="size-5" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round"></path></svg></button><!--astro:end--></astro-island><a href="/" class="min-w-0 truncate font-semibold text-ink no-underline">Teoria Musical</a><div class="ms-auto flex shrink-0 items-center gap-1"><astro-island uid="2qpPsV" prefix="r6" component-url="/_astro/Search.DWVVEPUn.js" component-export="default" renderer-url="/_astro/client.yyZZvWdV.js" props="{}" ssr client="idle" opts="{&quot;name&quot;:&quot;Search&quot;,&quot;value&quot;:true}" await-children><button class="rounded px-2 py-1 text-body-sm text-secondary outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent" data-rac="" type="button" tabindex="0" aria-expanded="false" id="react-aria-_r6R_0H1_" data-react-aria-pressable="true">Pesquisar</button><!--astro:end--></astro-island><astro-island uid="1Af02n" prefix="r7" component-url="/_astro/ThemeToggle.BfMpIbgS.js" component-export="default" renderer-url="/_astro/client.yyZZvWdV.js" props="{}" ssr client="idle" opts="{&quot;name&quot;:&quot;ThemeToggle&quot;,&quot;value&quot;:true}" await-children><button class="rounded px-2 py-1 text-body-sm text-secondary outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent" data-rac="" type="button" tabindex="0" aria-haspopup="true" aria-expanded="false" id="react-aria-_r7R_0_" data-react-aria-pressable="true" aria-label="Selecionar tema">Automático</button><!--astro:end--></astro-island></div></header><div class="mx-auto grid w-full max-w-6xl grid-cols-1 gap-8 px-4 lg:grid-cols-[16rem_minmax(0,1fr)] xl:grid-cols-[16rem_minmax(0,1fr)_14rem]"><div class="hidden py-8 lg:block"><!-- Rendered on the server and hydrated for the disclosures; a reader
+				     without JavaScript still gets every link. --><div class="sticky top-16 max-h-[calc(100dvh-5rem)] overflow-auto"><astro-island uid="bYACd" prefix="r4" component-url="/_astro/SidebarNav.Cc3HOfc4.js" component-export="default" renderer-url="/_astro/client.yyZZvWdV.js" props="{&quot;slot&quot;:[0,&quot;sidebar&quot;],&quot;chapters&quot;:[1,[[0,{&quot;label&quot;:[0,&quot;Prefácio&quot;],&quot;pages&quot;:[1,[[0,{&quot;href&quot;:[0,&quot;/prefacio/&quot;],&quot;label&quot;:[0,&quot;Prefácio&quot;]}]]]}],[0,{&quot;label&quot;:[0,&quot;1. Fundamentos&quot;],&quot;pages&quot;:[1,[[0,{&quot;href&quot;:[0,&quot;/fundamentos/som/&quot;],&quot;label&quot;:[0,&quot;1.1 Som&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/pauta-e-partitura/&quot;],&quot;label&quot;:[0,&quot;1.2 Pauta e partitura&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/notas/&quot;],&quot;label&quot;:[0,&quot;1.3 Notas&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/claves/&quot;],&quot;label&quot;:[0,&quot;1.4 Claves&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/armacao-de-clave/&quot;],&quot;label&quot;:[0,&quot;1.5 Armação de clave&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/vozes/&quot;],&quot;label&quot;:[0,&quot;1.6 Vozes&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/figuras-ritmicas/&quot;],&quot;label&quot;:[0,&quot;1.7 Figuras rítmicas&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/ritmo-e-compassos/&quot;],&quot;label&quot;:[0,&quot;1.8 Ritmo e compassos&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/metrica/&quot;],&quot;label&quot;:[0,&quot;1.9 Métrica&quot;]}]]]}],[0,{&quot;label&quot;:[0,&quot;2. Sons isolados&quot;],&quot;pages&quot;:[1,[[0,{&quot;href&quot;:[0,&quot;/sons-isolados/serie-harmonica/&quot;],&quot;label&quot;:[0,&quot;2.1 Série harmónica&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-isolados/altura-definida-e-indefinida/&quot;],&quot;label&quot;:[0,&quot;2.2 Altura definida e indefinida&quot;]}]]]}],[0,{&quot;label&quot;:[0,&quot;3. Sons em conjunto&quot;],&quot;pages&quot;:[1,[[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/melodia-e-intervalos/&quot;],&quot;label&quot;:[0,&quot;3.1 Melodia e intervalos&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/consonancia-e-dissonancia/&quot;],&quot;label&quot;:[0,&quot;3.2 Consonância e dissonância&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/escalas/&quot;],&quot;label&quot;:[0,&quot;3.3 Escalas&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/modos/&quot;],&quot;label&quot;:[0,&quot;3.4 Modos&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/triades/&quot;],&quot;label&quot;:[0,&quot;3.5 Tríades&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/acordes-de-setima/&quot;],&quot;label&quot;:[0,&quot;3.6 Acordes de sétima&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/baixo-continuo/&quot;],&quot;label&quot;:[0,&quot;3.7 Baixo contínuo&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/dominantes-secundarias/&quot;],&quot;label&quot;:[0,&quot;3.8 Dominantes secundárias&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/modulacao/&quot;],&quot;label&quot;:[0,&quot;3.9 Modulação&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/cadencias/&quot;],&quot;label&quot;:[0,&quot;3.10 Cadências&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/forma-e-frase/&quot;],&quot;label&quot;:[0,&quot;3.11 Forma e frase&quot;]}]]]}],[0,{&quot;label&quot;:[0,&quot;4. Palavras finais&quot;],&quot;pages&quot;:[1,[]]}],[0,{&quot;label&quot;:[0,&quot;Recursos&quot;],&quot;pages&quot;:[1,[[0,{&quot;href&quot;:[0,&quot;/recursos/papel-pautado/&quot;],&quot;label&quot;:[0,&quot;Papel pautado&quot;]}],[0,{&quot;href&quot;:[0,&quot;/recursos/sobre/&quot;],&quot;label&quot;:[0,&quot;Sobre o livro&quot;]}],[0,{&quot;href&quot;:[0,&quot;/recursos/transferencias/&quot;],&quot;label&quot;:[0,&quot;Transferências&quot;]}]]]}]]],&quot;current&quot;:[0,&quot;/sons-em-conjunto/baixo-continuo/&quot;]}" ssr client="idle" opts="{&quot;name&quot;:&quot;SidebarNav&quot;,&quot;value&quot;:true}" await-children><nav aria-label="Navegação principal" class="flex flex-col gap-1"><div class="react-aria-Disclosure" data-rac=""><h3 class="contents"><button id="react-aria-_r4R_1H1_" class="group flex w-full items-center gap-2 rounded px-2 py-1 text-start text-body-sm font-semibold text-ink outline-none hover:text-accent focus-visible:ring-2 focus-visible:ring-accent" data-rac="" type="button" tabindex="0" data-react-aria-pressable="true" aria-expanded="false" aria-controls="react-aria-_r4R_1H2_" slot="trigger"><svg aria-hidden="true" viewBox="0 0 24 24" class="size-4 shrink-0 transition-transform group-aria-[expanded=false]:-rotate-90" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"></path></svg>Prefácio</button></h3><div class="react-aria-DisclosurePanel" data-rac="" id="react-aria-_r4R_1H2_" role="group" aria-labelledby="react-aria-_r4R_1H1_" aria-hidden="true" hidden=""><ul class="ms-4 flex flex-col border-s border-border ps-2"><li><a href="/prefacio/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">Prefácio</a></li></ul></div></div><div class="react-aria-Disclosure" data-rac=""><h3 class="contents"><button id="react-aria-_r4R_2H1_" class="group flex w-full items-center gap-2 rounded px-2 py-1 text-start text-body-sm font-semibold text-ink outline-none hover:text-accent focus-visible:ring-2 focus-visible:ring-accent" data-rac="" type="button" tabindex="0" data-react-aria-pressable="true" aria-expanded="false" aria-controls="react-aria-_r4R_2H2_" slot="trigger"><svg aria-hidden="true" viewBox="0 0 24 24" class="size-4 shrink-0 transition-transform group-aria-[expanded=false]:-rotate-90" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"></path></svg>1. Fundamentos</button></h3><div class="react-aria-DisclosurePanel" data-rac="" id="react-aria-_r4R_2H2_" role="group" aria-labelledby="react-aria-_r4R_2H1_" aria-hidden="true" hidden=""><ul class="ms-4 flex flex-col border-s border-border ps-2"><li><a href="/fundamentos/som/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">1.1 Som</a></li><li><a href="/fundamentos/pauta-e-partitura/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">1.2 Pauta e partitura</a></li><li><a href="/fundamentos/notas/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">1.3 Notas</a></li><li><a href="/fundamentos/claves/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">1.4 Claves</a></li><li><a href="/fundamentos/armacao-de-clave/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">1.5 Armação de clave</a></li><li><a href="/fundamentos/vozes/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">1.6 Vozes</a></li><li><a href="/fundamentos/figuras-ritmicas/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">1.7 Figuras rítmicas</a></li><li><a href="/fundamentos/ritmo-e-compassos/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">1.8 Ritmo e compassos</a></li><li><a href="/fundamentos/metrica/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">1.9 Métrica</a></li></ul></div></div><div class="react-aria-Disclosure" data-rac=""><h3 class="contents"><button id="react-aria-_r4R_3H1_" class="group flex w-full items-center gap-2 rounded px-2 py-1 text-start text-body-sm font-semibold text-ink outline-none hover:text-accent focus-visible:ring-2 focus-visible:ring-accent" data-rac="" type="button" tabindex="0" data-react-aria-pressable="true" aria-expanded="false" aria-controls="react-aria-_r4R_3H2_" slot="trigger"><svg aria-hidden="true" viewBox="0 0 24 24" class="size-4 shrink-0 transition-transform group-aria-[expanded=false]:-rotate-90" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"></path></svg>2. Sons isolados</button></h3><div class="react-aria-DisclosurePanel" data-rac="" id="react-aria-_r4R_3H2_" role="group" aria-labelledby="react-aria-_r4R_3H1_" aria-hidden="true" hidden=""><ul class="ms-4 flex flex-col border-s border-border ps-2"><li><a href="/sons-isolados/serie-harmonica/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">2.1 Série harmónica</a></li><li><a href="/sons-isolados/altura-definida-e-indefinida/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">2.2 Altura definida e indefinida</a></li></ul></div></div><div class="react-aria-Disclosure" data-rac="" data-expanded="true"><h3 class="contents"><button id="react-aria-_r4R_4H1_" class="group flex w-full items-center gap-2 rounded px-2 py-1 text-start text-body-sm font-semibold text-ink outline-none hover:text-accent focus-visible:ring-2 focus-visible:ring-accent" data-rac="" type="button" tabindex="0" data-react-aria-pressable="true" aria-expanded="true" aria-controls="react-aria-_r4R_4H2_" slot="trigger"><svg aria-hidden="true" viewBox="0 0 24 24" class="size-4 shrink-0 transition-transform group-aria-[expanded=false]:-rotate-90" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"></path></svg>3. Sons em conjunto</button></h3><div class="react-aria-DisclosurePanel" data-rac="" id="react-aria-_r4R_4H2_" role="group" aria-labelledby="react-aria-_r4R_4H1_" aria-hidden="false"><ul class="ms-4 flex flex-col border-s border-border ps-2"><li><a href="/sons-em-conjunto/melodia-e-intervalos/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">3.1 Melodia e intervalos</a></li><li><a href="/sons-em-conjunto/consonancia-e-dissonancia/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">3.2 Consonância e dissonância</a></li><li><a href="/sons-em-conjunto/escalas/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">3.3 Escalas</a></li><li><a href="/sons-em-conjunto/modos/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">3.4 Modos</a></li><li><a href="/sons-em-conjunto/triades/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">3.5 Tríades</a></li><li><a href="/sons-em-conjunto/acordes-de-setima/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">3.6 Acordes de sétima</a></li><li><a href="/sons-em-conjunto/baixo-continuo/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent" aria-current="page">3.7 Baixo contínuo</a></li><li><a href="/sons-em-conjunto/dominantes-secundarias/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">3.8 Dominantes secundárias</a></li><li><a href="/sons-em-conjunto/modulacao/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">3.9 Modulação</a></li><li><a href="/sons-em-conjunto/cadencias/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">3.10 Cadências</a></li><li><a href="/sons-em-conjunto/forma-e-frase/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">3.11 Forma e frase</a></li></ul></div></div><div class="react-aria-Disclosure" data-rac=""><h3 class="contents"><button id="react-aria-_r4R_5H1_" class="group flex w-full items-center gap-2 rounded px-2 py-1 text-start text-body-sm font-semibold text-ink outline-none hover:text-accent focus-visible:ring-2 focus-visible:ring-accent" data-rac="" type="button" tabindex="0" data-react-aria-pressable="true" aria-expanded="false" aria-controls="react-aria-_r4R_5H2_" slot="trigger"><svg aria-hidden="true" viewBox="0 0 24 24" class="size-4 shrink-0 transition-transform group-aria-[expanded=false]:-rotate-90" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"></path></svg>4. Palavras finais</button></h3><div class="react-aria-DisclosurePanel" data-rac="" id="react-aria-_r4R_5H2_" role="group" aria-labelledby="react-aria-_r4R_5H1_" aria-hidden="true" hidden=""><ul class="ms-4 flex flex-col border-s border-border ps-2"></ul></div></div><div class="react-aria-Disclosure" data-rac=""><h3 class="contents"><button id="react-aria-_r4R_6H1_" class="group flex w-full items-center gap-2 rounded px-2 py-1 text-start text-body-sm font-semibold text-ink outline-none hover:text-accent focus-visible:ring-2 focus-visible:ring-accent" data-rac="" type="button" tabindex="0" data-react-aria-pressable="true" aria-expanded="false" aria-controls="react-aria-_r4R_6H2_" slot="trigger"><svg aria-hidden="true" viewBox="0 0 24 24" class="size-4 shrink-0 transition-transform group-aria-[expanded=false]:-rotate-90" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"></path></svg>Recursos</button></h3><div class="react-aria-DisclosurePanel" data-rac="" id="react-aria-_r4R_6H2_" role="group" aria-labelledby="react-aria-_r4R_6H1_" aria-hidden="true" hidden=""><ul class="ms-4 flex flex-col border-s border-border ps-2"><li><a href="/recursos/papel-pautado/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">Papel pautado</a></li><li><a href="/recursos/sobre/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">Sobre o livro</a></li><li><a href="/recursos/transferencias/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">Transferências</a></li></ul></div></div></nav><!--astro:end--></astro-island></div></div><main id="_top" class="min-w-0 py-8"><h1 class="mb-6 text-title font-semibold text-ink">3.7 Baixo contínuo</h1><div class="book-content" data-pagefind-body><p>O baixo contínuo é um sistema de notação musical que tem por base o uso de figuras, isto é,
+números árabes, de modo a indicar a posição que cada uma das vozes ocupa na harmonia. Os números
+indicam, relativamente à nota mais grave (o baixo), onde se encontram as outras vozes que compõem
+a harmonia.</p>
+<figure id="fig-baixo-continuo" class="figure" data-score="figured_bass" data-cursor="[[0,8.58,-0.18,3.82],[2,20.34,-0.18,3.82],[4,32.09,-0.18,3.82],[6,44.33,-0.18,3.82],[8,56.09,-0.18,3.82],[10,66.44,-0.18,3.82],[12,78.5,-0.18,3.82]]"><svg class="score" role="img" aria-label="Figura 3.7.1. Baixo contínuo em tríades e acordes de sétima." xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.2" width="159.20mm" height="21.22mm" viewBox="0.0000 -3.5870 90.5936 12.0769">
+<style type="text/css">
+<![CDATA[
+tspan { white-space: pre; }
+]]>
+</style>
+<g transform="translate(17.8915, 1.8201)">
+<rect x="0.0000" y="-2.0000" width="0.1900" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(0.0000, 4.8201)">
+<rect x="43.8435" y="-0.1000" width="2.9430" height="0.2000" ry="0.1000" fill="currentColor"/>
+</g>
+<g transform="translate(0.0000, 4.8201)">
+<rect x="8.0945" y="-0.1000" width="2.9430" height="0.2000" ry="0.1000" fill="currentColor"/>
+</g>
+<g transform="translate(0.0000, 3.8201)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(0.0000, 2.8201)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(0.0000, 1.8201)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(0.0000, 0.8201)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(0.0000, -0.1799)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(89.9936, 1.8201)">
+<rect x="0.0000" y="-2.0000" width="0.6000" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(89.5036, 1.8201)">
+<rect x="0.0000" y="-2.0000" width="0.1900" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(77.4486, 1.8201)">
+<rect x="0.0000" y="-2.0000" width="0.1900" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(65.3936, 1.8201)">
+<rect x="0.0000" y="-2.0000" width="0.1900" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(53.6405, 1.8201)">
+<rect x="0.0000" y="-2.0000" width="0.1900" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(41.8875, 1.8201)">
+<rect x="0.0000" y="-2.0000" width="0.1900" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(41.3975, 1.8201)">
+<rect x="0.0000" y="-2.0000" width="0.1900" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(29.6445, 1.8201)">
+<rect x="0.0000" y="-2.0000" width="0.1900" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(56.0870, 3.8201)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(8.5850, 4.8201)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(8.5850, 3.8201)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(8.5850, 2.8201)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(0.8000, 2.8201)">
+<path transform="scale(0.0040, -0.0040)" d="M266 -635h-6c-108 0 -195 88 -195 197c0 58 53 103 112 103c54 0 95 -47 95 -103c0 -52 -43 -95 -95 -95c-11 0 -21 2 -31 6c26 -39 68 -65 117 -65h4zM401 151c19 -89 48 -242 60 -354c76 27 112 94 112 163c0 89 -60 179 -172 191zM74 28c0 -112 98 -247 278 -247
+c21 0 44 2 68 6c-7 64 -29 203 -63 364c-79 -8 -124 -61 -124 -119c0 -44 25 -91 81 -123c5 -5 7 -10 7 -15c0 -11 -10 -22 -22 -22c-15 0 -126 62 -126 187c0 88 58 174 160 197c-14 58 -29 117 -46 175c-107 -121 -213 -243 -213 -403zM357 1194c28 0 143 -206 143 -361
+c0 -143 -86 -255 -180 -364c21 -68 39 -138 56 -207c5 0 10 1 14 1c155 0 255 -129 255 -262c0 -113 -74 -212 -180 -245c3 -35 5 -70 5 -105c0 -19 -1 -39 -2 -58c-7 -119 -88 -225 -202 -228l1 43c93 2 153 92 159 191c1 18 2 37 2 55c0 31 -1 61 -4 92
+c-28 -5 -55 -8 -80 -8c-239 0 -342 217 -342 374c0 177 131 306 248 441c-29 96 -52 170 -52 346c0 189 144 295 159 295zM247 782c0 -55 12 -115 35 -190c82 100 147 202 147 326c0 40 -6 82 -21 127c-49 -24 -161 -97 -161 -263z" fill="currentColor"/>
+</g>
+<g transform="translate(4.8850, 1.8201)">
+<path transform="scale(0.0040, -0.0040)" d="M433 -89c0 -22 -50 -174 -183 -174c-59 0 -250 19 -250 263c0 62 18 262 250 262c116 0 176 -106 176 -163c0 -40 -30 -72 -67 -72c-31 0 -75 25 -75 75c0 38 27 77 72 77c4 0 9 0 14 -1c-28 37 -72 59 -120 59c-106 0 -113 -73 -113 -186v-51v-51
+c0 -113 7 -187 113 -187c80 0 139 70 158 151c2 7 7 10 12 10c6 0 13 -4 13 -12z" fill="currentColor"/>
+</g>
+<g transform="translate(8.5850, 6.9899)">
+<path transform="scale(0.0022, -0.0022)" d="M83 500c8 0 69 -14 131 -14c54 0 133 15 134 15c17 0 27 -12 27 -22c0 -13 -88 -100 -234 -100c-17 0 -31 -14 -31 -31v-41c25 25 63 25 98 25h4c115 0 182 -55 182 -166c0 -99 -96 -166 -202 -166c-88 0 -169 52 -169 133c0 32 26 58 58 58s58 -26 58 -58
+c0 -22 -36 -26 -36 -48c0 -36 47 -42 89 -42c52 0 73 63 73 123c0 53 -7 112 -53 112c-133 0 -86 -44 -128 -44c-14 0 -28 10 -28 27v209c0 17 12 30 27 30z" fill="currentColor"/>
+</g>
+<g transform="translate(8.5850, 8.4899)">
+<path transform="scale(0.0022, -0.0022)" d="M296 266c0 -54 84 -40 84 -125c0 -94 -83 -141 -186 -141c-84 0 -159 54 -159 133c0 32 26 58 58 58s58 -26 58 -58c0 -22 -36 -26 -36 -48c0 -33 41 -42 79 -42c41 0 57 50 57 98v21c0 44 -3 77 -44 77h-65c-18 0 -27 14 -27 27s9 27 27 27h65c42 0 44 36 44 83v11
+c0 43 -20 70 -61 70c-33 0 -68 -9 -68 -38c0 -19 31 -23 31 -42c0 -28 -22 -51 -50 -51s-51 23 -51 51c0 71 64 123 138 123c93 0 174 -31 174 -113c0 -94 -68 -67 -68 -121z" fill="currentColor"/>
+</g>
+<g transform="translate(20.3380, 3.8201)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(20.3380, 2.8201)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(20.3380, 1.3201)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(20.3380, 6.9899)">
+<path transform="scale(0.0022, -0.0022)" d="M207 226c-44 0 -46 -40 -46 -92s2 -91 46 -91c46 0 55 38 55 91s-9 92 -55 92zM161 257c14 8 29 12 46 12c103 0 177 -41 177 -135s-74 -134 -177 -134c-114 0 -176 124 -176 250c0 129 77 250 197 250c75 0 141 -52 141 -123c0 -32 -26 -58 -58 -58s-58 26 -58 58
+c0 21 35 23 35 44c0 26 -31 36 -60 36c-61 0 -69 -60 -69 -129c0 -23 2 -48 2 -71z" fill="currentColor"/>
+</g>
+<g transform="translate(20.3380, 8.4899)">
+<path transform="scale(0.0022, -0.0022)" d="M296 266c0 -54 84 -40 84 -125c0 -94 -83 -141 -186 -141c-84 0 -159 54 -159 133c0 32 26 58 58 58s58 -26 58 -58c0 -22 -36 -26 -36 -48c0 -33 41 -42 79 -42c41 0 57 50 57 98v21c0 44 -3 77 -44 77h-65c-18 0 -27 14 -27 27s9 27 27 27h65c42 0 44 36 44 83v11
+c0 43 -20 70 -61 70c-33 0 -68 -9 -68 -38c0 -19 31 -23 31 -42c0 -28 -22 -51 -50 -51s-51 23 -51 51c0 71 64 123 138 123c93 0 174 -31 174 -113c0 -94 -68 -67 -68 -121z" fill="currentColor"/>
+</g>
+<g transform="translate(32.0910, 2.8201)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(32.0910, 1.3201)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(32.0910, 0.3201)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(32.0910, 6.9899)">
+<path transform="scale(0.0022, -0.0022)" d="M207 226c-44 0 -46 -40 -46 -92s2 -91 46 -91c46 0 55 38 55 91s-9 92 -55 92zM161 257c14 8 29 12 46 12c103 0 177 -41 177 -135s-74 -134 -177 -134c-114 0 -176 124 -176 250c0 129 77 250 197 250c75 0 141 -52 141 -123c0 -32 -26 -58 -58 -58s-58 26 -58 58
+c0 21 35 23 35 44c0 26 -31 36 -60 36c-61 0 -69 -60 -69 -129c0 -23 2 -48 2 -71z" fill="currentColor"/>
+</g>
+<g transform="translate(32.0910, 8.4899)">
+<path transform="scale(0.0022, -0.0022)" d="M148 501c10 0 41 -15 72 -15c32 0 63 15 76 15c15 0 26 -11 26 -21c0 -4 -1 -7 -4 -10l-264 -291h134v4c0 60 50 41 75 85c7 11 8 24 14 36c3 7 10 10 17 10c11 0 24 -8 24 -25v-110h70c18 0 27 -14 27 -27s-9 -27 -27 -27h-70c2 -45 58 -60 80 -82c14 0 22 -10 22 -21
+s-8 -22 -22 -22c-49 0 -96 14 -145 14s-97 -14 -146 -14c-14 0 -21 11 -21 22s7 21 21 21c44 0 79 37 81 82h-134c-43 0 -57 25 -57 42c0 5 1 10 3 12c73 81 123 182 123 291c0 17 11 31 25 31z" fill="currentColor"/>
+</g>
+<g transform="translate(34.6623, -1.7669)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>Acordes de sétima:</tspan>
+</text>
+</g>
+<g transform="translate(44.3340, 4.8201)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(44.3340, 3.8201)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(44.3340, 2.8201)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(44.3340, 1.8201)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(44.3340, 6.9899)">
+<path transform="scale(0.0022, -0.0022)" d="M427 473c0 -24 -144 -180 -144 -369c0 -46 8 -72 8 -79c0 -14 -12 -26 -25 -26c-11 0 -42 15 -73 15c-32 0 -62 -15 -74 -15c-14 0 -25 11 -25 23c0 4 32 103 184 324c-9 -2 -19 -3 -28 -3c-61 0 -65 45 -102 45c-31 0 -52 -56 -52 -77c0 -18 -14 -27 -27 -27
+s-27 9 -27 27v162c0 18 14 27 27 27s27 -9 27 -27v-16c0 -10 14 -19 22 -19c9 0 36 59 89 59s64 -50 103 -50c51 0 64 53 89 53c14 0 28 -12 28 -27z" fill="currentColor"/>
+</g>
+<g transform="translate(56.0870, 2.8201)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(56.0870, 1.8201)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(57.7890, 1.3201)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(4.8542, -1.7669)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>Tríades:</tspan>
+</text>
+</g>
+<g transform="translate(56.0870, 6.9899)">
+<path transform="scale(0.0022, -0.0022)" d="M207 226c-44 0 -46 -40 -46 -92s2 -91 46 -91c46 0 55 38 55 91s-9 92 -55 92zM161 257c14 8 29 12 46 12c103 0 177 -41 177 -135s-74 -134 -177 -134c-114 0 -176 124 -176 250c0 129 77 250 197 250c75 0 141 -52 141 -123c0 -32 -26 -58 -58 -58s-58 26 -58 58
+c0 21 35 23 35 44c0 26 -31 36 -60 36c-61 0 -69 -60 -69 -129c0 -23 2 -48 2 -71z" fill="currentColor"/>
+</g>
+<g transform="translate(56.0870, 8.4899)">
+<path transform="scale(0.0022, -0.0022)" d="M83 500c8 0 69 -14 131 -14c54 0 133 15 134 15c17 0 27 -12 27 -22c0 -13 -88 -100 -234 -100c-17 0 -31 -14 -31 -31v-41c25 25 63 25 98 25h4c115 0 182 -55 182 -166c0 -99 -96 -166 -202 -166c-88 0 -169 52 -169 133c0 32 26 58 58 58s58 -26 58 -58
+c0 -22 -36 -26 -36 -48c0 -36 47 -42 89 -42c52 0 73 63 73 123c0 53 -7 112 -53 112c-133 0 -86 -44 -128 -44c-14 0 -28 10 -28 27v209c0 17 12 30 27 30z" fill="currentColor"/>
+</g>
+<g transform="translate(68.1420, 2.8201)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(66.4400, 1.8201)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(68.1420, 1.3201)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(68.1420, 0.3201)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(68.1420, 6.9899)">
+<path transform="scale(0.0022, -0.0022)" d="M148 501c10 0 41 -15 72 -15c32 0 63 15 76 15c15 0 26 -11 26 -21c0 -4 -1 -7 -4 -10l-264 -291h134v4c0 60 50 41 75 85c7 11 8 24 14 36c3 7 10 10 17 10c11 0 24 -8 24 -25v-110h70c18 0 27 -14 27 -27s-9 -27 -27 -27h-70c2 -45 58 -60 80 -82c14 0 22 -10 22 -21
+s-8 -22 -22 -22c-49 0 -96 14 -145 14s-97 -14 -146 -14c-14 0 -21 11 -21 22s7 21 21 21c44 0 79 37 81 82h-134c-43 0 -57 25 -57 42c0 5 1 10 3 12c73 81 123 182 123 291c0 17 11 31 25 31z" fill="currentColor"/>
+</g>
+<g transform="translate(68.1420, 8.4899)">
+<path transform="scale(0.0022, -0.0022)" d="M296 266c0 -54 84 -40 84 -125c0 -94 -83 -141 -186 -141c-84 0 -159 54 -159 133c0 32 26 58 58 58s58 -26 58 -58c0 -22 -36 -26 -36 -48c0 -33 41 -42 79 -42c41 0 57 50 57 98v21c0 44 -3 77 -44 77h-65c-18 0 -27 14 -27 27s9 27 27 27h65c42 0 44 36 44 83v11
+c0 43 -20 70 -61 70c-33 0 -68 -9 -68 -38c0 -19 31 -23 31 -42c0 -28 -22 -51 -50 -51s-51 23 -51 51c0 71 64 123 138 123c93 0 174 -31 174 -113c0 -94 -68 -67 -68 -121z" fill="currentColor"/>
+</g>
+<g transform="translate(78.4951, 1.8201)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(80.1971, 1.3201)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(80.1971, 0.3201)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(80.1971, -0.6799)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(80.1971, 6.9899)">
+<path transform="scale(0.0022, -0.0022)" d="M148 501c10 0 41 -15 72 -15c32 0 63 15 76 15c15 0 26 -11 26 -21c0 -4 -1 -7 -4 -10l-264 -291h134v4c0 60 50 41 75 85c7 11 8 24 14 36c3 7 10 10 17 10c11 0 24 -8 24 -25v-110h70c18 0 27 -14 27 -27s-9 -27 -27 -27h-70c2 -45 58 -60 80 -82c14 0 22 -10 22 -21
+s-8 -22 -22 -22c-49 0 -96 14 -145 14s-97 -14 -146 -14c-14 0 -21 11 -21 22s7 21 21 21c44 0 79 37 81 82h-134c-43 0 -57 25 -57 42c0 5 1 10 3 12c73 81 123 182 123 291c0 17 11 31 25 31z" fill="currentColor"/>
+</g>
+<g transform="translate(80.1971, 8.4899)">
+<path transform="scale(0.0022, -0.0022)" d="M111 66c-60 0 -39 -66 -72 -66c-11 0 -22 7 -22 21v2c15 169 232 158 232 332c0 50 -17 102 -61 102c-33 0 -65 -15 -65 -44c0 -24 31 -37 31 -61c0 -34 -27 -61 -61 -61s-61 27 -61 61c0 83 71 148 156 148c98 0 190 -55 190 -145c0 -140 -131 -154 -225 -205
+c85 -2 113 -61 165 -61c45 0 28 41 57 41c11 0 23 -8 23 -21c0 -29 -49 -109 -145 -109c-92 0 -96 66 -142 66z" fill="currentColor"/>
+</g>
+</svg><p><audio class="figure-audio" controls preload="none"><source src="/audio/figured_bass.m4a" type="audio/mp4"><source src="/audio/figured_bass.mp3" type="audio/mpeg"></audio></p><figcaption><b class="figure-number">Figura 3.7.1.</b> Baixo contínuo em tríades e acordes de sétima.<span class="figure-files"><a href="/scores/figured_bass.ly" download>LilyPond</a> · <a href="/audio/figured_bass.m4a" download>AAC</a> · <a href="/audio/figured_bass.mp3" download>MP3</a></span></figcaption></figure>
+<p>Relativamente às tríades, em detalhe:</p>
+<ul>
+<li>Estado fundamental: em branco ou 5 3. C (1) – E (3) – G (5).</li>
+<li>Primeira inversão: o [C] sobe para a voz de cima, portanto, relativamente à nova nota que ficou na posição mais grave [E], o [C] encontra-se 6 passos acima e o [G] 3 passos.</li>
+<li>Segunda inversão: as notas [C] e [E] sobem para as vozes de cima, ficando o [G] na posição mais grave, e deste modo relativamente ao [G] a nota [E] ficou na 6.ª posição e a nota [C] na 4.ª posição.</li>
+</ul>
+<p>Tríades, em resumo:</p>
+<ul>
+<li>Estado fundamental: em branco ou 5 3</li>
+<li>Primeira inversão: 6 ou 6 3</li>
+<li>Segunda inversão: 6 4</li>
+</ul>
+<p>Relativamente aos acordes de sétima, o mesmo raciocínio aplica-se:</p>
+<ul>
+<li>Estado fundamental: 7. Tendo como exemplo [C, E, G, B], e de modo a distinguir a posição deste acorde relativamente a uma tríade, é indicado no baixo contínuo o número 7, para informar que existe uma sétima nota no acorde [B].</li>
+<li>Primeira inversão: 6 5. O [C] sobe para a voz de cima e, portanto, relativamente à nova nota que ficou na posição mais grave [E], a nota [C] ficou na 6.ª posição e [B] na 5.ª posição.</li>
+<li>Segunda inversão: 4 3. As notas [C] e [E] sobem para as vozes de cima, ficando [G] na posição mais grave, e deste modo relativamente ao [G], a nota [C] ficou na quarta posição e a nota [B] na terceira posição.</li>
+<li>Terceira inversão: 2 ou 4 2. As notas [C, E, G] sobem para [B], ficando o [B] na posição mais grave, e deste modo o [C] ficou na 2.ª posição e o [E] na quarta posição. Muitas vezes o quatro é omitido porque, no acorde de sétima, o 2 pressupõe imediatamente que é [B] que se encontra no baixo (porque a tónica [C] está na 2.ª posição).</li>
+</ul>
+<script type="module">
+for (const figure of document.querySelectorAll('figure.figure[data-cursor]')) {
+  const map = JSON.parse(figure.dataset.cursor);
+  const audio = figure.querySelector('audio');
+  const svg = figure.querySelector('svg.score');
+  if (!audio || !svg || map.length === 0) continue;
+
+  // The band is the staves the note belongs to: on a score over several systems the bar
+  // must not run down the silent ones.
+  const PAD = 1.5;
+  const bar = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+  bar.setAttribute('class', 'score-cursor');
+  bar.setAttribute('width', 0.5);
+  const place = ([, x, top, bottom]) => {
+    bar.setAttribute('y', top - PAD);
+    bar.setAttribute('height', bottom - top + PAD * 2);
+  };
+  place(map[0]);
+  bar.setAttribute('x', map[0][1]);
+  svg.append(bar);
+
+  let frame = 0;
+  const follow = () => {
+    const now = audio.currentTime;
+    let index = 0;
+    for (let low = 0, high = map.length - 1; low <= high; ) {
+      const middle = (low + high) >> 1;
+      if (map[middle][0] <= now) { index = middle; low = middle + 1; } else { high = middle - 1; }
+    }
+    // The bar marks the note sounding rather than sliding between notes: a whole note
+    // lasts seconds, and drift reads as the recording being out of step.
+    place(map[index]);
+    bar.setAttribute('x', map[index][1]);
+    frame = requestAnimationFrame(follow);
+  };
+
+  const stop = () => { cancelAnimationFrame(frame); frame = 0; };
+  audio.addEventListener('play', () => { svg.classList.add('is-playing'); follow(); });
+  audio.addEventListener('pause', stop);
+  audio.addEventListener('ended', () => { stop(); svg.classList.remove('is-playing'); });
+}
+</script>
+</div><nav class="mt-12 flex justify-between gap-4 border-t border-border pt-6 text-body-sm"><a href="/sons-em-conjunto/acordes-de-setima/" rel="prev" class="text-accent no-underline">← Anterior: 3.6 Acordes de sétima</a><a href="/sons-em-conjunto/dominantes-secundarias/" rel="next" class="text-accent no-underline">Seguinte: 3.8 Dominantes secundárias →</a></nav></main><div class="hidden py-8 xl:block"></div></div><footer class="book-colophon"><p><a href="/">Teoria Musical</a>, um projeto de Marco Ferra</p><p><span>Código sob <a href="https://github.com/mfsphere/teoria-musical/blob/main/LICENSE">MIT</a></span><span>Texto, partituras e gravações sob <a href="https://github.com/mfsphere/teoria-musical/blob/main/LICENSE-TEXT">CC BY-SA 4.0</a></span><span>2017–2026</span></p></footer></body></html>

@@ -1,0 +1,559 @@
+<!DOCTYPE html><html lang="pt-PT"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>1.8 Ritmo e compassos</title><meta name="description" content="O que é o ritmo, o que significa «tempo» em música, e as barras de compasso: simples, duplas, finais, de repetição e com casas distintas."><link rel="canonical" href="https://www.teoria-musical.com/fundamentos/ritmo-e-compassos/"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><meta property="og:type" content="book"><meta property="og:site_name" content="Teoria Musical"><meta property="og:title" content="1.8 Ritmo e compassos"><meta property="og:description" content="O que é o ritmo, o que significa «tempo» em música, e as barras de compasso: simples, duplas, finais, de repetição e com casas distintas."><meta property="og:url" content="https://www.teoria-musical.com/fundamentos/ritmo-e-compassos/"><meta property="og:image" content="https://www.teoria-musical.com/og.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Teoria Musical — princípios de ritmo, melodia e harmonia"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://www.teoria-musical.com/og.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Book","name":"Teoria Musical","alternateName":"Música: Princípios de ritmo, melodia e harmonia","author":{"@type":"Person","name":"Marco A. Ferra"},"inLanguage":"pt-PT","url":"https://www.teoria-musical.com/","license":"https://creativecommons.org/licenses/by-sa/4.0/","isAccessibleForFree":true,"genre":"Teoria musical"}</script><script>
+			try {
+				const stored = localStorage.getItem('teoria-musical:theme');
+				const dark =
+					stored === 'dark' ||
+					(stored !== 'light' && matchMedia('(prefers-color-scheme: dark)').matches);
+				document.documentElement.classList.toggle('dark', dark);
+			} catch {
+				/* Storage refused: the system preference still applies. */
+			}
+		</script><link rel="stylesheet" href="/_astro/nav.BigK0A7K.css"></head><body class="min-h-dvh bg-paper font-serif text-body"><a href="#_top" class="skip-link">Saltar para o conteúdo</a><header class="sticky top-0 z-40 flex items-center gap-2 border-b border-border bg-surface px-3 py-2 sm:gap-3 sm:px-4"><style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var l=(n,t)=>{let i=async()=>{await(await n())()},e=typeof t.value=="object"?t.value:void 0,s={timeout:e==null?void 0:e.timeout};"requestIdleCallback"in window?window.requestIdleCallback(i,s):setTimeout(i,s.timeout||200)};(self.Astro||(self.Astro={})).idle=l;window.dispatchEvent(new Event("astro:idle"));})();</script><script>(()=>{var g=Object.defineProperty;var w=(a,s,c)=>s in a?g(a,s,{enumerable:!0,configurable:!0,writable:!0,value:c}):a[s]=c;var l=(a,s,c)=>w(a,typeof s!="symbol"?s+"":s,c);var E=new Set(["__proto__","constructor","prototype"]);{let a={0:t=>y(t),1:t=>c(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(c(t)),5:t=>new Set(c(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t),11:t=>Number.POSITIVE_INFINITY*t},s=t=>{let[p,e]=t;return p in a?a[p](e):void 0},c=t=>t.map(s),y=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([p,e])=>[p,s(e)]));class f extends HTMLElement{constructor(){super(...arguments);l(this,"Component");l(this,"hydrator");l(this,"hydrate",async()=>{var b;if(!this.hydrator||!this.isConnected)return;let e=(b=this.parentElement)==null?void 0:b.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let r=this.querySelectorAll("astro-slot"),n={},d=this.querySelectorAll("template[data-astro-template]");for(let o of d){let i=o.closest(this.tagName);i!=null&&i.isSameNode(this)&&(n[o.getAttribute("data-astro-template")||"default"]=o.innerHTML,o.remove())}for(let o of r){let i=o.closest(this.tagName);i!=null&&i.isSameNode(this)&&(n[o.getAttribute("name")||"default"]=o.innerHTML)}let u;try{u=this.hasAttribute("props")?y(JSON.parse(this.getAttribute("props"))):{}}catch(o){let i=this.getAttribute("component-url")||"<unknown>",v=this.getAttribute("component-export");throw v&&(i+=` (export ${v})`),console.error(`[hydrate] Error parsing props for component ${i}`,this.getAttribute("props"),o),o}let h;await this.hydrator(this)(this.Component,u,n,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});l(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),r.disconnect(),this.childrenConnectedCallback()},r=new MutationObserver(()=>{var n;((n=this.lastChild)==null?void 0:n.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});r.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}getRetryImportUrl(e){let r=new URL(e,document.baseURI);return r.searchParams.set("astro-retry",Date.now().toString()),r.toString()}async importWithRetry(e){try{return await import(e)}catch(r){return await new Promise(n=>setTimeout(n,1e3)),import(this.getRetryImportUrl(e))}}handleHydrationError(e){let r=this.getAttribute("component-url"),n=new CustomEvent("astro:hydration-error",{cancelable:!0,bubbles:!0,composed:!0,detail:{error:e,componentUrl:r}});this.dispatchEvent(n)&&console.error(`[astro-island] Error hydrating ${r}`,e)}async start(){let e=JSON.parse(this.getAttribute("opts")),r=this.getAttribute("client");if(Astro[r]===void 0){window.addEventListener(`astro:${r}`,()=>this.start(),{once:!0});return}try{await Astro[r](async()=>{let n=this.getAttribute("renderer-url");try{let[d,{default:u}]=await Promise.all([this.importWithRetry(this.getAttribute("component-url")),n?this.importWithRetry(n):Promise.resolve({default:()=>()=>{}})]),h=this.getAttribute("component-export")||"default";if(h.includes(".")){this.Component=d;for(let m of h.split(".")){if(E.has(m)||!this.Component||typeof this.Component!="object"&&typeof this.Component!="function"||!Object.hasOwn(this.Component,m))throw new Error(`Invalid component export path: ${h}`);this.Component=this.Component[m]}}else{if(E.has(h))throw new Error(`Invalid component export path: ${h}`);this.Component=d[h]}return this.hydrator=u,this.hydrate}catch(d){return this.handleHydrationError(d),()=>{}}},e,this)}catch(n){this.handleHydrationError(n)}}attributeChangedCallback(){this.hydrate()}}l(f,"observedAttributes",["props"]),customElements.get("astro-island")||customElements.define("astro-island",f)}})();</script><astro-island uid="Z2gyEqy" prefix="r5" component-url="/_astro/MobileNav.BCEGxCaz.js" component-export="default" renderer-url="/_astro/client.yyZZvWdV.js" props="{&quot;chapters&quot;:[1,[[0,{&quot;label&quot;:[0,&quot;Prefácio&quot;],&quot;pages&quot;:[1,[[0,{&quot;href&quot;:[0,&quot;/prefacio/&quot;],&quot;label&quot;:[0,&quot;Prefácio&quot;]}]]]}],[0,{&quot;label&quot;:[0,&quot;1. Fundamentos&quot;],&quot;pages&quot;:[1,[[0,{&quot;href&quot;:[0,&quot;/fundamentos/som/&quot;],&quot;label&quot;:[0,&quot;1.1 Som&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/pauta-e-partitura/&quot;],&quot;label&quot;:[0,&quot;1.2 Pauta e partitura&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/notas/&quot;],&quot;label&quot;:[0,&quot;1.3 Notas&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/claves/&quot;],&quot;label&quot;:[0,&quot;1.4 Claves&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/armacao-de-clave/&quot;],&quot;label&quot;:[0,&quot;1.5 Armação de clave&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/vozes/&quot;],&quot;label&quot;:[0,&quot;1.6 Vozes&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/figuras-ritmicas/&quot;],&quot;label&quot;:[0,&quot;1.7 Figuras rítmicas&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/ritmo-e-compassos/&quot;],&quot;label&quot;:[0,&quot;1.8 Ritmo e compassos&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/metrica/&quot;],&quot;label&quot;:[0,&quot;1.9 Métrica&quot;]}]]]}],[0,{&quot;label&quot;:[0,&quot;2. Sons isolados&quot;],&quot;pages&quot;:[1,[[0,{&quot;href&quot;:[0,&quot;/sons-isolados/serie-harmonica/&quot;],&quot;label&quot;:[0,&quot;2.1 Série harmónica&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-isolados/altura-definida-e-indefinida/&quot;],&quot;label&quot;:[0,&quot;2.2 Altura definida e indefinida&quot;]}]]]}],[0,{&quot;label&quot;:[0,&quot;3. Sons em conjunto&quot;],&quot;pages&quot;:[1,[[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/melodia-e-intervalos/&quot;],&quot;label&quot;:[0,&quot;3.1 Melodia e intervalos&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/consonancia-e-dissonancia/&quot;],&quot;label&quot;:[0,&quot;3.2 Consonância e dissonância&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/escalas/&quot;],&quot;label&quot;:[0,&quot;3.3 Escalas&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/modos/&quot;],&quot;label&quot;:[0,&quot;3.4 Modos&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/triades/&quot;],&quot;label&quot;:[0,&quot;3.5 Tríades&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/acordes-de-setima/&quot;],&quot;label&quot;:[0,&quot;3.6 Acordes de sétima&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/baixo-continuo/&quot;],&quot;label&quot;:[0,&quot;3.7 Baixo contínuo&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/dominantes-secundarias/&quot;],&quot;label&quot;:[0,&quot;3.8 Dominantes secundárias&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/modulacao/&quot;],&quot;label&quot;:[0,&quot;3.9 Modulação&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/cadencias/&quot;],&quot;label&quot;:[0,&quot;3.10 Cadências&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/forma-e-frase/&quot;],&quot;label&quot;:[0,&quot;3.11 Forma e frase&quot;]}]]]}],[0,{&quot;label&quot;:[0,&quot;4. Palavras finais&quot;],&quot;pages&quot;:[1,[]]}],[0,{&quot;label&quot;:[0,&quot;Recursos&quot;],&quot;pages&quot;:[1,[[0,{&quot;href&quot;:[0,&quot;/recursos/papel-pautado/&quot;],&quot;label&quot;:[0,&quot;Papel pautado&quot;]}],[0,{&quot;href&quot;:[0,&quot;/recursos/sobre/&quot;],&quot;label&quot;:[0,&quot;Sobre o livro&quot;]}],[0,{&quot;href&quot;:[0,&quot;/recursos/transferencias/&quot;],&quot;label&quot;:[0,&quot;Transferências&quot;]}]]]}]]],&quot;current&quot;:[0,&quot;/fundamentos/ritmo-e-compassos/&quot;]}" ssr client="idle" opts="{&quot;name&quot;:&quot;MobileNav&quot;,&quot;value&quot;:true}" await-children><button class="rounded p-2 text-secondary outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent lg:hidden" data-rac="" type="button" tabindex="0" aria-expanded="false" id="react-aria-_r5R_0H1_" data-react-aria-pressable="true" aria-label="Menu"><svg aria-hidden="true" viewBox="0 0 24 24" class="size-5" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round"></path></svg></button><!--astro:end--></astro-island><a href="/" class="min-w-0 truncate font-semibold text-ink no-underline">Teoria Musical</a><div class="ms-auto flex shrink-0 items-center gap-1"><astro-island uid="2qpPsV" prefix="r6" component-url="/_astro/Search.DWVVEPUn.js" component-export="default" renderer-url="/_astro/client.yyZZvWdV.js" props="{}" ssr client="idle" opts="{&quot;name&quot;:&quot;Search&quot;,&quot;value&quot;:true}" await-children><button class="rounded px-2 py-1 text-body-sm text-secondary outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent" data-rac="" type="button" tabindex="0" aria-expanded="false" id="react-aria-_r6R_0H1_" data-react-aria-pressable="true">Pesquisar</button><!--astro:end--></astro-island><astro-island uid="1Af02n" prefix="r7" component-url="/_astro/ThemeToggle.BfMpIbgS.js" component-export="default" renderer-url="/_astro/client.yyZZvWdV.js" props="{}" ssr client="idle" opts="{&quot;name&quot;:&quot;ThemeToggle&quot;,&quot;value&quot;:true}" await-children><button class="rounded px-2 py-1 text-body-sm text-secondary outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent" data-rac="" type="button" tabindex="0" aria-haspopup="true" aria-expanded="false" id="react-aria-_r7R_0_" data-react-aria-pressable="true" aria-label="Selecionar tema">Automático</button><!--astro:end--></astro-island></div></header><div class="mx-auto grid w-full max-w-6xl grid-cols-1 gap-8 px-4 lg:grid-cols-[16rem_minmax(0,1fr)] xl:grid-cols-[16rem_minmax(0,1fr)_14rem]"><div class="hidden py-8 lg:block"><!-- Rendered on the server and hydrated for the disclosures; a reader
+				     without JavaScript still gets every link. --><div class="sticky top-16 max-h-[calc(100dvh-5rem)] overflow-auto"><astro-island uid="1IzhLg" prefix="r4" component-url="/_astro/SidebarNav.Cc3HOfc4.js" component-export="default" renderer-url="/_astro/client.yyZZvWdV.js" props="{&quot;slot&quot;:[0,&quot;sidebar&quot;],&quot;chapters&quot;:[1,[[0,{&quot;label&quot;:[0,&quot;Prefácio&quot;],&quot;pages&quot;:[1,[[0,{&quot;href&quot;:[0,&quot;/prefacio/&quot;],&quot;label&quot;:[0,&quot;Prefácio&quot;]}]]]}],[0,{&quot;label&quot;:[0,&quot;1. Fundamentos&quot;],&quot;pages&quot;:[1,[[0,{&quot;href&quot;:[0,&quot;/fundamentos/som/&quot;],&quot;label&quot;:[0,&quot;1.1 Som&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/pauta-e-partitura/&quot;],&quot;label&quot;:[0,&quot;1.2 Pauta e partitura&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/notas/&quot;],&quot;label&quot;:[0,&quot;1.3 Notas&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/claves/&quot;],&quot;label&quot;:[0,&quot;1.4 Claves&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/armacao-de-clave/&quot;],&quot;label&quot;:[0,&quot;1.5 Armação de clave&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/vozes/&quot;],&quot;label&quot;:[0,&quot;1.6 Vozes&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/figuras-ritmicas/&quot;],&quot;label&quot;:[0,&quot;1.7 Figuras rítmicas&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/ritmo-e-compassos/&quot;],&quot;label&quot;:[0,&quot;1.8 Ritmo e compassos&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/metrica/&quot;],&quot;label&quot;:[0,&quot;1.9 Métrica&quot;]}]]]}],[0,{&quot;label&quot;:[0,&quot;2. Sons isolados&quot;],&quot;pages&quot;:[1,[[0,{&quot;href&quot;:[0,&quot;/sons-isolados/serie-harmonica/&quot;],&quot;label&quot;:[0,&quot;2.1 Série harmónica&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-isolados/altura-definida-e-indefinida/&quot;],&quot;label&quot;:[0,&quot;2.2 Altura definida e indefinida&quot;]}]]]}],[0,{&quot;label&quot;:[0,&quot;3. Sons em conjunto&quot;],&quot;pages&quot;:[1,[[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/melodia-e-intervalos/&quot;],&quot;label&quot;:[0,&quot;3.1 Melodia e intervalos&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/consonancia-e-dissonancia/&quot;],&quot;label&quot;:[0,&quot;3.2 Consonância e dissonância&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/escalas/&quot;],&quot;label&quot;:[0,&quot;3.3 Escalas&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/modos/&quot;],&quot;label&quot;:[0,&quot;3.4 Modos&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/triades/&quot;],&quot;label&quot;:[0,&quot;3.5 Tríades&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/acordes-de-setima/&quot;],&quot;label&quot;:[0,&quot;3.6 Acordes de sétima&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/baixo-continuo/&quot;],&quot;label&quot;:[0,&quot;3.7 Baixo contínuo&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/dominantes-secundarias/&quot;],&quot;label&quot;:[0,&quot;3.8 Dominantes secundárias&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/modulacao/&quot;],&quot;label&quot;:[0,&quot;3.9 Modulação&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/cadencias/&quot;],&quot;label&quot;:[0,&quot;3.10 Cadências&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/forma-e-frase/&quot;],&quot;label&quot;:[0,&quot;3.11 Forma e frase&quot;]}]]]}],[0,{&quot;label&quot;:[0,&quot;4. Palavras finais&quot;],&quot;pages&quot;:[1,[]]}],[0,{&quot;label&quot;:[0,&quot;Recursos&quot;],&quot;pages&quot;:[1,[[0,{&quot;href&quot;:[0,&quot;/recursos/papel-pautado/&quot;],&quot;label&quot;:[0,&quot;Papel pautado&quot;]}],[0,{&quot;href&quot;:[0,&quot;/recursos/sobre/&quot;],&quot;label&quot;:[0,&quot;Sobre o livro&quot;]}],[0,{&quot;href&quot;:[0,&quot;/recursos/transferencias/&quot;],&quot;label&quot;:[0,&quot;Transferências&quot;]}]]]}]]],&quot;current&quot;:[0,&quot;/fundamentos/ritmo-e-compassos/&quot;]}" ssr client="idle" opts="{&quot;name&quot;:&quot;SidebarNav&quot;,&quot;value&quot;:true}" await-children><nav aria-label="Navegação principal" class="flex flex-col gap-1"><div class="react-aria-Disclosure" data-rac=""><h3 class="contents"><button id="react-aria-_r4R_1H1_" class="group flex w-full items-center gap-2 rounded px-2 py-1 text-start text-body-sm font-semibold text-ink outline-none hover:text-accent focus-visible:ring-2 focus-visible:ring-accent" data-rac="" type="button" tabindex="0" data-react-aria-pressable="true" aria-expanded="false" aria-controls="react-aria-_r4R_1H2_" slot="trigger"><svg aria-hidden="true" viewBox="0 0 24 24" class="size-4 shrink-0 transition-transform group-aria-[expanded=false]:-rotate-90" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"></path></svg>Prefácio</button></h3><div class="react-aria-DisclosurePanel" data-rac="" id="react-aria-_r4R_1H2_" role="group" aria-labelledby="react-aria-_r4R_1H1_" aria-hidden="true" hidden=""><ul class="ms-4 flex flex-col border-s border-border ps-2"><li><a href="/prefacio/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">Prefácio</a></li></ul></div></div><div class="react-aria-Disclosure" data-rac="" data-expanded="true"><h3 class="contents"><button id="react-aria-_r4R_2H1_" class="group flex w-full items-center gap-2 rounded px-2 py-1 text-start text-body-sm font-semibold text-ink outline-none hover:text-accent focus-visible:ring-2 focus-visible:ring-accent" data-rac="" type="button" tabindex="0" data-react-aria-pressable="true" aria-expanded="true" aria-controls="react-aria-_r4R_2H2_" slot="trigger"><svg aria-hidden="true" viewBox="0 0 24 24" class="size-4 shrink-0 transition-transform group-aria-[expanded=false]:-rotate-90" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"></path></svg>1. Fundamentos</button></h3><div class="react-aria-DisclosurePanel" data-rac="" id="react-aria-_r4R_2H2_" role="group" aria-labelledby="react-aria-_r4R_2H1_" aria-hidden="false"><ul class="ms-4 flex flex-col border-s border-border ps-2"><li><a href="/fundamentos/som/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">1.1 Som</a></li><li><a href="/fundamentos/pauta-e-partitura/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">1.2 Pauta e partitura</a></li><li><a href="/fundamentos/notas/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">1.3 Notas</a></li><li><a href="/fundamentos/claves/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">1.4 Claves</a></li><li><a href="/fundamentos/armacao-de-clave/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">1.5 Armação de clave</a></li><li><a href="/fundamentos/vozes/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">1.6 Vozes</a></li><li><a href="/fundamentos/figuras-ritmicas/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">1.7 Figuras rítmicas</a></li><li><a href="/fundamentos/ritmo-e-compassos/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent" aria-current="page">1.8 Ritmo e compassos</a></li><li><a href="/fundamentos/metrica/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">1.9 Métrica</a></li></ul></div></div><div class="react-aria-Disclosure" data-rac=""><h3 class="contents"><button id="react-aria-_r4R_3H1_" class="group flex w-full items-center gap-2 rounded px-2 py-1 text-start text-body-sm font-semibold text-ink outline-none hover:text-accent focus-visible:ring-2 focus-visible:ring-accent" data-rac="" type="button" tabindex="0" data-react-aria-pressable="true" aria-expanded="false" aria-controls="react-aria-_r4R_3H2_" slot="trigger"><svg aria-hidden="true" viewBox="0 0 24 24" class="size-4 shrink-0 transition-transform group-aria-[expanded=false]:-rotate-90" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"></path></svg>2. Sons isolados</button></h3><div class="react-aria-DisclosurePanel" data-rac="" id="react-aria-_r4R_3H2_" role="group" aria-labelledby="react-aria-_r4R_3H1_" aria-hidden="true" hidden=""><ul class="ms-4 flex flex-col border-s border-border ps-2"><li><a href="/sons-isolados/serie-harmonica/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">2.1 Série harmónica</a></li><li><a href="/sons-isolados/altura-definida-e-indefinida/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">2.2 Altura definida e indefinida</a></li></ul></div></div><div class="react-aria-Disclosure" data-rac=""><h3 class="contents"><button id="react-aria-_r4R_4H1_" class="group flex w-full items-center gap-2 rounded px-2 py-1 text-start text-body-sm font-semibold text-ink outline-none hover:text-accent focus-visible:ring-2 focus-visible:ring-accent" data-rac="" type="button" tabindex="0" data-react-aria-pressable="true" aria-expanded="false" aria-controls="react-aria-_r4R_4H2_" slot="trigger"><svg aria-hidden="true" viewBox="0 0 24 24" class="size-4 shrink-0 transition-transform group-aria-[expanded=false]:-rotate-90" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"></path></svg>3. Sons em conjunto</button></h3><div class="react-aria-DisclosurePanel" data-rac="" id="react-aria-_r4R_4H2_" role="group" aria-labelledby="react-aria-_r4R_4H1_" aria-hidden="true" hidden=""><ul class="ms-4 flex flex-col border-s border-border ps-2"><li><a href="/sons-em-conjunto/melodia-e-intervalos/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">3.1 Melodia e intervalos</a></li><li><a href="/sons-em-conjunto/consonancia-e-dissonancia/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">3.2 Consonância e dissonância</a></li><li><a href="/sons-em-conjunto/escalas/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">3.3 Escalas</a></li><li><a href="/sons-em-conjunto/modos/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">3.4 Modos</a></li><li><a href="/sons-em-conjunto/triades/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">3.5 Tríades</a></li><li><a href="/sons-em-conjunto/acordes-de-setima/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">3.6 Acordes de sétima</a></li><li><a href="/sons-em-conjunto/baixo-continuo/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">3.7 Baixo contínuo</a></li><li><a href="/sons-em-conjunto/dominantes-secundarias/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">3.8 Dominantes secundárias</a></li><li><a href="/sons-em-conjunto/modulacao/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">3.9 Modulação</a></li><li><a href="/sons-em-conjunto/cadencias/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">3.10 Cadências</a></li><li><a href="/sons-em-conjunto/forma-e-frase/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">3.11 Forma e frase</a></li></ul></div></div><div class="react-aria-Disclosure" data-rac=""><h3 class="contents"><button id="react-aria-_r4R_5H1_" class="group flex w-full items-center gap-2 rounded px-2 py-1 text-start text-body-sm font-semibold text-ink outline-none hover:text-accent focus-visible:ring-2 focus-visible:ring-accent" data-rac="" type="button" tabindex="0" data-react-aria-pressable="true" aria-expanded="false" aria-controls="react-aria-_r4R_5H2_" slot="trigger"><svg aria-hidden="true" viewBox="0 0 24 24" class="size-4 shrink-0 transition-transform group-aria-[expanded=false]:-rotate-90" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"></path></svg>4. Palavras finais</button></h3><div class="react-aria-DisclosurePanel" data-rac="" id="react-aria-_r4R_5H2_" role="group" aria-labelledby="react-aria-_r4R_5H1_" aria-hidden="true" hidden=""><ul class="ms-4 flex flex-col border-s border-border ps-2"></ul></div></div><div class="react-aria-Disclosure" data-rac=""><h3 class="contents"><button id="react-aria-_r4R_6H1_" class="group flex w-full items-center gap-2 rounded px-2 py-1 text-start text-body-sm font-semibold text-ink outline-none hover:text-accent focus-visible:ring-2 focus-visible:ring-accent" data-rac="" type="button" tabindex="0" data-react-aria-pressable="true" aria-expanded="false" aria-controls="react-aria-_r4R_6H2_" slot="trigger"><svg aria-hidden="true" viewBox="0 0 24 24" class="size-4 shrink-0 transition-transform group-aria-[expanded=false]:-rotate-90" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"></path></svg>Recursos</button></h3><div class="react-aria-DisclosurePanel" data-rac="" id="react-aria-_r4R_6H2_" role="group" aria-labelledby="react-aria-_r4R_6H1_" aria-hidden="true" hidden=""><ul class="ms-4 flex flex-col border-s border-border ps-2"><li><a href="/recursos/papel-pautado/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">Papel pautado</a></li><li><a href="/recursos/sobre/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">Sobre o livro</a></li><li><a href="/recursos/transferencias/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">Transferências</a></li></ul></div></div></nav><!--astro:end--></astro-island></div></div><main id="_top" class="min-w-0 py-8"><h1 class="mb-6 text-title font-semibold text-ink">1.8 Ritmo e compassos</h1><div class="book-content" data-pagefind-body><p>O ritmo pode ser considerado como a sequência de movimentos no tempo. Conceptualmente e de
+modo mais abrangente, podemos separar o ritmo das outras duas entidades que compõem a
+música: a melodia e a harmonia. Em geral, o conceito de ritmo não deverá estar associado aos
+conceitos relativos à altura, isto é, notas mais graves ou mais agudas, e do timbre.</p>
+<p>O conceito de ritmo, na sua essência, é mais próximo dos conceitos de fórmula de compasso,
+duração e tempo. Um ritmo pode ser considerado como um padrão específico de ataques no tempo
+e pode ser produzido por instrumentos de altura indefinida, como, por exemplo, os de
+percussão, ou definida, como os de cordas. De forma mais lata, o ritmo é o conjunto dessa
+sequência de ataques e que formam um padrão rítmico. Esses padrões podem estar intimamente
+ligados a estilos musicais.</p>
+<h2 id="a-palavra-tempo">A palavra «tempo»</h2>
+<p>O significado de «tempo», em português, assume diferentes sentidos dependendo do contexto, e
+é natural que o termo suscite dúvidas aquando o seu uso e significado.</p>
+<ul>
+<li>Em geral, o tempo de uma peça musical é a sua velocidade, ou seja, quão lentamente ou rapidamente esta deve ser interpretada. Pode ser indicada de forma mais lata, como, por exemplo, Larghetto (de 60 a 66 bpm) ou Allegro (de 120 a 156 bpm), ou de modo mais exato, por exemplo, 80 semínimas num minuto. O acrónimo bpm significa «Beats per Minute».</li>
+<li>Pode informar sobre o padrão rítmico de uma peça musical, por exemplo, se o tempo é à semínima, no caso de compassos simples, ou semínima pontuada, no caso de compassos compostos. Em geral, os padrões rítmicos são constantes e caracterizam uma peça na sua tonalidade, mas podem mudar durante o decorrer da mesma.</li>
+<li>Por último, e muito frequentemente, pode significar cada uma das divisões ou subdivisões de um compasso, como, por exemplo, existem quatro tempos num compasso de 4/4.</li>
+</ul>
+<h2 id="barras-de-compasso">Barras de compasso</h2>
+<p>Define-se por compasso os vários fragmentos da partitura que correspondem a segmentos de
+tempo cuja duração é indicada pela fórmula de compasso e que se encontram contidos entre
+duas barras verticais. Embora a palavra compasso seja usada de um modo generalizado em
+português, em inglês na Europa a palavra mais usada é «bar» e em norte-americano é
+«measure». Podemos afirmar que «bar» seriam as barras verticais que delimitam os compassos e
+o «measure» o compasso em si, pelo que um termo eventualmente menos ambíguo seria «bar
+line». Em todo o caso, na prática os termos são usados indistintamente. Existem inúmeras
+barras de compasso com inúmeros objetivos diferentes. Todas as barras de compasso,
+independentemente dos seus símbolos, delimitam os compassos, mas algumas têm funções
+adicionais. As próximas figuras apresentam as mais comuns:</p>
+<figure id="fig-barras-simples" class="figure" data-score="barlines_simple" data-cursor="[[0,15.03,1.78,5.78],[1.2,26.04,1.78,5.78],[2.4,39.38,1.78,5.78],[3.6,50.39,1.78,5.78],[4.8,64.25,1.78,5.78],[6,75.26,1.78,5.78]]"><svg class="score" role="img" aria-label="Figura 1.8.1. Barras simples para divisão dos compassos." xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.2" width="159.20mm" height="17.72mm" viewBox="0.0000 -0.0240 90.5936 10.0825">
+<style type="text/css">
+<![CDATA[
+tspan { white-space: pre; }
+]]>
+</style>
+<g transform="translate(37.2455, 3.7760)">
+<rect x="0.0000" y="-2.0000" width="0.1900" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(0.0000, 5.7760)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(0.0000, 4.7760)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(0.0000, 3.7760)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(0.0000, 2.7760)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(0.0000, 1.7760)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(89.9936, 3.7760)">
+<rect x="0.0000" y="-2.0000" width="0.6000" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(89.5036, 3.7760)">
+<rect x="0.0000" y="-2.0000" width="0.1900" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(62.1193, 3.7760)">
+<rect x="0.0000" y="-2.0000" width="0.1900" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(61.6293, 3.7760)">
+<rect x="0.0000" y="-2.0000" width="0.1900" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(0.0000, 6.7760)">
+<rect x="74.9189" y="-0.1000" width="2.0661" height="0.2000" ry="0.1000" fill="currentColor"/>
+</g>
+<g transform="translate(15.0329, 4.2760)">
+<path transform="scale(0.0040, -0.0040)" d="M72 -106c40 0 204 110 231 143c7 9 11 19 11 28c0 22 -18 41 -42 41c-40 0 -204 -110 -231 -143c-7 -9 -10 -19 -10 -28c0 -22 17 -41 41 -41zM0 -67c0 71 46 203 258 203c41 0 86 -10 86 -69c0 -71 -46 -203 -258 -203c-41 0 -86 10 -86 69z" fill="currentColor"/>
+</g>
+<g transform="translate(0.8000, 4.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M266 -635h-6c-108 0 -195 88 -195 197c0 58 53 103 112 103c54 0 95 -47 95 -103c0 -52 -43 -95 -95 -95c-11 0 -21 2 -31 6c26 -39 68 -65 117 -65h4zM401 151c19 -89 48 -242 60 -354c76 27 112 94 112 163c0 89 -60 179 -172 191zM74 28c0 -112 98 -247 278 -247
+c21 0 44 2 68 6c-7 64 -29 203 -63 364c-79 -8 -124 -61 -124 -119c0 -44 25 -91 81 -123c5 -5 7 -10 7 -15c0 -11 -10 -22 -22 -22c-15 0 -126 62 -126 187c0 88 58 174 160 197c-14 58 -29 117 -46 175c-107 -121 -213 -243 -213 -403zM357 1194c28 0 143 -206 143 -361
+c0 -143 -86 -255 -180 -364c21 -68 39 -138 56 -207c5 0 10 1 14 1c155 0 255 -129 255 -262c0 -113 -74 -212 -180 -245c3 -35 5 -70 5 -105c0 -19 -1 -39 -2 -58c-7 -119 -88 -225 -202 -228l1 43c93 2 153 92 159 191c1 18 2 37 2 55c0 31 -1 61 -4 92
+c-28 -5 -55 -8 -80 -8c-239 0 -342 217 -342 374c0 177 131 306 248 441c-29 96 -52 170 -52 346c0 189 144 295 159 295zM247 782c0 -55 12 -115 35 -190c82 100 147 202 147 326c0 40 -6 82 -21 127c-49 -24 -161 -97 -161 -263z" fill="currentColor"/>
+</g>
+<g transform="translate(4.8850, 3.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M433 -89c0 -22 -50 -174 -183 -174c-59 0 -250 19 -250 263c0 62 18 262 250 262c116 0 176 -106 176 -163c0 -40 -30 -72 -67 -72c-31 0 -75 25 -75 75c0 38 27 77 72 77c4 0 9 0 14 -1c-28 37 -72 59 -120 59c-106 0 -113 -73 -113 -186v-51v-51
+c0 -113 7 -187 113 -187c80 0 139 70 158 151c2 7 7 10 12 10c6 0 13 -4 13 -12z" fill="currentColor"/>
+</g>
+<g transform="translate(0.0000, 9.5596)">
+<text font-family="TeX Gyre Schola" font-weight="bold" font-size="2.2000" text-anchor="start" fill="currentColor">
+<tspan>Exemplo n.º:</tspan>
+</text>
+</g>
+<g transform="translate(16.3453, 3.7760)">
+<rect x="-0.0650" y="-3.0000" width="0.1300" height="3.2410" ry="0.0400" fill="currentColor"/>
+</g>
+<g transform="translate(26.0413, 4.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M72 -106c40 0 204 110 231 143c7 9 11 19 11 28c0 22 -18 41 -42 41c-40 0 -204 -110 -231 -143c-7 -9 -10 -19 -10 -28c0 -22 17 -41 41 -41zM0 -67c0 71 46 203 258 203c41 0 86 -10 86 -69c0 -71 -46 -203 -258 -203c-41 0 -86 10 -86 69z" fill="currentColor"/>
+</g>
+<g transform="translate(26.0413, 9.5596)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>1. Barra simples</tspan>
+</text>
+</g>
+<g transform="translate(27.3537, 3.7760)">
+<rect x="-0.0650" y="-2.5000" width="0.1300" height="3.2410" ry="0.0400" fill="currentColor"/>
+</g>
+<g transform="translate(39.3810, 5.2760)">
+<path transform="scale(0.0040, -0.0040)" d="M72 -106c40 0 204 110 231 143c7 9 11 19 11 28c0 22 -18 41 -42 41c-40 0 -204 -110 -231 -143c-7 -9 -10 -19 -10 -28c0 -22 17 -41 41 -41zM0 -67c0 71 46 203 258 203c41 0 86 -10 86 -69c0 -71 -46 -203 -258 -203c-41 0 -86 10 -86 69z" fill="currentColor"/>
+</g>
+<g transform="translate(40.6934, 3.7760)">
+<rect x="-0.0650" y="-2.0000" width="0.1300" height="3.2410" ry="0.0400" fill="currentColor"/>
+</g>
+<g transform="translate(50.3894, 5.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M72 -106c40 0 204 110 231 143c7 9 11 19 11 28c0 22 -18 41 -42 41c-40 0 -204 -110 -231 -143c-7 -9 -10 -19 -10 -28c0 -22 17 -41 41 -41zM0 -67c0 71 46 203 258 203c41 0 86 -10 86 -69c0 -71 -46 -203 -258 -203c-41 0 -86 10 -86 69z" fill="currentColor"/>
+</g>
+<g transform="translate(50.3894, 9.5596)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>2. Barra dupla</tspan>
+</text>
+</g>
+<g transform="translate(51.7018, 3.7760)">
+<rect x="-0.0650" y="-1.5000" width="0.1300" height="3.2410" ry="0.0400" fill="currentColor"/>
+</g>
+<g transform="translate(64.2548, 6.2760)">
+<path transform="scale(0.0040, -0.0040)" d="M72 -106c40 0 204 110 231 143c7 9 11 19 11 28c0 22 -18 41 -42 41c-40 0 -204 -110 -231 -143c-7 -9 -10 -19 -10 -28c0 -22 17 -41 41 -41zM0 -67c0 71 46 203 258 203c41 0 86 -10 86 -69c0 -71 -46 -203 -258 -203c-41 0 -86 10 -86 69z" fill="currentColor"/>
+</g>
+<g transform="translate(65.5672, 3.7760)">
+<rect x="-0.0650" y="-1.0000" width="0.1300" height="3.2410" ry="0.0400" fill="currentColor"/>
+</g>
+<g transform="translate(75.2632, 6.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M72 -106c40 0 204 110 231 143c7 9 11 19 11 28c0 22 -18 41 -42 41c-40 0 -204 -110 -231 -143c-7 -9 -10 -19 -10 -28c0 -22 17 -41 41 -41zM0 -67c0 71 46 203 258 203c41 0 86 -10 86 -69c0 -71 -46 -203 -258 -203c-41 0 -86 10 -86 69z" fill="currentColor"/>
+</g>
+<g transform="translate(75.2632, 9.5596)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>3. Barra final</tspan>
+</text>
+</g>
+<g transform="translate(76.5756, 3.7760)">
+<rect x="-0.0650" y="-0.5000" width="0.1300" height="3.2410" ry="0.0400" fill="currentColor"/>
+</g>
+</svg><p><audio class="figure-audio" controls preload="none"><source src="/audio/barlines_simple.m4a" type="audio/mp4"><source src="/audio/barlines_simple.mp3" type="audio/mpeg"></audio></p><figcaption><b class="figure-number">Figura 1.8.1.</b> Barras simples para divisão dos compassos.<span class="figure-files"><a href="/scores/barlines_simple.ly" download>LilyPond</a> · <a href="/audio/barlines_simple.m4a" download>AAC</a> · <a href="/audio/barlines_simple.mp3" download>MP3</a></span></figcaption></figure>
+<p>O exemplo da figura anterior apresenta três barras de compasso diferentes, sendo que a barra
+mais à esquerda é uma barra simples e as outras duas são barras duplas. A barra do exemplo
+número 1 é uma barra simples e a sua única função é delimitar os compassos. O exemplo número
+2 apresenta uma barra dupla cuja função adicional é a de indicar uma mudança de movimento ou
+o início de uma nova secção numa peça musical. O exemplo 3 apresenta uma barra final,
+composta por uma barra mais fina à esquerda e uma mais grossa à direita, cujo objetivo é
+indicar o fim de uma peça musical.</p>
+<figure id="fig-barras-repeticao" class="figure" data-score="barlines_repetition" data-cursor="[[0,14.45,1.78,5.78],[1.2,16.49,1.78,5.78],[2.4,30.87,1.78,5.78],[3.6,41.59,1.78,5.78],[4.8,56.41,1.78,5.78],[6,66.69,1.78,5.78]]"><svg class="score" role="img" aria-label="Figura 1.8.2. Barras de repetição." xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.2" width="160.22mm" height="22.78mm" viewBox="-0.5788 -0.0240 91.1724 12.9603">
+<style type="text/css">
+<![CDATA[
+tspan { white-space: pre; }
+]]>
+</style>
+<g transform="translate(28.5543, 3.2760)">
+<path transform="scale(0.0040, -0.0040)" d="M0 0c0 31 25 56 56 56s56 -25 56 -56s-25 -56 -56 -56s-56 25 -56 56z" fill="currentColor"/>
+</g>
+<g transform="translate(28.5543, 4.2760)">
+<path transform="scale(0.0040, -0.0040)" d="M0 0c0 31 25 56 56 56s56 -25 56 -56s-25 -56 -56 -56s-56 25 -56 56z" fill="currentColor"/>
+</g>
+<g transform="translate(28.0643, 3.7760)">
+<rect x="0.0000" y="-2.0000" width="0.1900" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(27.1643, 3.7760)">
+<rect x="0.0000" y="-2.0000" width="0.6000" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(0.0000, 5.7760)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(0.0000, 4.7760)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(0.0000, 3.7760)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(0.0000, 2.7760)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(0.0000, 1.7760)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(88.7536, 3.2760)">
+<path transform="scale(0.0040, -0.0040)" d="M0 0c0 31 25 56 56 56s56 -25 56 -56s-25 -56 -56 -56s-56 25 -56 56z" fill="currentColor"/>
+</g>
+<g transform="translate(88.7536, 4.2760)">
+<path transform="scale(0.0040, -0.0040)" d="M0 0c0 31 25 56 56 56s56 -25 56 -56s-25 -56 -56 -56s-56 25 -56 56z" fill="currentColor"/>
+</g>
+<g transform="translate(89.9936, 3.7760)">
+<rect x="0.0000" y="-2.0000" width="0.6000" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(89.5036, 3.7760)">
+<rect x="0.0000" y="-2.0000" width="0.1900" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(51.6214, 3.2760)">
+<path transform="scale(0.0040, -0.0040)" d="M0 0c0 31 25 56 56 56s56 -25 56 -56s-25 -56 -56 -56s-56 25 -56 56z" fill="currentColor"/>
+</g>
+<g transform="translate(51.6214, 4.2760)">
+<path transform="scale(0.0040, -0.0040)" d="M0 0c0 31 25 56 56 56s56 -25 56 -56s-25 -56 -56 -56s-56 25 -56 56z" fill="currentColor"/>
+</g>
+<g transform="translate(54.1714, 3.2760)">
+<path transform="scale(0.0040, -0.0040)" d="M0 0c0 31 25 56 56 56s56 -25 56 -56s-25 -56 -56 -56s-56 25 -56 56z" fill="currentColor"/>
+</g>
+<g transform="translate(54.1714, 4.2760)">
+<path transform="scale(0.0040, -0.0040)" d="M0 0c0 31 25 56 56 56s56 -25 56 -56s-25 -56 -56 -56s-56 25 -56 56z" fill="currentColor"/>
+</g>
+<g transform="translate(53.2714, 3.7760)">
+<rect x="0.0000" y="-2.0000" width="0.6000" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(52.3714, 3.7760)">
+<rect x="0.0000" y="-2.0000" width="0.6000" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(14.4541, 3.2760)">
+<path transform="scale(0.0040, -0.0040)" d="M72 -106c40 0 204 110 231 143c7 9 11 19 11 28c0 22 -18 41 -42 41c-40 0 -204 -110 -231 -143c-7 -9 -10 -19 -10 -28c0 -22 17 -41 41 -41zM0 -67c0 71 46 203 258 203c41 0 86 -10 86 -69c0 -71 -46 -203 -258 -203c-41 0 -86 10 -86 69z" fill="currentColor"/>
+</g>
+<g transform="translate(0.8000, 4.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M266 -635h-6c-108 0 -195 88 -195 197c0 58 53 103 112 103c54 0 95 -47 95 -103c0 -52 -43 -95 -95 -95c-11 0 -21 2 -31 6c26 -39 68 -65 117 -65h4zM401 151c19 -89 48 -242 60 -354c76 27 112 94 112 163c0 89 -60 179 -172 191zM74 28c0 -112 98 -247 278 -247
+c21 0 44 2 68 6c-7 64 -29 203 -63 364c-79 -8 -124 -61 -124 -119c0 -44 25 -91 81 -123c5 -5 7 -10 7 -15c0 -11 -10 -22 -22 -22c-15 0 -126 62 -126 187c0 88 58 174 160 197c-14 58 -29 117 -46 175c-107 -121 -213 -243 -213 -403zM357 1194c28 0 143 -206 143 -361
+c0 -143 -86 -255 -180 -364c21 -68 39 -138 56 -207c5 0 10 1 14 1c155 0 255 -129 255 -262c0 -113 -74 -212 -180 -245c3 -35 5 -70 5 -105c0 -19 -1 -39 -2 -58c-7 -119 -88 -225 -202 -228l1 43c93 2 153 92 159 191c1 18 2 37 2 55c0 31 -1 61 -4 92
+c-28 -5 -55 -8 -80 -8c-239 0 -342 217 -342 374c0 177 131 306 248 441c-29 96 -52 170 -52 346c0 189 144 295 159 295zM247 782c0 -55 12 -115 35 -190c82 100 147 202 147 326c0 40 -6 82 -21 127c-49 -24 -161 -97 -161 -263z" fill="currentColor"/>
+</g>
+<g transform="translate(4.8850, 3.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M433 -89c0 -22 -50 -174 -183 -174c-59 0 -250 19 -250 263c0 62 18 262 250 262c116 0 176 -106 176 -163c0 -40 -30 -72 -67 -72c-31 0 -75 25 -75 75c0 38 27 77 72 77c4 0 9 0 14 -1c-28 37 -72 59 -120 59c-106 0 -113 -73 -113 -186v-51v-51
+c0 -113 7 -187 113 -187c80 0 139 70 158 151c2 7 7 10 12 10c6 0 13 -4 13 -12z" fill="currentColor"/>
+</g>
+<g transform="translate(-0.5788, 9.4374)">
+<text font-family="TeX Gyre Schola" font-weight="bold" font-size="2.2000" text-anchor="start" fill="currentColor">
+<tspan>Exemplo n.º:</tspan>
+</text>
+</g>
+<g transform="translate(14.5191, 3.7760)">
+<rect x="-0.0650" y="-0.2410" width="0.1300" height="3.2410" ry="0.0400" fill="currentColor"/>
+</g>
+<g transform="translate(16.4926, 4.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M72 -106c40 0 204 110 231 143c7 9 11 19 11 28c0 22 -18 41 -42 41c-40 0 -204 -110 -231 -143c-7 -9 -10 -19 -10 -28c0 -22 17 -41 41 -41zM0 -67c0 71 46 203 258 203c41 0 86 -10 86 -69c0 -71 -46 -203 -258 -203c-41 0 -86 10 -86 69z" fill="currentColor"/>
+</g>
+<g transform="translate(16.4926, 9.4374)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>4. Barra de repetição</tspan>
+</text>
+</g>
+<g transform="translate(22.2628, 12.4374)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>à esquerda</tspan>
+</text>
+</g>
+<g transform="translate(17.8050, 3.7760)">
+<rect x="-0.0650" y="-2.5000" width="0.1300" height="3.2410" ry="0.0400" fill="currentColor"/>
+</g>
+<g transform="translate(30.8671, 5.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M72 -106c40 0 204 110 231 143c7 9 11 19 11 28c0 22 -18 41 -42 41c-40 0 -204 -110 -231 -143c-7 -9 -10 -19 -10 -28c0 -22 17 -41 41 -41zM0 -67c0 71 46 203 258 203c41 0 86 -10 86 -69c0 -71 -46 -203 -258 -203c-41 0 -86 10 -86 69z" fill="currentColor"/>
+</g>
+<g transform="translate(32.1795, 3.7760)">
+<rect x="-0.0650" y="-1.5000" width="0.1300" height="3.2410" ry="0.0400" fill="currentColor"/>
+</g>
+<g transform="translate(41.5929, 4.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M72 -106c40 0 204 110 231 143c7 9 11 19 11 28c0 22 -18 41 -42 41c-40 0 -204 -110 -231 -143c-7 -9 -10 -19 -10 -28c0 -22 17 -41 41 -41zM0 -67c0 71 46 203 258 203c41 0 86 -10 86 -69c0 -71 -46 -203 -258 -203c-41 0 -86 10 -86 69z" fill="currentColor"/>
+</g>
+<g transform="translate(41.5929, 9.4374)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>5. Barra de repetição</tspan>
+</text>
+</g>
+<g transform="translate(42.2417, 12.4374)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>à esquerda e direita</tspan>
+</text>
+</g>
+<g transform="translate(42.9053, 3.7760)">
+<rect x="-0.0650" y="-2.5000" width="0.1300" height="3.2410" ry="0.0400" fill="currentColor"/>
+</g>
+<g transform="translate(56.4148, 3.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M72 -106c40 0 204 110 231 143c7 9 11 19 11 28c0 22 -18 41 -42 41c-40 0 -204 -110 -231 -143c-7 -9 -10 -19 -10 -28c0 -22 17 -41 41 -41zM0 -67c0 71 46 203 258 203c41 0 86 -10 86 -69c0 -71 -46 -203 -258 -203c-41 0 -86 10 -86 69z" fill="currentColor"/>
+</g>
+<g transform="translate(56.4798, 3.7760)">
+<rect x="-0.0650" y="0.2590" width="0.1300" height="3.0743" ry="0.0400" fill="currentColor"/>
+</g>
+<g transform="translate(66.6933, 2.7760)">
+<path transform="scale(0.0040, -0.0040)" d="M72 -106c40 0 204 110 231 143c7 9 11 19 11 28c0 22 -18 41 -42 41c-40 0 -204 -110 -231 -143c-7 -9 -10 -19 -10 -28c0 -22 17 -41 41 -41zM0 -67c0 71 46 203 258 203c41 0 86 -10 86 -69c0 -71 -46 -203 -258 -203c-41 0 -86 10 -86 69z" fill="currentColor"/>
+</g>
+<g transform="translate(66.6933, 9.4374)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>6. Barra de repetição</tspan>
+</text>
+</g>
+<g transform="translate(73.7951, 12.4374)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>à direita</tspan>
+</text>
+</g>
+<g transform="translate(66.7583, 3.7760)">
+<rect x="-0.0650" y="-0.7410" width="0.1300" height="3.2410" ry="0.0400" fill="currentColor"/>
+</g>
+</svg><p><audio class="figure-audio" controls preload="none"><source src="/audio/barlines_repetition.m4a" type="audio/mp4"><source src="/audio/barlines_repetition.mp3" type="audio/mpeg"></audio></p><figcaption><b class="figure-number">Figura 1.8.2.</b> Barras de repetição.<span class="figure-files"><a href="/scores/barlines_repetition.ly" download>LilyPond</a> · <a href="/audio/barlines_repetition.m4a" download>AAC</a> · <a href="/audio/barlines_repetition.mp3" download>MP3</a></span></figcaption></figure>
+<p>As três barras de compasso do exemplo anterior são denominadas barras de repetição. A barra
+do exemplo 4 indica que os compassos que se encontram à sua direita devem ser repetidos uma
+vez, até se encontrar a barra do exemplo 5. Quando a barra do exemplo 5 é alcançada, a peça
+deve ser repetida desde a barra do exemplo 4, continuando até existirem barras com outras
+funções. A barra de repetição do exemplo 5 junta num único símbolo as barras dos exemplos 4
+e 6.</p>
+<figure id="fig-barras-casas" class="figure" data-score="barlines_volta_brackets" data-cursor="[[0,8.49,3.21,7.21],[0.6,13.23,3.21,7.21],[1.2,17.96,3.21,7.21],[1.8,25.74,3.21,7.21],[2.4,30.47,3.21,7.21],[3,35.21,3.21,7.21],[3.6,41.7,3.21,7.21],[4.2,46.44,3.21,7.21],[4.8,51.18,3.21,7.21],[5.4,57.7,3.21,7.21],[6,62.44,3.21,7.21],[6.6,67.17,3.21,7.21],[7.2,25.74,3.21,7.21],[7.8,30.47,3.21,7.21],[8.4,35.21,3.21,7.21],[9,75.11,3.21,7.21],[9.6,79.85,3.21,7.21],[10.2,84.59,3.21,7.21]]"><svg class="score" role="img" aria-label="Figura 1.8.3. Barras de repetição com duas casas distintas." xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.2" width="159.20mm" height="15.39mm" viewBox="0.0000 0.0000 90.5936 8.7600">
+<style type="text/css">
+<![CDATA[
+tspan { white-space: pre; }
+]]>
+</style>
+<g transform="translate(23.9271, 4.7100)">
+<path transform="scale(0.0040, -0.0040)" d="M0 0c0 31 25 56 56 56s56 -25 56 -56s-25 -56 -56 -56s-56 25 -56 56z" fill="currentColor"/>
+</g>
+<g transform="translate(23.9271, 5.7100)">
+<path transform="scale(0.0040, -0.0040)" d="M0 0c0 31 25 56 56 56s56 -25 56 -56s-25 -56 -56 -56s-56 25 -56 56z" fill="currentColor"/>
+</g>
+<g transform="translate(23.4371, 5.2100)">
+<rect x="0.0000" y="-2.0000" width="0.1900" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(22.5371, 5.2100)">
+<rect x="0.0000" y="-2.0000" width="0.6000" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(0.0000, 7.2100)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(0.0000, 6.2100)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(0.0000, 5.2100)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(0.0000, 4.2100)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(0.0000, 3.2100)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(89.9936, 5.2100)">
+<rect x="0.0000" y="-2.0000" width="0.6000" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(89.5036, 5.2100)">
+<rect x="0.0000" y="-2.0000" width="0.1900" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(71.9125, 4.7100)">
+<path transform="scale(0.0040, -0.0040)" d="M0 0c0 31 25 56 56 56s56 -25 56 -56s-25 -56 -56 -56s-56 25 -56 56z" fill="currentColor"/>
+</g>
+<g transform="translate(71.9125, 5.7100)">
+<path transform="scale(0.0040, -0.0040)" d="M0 0c0 31 25 56 56 56s56 -25 56 -56s-25 -56 -56 -56s-56 25 -56 56z" fill="currentColor"/>
+</g>
+<g transform="translate(73.1525, 5.2100)">
+<rect x="0.0000" y="-2.0000" width="0.6000" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(72.6625, 5.2100)">
+<rect x="0.0000" y="-2.0000" width="0.1900" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(56.1499, 5.2100)">
+<rect x="0.0000" y="-2.0000" width="0.1900" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(0.0000, 8.2100)">
+<rect x="84.2614" y="-0.1000" width="1.9563" height="0.2000" ry="0.1000" fill="currentColor"/>
+</g>
+<g transform="translate(0.0000, 8.2100)">
+<rect x="79.5238" y="-0.1000" width="1.9563" height="0.2000" ry="0.1000" fill="currentColor"/>
+</g>
+<g transform="translate(0.0000, 8.2100)">
+<rect x="74.7863" y="-0.1000" width="1.9563" height="0.2000" ry="0.1000" fill="currentColor"/>
+</g>
+<g transform="translate(40.1507, 5.2100)">
+<rect x="0.0000" y="-2.0000" width="0.1900" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(41.1807, 1.8549)">
+<g>
+<path transform="scale(0.0025, -0.0025)" d="M191 487c16 0 30 14 41 14c12 0 23 -14 23 -31v-343c0 -46 35 -85 80 -85c14 0 20 -11 20 -21s-6 -21 -20 -21c-48 0 -96 13 -144 13s-95 -13 -143 -13c-14 0 -21 11 -21 21s7 21 21 21c45 0 79 39 79 85v143c0 22 -15 34 -29 34c-7 0 -13 -3 -17 -10l-34 -68
+c-5 -10 -14 -14 -23 -14c-14 0 -27 10 -27 25c0 4 1 9 3 13l127 250c2 4 6 6 10 6c15 0 39 -19 54 -19z" fill="currentColor"/>
+<path transform="translate(0.9560, 0.0000) scale(0.0025, -0.0025)" d="M0 53c0 29 24 53 53 53s53 -24 53 -53s-24 -53 -53 -53s-53 24 -53 53z" fill="currentColor"/>
+</g>
+</g>
+<g transform="translate(40.1507, 0.0800)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1600" stroke="currentColor" x1="32.5918" y1="-0.0000" x2="32.5918" y2="2.0000"/>
+</g>
+<g transform="translate(40.1507, 0.0800)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1600" stroke="currentColor" x1="0.1100" y1="-0.0000" x2="0.1100" y2="2.0000"/>
+</g>
+<g transform="translate(40.1507, 0.0800)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1600" stroke="currentColor" x1="0.1100" y1="-0.0000" x2="32.5918" y2="-0.0000"/>
+</g>
+<g transform="translate(8.4897, 4.7100)">
+<path transform="scale(0.0040, -0.0040)" d="M0 -46c0 91 116 182 217 182c63 0 109 -35 109 -90c0 -87 -110 -182 -220 -182c-67 0 -106 39 -106 90z" fill="currentColor"/>
+</g>
+<g transform="translate(0.8000, 6.2100)">
+<path transform="scale(0.0040, -0.0040)" d="M266 -635h-6c-108 0 -195 88 -195 197c0 58 53 103 112 103c54 0 95 -47 95 -103c0 -52 -43 -95 -95 -95c-11 0 -21 2 -31 6c26 -39 68 -65 117 -65h4zM401 151c19 -89 48 -242 60 -354c76 27 112 94 112 163c0 89 -60 179 -172 191zM74 28c0 -112 98 -247 278 -247
+c21 0 44 2 68 6c-7 64 -29 203 -63 364c-79 -8 -124 -61 -124 -119c0 -44 25 -91 81 -123c5 -5 7 -10 7 -15c0 -11 -10 -22 -22 -22c-15 0 -126 62 -126 187c0 88 58 174 160 197c-14 58 -29 117 -46 175c-107 -121 -213 -243 -213 -403zM357 1194c28 0 143 -206 143 -361
+c0 -143 -86 -255 -180 -364c21 -68 39 -138 56 -207c5 0 10 1 14 1c155 0 255 -129 255 -262c0 -113 -74 -212 -180 -245c3 -35 5 -70 5 -105c0 -19 -1 -39 -2 -58c-7 -119 -88 -225 -202 -228l1 43c93 2 153 92 159 191c1 18 2 37 2 55c0 31 -1 61 -4 92
+c-28 -5 -55 -8 -80 -8c-239 0 -342 217 -342 374c0 177 131 306 248 441c-29 96 -52 170 -52 346c0 189 144 295 159 295zM247 782c0 -55 12 -115 35 -190c82 100 147 202 147 326c0 40 -6 82 -21 127c-49 -24 -161 -97 -161 -263z" fill="currentColor"/>
+</g>
+<g transform="translate(5.0216, 5.2100)">
+<path transform="scale(0.0040, -0.0040)" d="M263 265c0 -33 70 -23 70 -125c0 -92 -79 -140 -179 -140c-79 0 -154 42 -154 113c0 36 30 66 66 66s65 -30 65 -66c0 -25 -40 -28 -40 -53c0 -27 32 -37 63 -37c49 0 63 61 63 117v16c0 54 -2 94 -50 94h-80c-10 0 -14 8 -14 15s4 14 14 14h80c49 0 50 43 50 99v8
+c0 54 -18 91 -67 91c-28 0 -57 -9 -57 -33c0 -22 35 -25 35 -47c0 -32 -25 -58 -57 -58s-58 26 -58 58c0 64 67 103 137 103c91 0 169 -33 169 -114c0 -122 -56 -80 -56 -121z" fill="currentColor"/>
+</g>
+<g transform="translate(4.8850, 7.2100)">
+<path transform="scale(0.0040, -0.0040)" d="M196 117h117c0 -48 27 -94 72 -94c8 0 12 -5 12 -11s-4 -12 -12 -12c-44 0 -87 13 -131 13s-87 -13 -131 -13c-8 0 -12 6 -12 12s4 11 12 11c45 0 73 46 73 94zM225 487c36 0 69 14 76 14c8 0 14 -6 14 -12c0 -2 -1 -3 -2 -5l-284 -330h167v131c0 34 34 27 68 72
+c22 30 23 56 36 56c6 0 13 -5 13 -14v-245h72c10 0 15 -7 15 -14s-5 -15 -15 -15h-72v-8h-117v8h-167c-23 0 -31 14 -31 23c0 12 140 143 140 336c0 9 6 16 13 16c5 0 39 -13 74 -13z" fill="currentColor"/>
+</g>
+<g transform="translate(8.5547, 5.2100)">
+<rect x="-0.0650" y="-0.3138" width="0.1300" height="3.3138" ry="0.0400" fill="currentColor"/>
+</g>
+<g transform="translate(13.2273, 4.7100)">
+<path transform="scale(0.0040, -0.0040)" d="M0 -46c0 91 116 182 217 182c63 0 109 -35 109 -90c0 -87 -110 -182 -220 -182c-67 0 -106 39 -106 90z" fill="currentColor"/>
+</g>
+<g transform="translate(13.2923, 5.2100)">
+<rect x="-0.0650" y="-0.3138" width="0.1300" height="3.3138" ry="0.0400" fill="currentColor"/>
+</g>
+<g transform="translate(17.9648, 4.7100)">
+<path transform="scale(0.0040, -0.0040)" d="M0 -46c0 91 116 182 217 182c63 0 109 -35 109 -90c0 -87 -110 -182 -220 -182c-67 0 -106 39 -106 90z" fill="currentColor"/>
+</g>
+<g transform="translate(18.0298, 5.2100)">
+<rect x="-0.0650" y="-0.3138" width="0.1300" height="3.3138" ry="0.0400" fill="currentColor"/>
+</g>
+<g transform="translate(25.7370, 6.2100)">
+<path transform="scale(0.0040, -0.0040)" d="M0 -46c0 91 116 182 217 182c63 0 109 -35 109 -90c0 -87 -110 -182 -220 -182c-67 0 -106 39 -106 90z" fill="currentColor"/>
+</g>
+<g transform="translate(74.5925, 1.8398)">
+<g>
+<path transform="scale(0.0025, -0.0025)" d="M93 66c-60 0 -40 -66 -72 -66c-11 0 -21 7 -21 20v3c15 169 232 157 232 332c0 51 -18 103 -62 103c-31 0 -62 -13 -62 -41c0 -25 33 -39 33 -64c0 -35 -29 -63 -64 -63s-63 28 -63 63c0 83 71 147 156 147c97 0 189 -56 189 -145c0 -141 -133 -154 -227 -206
+c86 0 115 -62 168 -62c45 0 29 41 57 41c11 0 21 -9 21 -21c0 -28 -47 -107 -143 -107c-92 0 -95 66 -142 66z" fill="currentColor"/>
+<path transform="translate(0.9902, 0.0000) scale(0.0025, -0.0025)" d="M0 53c0 29 24 53 53 53s53 -24 53 -53s-24 -53 -53 -53s-53 24 -53 53z" fill="currentColor"/>
+</g>
+</g>
+<g transform="translate(72.6625, 0.0800)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1600" stroke="currentColor" x1="17.8511" y1="-0.0000" x2="17.8511" y2="2.0000"/>
+</g>
+<g transform="translate(72.6625, 0.0800)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1600" stroke="currentColor" x1="1.0100" y1="-0.0000" x2="1.0100" y2="2.0000"/>
+</g>
+<g transform="translate(72.6625, 0.0800)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1600" stroke="currentColor" x1="1.0100" y1="-0.0000" x2="17.8511" y2="-0.0000"/>
+</g>
+<g transform="translate(26.9762, 5.2100)">
+<rect x="-0.0650" y="-2.5000" width="0.1300" height="3.3138" ry="0.0400" fill="currentColor"/>
+</g>
+<g transform="translate(30.4746, 6.2100)">
+<path transform="scale(0.0040, -0.0040)" d="M0 -46c0 91 116 182 217 182c63 0 109 -35 109 -90c0 -87 -110 -182 -220 -182c-67 0 -106 39 -106 90z" fill="currentColor"/>
+</g>
+<g transform="translate(31.7138, 5.2100)">
+<rect x="-0.0650" y="-2.5000" width="0.1300" height="3.3138" ry="0.0400" fill="currentColor"/>
+</g>
+<g transform="translate(35.2121, 6.2100)">
+<path transform="scale(0.0040, -0.0040)" d="M0 -46c0 91 116 182 217 182c63 0 109 -35 109 -90c0 -87 -110 -182 -220 -182c-67 0 -106 39 -106 90z" fill="currentColor"/>
+</g>
+<g transform="translate(36.4513, 5.2100)">
+<rect x="-0.0650" y="-2.5000" width="0.1300" height="3.3138" ry="0.0400" fill="currentColor"/>
+</g>
+<g transform="translate(41.7005, 7.2100)">
+<path transform="scale(0.0040, -0.0040)" d="M0 -46c0 91 116 182 217 182c63 0 109 -35 109 -90c0 -87 -110 -182 -220 -182c-67 0 -106 39 -106 90z" fill="currentColor"/>
+</g>
+<g transform="translate(42.9397, 5.2100)">
+<rect x="-0.0650" y="-1.5000" width="0.1300" height="3.3138" ry="0.0400" fill="currentColor"/>
+</g>
+<g transform="translate(46.4381, 7.2100)">
+<path transform="scale(0.0040, -0.0040)" d="M0 -46c0 91 116 182 217 182c63 0 109 -35 109 -90c0 -87 -110 -182 -220 -182c-67 0 -106 39 -106 90z" fill="currentColor"/>
+</g>
+<g transform="translate(47.6773, 5.2100)">
+<rect x="-0.0650" y="-1.5000" width="0.1300" height="3.3138" ry="0.0400" fill="currentColor"/>
+</g>
+<g transform="translate(51.1757, 7.2100)">
+<path transform="scale(0.0040, -0.0040)" d="M0 -46c0 91 116 182 217 182c63 0 109 -35 109 -90c0 -87 -110 -182 -220 -182c-67 0 -106 39 -106 90z" fill="currentColor"/>
+</g>
+<g transform="translate(52.4149, 5.2100)">
+<rect x="-0.0650" y="-1.5000" width="0.1300" height="3.3138" ry="0.0400" fill="currentColor"/>
+</g>
+<g transform="translate(57.6998, 7.7100)">
+<path transform="scale(0.0040, -0.0040)" d="M0 -46c0 91 116 182 217 182c63 0 109 -35 109 -90c0 -87 -110 -182 -220 -182c-67 0 -106 39 -106 90z" fill="currentColor"/>
+</g>
+<g transform="translate(58.9390, 5.2100)">
+<rect x="-0.0650" y="-1.0000" width="0.1300" height="3.3138" ry="0.0400" fill="currentColor"/>
+</g>
+<g transform="translate(62.4373, 7.7100)">
+<path transform="scale(0.0040, -0.0040)" d="M0 -46c0 91 116 182 217 182c63 0 109 -35 109 -90c0 -87 -110 -182 -220 -182c-67 0 -106 39 -106 90z" fill="currentColor"/>
+</g>
+<g transform="translate(63.6765, 5.2100)">
+<rect x="-0.0650" y="-1.0000" width="0.1300" height="3.3138" ry="0.0400" fill="currentColor"/>
+</g>
+<g transform="translate(85.8266, 5.2100)">
+<rect x="-0.0650" y="-0.5000" width="0.1300" height="3.3138" ry="0.0400" fill="currentColor"/>
+</g>
+<g transform="translate(67.1749, 7.7100)">
+<path transform="scale(0.0040, -0.0040)" d="M0 -46c0 91 116 182 217 182c63 0 109 -35 109 -90c0 -87 -110 -182 -220 -182c-67 0 -106 39 -106 90z" fill="currentColor"/>
+</g>
+<g transform="translate(68.4141, 5.2100)">
+<rect x="-0.0650" y="-1.0000" width="0.1300" height="3.3138" ry="0.0400" fill="currentColor"/>
+</g>
+<g transform="translate(84.5874, 8.2100)">
+<path transform="scale(0.0040, -0.0040)" d="M0 -46c0 91 116 182 217 182c63 0 109 -35 109 -90c0 -87 -110 -182 -220 -182c-67 0 -106 39 -106 90z" fill="currentColor"/>
+</g>
+<g transform="translate(75.1123, 8.2100)">
+<path transform="scale(0.0040, -0.0040)" d="M0 -46c0 91 116 182 217 182c63 0 109 -35 109 -90c0 -87 -110 -182 -220 -182c-67 0 -106 39 -106 90z" fill="currentColor"/>
+</g>
+<g transform="translate(76.3515, 5.2100)">
+<rect x="-0.0650" y="-0.5000" width="0.1300" height="3.3138" ry="0.0400" fill="currentColor"/>
+</g>
+<g transform="translate(79.8499, 8.2100)">
+<path transform="scale(0.0040, -0.0040)" d="M0 -46c0 91 116 182 217 182c63 0 109 -35 109 -90c0 -87 -110 -182 -220 -182c-67 0 -106 39 -106 90z" fill="currentColor"/>
+</g>
+<g transform="translate(81.0891, 5.2100)">
+<rect x="-0.0650" y="-0.5000" width="0.1300" height="3.3138" ry="0.0400" fill="currentColor"/>
+</g>
+</svg><p><audio class="figure-audio" controls preload="none"><source src="/audio/barlines_volta_brackets.m4a" type="audio/mp4"><source src="/audio/barlines_volta_brackets.mp3" type="audio/mpeg"></audio></p><figcaption><b class="figure-number">Figura 1.8.3.</b> Barras de repetição com duas casas distintas.<span class="figure-files"><a href="/scores/barlines_volta_brackets.ly" download>LilyPond</a> · <a href="/audio/barlines_volta_brackets.m4a" download>AAC</a> · <a href="/audio/barlines_volta_brackets.mp3" download>MP3</a></span></figcaption></figure>
+<p>Os exemplos da figura anterior estendem o conceito de barra de repetição e incluem a
+indicação de duas casas: a casa 1, que vai desde o compasso número 3 até ao compasso número
+4 (inclusive) e a casa 2 que ocupa apenas o compasso número 5. A casa 1 é tocada uma vez
+aquando a primeira passagem, mas saltada aquando a primeira repetição, que deve saltar do
+compasso número 2 imediatamente para a casa 2 no 5.º compasso. A peça deverá ser tocada do
+seguinte modo:</p>
+<ul>
+<li>[C, C, C], [G, G, G], [E, E, E], [D, D, D] (repete desde o compasso 2), [G, G, G] (salta a casa 1 para a casa dois), [C, C, C] e termina.</li>
+</ul>
+<script type="module">
+for (const figure of document.querySelectorAll('figure.figure[data-cursor]')) {
+  const map = JSON.parse(figure.dataset.cursor);
+  const audio = figure.querySelector('audio');
+  const svg = figure.querySelector('svg.score');
+  if (!audio || !svg || map.length === 0) continue;
+
+  // The band is the staves the note belongs to: on a score over several systems the bar
+  // must not run down the silent ones.
+  const PAD = 1.5;
+  const bar = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+  bar.setAttribute('class', 'score-cursor');
+  bar.setAttribute('width', 0.5);
+  const place = ([, x, top, bottom]) => {
+    bar.setAttribute('y', top - PAD);
+    bar.setAttribute('height', bottom - top + PAD * 2);
+  };
+  place(map[0]);
+  bar.setAttribute('x', map[0][1]);
+  svg.append(bar);
+
+  let frame = 0;
+  const follow = () => {
+    const now = audio.currentTime;
+    let index = 0;
+    for (let low = 0, high = map.length - 1; low <= high; ) {
+      const middle = (low + high) >> 1;
+      if (map[middle][0] <= now) { index = middle; low = middle + 1; } else { high = middle - 1; }
+    }
+    // The bar marks the note sounding rather than sliding between notes: a whole note
+    // lasts seconds, and drift reads as the recording being out of step.
+    place(map[index]);
+    bar.setAttribute('x', map[index][1]);
+    frame = requestAnimationFrame(follow);
+  };
+
+  const stop = () => { cancelAnimationFrame(frame); frame = 0; };
+  audio.addEventListener('play', () => { svg.classList.add('is-playing'); follow(); });
+  audio.addEventListener('pause', stop);
+  audio.addEventListener('ended', () => { stop(); svg.classList.remove('is-playing'); });
+}
+</script>
+</div><nav class="mt-12 flex justify-between gap-4 border-t border-border pt-6 text-body-sm"><a href="/fundamentos/figuras-ritmicas/" rel="prev" class="text-accent no-underline">← Anterior: 1.7 Figuras rítmicas</a><a href="/fundamentos/metrica/" rel="next" class="text-accent no-underline">Seguinte: 1.9 Métrica →</a></nav></main><div class="hidden py-8 xl:block"><nav aria-label="Nesta página" class="sticky top-16 text-body-sm text-secondary"><p class="mb-2 font-semibold text-ink">Nesta página</p><ul class="flex flex-col gap-1"><li class><a href="#a-palavra-tempo" class="no-underline hover:text-ink">A palavra «tempo»</a></li><li class><a href="#barras-de-compasso" class="no-underline hover:text-ink">Barras de compasso</a></li></ul></nav></div></div><footer class="book-colophon"><p><a href="/">Teoria Musical</a>, um projeto de Marco Ferra</p><p><span>Código sob <a href="https://github.com/mfsphere/teoria-musical/blob/main/LICENSE">MIT</a></span><span>Texto, partituras e gravações sob <a href="https://github.com/mfsphere/teoria-musical/blob/main/LICENSE-TEXT">CC BY-SA 4.0</a></span><span>2017–2026</span></p></footer></body></html>

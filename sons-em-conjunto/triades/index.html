@@ -1,0 +1,989 @@
+<!DOCTYPE html><html lang="pt-PT"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>3.5 Tríades</title><meta name="description" content="A tríade e as suas qualidades, o estado fundamental e as inversões, a harmonização da escala maior e a análise por numerais romanos."><link rel="canonical" href="https://www.teoria-musical.com/sons-em-conjunto/triades/"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><meta property="og:type" content="book"><meta property="og:site_name" content="Teoria Musical"><meta property="og:title" content="3.5 Tríades"><meta property="og:description" content="A tríade e as suas qualidades, o estado fundamental e as inversões, a harmonização da escala maior e a análise por numerais romanos."><meta property="og:url" content="https://www.teoria-musical.com/sons-em-conjunto/triades/"><meta property="og:image" content="https://www.teoria-musical.com/og.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Teoria Musical — princípios de ritmo, melodia e harmonia"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://www.teoria-musical.com/og.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Book","name":"Teoria Musical","alternateName":"Música: Princípios de ritmo, melodia e harmonia","author":{"@type":"Person","name":"Marco A. Ferra"},"inLanguage":"pt-PT","url":"https://www.teoria-musical.com/","license":"https://creativecommons.org/licenses/by-sa/4.0/","isAccessibleForFree":true,"genre":"Teoria musical"}</script><script>
+			try {
+				const stored = localStorage.getItem('teoria-musical:theme');
+				const dark =
+					stored === 'dark' ||
+					(stored !== 'light' && matchMedia('(prefers-color-scheme: dark)').matches);
+				document.documentElement.classList.toggle('dark', dark);
+			} catch {
+				/* Storage refused: the system preference still applies. */
+			}
+		</script><link rel="stylesheet" href="/_astro/nav.BigK0A7K.css"></head><body class="min-h-dvh bg-paper font-serif text-body"><a href="#_top" class="skip-link">Saltar para o conteúdo</a><header class="sticky top-0 z-40 flex items-center gap-2 border-b border-border bg-surface px-3 py-2 sm:gap-3 sm:px-4"><style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var l=(n,t)=>{let i=async()=>{await(await n())()},e=typeof t.value=="object"?t.value:void 0,s={timeout:e==null?void 0:e.timeout};"requestIdleCallback"in window?window.requestIdleCallback(i,s):setTimeout(i,s.timeout||200)};(self.Astro||(self.Astro={})).idle=l;window.dispatchEvent(new Event("astro:idle"));})();</script><script>(()=>{var g=Object.defineProperty;var w=(a,s,c)=>s in a?g(a,s,{enumerable:!0,configurable:!0,writable:!0,value:c}):a[s]=c;var l=(a,s,c)=>w(a,typeof s!="symbol"?s+"":s,c);var E=new Set(["__proto__","constructor","prototype"]);{let a={0:t=>y(t),1:t=>c(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(c(t)),5:t=>new Set(c(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t),11:t=>Number.POSITIVE_INFINITY*t},s=t=>{let[p,e]=t;return p in a?a[p](e):void 0},c=t=>t.map(s),y=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([p,e])=>[p,s(e)]));class f extends HTMLElement{constructor(){super(...arguments);l(this,"Component");l(this,"hydrator");l(this,"hydrate",async()=>{var b;if(!this.hydrator||!this.isConnected)return;let e=(b=this.parentElement)==null?void 0:b.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let r=this.querySelectorAll("astro-slot"),n={},d=this.querySelectorAll("template[data-astro-template]");for(let o of d){let i=o.closest(this.tagName);i!=null&&i.isSameNode(this)&&(n[o.getAttribute("data-astro-template")||"default"]=o.innerHTML,o.remove())}for(let o of r){let i=o.closest(this.tagName);i!=null&&i.isSameNode(this)&&(n[o.getAttribute("name")||"default"]=o.innerHTML)}let u;try{u=this.hasAttribute("props")?y(JSON.parse(this.getAttribute("props"))):{}}catch(o){let i=this.getAttribute("component-url")||"<unknown>",v=this.getAttribute("component-export");throw v&&(i+=` (export ${v})`),console.error(`[hydrate] Error parsing props for component ${i}`,this.getAttribute("props"),o),o}let h;await this.hydrator(this)(this.Component,u,n,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});l(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),r.disconnect(),this.childrenConnectedCallback()},r=new MutationObserver(()=>{var n;((n=this.lastChild)==null?void 0:n.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});r.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}getRetryImportUrl(e){let r=new URL(e,document.baseURI);return r.searchParams.set("astro-retry",Date.now().toString()),r.toString()}async importWithRetry(e){try{return await import(e)}catch(r){return await new Promise(n=>setTimeout(n,1e3)),import(this.getRetryImportUrl(e))}}handleHydrationError(e){let r=this.getAttribute("component-url"),n=new CustomEvent("astro:hydration-error",{cancelable:!0,bubbles:!0,composed:!0,detail:{error:e,componentUrl:r}});this.dispatchEvent(n)&&console.error(`[astro-island] Error hydrating ${r}`,e)}async start(){let e=JSON.parse(this.getAttribute("opts")),r=this.getAttribute("client");if(Astro[r]===void 0){window.addEventListener(`astro:${r}`,()=>this.start(),{once:!0});return}try{await Astro[r](async()=>{let n=this.getAttribute("renderer-url");try{let[d,{default:u}]=await Promise.all([this.importWithRetry(this.getAttribute("component-url")),n?this.importWithRetry(n):Promise.resolve({default:()=>()=>{}})]),h=this.getAttribute("component-export")||"default";if(h.includes(".")){this.Component=d;for(let m of h.split(".")){if(E.has(m)||!this.Component||typeof this.Component!="object"&&typeof this.Component!="function"||!Object.hasOwn(this.Component,m))throw new Error(`Invalid component export path: ${h}`);this.Component=this.Component[m]}}else{if(E.has(h))throw new Error(`Invalid component export path: ${h}`);this.Component=d[h]}return this.hydrator=u,this.hydrate}catch(d){return this.handleHydrationError(d),()=>{}}},e,this)}catch(n){this.handleHydrationError(n)}}attributeChangedCallback(){this.hydrate()}}l(f,"observedAttributes",["props"]),customElements.get("astro-island")||customElements.define("astro-island",f)}})();</script><astro-island uid="Z1H79hg" prefix="r5" component-url="/_astro/MobileNav.BCEGxCaz.js" component-export="default" renderer-url="/_astro/client.yyZZvWdV.js" props="{&quot;chapters&quot;:[1,[[0,{&quot;label&quot;:[0,&quot;Prefácio&quot;],&quot;pages&quot;:[1,[[0,{&quot;href&quot;:[0,&quot;/prefacio/&quot;],&quot;label&quot;:[0,&quot;Prefácio&quot;]}]]]}],[0,{&quot;label&quot;:[0,&quot;1. Fundamentos&quot;],&quot;pages&quot;:[1,[[0,{&quot;href&quot;:[0,&quot;/fundamentos/som/&quot;],&quot;label&quot;:[0,&quot;1.1 Som&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/pauta-e-partitura/&quot;],&quot;label&quot;:[0,&quot;1.2 Pauta e partitura&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/notas/&quot;],&quot;label&quot;:[0,&quot;1.3 Notas&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/claves/&quot;],&quot;label&quot;:[0,&quot;1.4 Claves&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/armacao-de-clave/&quot;],&quot;label&quot;:[0,&quot;1.5 Armação de clave&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/vozes/&quot;],&quot;label&quot;:[0,&quot;1.6 Vozes&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/figuras-ritmicas/&quot;],&quot;label&quot;:[0,&quot;1.7 Figuras rítmicas&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/ritmo-e-compassos/&quot;],&quot;label&quot;:[0,&quot;1.8 Ritmo e compassos&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/metrica/&quot;],&quot;label&quot;:[0,&quot;1.9 Métrica&quot;]}]]]}],[0,{&quot;label&quot;:[0,&quot;2. Sons isolados&quot;],&quot;pages&quot;:[1,[[0,{&quot;href&quot;:[0,&quot;/sons-isolados/serie-harmonica/&quot;],&quot;label&quot;:[0,&quot;2.1 Série harmónica&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-isolados/altura-definida-e-indefinida/&quot;],&quot;label&quot;:[0,&quot;2.2 Altura definida e indefinida&quot;]}]]]}],[0,{&quot;label&quot;:[0,&quot;3. Sons em conjunto&quot;],&quot;pages&quot;:[1,[[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/melodia-e-intervalos/&quot;],&quot;label&quot;:[0,&quot;3.1 Melodia e intervalos&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/consonancia-e-dissonancia/&quot;],&quot;label&quot;:[0,&quot;3.2 Consonância e dissonância&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/escalas/&quot;],&quot;label&quot;:[0,&quot;3.3 Escalas&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/modos/&quot;],&quot;label&quot;:[0,&quot;3.4 Modos&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/triades/&quot;],&quot;label&quot;:[0,&quot;3.5 Tríades&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/acordes-de-setima/&quot;],&quot;label&quot;:[0,&quot;3.6 Acordes de sétima&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/baixo-continuo/&quot;],&quot;label&quot;:[0,&quot;3.7 Baixo contínuo&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/dominantes-secundarias/&quot;],&quot;label&quot;:[0,&quot;3.8 Dominantes secundárias&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/modulacao/&quot;],&quot;label&quot;:[0,&quot;3.9 Modulação&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/cadencias/&quot;],&quot;label&quot;:[0,&quot;3.10 Cadências&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/forma-e-frase/&quot;],&quot;label&quot;:[0,&quot;3.11 Forma e frase&quot;]}]]]}],[0,{&quot;label&quot;:[0,&quot;4. Palavras finais&quot;],&quot;pages&quot;:[1,[]]}],[0,{&quot;label&quot;:[0,&quot;Recursos&quot;],&quot;pages&quot;:[1,[[0,{&quot;href&quot;:[0,&quot;/recursos/papel-pautado/&quot;],&quot;label&quot;:[0,&quot;Papel pautado&quot;]}],[0,{&quot;href&quot;:[0,&quot;/recursos/sobre/&quot;],&quot;label&quot;:[0,&quot;Sobre o livro&quot;]}],[0,{&quot;href&quot;:[0,&quot;/recursos/transferencias/&quot;],&quot;label&quot;:[0,&quot;Transferências&quot;]}]]]}]]],&quot;current&quot;:[0,&quot;/sons-em-conjunto/triades/&quot;]}" ssr client="idle" opts="{&quot;name&quot;:&quot;MobileNav&quot;,&quot;value&quot;:true}" await-children><button class="rounded p-2 text-secondary outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent lg:hidden" data-rac="" type="button" tabindex="0" aria-expanded="false" id="react-aria-_r5R_0H1_" data-react-aria-pressable="true" aria-label="Menu"><svg aria-hidden="true" viewBox="0 0 24 24" class="size-5" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round"></path></svg></button><!--astro:end--></astro-island><a href="/" class="min-w-0 truncate font-semibold text-ink no-underline">Teoria Musical</a><div class="ms-auto flex shrink-0 items-center gap-1"><astro-island uid="2qpPsV" prefix="r6" component-url="/_astro/Search.DWVVEPUn.js" component-export="default" renderer-url="/_astro/client.yyZZvWdV.js" props="{}" ssr client="idle" opts="{&quot;name&quot;:&quot;Search&quot;,&quot;value&quot;:true}" await-children><button class="rounded px-2 py-1 text-body-sm text-secondary outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent" data-rac="" type="button" tabindex="0" aria-expanded="false" id="react-aria-_r6R_0H1_" data-react-aria-pressable="true">Pesquisar</button><!--astro:end--></astro-island><astro-island uid="1Af02n" prefix="r7" component-url="/_astro/ThemeToggle.BfMpIbgS.js" component-export="default" renderer-url="/_astro/client.yyZZvWdV.js" props="{}" ssr client="idle" opts="{&quot;name&quot;:&quot;ThemeToggle&quot;,&quot;value&quot;:true}" await-children><button class="rounded px-2 py-1 text-body-sm text-secondary outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent" data-rac="" type="button" tabindex="0" aria-haspopup="true" aria-expanded="false" id="react-aria-_r7R_0_" data-react-aria-pressable="true" aria-label="Selecionar tema">Automático</button><!--astro:end--></astro-island></div></header><div class="mx-auto grid w-full max-w-6xl grid-cols-1 gap-8 px-4 lg:grid-cols-[16rem_minmax(0,1fr)] xl:grid-cols-[16rem_minmax(0,1fr)_14rem]"><div class="hidden py-8 lg:block"><!-- Rendered on the server and hydrated for the disclosures; a reader
+				     without JavaScript still gets every link. --><div class="sticky top-16 max-h-[calc(100dvh-5rem)] overflow-auto"><astro-island uid="Zrtyu1" prefix="r4" component-url="/_astro/SidebarNav.Cc3HOfc4.js" component-export="default" renderer-url="/_astro/client.yyZZvWdV.js" props="{&quot;slot&quot;:[0,&quot;sidebar&quot;],&quot;chapters&quot;:[1,[[0,{&quot;label&quot;:[0,&quot;Prefácio&quot;],&quot;pages&quot;:[1,[[0,{&quot;href&quot;:[0,&quot;/prefacio/&quot;],&quot;label&quot;:[0,&quot;Prefácio&quot;]}]]]}],[0,{&quot;label&quot;:[0,&quot;1. Fundamentos&quot;],&quot;pages&quot;:[1,[[0,{&quot;href&quot;:[0,&quot;/fundamentos/som/&quot;],&quot;label&quot;:[0,&quot;1.1 Som&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/pauta-e-partitura/&quot;],&quot;label&quot;:[0,&quot;1.2 Pauta e partitura&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/notas/&quot;],&quot;label&quot;:[0,&quot;1.3 Notas&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/claves/&quot;],&quot;label&quot;:[0,&quot;1.4 Claves&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/armacao-de-clave/&quot;],&quot;label&quot;:[0,&quot;1.5 Armação de clave&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/vozes/&quot;],&quot;label&quot;:[0,&quot;1.6 Vozes&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/figuras-ritmicas/&quot;],&quot;label&quot;:[0,&quot;1.7 Figuras rítmicas&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/ritmo-e-compassos/&quot;],&quot;label&quot;:[0,&quot;1.8 Ritmo e compassos&quot;]}],[0,{&quot;href&quot;:[0,&quot;/fundamentos/metrica/&quot;],&quot;label&quot;:[0,&quot;1.9 Métrica&quot;]}]]]}],[0,{&quot;label&quot;:[0,&quot;2. Sons isolados&quot;],&quot;pages&quot;:[1,[[0,{&quot;href&quot;:[0,&quot;/sons-isolados/serie-harmonica/&quot;],&quot;label&quot;:[0,&quot;2.1 Série harmónica&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-isolados/altura-definida-e-indefinida/&quot;],&quot;label&quot;:[0,&quot;2.2 Altura definida e indefinida&quot;]}]]]}],[0,{&quot;label&quot;:[0,&quot;3. Sons em conjunto&quot;],&quot;pages&quot;:[1,[[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/melodia-e-intervalos/&quot;],&quot;label&quot;:[0,&quot;3.1 Melodia e intervalos&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/consonancia-e-dissonancia/&quot;],&quot;label&quot;:[0,&quot;3.2 Consonância e dissonância&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/escalas/&quot;],&quot;label&quot;:[0,&quot;3.3 Escalas&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/modos/&quot;],&quot;label&quot;:[0,&quot;3.4 Modos&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/triades/&quot;],&quot;label&quot;:[0,&quot;3.5 Tríades&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/acordes-de-setima/&quot;],&quot;label&quot;:[0,&quot;3.6 Acordes de sétima&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/baixo-continuo/&quot;],&quot;label&quot;:[0,&quot;3.7 Baixo contínuo&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/dominantes-secundarias/&quot;],&quot;label&quot;:[0,&quot;3.8 Dominantes secundárias&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/modulacao/&quot;],&quot;label&quot;:[0,&quot;3.9 Modulação&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/cadencias/&quot;],&quot;label&quot;:[0,&quot;3.10 Cadências&quot;]}],[0,{&quot;href&quot;:[0,&quot;/sons-em-conjunto/forma-e-frase/&quot;],&quot;label&quot;:[0,&quot;3.11 Forma e frase&quot;]}]]]}],[0,{&quot;label&quot;:[0,&quot;4. Palavras finais&quot;],&quot;pages&quot;:[1,[]]}],[0,{&quot;label&quot;:[0,&quot;Recursos&quot;],&quot;pages&quot;:[1,[[0,{&quot;href&quot;:[0,&quot;/recursos/papel-pautado/&quot;],&quot;label&quot;:[0,&quot;Papel pautado&quot;]}],[0,{&quot;href&quot;:[0,&quot;/recursos/sobre/&quot;],&quot;label&quot;:[0,&quot;Sobre o livro&quot;]}],[0,{&quot;href&quot;:[0,&quot;/recursos/transferencias/&quot;],&quot;label&quot;:[0,&quot;Transferências&quot;]}]]]}]]],&quot;current&quot;:[0,&quot;/sons-em-conjunto/triades/&quot;]}" ssr client="idle" opts="{&quot;name&quot;:&quot;SidebarNav&quot;,&quot;value&quot;:true}" await-children><nav aria-label="Navegação principal" class="flex flex-col gap-1"><div class="react-aria-Disclosure" data-rac=""><h3 class="contents"><button id="react-aria-_r4R_1H1_" class="group flex w-full items-center gap-2 rounded px-2 py-1 text-start text-body-sm font-semibold text-ink outline-none hover:text-accent focus-visible:ring-2 focus-visible:ring-accent" data-rac="" type="button" tabindex="0" data-react-aria-pressable="true" aria-expanded="false" aria-controls="react-aria-_r4R_1H2_" slot="trigger"><svg aria-hidden="true" viewBox="0 0 24 24" class="size-4 shrink-0 transition-transform group-aria-[expanded=false]:-rotate-90" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"></path></svg>Prefácio</button></h3><div class="react-aria-DisclosurePanel" data-rac="" id="react-aria-_r4R_1H2_" role="group" aria-labelledby="react-aria-_r4R_1H1_" aria-hidden="true" hidden=""><ul class="ms-4 flex flex-col border-s border-border ps-2"><li><a href="/prefacio/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">Prefácio</a></li></ul></div></div><div class="react-aria-Disclosure" data-rac=""><h3 class="contents"><button id="react-aria-_r4R_2H1_" class="group flex w-full items-center gap-2 rounded px-2 py-1 text-start text-body-sm font-semibold text-ink outline-none hover:text-accent focus-visible:ring-2 focus-visible:ring-accent" data-rac="" type="button" tabindex="0" data-react-aria-pressable="true" aria-expanded="false" aria-controls="react-aria-_r4R_2H2_" slot="trigger"><svg aria-hidden="true" viewBox="0 0 24 24" class="size-4 shrink-0 transition-transform group-aria-[expanded=false]:-rotate-90" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"></path></svg>1. Fundamentos</button></h3><div class="react-aria-DisclosurePanel" data-rac="" id="react-aria-_r4R_2H2_" role="group" aria-labelledby="react-aria-_r4R_2H1_" aria-hidden="true" hidden=""><ul class="ms-4 flex flex-col border-s border-border ps-2"><li><a href="/fundamentos/som/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">1.1 Som</a></li><li><a href="/fundamentos/pauta-e-partitura/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">1.2 Pauta e partitura</a></li><li><a href="/fundamentos/notas/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">1.3 Notas</a></li><li><a href="/fundamentos/claves/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">1.4 Claves</a></li><li><a href="/fundamentos/armacao-de-clave/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">1.5 Armação de clave</a></li><li><a href="/fundamentos/vozes/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">1.6 Vozes</a></li><li><a href="/fundamentos/figuras-ritmicas/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">1.7 Figuras rítmicas</a></li><li><a href="/fundamentos/ritmo-e-compassos/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">1.8 Ritmo e compassos</a></li><li><a href="/fundamentos/metrica/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">1.9 Métrica</a></li></ul></div></div><div class="react-aria-Disclosure" data-rac=""><h3 class="contents"><button id="react-aria-_r4R_3H1_" class="group flex w-full items-center gap-2 rounded px-2 py-1 text-start text-body-sm font-semibold text-ink outline-none hover:text-accent focus-visible:ring-2 focus-visible:ring-accent" data-rac="" type="button" tabindex="0" data-react-aria-pressable="true" aria-expanded="false" aria-controls="react-aria-_r4R_3H2_" slot="trigger"><svg aria-hidden="true" viewBox="0 0 24 24" class="size-4 shrink-0 transition-transform group-aria-[expanded=false]:-rotate-90" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"></path></svg>2. Sons isolados</button></h3><div class="react-aria-DisclosurePanel" data-rac="" id="react-aria-_r4R_3H2_" role="group" aria-labelledby="react-aria-_r4R_3H1_" aria-hidden="true" hidden=""><ul class="ms-4 flex flex-col border-s border-border ps-2"><li><a href="/sons-isolados/serie-harmonica/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">2.1 Série harmónica</a></li><li><a href="/sons-isolados/altura-definida-e-indefinida/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">2.2 Altura definida e indefinida</a></li></ul></div></div><div class="react-aria-Disclosure" data-rac="" data-expanded="true"><h3 class="contents"><button id="react-aria-_r4R_4H1_" class="group flex w-full items-center gap-2 rounded px-2 py-1 text-start text-body-sm font-semibold text-ink outline-none hover:text-accent focus-visible:ring-2 focus-visible:ring-accent" data-rac="" type="button" tabindex="0" data-react-aria-pressable="true" aria-expanded="true" aria-controls="react-aria-_r4R_4H2_" slot="trigger"><svg aria-hidden="true" viewBox="0 0 24 24" class="size-4 shrink-0 transition-transform group-aria-[expanded=false]:-rotate-90" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"></path></svg>3. Sons em conjunto</button></h3><div class="react-aria-DisclosurePanel" data-rac="" id="react-aria-_r4R_4H2_" role="group" aria-labelledby="react-aria-_r4R_4H1_" aria-hidden="false"><ul class="ms-4 flex flex-col border-s border-border ps-2"><li><a href="/sons-em-conjunto/melodia-e-intervalos/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">3.1 Melodia e intervalos</a></li><li><a href="/sons-em-conjunto/consonancia-e-dissonancia/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">3.2 Consonância e dissonância</a></li><li><a href="/sons-em-conjunto/escalas/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">3.3 Escalas</a></li><li><a href="/sons-em-conjunto/modos/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">3.4 Modos</a></li><li><a href="/sons-em-conjunto/triades/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent" aria-current="page">3.5 Tríades</a></li><li><a href="/sons-em-conjunto/acordes-de-setima/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">3.6 Acordes de sétima</a></li><li><a href="/sons-em-conjunto/baixo-continuo/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">3.7 Baixo contínuo</a></li><li><a href="/sons-em-conjunto/dominantes-secundarias/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">3.8 Dominantes secundárias</a></li><li><a href="/sons-em-conjunto/modulacao/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">3.9 Modulação</a></li><li><a href="/sons-em-conjunto/cadencias/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">3.10 Cadências</a></li><li><a href="/sons-em-conjunto/forma-e-frase/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">3.11 Forma e frase</a></li></ul></div></div><div class="react-aria-Disclosure" data-rac=""><h3 class="contents"><button id="react-aria-_r4R_5H1_" class="group flex w-full items-center gap-2 rounded px-2 py-1 text-start text-body-sm font-semibold text-ink outline-none hover:text-accent focus-visible:ring-2 focus-visible:ring-accent" data-rac="" type="button" tabindex="0" data-react-aria-pressable="true" aria-expanded="false" aria-controls="react-aria-_r4R_5H2_" slot="trigger"><svg aria-hidden="true" viewBox="0 0 24 24" class="size-4 shrink-0 transition-transform group-aria-[expanded=false]:-rotate-90" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"></path></svg>4. Palavras finais</button></h3><div class="react-aria-DisclosurePanel" data-rac="" id="react-aria-_r4R_5H2_" role="group" aria-labelledby="react-aria-_r4R_5H1_" aria-hidden="true" hidden=""><ul class="ms-4 flex flex-col border-s border-border ps-2"></ul></div></div><div class="react-aria-Disclosure" data-rac=""><h3 class="contents"><button id="react-aria-_r4R_6H1_" class="group flex w-full items-center gap-2 rounded px-2 py-1 text-start text-body-sm font-semibold text-ink outline-none hover:text-accent focus-visible:ring-2 focus-visible:ring-accent" data-rac="" type="button" tabindex="0" data-react-aria-pressable="true" aria-expanded="false" aria-controls="react-aria-_r4R_6H2_" slot="trigger"><svg aria-hidden="true" viewBox="0 0 24 24" class="size-4 shrink-0 transition-transform group-aria-[expanded=false]:-rotate-90" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"></path></svg>Recursos</button></h3><div class="react-aria-DisclosurePanel" data-rac="" id="react-aria-_r4R_6H2_" role="group" aria-labelledby="react-aria-_r4R_6H1_" aria-hidden="true" hidden=""><ul class="ms-4 flex flex-col border-s border-border ps-2"><li><a href="/recursos/papel-pautado/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">Papel pautado</a></li><li><a href="/recursos/sobre/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">Sobre o livro</a></li><li><a href="/recursos/transferencias/" class="block rounded px-2 py-1 text-body-sm text-secondary no-underline outline-none hover:text-ink focus-visible:ring-2 focus-visible:ring-accent aria-[current=page]:font-semibold aria-[current=page]:text-accent">Transferências</a></li></ul></div></div></nav><!--astro:end--></astro-island></div></div><main id="_top" class="min-w-0 py-8"><h1 class="mb-6 text-title font-semibold text-ink">3.5 Tríades</h1><div class="book-content" data-pagefind-body><p>Antes de construir acordes, convém fixar dois termos:</p>
+<ul>
+<li>Díade: duas notas (alturas) tocadas simultaneamente ou sequencialmente. É um termo pouco usado na música tonal, mas mais usado na música não tonal.</li>
+<li>Tríade: três notas (alturas) tocadas simultaneamente ou sequencialmente.</li>
+</ul>
+<p>O acorde mais simples é a tríade, sendo esta formada por três alturas (ou notas): a tónica,
+também denominada de fundamental, a terceira (mediante) e a quinta (dominante). Se
+considerarmos a tríade de Dó Maior, composta por [C, E, G], quaisquer outras disposições
+destas três notas, por exemplo [E, G, C] ou [G, C, E], constituirá um tipo de tríade em Dó.
+Se for a nota fundamental a encontrar-se na voz mais baixa, a tríade encontra-se no estado
+fundamental. Se for qualquer outra nota do acorde a ocupar a voz mais baixa, o acorde
+encontra-se numa inversão. É o intervalo formado entre a tónica e a mediante que dá a
+qualidade à tríade: se o intervalo for diminuto, menor, maior ou aumentado, a tríade, ou
+acorde, será também diminuto, menor, maior ou aumentado, respetivamente.</p>
+<figure id="fig-triades-cmajor" class="figure" data-score="chords_3notes" data-cursor="[[0,23.97,0.32,4.32],[2,40.82,0.32,4.32],[4,57.82,0.32,4.32],[6,75.6,0.32,4.32]]"><svg class="score" role="img" aria-label="Figura 3.5.1. Tríades em Dó Maior." xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.2" width="159.20mm" height="23.75mm" viewBox="0.0000 -2.5971 90.5936 13.5141">
+<style type="text/css">
+<![CDATA[
+tspan { white-space: pre; }
+]]>
+</style>
+<g transform="translate(37.8696, 2.3174)">
+<rect x="0.0000" y="-2.0000" width="0.1900" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(0.0000, 5.3174)">
+<rect x="75.1140" y="-0.1000" width="2.9430" height="0.2000" ry="0.1000" fill="currentColor"/>
+</g>
+<g transform="translate(0.0000, 5.3174)">
+<rect x="57.3297" y="-0.1000" width="2.9430" height="0.2000" ry="0.1000" fill="currentColor"/>
+</g>
+<g transform="translate(0.0000, 5.3174)">
+<rect x="40.3298" y="-0.1000" width="2.9430" height="0.2000" ry="0.1000" fill="currentColor"/>
+</g>
+<g transform="translate(0.0000, 5.3174)">
+<rect x="23.4800" y="-0.1000" width="2.9430" height="0.2000" ry="0.1000" fill="currentColor"/>
+</g>
+<g transform="translate(0.0000, 4.3174)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(0.0000, 3.3174)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(0.0000, 2.3174)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(0.0000, 1.3174)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(0.0000, 0.3174)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(89.9936, 2.3174)">
+<rect x="0.0000" y="-2.0000" width="0.6000" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(89.5036, 2.3174)">
+<rect x="0.0000" y="-2.0000" width="0.1900" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(71.7192, 2.3174)">
+<rect x="0.0000" y="-2.0000" width="0.1900" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(54.7194, 2.3174)">
+<rect x="0.0000" y="-2.0000" width="0.1900" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(23.9705, -0.2796)">
+<text font-family="TeX Gyre Heros" font-size="2.6165" text-anchor="start" fill="currentColor">
+<tspan>C</tspan>
+</text>
+</g>
+<g transform="translate(23.9705, 5.3174)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(23.9705, 4.3174)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(23.9705, 3.3174)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(0.8000, 3.3174)">
+<path transform="scale(0.0040, -0.0040)" d="M266 -635h-6c-108 0 -195 88 -195 197c0 58 53 103 112 103c54 0 95 -47 95 -103c0 -52 -43 -95 -95 -95c-11 0 -21 2 -31 6c26 -39 68 -65 117 -65h4zM401 151c19 -89 48 -242 60 -354c76 27 112 94 112 163c0 89 -60 179 -172 191zM74 28c0 -112 98 -247 278 -247
+c21 0 44 2 68 6c-7 64 -29 203 -63 364c-79 -8 -124 -61 -124 -119c0 -44 25 -91 81 -123c5 -5 7 -10 7 -15c0 -11 -10 -22 -22 -22c-15 0 -126 62 -126 187c0 88 58 174 160 197c-14 58 -29 117 -46 175c-107 -121 -213 -243 -213 -403zM357 1194c28 0 143 -206 143 -361
+c0 -143 -86 -255 -180 -364c21 -68 39 -138 56 -207c5 0 10 1 14 1c155 0 255 -129 255 -262c0 -113 -74 -212 -180 -245c3 -35 5 -70 5 -105c0 -19 -1 -39 -2 -58c-7 -119 -88 -225 -202 -228l1 43c93 2 153 92 159 191c1 18 2 37 2 55c0 31 -1 61 -4 92
+c-28 -5 -55 -8 -80 -8c-239 0 -342 217 -342 374c0 177 131 306 248 441c-29 96 -52 170 -52 346c0 189 144 295 159 295zM247 782c0 -55 12 -115 35 -190c82 100 147 202 147 326c0 40 -6 82 -21 127c-49 -24 -161 -97 -161 -263z" fill="currentColor"/>
+</g>
+<g transform="translate(4.8850, 2.3174)">
+<path transform="scale(0.0040, -0.0040)" d="M433 -89c0 -22 -50 -174 -183 -174c-59 0 -250 19 -250 263c0 62 18 262 250 262c116 0 176 -106 176 -163c0 -40 -30 -72 -67 -72c-31 0 -75 25 -75 75c0 38 27 77 72 77c4 0 9 0 14 -1c-28 37 -72 59 -120 59c-106 0 -113 -73 -113 -186v-51v-51
+c0 -113 7 -187 113 -187c80 0 139 70 158 151c2 7 7 10 12 10c6 0 13 -4 13 -12z" fill="currentColor"/>
+</g>
+<g transform="translate(21.5543, 8.0840)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>Maior</tspan>
+</text>
+</g>
+<g transform="translate(12.2574, 8.0840)">
+<text font-family="TeX Gyre Schola" font-weight="bold" font-size="2.2000" text-anchor="start" fill="currentColor">
+<tspan>Triade:</tspan>
+</text>
+</g>
+<g transform="translate(24.4565, 10.8840)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>I</tspan>
+</text>
+</g>
+<g transform="translate(0.0000, 10.8840)">
+<text font-family="TeX Gyre Schola" font-weight="bold" font-size="2.2000" text-anchor="start" fill="currentColor">
+<tspan>Análise funcional:</tspan>
+</text>
+</g>
+<g transform="translate(40.8203, -0.2796)">
+<text font-family="TeX Gyre Heros" font-size="2.6165" text-anchor="start" fill="currentColor">
+<tspan>C</tspan>
+</text>
+</g>
+<g transform="translate(42.6982, -0.2796)">
+<text font-family="TeX Gyre Heros" font-size="2.6165" text-anchor="start" fill="currentColor">
+<tspan>m</tspan>
+</text>
+</g>
+<g transform="translate(40.8203, 5.3174)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(40.8203, 4.3174)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(40.8203, 3.3174)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(38.1139, 8.0840)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>Menor</tspan>
+</text>
+</g>
+<g transform="translate(40.4819, 10.8840)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>I</tspan>
+</text>
+</g>
+<g transform="translate(41.5843, 9.9925)">
+<text font-family="TeX Gyre Schola" font-size="1.7459" text-anchor="start" fill="currentColor">
+<tspan>m</tspan>
+</text>
+</g>
+<g transform="translate(39.6703, 4.3174)">
+<path transform="scale(0.0040, -0.0040)" d="M27 41l-1 -66v-11c0 -22 1 -44 4 -66c45 38 93 80 93 139c0 33 -14 67 -43 67c-31 0 -52 -30 -53 -63zM-15 -138l-12 595c8 5 18 8 27 8s19 -3 27 -8l-7 -345c25 21 58 34 91 34c52 0 89 -48 89 -102c0 -80 -86 -117 -147 -169c-15 -13 -24 -38 -45 -38
+c-13 0 -23 11 -23 25z" fill="currentColor"/>
+</g>
+<g transform="translate(57.8202, -0.2796)">
+<text font-family="TeX Gyre Heros" font-size="2.6165" text-anchor="start" fill="currentColor">
+<tspan>C</tspan>
+</text>
+</g>
+<g transform="translate(59.6980, -0.2796)">
+<text font-family="TeX Gyre Heros" font-size="2.6165" text-anchor="start" fill="currentColor">
+<tspan>+</tspan>
+</text>
+</g>
+<g transform="translate(57.8202, 5.3174)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(57.8202, 4.3174)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(57.8202, 3.3174)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(52.1603, 8.0840)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>Aumentada</tspan>
+</text>
+</g>
+<g transform="translate(57.8186, 10.8840)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>I</tspan>
+</text>
+</g>
+<g transform="translate(59.3524, 9.3736)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.0707" stroke="currentColor" x1="0" y1="0" x2="-0.3960" y2="0"/>
+</g>
+<g transform="translate(59.3524, 9.3736)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.0707" stroke="currentColor" x1="0" y1="0" x2="0" y2="0.3960"/>
+</g>
+<g transform="translate(59.3524, 9.3736)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.0707" stroke="currentColor" x1="0" y1="0" x2="0.3960" y2="0"/>
+</g>
+<g transform="translate(59.3524, 9.3736)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.0707" stroke="currentColor" x1="0" y1="0" x2="0" y2="-0.3960"/>
+</g>
+<g transform="translate(56.3702, 3.3174)">
+<path transform="scale(0.0040, -0.0040)" d="M0 119c0 8 5 15 13 18l46 17v158c0 10 8 19 18 19s19 -9 19 -19v-145l83 31v158c0 10 9 19 19 19s18 -9 18 -19v-145l32 12c2 1 5 1 7 1c11 0 20 -9 20 -20v-60c0 -8 -5 -16 -13 -19l-46 -16v-160l32 11c2 1 5 1 7 1c11 0 20 -9 20 -20v-60c0 -8 -5 -15 -13 -18l-46 -17
+v-158c0 -10 -8 -19 -18 -19s-19 9 -19 19v145l-83 -31v-158c0 -10 -9 -19 -19 -19s-18 9 -18 19v145l-32 -12c-2 -1 -5 -1 -7 -1c-11 0 -20 9 -20 20v60c0 8 5 16 13 19l46 16v160l-32 -11c-2 -1 -5 -1 -7 -1c-11 0 -20 9 -20 20v60zM179 95l-83 -30v-160l83 30v160z" fill="currentColor"/>
+</g>
+<g transform="translate(75.6045, -0.2796)">
+<text font-family="TeX Gyre Heros" font-size="2.6165" text-anchor="start" fill="currentColor">
+<tspan>C</tspan>
+</text>
+</g>
+<g transform="translate(77.4824, -0.2796)">
+<text font-family="TeX Gyre Heros" font-size="3.2965" text-anchor="start" fill="currentColor">
+<tspan>°</tspan>
+</text>
+</g>
+<g transform="translate(75.6045, 5.3174)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(75.6045, 4.3174)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(75.6045, 3.3174)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(71.0885, 8.0840)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>Diminuta</tspan>
+</text>
+</g>
+<g transform="translate(75.6596, 10.8840)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>I</tspan>
+</text>
+</g>
+<g transform="translate(77.1367, 9.4302)">
+<circle stroke-linejoin="round" stroke-linecap="round" fill="none" stroke="currentColor" stroke-width="0.0707" r="0.3394"/>
+</g>
+<g transform="translate(73.4900, 4.3174)">
+<path transform="scale(0.0040, -0.0040)" d="M27 41l-1 -66v-11c0 -22 1 -44 4 -66c45 38 93 80 93 139c0 33 -14 67 -43 67c-31 0 -52 -30 -53 -63zM-15 -138l-12 595c8 5 18 8 27 8s19 -3 27 -8l-7 -345c25 21 58 34 91 34c52 0 89 -48 89 -102c0 -80 -86 -117 -147 -169c-15 -13 -24 -38 -45 -38
+c-13 0 -23 11 -23 25z" fill="currentColor"/>
+</g>
+<g transform="translate(74.4545, 3.3174)">
+<path transform="scale(0.0040, -0.0040)" d="M27 41l-1 -66v-11c0 -22 1 -44 4 -66c45 38 93 80 93 139c0 33 -14 67 -43 67c-31 0 -52 -30 -53 -63zM-15 -138l-12 595c8 5 18 8 27 8s19 -3 27 -8l-7 -345c25 21 58 34 91 34c52 0 89 -48 89 -102c0 -80 -86 -117 -147 -169c-15 -13 -24 -38 -45 -38
+c-13 0 -23 11 -23 25z" fill="currentColor"/>
+</g>
+</svg><p><audio class="figure-audio" controls preload="none"><source src="/audio/chords_3notes.m4a" type="audio/mp4"><source src="/audio/chords_3notes.mp3" type="audio/mpeg"></audio></p><figcaption><b class="figure-number">Figura 3.5.1.</b> Tríades em Dó Maior.<span class="figure-files"><a href="/scores/chords_3notes.ly" download>LilyPond</a> · <a href="/audio/chords_3notes.m4a" download>AAC</a> · <a href="/audio/chords_3notes.mp3" download>MP3</a></span></figcaption></figure>
+<figure id="fig-triades-inversoes" class="figure" data-score="chords_3notes_inversions" data-cursor="[[0,32.18,-0.05,3.95],[2,55.18,-0.05,3.95],[4,76.65,-0.05,3.95]]"><svg class="score" role="img" aria-label="Figura 3.5.2. Tríades em Dó Maior e as suas duas inversões." xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.2" width="159.20mm" height="23.83mm" viewBox="0.0000 -2.6023 90.5936 13.5628">
+<style type="text/css">
+<![CDATA[
+tspan { white-space: pre; }
+]]>
+</style>
+<g transform="translate(51.6231, 1.9544)">
+<rect x="0.0000" y="-2.0000" width="0.1900" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(0.0000, 4.9544)">
+<rect x="31.6915" y="-0.1000" width="2.9430" height="0.2000" ry="0.1000" fill="currentColor"/>
+</g>
+<g transform="translate(0.0000, 3.9544)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(0.0000, 2.9544)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(0.0000, 1.9544)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(0.0000, 0.9544)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(0.0000, -0.0456)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(89.9936, 1.9544)">
+<rect x="0.0000" y="-2.0000" width="0.6000" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(89.5036, 1.9544)">
+<rect x="0.0000" y="-2.0000" width="0.1900" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(73.2392, 1.9544)">
+<rect x="0.0000" y="-2.0000" width="0.1900" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(32.1820, -0.6479)">
+<text font-family="TeX Gyre Heros" font-size="2.6165" text-anchor="start" fill="currentColor">
+<tspan>C</tspan>
+</text>
+</g>
+<g transform="translate(32.1820, 4.9544)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(32.1820, 3.9544)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(32.1820, 2.9544)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(0.8000, 2.9544)">
+<path transform="scale(0.0040, -0.0040)" d="M266 -635h-6c-108 0 -195 88 -195 197c0 58 53 103 112 103c54 0 95 -47 95 -103c0 -52 -43 -95 -95 -95c-11 0 -21 2 -31 6c26 -39 68 -65 117 -65h4zM401 151c19 -89 48 -242 60 -354c76 27 112 94 112 163c0 89 -60 179 -172 191zM74 28c0 -112 98 -247 278 -247
+c21 0 44 2 68 6c-7 64 -29 203 -63 364c-79 -8 -124 -61 -124 -119c0 -44 25 -91 81 -123c5 -5 7 -10 7 -15c0 -11 -10 -22 -22 -22c-15 0 -126 62 -126 187c0 88 58 174 160 197c-14 58 -29 117 -46 175c-107 -121 -213 -243 -213 -403zM357 1194c28 0 143 -206 143 -361
+c0 -143 -86 -255 -180 -364c21 -68 39 -138 56 -207c5 0 10 1 14 1c155 0 255 -129 255 -262c0 -113 -74 -212 -180 -245c3 -35 5 -70 5 -105c0 -19 -1 -39 -2 -58c-7 -119 -88 -225 -202 -228l1 43c93 2 153 92 159 191c1 18 2 37 2 55c0 31 -1 61 -4 92
+c-28 -5 -55 -8 -80 -8c-239 0 -342 217 -342 374c0 177 131 306 248 441c-29 96 -52 170 -52 346c0 189 144 295 159 295zM247 782c0 -55 12 -115 35 -190c82 100 147 202 147 326c0 40 -6 82 -21 127c-49 -24 -161 -97 -161 -263z" fill="currentColor"/>
+</g>
+<g transform="translate(4.8850, 1.9544)">
+<path transform="scale(0.0040, -0.0040)" d="M433 -89c0 -22 -50 -174 -183 -174c-59 0 -250 19 -250 263c0 62 18 262 250 262c116 0 176 -106 176 -163c0 -40 -30 -72 -67 -72c-31 0 -75 25 -75 75c0 38 27 77 72 77c4 0 9 0 14 -1c-28 37 -72 59 -120 59c-106 0 -113 -73 -113 -186v-51v-51
+c0 -113 7 -187 113 -187c80 0 139 70 158 151c2 7 7 10 12 10c6 0 13 -4 13 -12z" fill="currentColor"/>
+</g>
+<g transform="translate(21.5543, 7.4544)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>Estado fundamental</tspan>
+</text>
+</g>
+<g transform="translate(12.2574, 7.4544)">
+<text font-family="TeX Gyre Schola" font-weight="bold" font-size="2.2000" text-anchor="start" fill="currentColor">
+<tspan>Triade:</tspan>
+</text>
+</g>
+<g transform="translate(32.6679, 10.2544)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>I</tspan>
+</text>
+</g>
+<g transform="translate(0.0000, 10.2544)">
+<text font-family="TeX Gyre Schola" font-weight="bold" font-size="2.2000" text-anchor="start" fill="currentColor">
+<tspan>Análise funcional:</tspan>
+</text>
+</g>
+<g transform="translate(55.1825, -0.6479)">
+<text font-family="TeX Gyre Heros" font-size="2.6165" text-anchor="start" fill="currentColor">
+<tspan>C</tspan>
+</text>
+</g>
+<g transform="translate(57.0604, -0.6479)">
+<text font-family="TeX Gyre Heros" font-size="2.6165" text-anchor="start" fill="currentColor">
+<tspan>/</tspan>
+</text>
+</g>
+<g transform="translate(57.7774, -0.6479)">
+<text font-family="TeX Gyre Heros" font-size="2.6165" text-anchor="start" fill="currentColor">
+<tspan>E</tspan>
+</text>
+</g>
+<g transform="translate(55.1825, 3.9544)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(55.1825, 2.9544)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(55.1825, 1.4544)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(45.9717, 7.4544)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>Primeira inversão</tspan>
+</text>
+</g>
+<g transform="translate(55.0636, 10.2544)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>I</tspan>
+</text>
+</g>
+<g transform="translate(56.1660, 9.3629)">
+<text font-family="TeX Gyre Schola" font-size="1.7459" text-anchor="start" fill="currentColor">
+<tspan>5</tspan>
+</text>
+</g>
+<g transform="translate(56.1660, 10.9343)">
+<text font-family="TeX Gyre Schola" font-size="1.7459" text-anchor="start" fill="currentColor">
+<tspan>3</tspan>
+</text>
+</g>
+<g transform="translate(76.6465, -0.6479)">
+<text font-family="TeX Gyre Heros" font-size="2.6165" text-anchor="start" fill="currentColor">
+<tspan>C</tspan>
+</text>
+</g>
+<g transform="translate(78.5244, -0.6479)">
+<text font-family="TeX Gyre Heros" font-size="2.6165" text-anchor="start" fill="currentColor">
+<tspan>/</tspan>
+</text>
+</g>
+<g transform="translate(79.2414, -0.6479)">
+<text font-family="TeX Gyre Heros" font-size="2.6165" text-anchor="start" fill="currentColor">
+<tspan>G</tspan>
+</text>
+</g>
+<g transform="translate(76.6465, 2.9544)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(76.6465, 1.4544)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(76.6465, 0.4544)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(67.5553, 7.4544)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>Segunda inversão</tspan>
+</text>
+</g>
+<g transform="translate(76.5276, 10.2544)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>I</tspan>
+</text>
+</g>
+<g transform="translate(77.6300, 9.3629)">
+<text font-family="TeX Gyre Schola" font-size="1.7459" text-anchor="start" fill="currentColor">
+<tspan>6</tspan>
+</text>
+</g>
+<g transform="translate(77.6300, 10.9343)">
+<text font-family="TeX Gyre Schola" font-size="1.7459" text-anchor="start" fill="currentColor">
+<tspan>3</tspan>
+</text>
+</g>
+</svg><p><audio class="figure-audio" controls preload="none"><source src="/audio/chords_3notes_inversions.m4a" type="audio/mp4"><source src="/audio/chords_3notes_inversions.mp3" type="audio/mpeg"></audio></p><figcaption><b class="figure-number">Figura 3.5.2.</b> Tríades em Dó Maior e as suas duas inversões.<span class="figure-files"><a href="/scores/chords_3notes_inversions.ly" download>LilyPond</a> · <a href="/audio/chords_3notes_inversions.m4a" download>AAC</a> · <a href="/audio/chords_3notes_inversions.mp3" download>MP3</a></span></figcaption></figure>
+<p>A <a href="#fig-harmonizacao-fmajor">Figura 3.5.3</a> apresenta as sete tríades possíveis de formar a partir de cada um
+dos graus da escala de Fá Maior, cujas notas de cada uma das tríades pertencem exclusivamente
+à tonalidade de Fá Maior (notas diatónicas). O processo de construir tríades, ou acordes de
+sétima, em cada um dos graus de uma escala denomina-se de harmonização da escala. Empilhando
+notas em intervalos de terceira na escala maior obtêm-se três tríades maiores, três menores e
+uma diminuta. Como todas as escalas maiores partilham a mesma sequência interna de tons e
+meios-tons, estas tríades estarão sempre presentes em qualquer escala maior:</p>
+<figure id="fig-harmonizacao-fmajor" class="figure" data-score="harmonise_fmajor" data-cursor="[[0,6.3,0.32,4.32],[2,18.21,0.32,4.32],[4,31.73,0.32,4.32],[6,46.66,0.32,4.32],[8,62.51,0.32,4.32],[10,77.6,0.32,4.32],[12,91.11,0.32,4.32]]"><svg class="score" role="img" aria-label="Figura 3.5.3. Tríades construídas a partir de cada um dos graus da escala de Fá Maior." xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.2" width="178.27mm" height="26.94mm" viewBox="-4.6057 -4.5450 101.4454 15.3280">
+<style type="text/css">
+<![CDATA[
+tspan { white-space: pre; }
+]]>
+</style>
+<g transform="translate(96.2397, 2.3174)">
+<rect x="0.0000" y="-2.0000" width="0.6000" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(95.7497, 2.3174)">
+<rect x="0.0000" y="-2.0000" width="0.1900" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(0.0000, -0.6826)">
+<rect x="90.6222" y="-0.1000" width="2.9430" height="0.2000" ry="0.1000" fill="currentColor"/>
+</g>
+<g transform="translate(0.0000, -0.6826)">
+<rect x="77.1136" y="-0.1000" width="2.9430" height="0.2000" ry="0.1000" fill="currentColor"/>
+</g>
+<g transform="translate(0.0000, 4.3174)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="96.7897" y2="0"/>
+</g>
+<g transform="translate(0.0000, 3.3174)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="96.7897" y2="0"/>
+</g>
+<g transform="translate(0.0000, 2.3174)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="96.7897" y2="0"/>
+</g>
+<g transform="translate(0.0000, 1.3174)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="96.7897" y2="0"/>
+</g>
+<g transform="translate(0.0000, 0.3174)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="96.7897" y2="0"/>
+</g>
+<g transform="translate(6.3050, -2.2276)">
+<text font-family="TeX Gyre Heros" font-size="2.6165" text-anchor="start" fill="currentColor">
+<tspan>F</tspan>
+</text>
+</g>
+<g transform="translate(6.3050, 3.8174)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(6.3050, 2.8174)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(6.3050, 1.8174)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(0.8000, 3.3174)">
+<path transform="scale(0.0040, -0.0040)" d="M266 -635h-6c-108 0 -195 88 -195 197c0 58 53 103 112 103c54 0 95 -47 95 -103c0 -52 -43 -95 -95 -95c-11 0 -21 2 -31 6c26 -39 68 -65 117 -65h4zM401 151c19 -89 48 -242 60 -354c76 27 112 94 112 163c0 89 -60 179 -172 191zM74 28c0 -112 98 -247 278 -247
+c21 0 44 2 68 6c-7 64 -29 203 -63 364c-79 -8 -124 -61 -124 -119c0 -44 25 -91 81 -123c5 -5 7 -10 7 -15c0 -11 -10 -22 -22 -22c-15 0 -126 62 -126 187c0 88 58 174 160 197c-14 58 -29 117 -46 175c-107 -121 -213 -243 -213 -403zM357 1194c28 0 143 -206 143 -361
+c0 -143 -86 -255 -180 -364c21 -68 39 -138 56 -207c5 0 10 1 14 1c155 0 255 -129 255 -262c0 -113 -74 -212 -180 -245c3 -35 5 -70 5 -105c0 -19 -1 -39 -2 -58c-7 -119 -88 -225 -202 -228l1 43c93 2 153 92 159 191c1 18 2 37 2 55c0 31 -1 61 -4 92
+c-28 -5 -55 -8 -80 -8c-239 0 -342 217 -342 374c0 177 131 306 248 441c-29 96 -52 170 -52 346c0 189 144 295 159 295zM247 782c0 -55 12 -115 35 -190c82 100 147 202 147 326c0 40 -6 82 -21 127c-49 -24 -161 -97 -161 -263z" fill="currentColor"/>
+</g>
+<g transform="translate(4.3050, 2.3174)">
+<path transform="scale(0.0040, -0.0040)" d="M27 41l-1 -66v-11c0 -22 1 -44 4 -66c45 38 93 80 93 139c0 33 -14 67 -43 67c-31 0 -52 -30 -53 -63zM-15 -138l-12 595c8 5 18 8 27 8s19 -3 27 -8l-7 -345c25 21 58 34 91 34c52 0 89 -48 89 -102c0 -80 -86 -117 -147 -169c-15 -13 -24 -38 -45 -38
+c-13 0 -23 11 -23 25z" fill="currentColor"/>
+</g>
+<g transform="translate(3.4961, 7.9459)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>Tónica</tspan>
+</text>
+</g>
+<g transform="translate(-4.6057, 7.9459)">
+<text font-family="TeX Gyre Schola" font-weight="bold" font-size="2.2000" text-anchor="start" fill="currentColor">
+<tspan>Nome:</tspan>
+</text>
+</g>
+<g transform="translate(6.7909, 10.7459)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>I</tspan>
+</text>
+</g>
+<g transform="translate(-1.3962, 10.7459)">
+<text font-family="TeX Gyre Schola" font-weight="bold" font-size="2.2000" text-anchor="start" fill="currentColor">
+<tspan>AF:</tspan>
+</text>
+</g>
+<g transform="translate(18.2089, -2.2276)">
+<text font-family="TeX Gyre Heros" font-size="2.6165" text-anchor="start" fill="currentColor">
+<tspan>G</tspan>
+</text>
+</g>
+<g transform="translate(20.2575, -2.2276)">
+<text font-family="TeX Gyre Heros" font-size="2.6165" text-anchor="start" fill="currentColor">
+<tspan>m</tspan>
+</text>
+</g>
+<g transform="translate(18.2089, 3.3174)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(18.2089, 2.3174)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(18.2089, 1.3174)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(12.2759, 7.9459)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>Supertónica</tspan>
+</text>
+</g>
+<g transform="translate(18.4046, 10.7459)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>ii</tspan>
+</text>
+</g>
+<g transform="translate(31.7347, -2.2276)">
+<text font-family="TeX Gyre Heros" font-size="2.6165" text-anchor="start" fill="currentColor">
+<tspan>A</tspan>
+</text>
+</g>
+<g transform="translate(33.4760, -2.2276)">
+<text font-family="TeX Gyre Heros" font-size="2.6165" text-anchor="start" fill="currentColor">
+<tspan>m</tspan>
+</text>
+</g>
+<g transform="translate(31.7347, 2.8174)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(31.7347, 1.8174)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(31.7347, 0.8174)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(27.3039, 7.9459)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>Mediante</tspan>
+</text>
+</g>
+<g transform="translate(31.5377, 10.7459)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>iii</tspan>
+</text>
+</g>
+<g transform="translate(46.6603, -2.2276)">
+<text font-family="TeX Gyre Heros" font-size="2.6165" text-anchor="start" fill="currentColor">
+<tspan>B</tspan>
+</text>
+</g>
+<g transform="translate(48.6234, -2.5454)">
+<path transform="scale(0.0042, -0.0042)" d="M27 41l-1 -66v-11c0 -22 1 -44 4 -66c45 38 93 80 93 139c0 33 -14 67 -43 67c-31 0 -52 -30 -53 -63zM-15 -138l-12 595c8 5 18 8 27 8s19 -3 27 -8l-7 -345c25 21 58 34 91 34c52 0 89 -48 89 -102c0 -80 -86 -117 -147 -169c-15 -13 -24 -38 -45 -38
+c-13 0 -23 11 -23 25z" fill="currentColor"/>
+</g>
+<g transform="translate(46.6603, 2.3174)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(46.6603, 1.3174)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(46.6603, 0.3174)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(39.3274, 7.9459)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>Subdominante</tspan>
+</text>
+</g>
+<g transform="translate(46.2585, 10.7459)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>IV</tspan>
+</text>
+</g>
+<g transform="translate(62.5077, -2.2276)">
+<text font-family="TeX Gyre Heros" font-size="2.6165" text-anchor="start" fill="currentColor">
+<tspan>C</tspan>
+</text>
+</g>
+<g transform="translate(62.5077, 1.8174)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(62.5077, 0.8174)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(62.5077, -0.1826)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(57.1552, 7.9459)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>Dominante</tspan>
+</text>
+</g>
+<g transform="translate(62.6010, 10.7459)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>V</tspan>
+</text>
+</g>
+<g transform="translate(77.6041, -2.2276)">
+<text font-family="TeX Gyre Heros" font-size="2.6165" text-anchor="start" fill="currentColor">
+<tspan>D</tspan>
+</text>
+</g>
+<g transform="translate(79.4820, -2.2276)">
+<text font-family="TeX Gyre Heros" font-size="2.6165" text-anchor="start" fill="currentColor">
+<tspan>m</tspan>
+</text>
+</g>
+<g transform="translate(77.6041, 1.3174)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(77.6041, 0.3174)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(77.6041, -0.6826)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(71.0223, 7.9459)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>Submediante</tspan>
+</text>
+</g>
+<g transform="translate(77.5266, 10.7459)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>vi</tspan>
+</text>
+</g>
+<g transform="translate(91.1127, -2.2276)">
+<text font-family="TeX Gyre Heros" font-size="2.6165" text-anchor="start" fill="currentColor">
+<tspan>E</tspan>
+</text>
+</g>
+<g transform="translate(92.8540, -2.2276)">
+<text font-family="TeX Gyre Heros" font-size="3.2965" text-anchor="start" fill="currentColor">
+<tspan>°</tspan>
+</text>
+</g>
+<g transform="translate(91.1127, 0.8174)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(91.1127, -0.1826)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(91.1127, -1.1826)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(87.3478, 7.9459)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>Sensível</tspan>
+</text>
+</g>
+<g transform="translate(90.2118, 10.7459)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>vii</tspan>
+</text>
+</g>
+<g transform="translate(93.6010, 9.3646)">
+<circle stroke-linejoin="round" stroke-linecap="round" fill="none" stroke="currentColor" stroke-width="0.0707" r="0.3394"/>
+</g>
+</svg><p><audio class="figure-audio" controls preload="none"><source src="/audio/harmonise_fmajor.m4a" type="audio/mp4"><source src="/audio/harmonise_fmajor.mp3" type="audio/mpeg"></audio></p><figcaption><b class="figure-number">Figura 3.5.3.</b> Tríades construídas a partir de cada um dos graus da escala de Fá Maior.<span class="figure-files"><a href="/scores/harmonise_fmajor.ly" download>LilyPond</a> · <a href="/audio/harmonise_fmajor.m4a" download>AAC</a> · <a href="/audio/harmonise_fmajor.mp3" download>MP3</a></span></figcaption></figure>
+<h2 id="numerais-romanos">Numerais romanos</h2>
+<p>As tríades que foram obtidas podem ser identificadas pelo número romano correspondente ao grau
+da tónica. Esta simbologia nasceu na Europa no período entre aproximadamente a segunda metade
+do século XVII e o final do século XIX, e talvez esta notação seja uma das mais importantes que
+foram criadas neste período, permitindo uma análise mais independente e funcional da harmonia.
+Independente e funcional, pois a sua notação não depende de uma tonalidade específica. Este
+número romano é capitalizado de forma maiúscula se a tríade for maior ou de forma minúscula se
+for menor.</p>
+<p>Adicionalmente, se o acorde não se encontrar no seu estado fundamental, isto é, se estiver
+invertido, dois números árabes são colocados do lado direito e na vertical relativamente ao
+numeral romano, de modo a indicar qual a inversão usada. Devido à variedade de escalas que
+existem, podem-se obter ainda tríades aumentadas (+) ou diminutas (o), como é o caso da tríade
+formada a partir do 7.º grau das escalas maiores.</p>
+<p>A cifra no topo dos dois exemplos anteriores indica qual a nota fundamental da tríade (tónica)
+e, caso esta esteja invertida, é adicionada uma barra oblíqua que indica qual a nota mais grave.</p>
+<h2 id="posição-aberta-e-fechada">Posição aberta e fechada</h2>
+<p>Em harmonia, a posição é caracterizada pela proximidade das várias vozes relativamente umas às
+outras, dando origem a posições fechadas e posições abertas. Também os acordes podem
+encontrar-se numa destas duas posições. Estas são caracterizadas pelo espaço vertical que
+existe entre as vozes e que permite colocar (aberta), ou não (fechada), mais notas pertencentes
+ao acorde.</p>
+<figure id="fig-posicoes" class="figure" data-score="chords_3notes_positions" data-cursor="[[0,18.8,0.47,4.47],[2,36.62,0.47,4.47],[4,55.92,0.47,4.47],[6,74.73,0.47,4.47]]"><svg class="score" role="img" aria-label="Figura 3.5.4. Tríades e acordes de sétima em posição fechada e aberta." xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.2" width="159.20mm" height="30.71mm" viewBox="0.0000 -5.8946 90.5936 17.4773">
+<style type="text/css">
+<![CDATA[
+tspan { white-space: pre; }
+]]>
+</style>
+<g transform="translate(33.5745, 2.4731)">
+<rect x="0.0000" y="-2.0000" width="0.1900" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(0.0000, -1.5269)">
+<rect x="74.2364" y="-0.1000" width="2.9430" height="0.2000" ry="0.1000" fill="currentColor"/>
+</g>
+<g transform="translate(0.0000, -0.5269)">
+<rect x="74.2364" y="-0.1000" width="2.9430" height="0.2000" ry="0.1000" fill="currentColor"/>
+</g>
+<g transform="translate(0.0000, -1.5269)">
+<rect x="36.1311" y="-0.1000" width="2.9430" height="0.2000" ry="0.1000" fill="currentColor"/>
+</g>
+<g transform="translate(0.0000, -0.5269)">
+<rect x="36.1311" y="-0.1000" width="2.9430" height="0.2000" ry="0.1000" fill="currentColor"/>
+</g>
+<g transform="translate(0.0000, 5.4731)">
+<rect x="36.1311" y="-0.1000" width="2.9430" height="0.2000" ry="0.1000" fill="currentColor"/>
+</g>
+<g transform="translate(0.0000, 5.4731)">
+<rect x="18.3073" y="-0.1000" width="2.9430" height="0.2000" ry="0.1000" fill="currentColor"/>
+</g>
+<g transform="translate(0.0000, 4.4731)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(0.0000, 3.4731)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(0.0000, 2.4731)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(0.0000, 1.4731)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(0.0000, 0.4731)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="90.5436" y2="0"/>
+</g>
+<g transform="translate(89.9936, 2.4731)">
+<rect x="0.0000" y="-2.0000" width="0.6000" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(89.5036, 2.4731)">
+<rect x="0.0000" y="-2.0000" width="0.1900" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(70.6959, 2.4731)">
+<rect x="0.0000" y="-2.0000" width="0.1900" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(51.8883, 2.4731)">
+<rect x="0.0000" y="-2.0000" width="0.1900" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(51.3983, 2.4731)">
+<rect x="0.0000" y="-2.0000" width="0.1900" height="4.0000" ry="0.0000" fill="currentColor"/>
+</g>
+<g transform="translate(18.7978, -3.4215)">
+<text font-family="TeX Gyre Heros" font-size="2.6165" text-anchor="start" fill="currentColor">
+<tspan>C</tspan>
+</text>
+</g>
+<g transform="translate(18.7978, 5.4731)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(18.7978, 4.4731)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(18.7978, 3.4731)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(0.8000, 3.4731)">
+<path transform="scale(0.0040, -0.0040)" d="M266 -635h-6c-108 0 -195 88 -195 197c0 58 53 103 112 103c54 0 95 -47 95 -103c0 -52 -43 -95 -95 -95c-11 0 -21 2 -31 6c26 -39 68 -65 117 -65h4zM401 151c19 -89 48 -242 60 -354c76 27 112 94 112 163c0 89 -60 179 -172 191zM74 28c0 -112 98 -247 278 -247
+c21 0 44 2 68 6c-7 64 -29 203 -63 364c-79 -8 -124 -61 -124 -119c0 -44 25 -91 81 -123c5 -5 7 -10 7 -15c0 -11 -10 -22 -22 -22c-15 0 -126 62 -126 187c0 88 58 174 160 197c-14 58 -29 117 -46 175c-107 -121 -213 -243 -213 -403zM357 1194c28 0 143 -206 143 -361
+c0 -143 -86 -255 -180 -364c21 -68 39 -138 56 -207c5 0 10 1 14 1c155 0 255 -129 255 -262c0 -113 -74 -212 -180 -245c3 -35 5 -70 5 -105c0 -19 -1 -39 -2 -58c-7 -119 -88 -225 -202 -228l1 43c93 2 153 92 159 191c1 18 2 37 2 55c0 31 -1 61 -4 92
+c-28 -5 -55 -8 -80 -8c-239 0 -342 217 -342 374c0 177 131 306 248 441c-29 96 -52 170 -52 346c0 189 144 295 159 295zM247 782c0 -55 12 -115 35 -190c82 100 147 202 147 326c0 40 -6 82 -21 127c-49 -24 -161 -97 -161 -263z" fill="currentColor"/>
+</g>
+<g transform="translate(4.8850, 2.4731)">
+<path transform="scale(0.0040, -0.0040)" d="M433 -89c0 -22 -50 -174 -183 -174c-59 0 -250 19 -250 263c0 62 18 262 250 262c116 0 176 -106 176 -163c0 -40 -30 -72 -67 -72c-31 0 -75 25 -75 75c0 38 27 77 72 77c4 0 9 0 14 -1c-28 37 -72 59 -120 59c-106 0 -113 -73 -113 -186v-51v-51
+c0 -113 7 -187 113 -187c80 0 139 70 158 151c2 7 7 10 12 10c6 0 13 -4 13 -12z" fill="currentColor"/>
+</g>
+<g transform="translate(15.0329, 8.3382)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>Fechada</tspan>
+</text>
+</g>
+<g transform="translate(4.6776, 8.3382)">
+<text font-family="TeX Gyre Schola" font-weight="bold" font-size="2.2000" text-anchor="start" fill="currentColor">
+<tspan>Posição:</tspan>
+</text>
+</g>
+<g transform="translate(19.0960, 11.1382)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>1</tspan>
+</text>
+</g>
+<g transform="translate(0.0000, 11.1382)">
+<text font-family="TeX Gyre Schola" font-weight="bold" font-size="2.2000" text-anchor="start" fill="currentColor">
+<tspan>Exemplo n.º:</tspan>
+</text>
+</g>
+<g transform="translate(36.6216, -3.4215)">
+<text font-family="TeX Gyre Heros" font-size="2.6165" text-anchor="start" fill="currentColor">
+<tspan>C</tspan>
+</text>
+</g>
+<g transform="translate(36.6216, 5.4731)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(36.6216, 3.4731)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(36.6216, 0.9731)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(36.6216, -1.5269)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(33.6591, 8.3382)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>Aberta</tspan>
+</text>
+</g>
+<g transform="translate(36.9198, 11.1382)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>2</tspan>
+</text>
+</g>
+<g transform="translate(55.9193, -3.4215)">
+<text font-family="TeX Gyre Heros" font-size="2.6165" text-anchor="start" fill="currentColor">
+<tspan>E</tspan>
+</text>
+</g>
+<g transform="translate(57.8824, -3.7394)">
+<path transform="scale(0.0042, -0.0042)" d="M27 41l-1 -66v-11c0 -22 1 -44 4 -66c45 38 93 80 93 139c0 33 -14 67 -43 67c-31 0 -52 -30 -53 -63zM-15 -138l-12 595c8 5 18 8 27 8s19 -3 27 -8l-7 -345c25 21 58 34 91 34c52 0 89 -48 89 -102c0 -80 -86 -117 -147 -169c-15 -13 -24 -38 -45 -38
+c-13 0 -23 11 -23 25z" fill="currentColor"/>
+</g>
+<g transform="translate(58.7300, -4.6107)">
+<text font-family="TeX Gyre Heros" font-size="1.8500" text-anchor="start" fill="currentColor">
+<tspan>7</tspan>
+</text>
+</g>
+<g transform="translate(55.9193, 4.4731)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(55.9193, 3.4731)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(55.9193, 2.4731)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(55.9193, 1.4731)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(52.1544, 8.3382)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>Fechada</tspan>
+</text>
+</g>
+<g transform="translate(56.2174, 11.1382)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>3</tspan>
+</text>
+</g>
+<g transform="translate(54.7693, 4.4731)">
+<path transform="scale(0.0040, -0.0040)" d="M27 41l-1 -66v-11c0 -22 1 -44 4 -66c45 38 93 80 93 139c0 33 -14 67 -43 67c-31 0 -52 -30 -53 -63zM-15 -138l-12 595c8 5 18 8 27 8s19 -3 27 -8l-7 -345c25 21 58 34 91 34c52 0 89 -48 89 -102c0 -80 -86 -117 -147 -169c-15 -13 -24 -38 -45 -38
+c-13 0 -23 11 -23 25z" fill="currentColor"/>
+</g>
+<g transform="translate(53.7555, 2.4731)">
+<path transform="scale(0.0040, -0.0040)" d="M27 41l-1 -66v-11c0 -22 1 -44 4 -66c45 38 93 80 93 139c0 33 -14 67 -43 67c-31 0 -52 -30 -53 -63zM-15 -138l-12 595c8 5 18 8 27 8s19 -3 27 -8l-7 -345c25 21 58 34 91 34c52 0 89 -48 89 -102c0 -80 -86 -117 -147 -169c-15 -13 -24 -38 -45 -38
+c-13 0 -23 11 -23 25z" fill="currentColor"/>
+</g>
+<g transform="translate(54.7693, 1.4731)">
+<path transform="scale(0.0040, -0.0040)" d="M27 41l-1 -66v-11c0 -22 1 -44 4 -66c45 38 93 80 93 139c0 33 -14 67 -43 67c-31 0 -52 -30 -53 -63zM-15 -138l-12 595c8 5 18 8 27 8s19 -3 27 -8l-7 -345c25 21 58 34 91 34c52 0 89 -48 89 -102c0 -80 -86 -117 -147 -169c-15 -13 -24 -38 -45 -38
+c-13 0 -23 11 -23 25z" fill="currentColor"/>
+</g>
+<g transform="translate(74.7269, -3.4215)">
+<text font-family="TeX Gyre Heros" font-size="2.6165" text-anchor="start" fill="currentColor">
+<tspan>E</tspan>
+</text>
+</g>
+<g transform="translate(76.6901, -3.7394)">
+<path transform="scale(0.0042, -0.0042)" d="M27 41l-1 -66v-11c0 -22 1 -44 4 -66c45 38 93 80 93 139c0 33 -14 67 -43 67c-31 0 -52 -30 -53 -63zM-15 -138l-12 595c8 5 18 8 27 8s19 -3 27 -8l-7 -345c25 21 58 34 91 34c52 0 89 -48 89 -102c0 -80 -86 -117 -147 -169c-15 -13 -24 -38 -45 -38
+c-13 0 -23 11 -23 25z" fill="currentColor"/>
+</g>
+<g transform="translate(77.5377, -4.6107)">
+<text font-family="TeX Gyre Heros" font-size="1.8500" text-anchor="start" fill="currentColor">
+<tspan>7</tspan>
+</text>
+</g>
+<g transform="translate(74.7269, 4.4731)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(74.7269, 2.4731)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(74.7269, -0.0269)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(74.7269, -2.0269)">
+<path transform="scale(0.0040, -0.0040)" d="M347 -26c0 102 -89 139 -133 139c-23 0 -70 -10 -70 -89c0 -91 76 -136 132 -136c22 0 71 8 71 86zM245 136c144 0 246 -65 246 -136s-102 -136 -246 -136s-245 65 -245 136s101 136 245 136z" fill="currentColor"/>
+</g>
+<g transform="translate(71.7644, 8.3382)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>Aberta</tspan>
+</text>
+</g>
+<g transform="translate(75.0250, 11.1382)">
+<text font-family="TeX Gyre Schola" font-size="2.4697" text-anchor="start" fill="currentColor">
+<tspan>4</tspan>
+</text>
+</g>
+<g transform="translate(73.5769, 4.4731)">
+<path transform="scale(0.0040, -0.0040)" d="M27 41l-1 -66v-11c0 -22 1 -44 4 -66c45 38 93 80 93 139c0 33 -14 67 -43 67c-31 0 -52 -30 -53 -63zM-15 -138l-12 595c8 5 18 8 27 8s19 -3 27 -8l-7 -345c25 21 58 34 91 34c52 0 89 -48 89 -102c0 -80 -86 -117 -147 -169c-15 -13 -24 -38 -45 -38
+c-13 0 -23 11 -23 25z" fill="currentColor"/>
+</g>
+<g transform="translate(72.5631, 2.4731)">
+<path transform="scale(0.0040, -0.0040)" d="M27 41l-1 -66v-11c0 -22 1 -44 4 -66c45 38 93 80 93 139c0 33 -14 67 -43 67c-31 0 -52 -30 -53 -63zM-15 -138l-12 595c8 5 18 8 27 8s19 -3 27 -8l-7 -345c25 21 58 34 91 34c52 0 89 -48 89 -102c0 -80 -86 -117 -147 -169c-15 -13 -24 -38 -45 -38
+c-13 0 -23 11 -23 25z" fill="currentColor"/>
+</g>
+<g transform="translate(73.5769, -2.0269)">
+<path transform="scale(0.0040, -0.0040)" d="M27 41l-1 -66v-11c0 -22 1 -44 4 -66c45 38 93 80 93 139c0 33 -14 67 -43 67c-31 0 -52 -30 -53 -63zM-15 -138l-12 595c8 5 18 8 27 8s19 -3 27 -8l-7 -345c25 21 58 34 91 34c52 0 89 -48 89 -102c0 -80 -86 -117 -147 -169c-15 -13 -24 -38 -45 -38
+c-13 0 -23 11 -23 25z" fill="currentColor"/>
+</g>
+</svg><p><audio class="figure-audio" controls preload="none"><source src="/audio/chords_3notes_positions.m4a" type="audio/mp4"><source src="/audio/chords_3notes_positions.mp3" type="audio/mpeg"></audio></p><figcaption><b class="figure-number">Figura 3.5.4.</b> Tríades e acordes de sétima em posição fechada e aberta.<span class="figure-files"><a href="/scores/chords_3notes_positions.ly" download>LilyPond</a> · <a href="/audio/chords_3notes_positions.m4a" download>AAC</a> · <a href="/audio/chords_3notes_positions.mp3" download>MP3</a></span></figcaption></figure>
+<p>O primeiro exemplo apresenta o acorde de C Maior em posição fechada, ou seja, as notas que
+perfazem o acorde encontram-se tão próximas quanto possível. No segundo exemplo, o mesmo acorde
+encontra-se em posição aberta, por existir espaço livre entre as notas do acorde para se
+colocarem mais notas. Os exemplos três e quatro apresentam harmonias fechadas e abertas no
+acorde de Eb. A sonoridade transmitida também é diferente: nos acordes fechados a harmonia é
+mais coesa e forte, nos acordes abertos a harmonia é mais solta e leve.</p>
+<h2 id="inversões">Inversões</h2>
+<p>Como visto anteriormente, os acordes são constituídos por três ou mais notas tocadas
+simultaneamente, encontrando-se estas notas dispostas verticalmente em terceiras. Por exemplo,
+o acorde de Dó maior é composto por [C, E, G] e este acorde, em termos da sua inversão,
+encontra-se no estado fundamental.</p>
+<p>Os acordes podem-se encontrar em diferentes inversões, dependendo da nota do acorde que se
+encontra no registo mais grave. Existem duas inversões possíveis num acorde composto por três
+notas:</p>
+<ul>
+<li>Estado fundamental: [C, E, G], a tónica do acorde encontra-se no baixo.</li>
+<li>Primeira inversão: [E, G, C], a 3.ª nota do acorde encontra-se no baixo.</li>
+<li>Segunda inversão: [G, C, E], a 5.ª nota do acorde encontra-se no baixo.</li>
+</ul>
+<p>Como será visto em seguida, nos acordes de sétima (4 notas) existem 3 inversões possíveis,
+exemplo C7:</p>
+<ul>
+<li>Estado fundamental: [C, E, G, Bb]</li>
+<li>Primeira inversão: [E, G, Bb, C]</li>
+<li>Segunda inversão: [G, Bb, C, E]</li>
+<li>Terceira inversão: [Bb, C, E, G]</li>
+</ul>
+<p>Do ponto de vista de inversão, não importa quais as notas que se encontram nas outras vozes,
+importando apenas a nota que se encontra no registo mais grave. O nome do acorde também
+permanece inalterado, isto é, [C, E, G] é o acorde de Dó Maior e [E, G, C] é também um acorde
+de Dó maior (na 1.ª inversão). Embora o nome do acorde se mantenha inalterado, naturalmente que
+as inversões irão transmitir sonoridades diferentes e irão relacionar-se de outras formas com a
+harmonia e estética da própria música. As inversões são um instrumento extremamente importante
+para uma adequada condução das vozes, ou «voice leading».</p>
+<script type="module">
+for (const figure of document.querySelectorAll('figure.figure[data-cursor]')) {
+  const map = JSON.parse(figure.dataset.cursor);
+  const audio = figure.querySelector('audio');
+  const svg = figure.querySelector('svg.score');
+  if (!audio || !svg || map.length === 0) continue;
+
+  // The band is the staves the note belongs to: on a score over several systems the bar
+  // must not run down the silent ones.
+  const PAD = 1.5;
+  const bar = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+  bar.setAttribute('class', 'score-cursor');
+  bar.setAttribute('width', 0.5);
+  const place = ([, x, top, bottom]) => {
+    bar.setAttribute('y', top - PAD);
+    bar.setAttribute('height', bottom - top + PAD * 2);
+  };
+  place(map[0]);
+  bar.setAttribute('x', map[0][1]);
+  svg.append(bar);
+
+  let frame = 0;
+  const follow = () => {
+    const now = audio.currentTime;
+    let index = 0;
+    for (let low = 0, high = map.length - 1; low <= high; ) {
+      const middle = (low + high) >> 1;
+      if (map[middle][0] <= now) { index = middle; low = middle + 1; } else { high = middle - 1; }
+    }
+    // The bar marks the note sounding rather than sliding between notes: a whole note
+    // lasts seconds, and drift reads as the recording being out of step.
+    place(map[index]);
+    bar.setAttribute('x', map[index][1]);
+    frame = requestAnimationFrame(follow);
+  };
+
+  const stop = () => { cancelAnimationFrame(frame); frame = 0; };
+  audio.addEventListener('play', () => { svg.classList.add('is-playing'); follow(); });
+  audio.addEventListener('pause', stop);
+  audio.addEventListener('ended', () => { stop(); svg.classList.remove('is-playing'); });
+}
+</script>
+</div><nav class="mt-12 flex justify-between gap-4 border-t border-border pt-6 text-body-sm"><a href="/sons-em-conjunto/modos/" rel="prev" class="text-accent no-underline">← Anterior: 3.4 Modos</a><a href="/sons-em-conjunto/acordes-de-setima/" rel="next" class="text-accent no-underline">Seguinte: 3.6 Acordes de sétima →</a></nav></main><div class="hidden py-8 xl:block"><nav aria-label="Nesta página" class="sticky top-16 text-body-sm text-secondary"><p class="mb-2 font-semibold text-ink">Nesta página</p><ul class="flex flex-col gap-1"><li class><a href="#numerais-romanos" class="no-underline hover:text-ink">Numerais romanos</a></li><li class><a href="#posição-aberta-e-fechada" class="no-underline hover:text-ink">Posição aberta e fechada</a></li><li class><a href="#inversões" class="no-underline hover:text-ink">Inversões</a></li></ul></nav></div></div><footer class="book-colophon"><p><a href="/">Teoria Musical</a>, um projeto de Marco Ferra</p><p><span>Código sob <a href="https://github.com/mfsphere/teoria-musical/blob/main/LICENSE">MIT</a></span><span>Texto, partituras e gravações sob <a href="https://github.com/mfsphere/teoria-musical/blob/main/LICENSE-TEXT">CC BY-SA 4.0</a></span><span>2017–2026</span></p></footer></body></html>

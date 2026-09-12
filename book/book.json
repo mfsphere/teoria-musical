@@ -1,0 +1,79 @@
+{
+  "theme": "satteri",
+  "themeComment": "Look of the site. Files in src/styles/themes/.",
+  "chapters": [
+    {
+      "slug": "fundamentos",
+      "label": "Fundamentos"
+    },
+    {
+      "slug": "sons-isolados",
+      "label": "Sons isolados"
+    },
+    {
+      "slug": "sons-em-conjunto",
+      "label": "Sons em conjunto"
+    },
+    {
+      "slug": "palavras-finais",
+      "label": "Palavras finais"
+    }
+  ],
+  "audio": {
+    "sampleRate": 48000,
+    "bitrate": "320k",
+    "comment": "Each score's MIDI carries its own General MIDI program, set by midiInstrument in the .ly. Keys below are those programs. Presets are HALion Sonic multis exported from book/presets; each puts its instrument in slot 1, so parts play on channel 1.",
+    "instruments": {
+      "0": {
+        "name": "acoustic grand",
+        "preset": "piano.vstpreset"
+      },
+      "32": {
+        "name": "acoustic bass",
+        "preset": "bass.vstpreset"
+      },
+      "33": {
+        "name": "electric bass (finger)",
+        "preset": "ebass.vstpreset"
+      },
+      "40": {
+        "name": "violin",
+        "preset": "strings.vstpreset"
+      },
+      "41": {
+        "name": "viola",
+        "preset": "strings.vstpreset"
+      },
+      "42": {
+        "name": "cello",
+        "preset": "strings.vstpreset"
+      },
+      "65": {
+        "name": "alto sax",
+        "preset": "sax.vstpreset"
+      },
+      "115": {
+        "name": "woodblock",
+        "preset": "woodblock.vstpreset"
+      },
+      "percussion": {
+        "preset": "drums.vstpreset",
+        "name": "drum kit"
+      }
+    },
+    "sources": {
+      "comment": "Single sustained sounds rendered for the spectral figures in chapter 2. The GM kit has no tam-tam; note 52 is its Chinese cymbal, the most gong-like sound available: longest decay and the most noise-like spectrum of the kit.",
+      "piano-a4": {
+        "instrument": "0",
+        "note": 69,
+        "seconds": 30
+      },
+      "chinese-cymbal": {
+        "instrument": "percussion",
+        "note": 52,
+        "seconds": 8
+      }
+    },
+    "aacBitrate": "256k"
+  }
+}
