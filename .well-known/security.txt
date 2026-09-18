@@ -1,0 +1,18 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+# Regenerate after editing:
+#   gpg --clearsign --local-user EC659DE64500B5E2 --output public/.well-known/security.txt
+Contact: mailto:hello@teoria-musical.com
+Encryption: https://www.teoria-musical.com/.well-known/pgp-key.txt
+Expires: 2027-09-04T00:00:00.000Z
+Preferred-Languages: pt, en
+Canonical: https://www.teoria-musical.com/.well-known/security.txt
+-----BEGIN PGP SIGNATURE-----
+
+iJEEARYKADkWIQT9hYyObe6aiJmJjkbsZZ3mRQC14gUCaprG+xsUgAAAAAAEAA5t
+YW51MiwyLjUrMS4xMiwzLDMACgkQ7GWd5kUAteID0gEA/RYpPMW37eC6lDfyenC4
+NqI1LtjekeQKaTaqBbcjdukA/RVYCYol52rhsp15Vd+01wczPfcscXXL4D+VNVzA
+6kAG
+=BD7m
+-----END PGP SIGNATURE-----
